@@ -1,4 +1,69 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=50" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>Selecting Anti-Vandal Switches for Industrial Control Panels</title><link>https://www.mouser.com/blog/selecting-anti-vandal-switches-industrial-control-panels</link><category>Industrial Automation</category><pubDate>Thu, 01 Oct 2026 21:32:22 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/d9fa8b4b-8e0f-4923-9c26-71fe31ce7975/Large/Adobe-Stock-284636772-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=50" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>Mobile Cobots for Flexible Industrial Automation</title><link>https://www.mouser.com/blog/mobile-cobots-for-flexible-industrial-automation</link><category>Automation,Industrial,Industrial Automation,Robotics</category><pubDate>Mon, 05 Oct 2026 16:50:03 GMT</pubDate><description>&lt;h2 style="color:##333333; font-style:italic; font-size:16px;"&gt;&lt;em&gt;Mobile cobots combine autonomous transport with robotic handling across industrial workflows&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/cf42da64-6881-4845-9787-e9701b4ec05b/Large/Adobe-Stock-506021228-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: Nay/stock.adobe.com&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Industrial manufacturers must constantly adapt to changing production schedules, batch sizes, and labor constraints. These conditions make it harder to justify fixed automation designed for a single product or workstation. Automation must move where work is needed and switch between tasks as demand changes.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;For example, mobile collaborative robots (cobots) combine robotic arms that can handle and manipulate parts with autonomous mobile robots (AMRs) that can navigate between locations. This combination gives the cobot a facility-wide working area and enables it to connect production steps that depend on manual transfers.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In this first part of our blog series on cobots in automation, we look at how mobile cobots automate handoffs between operations and which workflows benefit from this mobility. We also examine the engineering work needed to make the complete system reliable.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Automating the Handoffs Between Operations&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Combining mobility and part handling is useful for automating handoffs between separate production steps.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;For example, consider a mobile cobot tending a computer numerical control (CNC) machine. Production software sends a service request once the machine finishes its cycle, and the cobot collects the correct blank from a staging area.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;When the cobot reaches the CNC machine, it must establish the correct working position. The machine controller checks that the spindle has stopped and the door is open before giving access.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The cobot removes the finished part and places it in onboard storage. It loads the new blank and confirms the exchange. The CNC machine can then start its next cycle as the cobot takes the finished part to inspection.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;This sequence has to operate as one mission. If a mission has 10 stages and each stage succeeds on 99 percent of attempts, only about 90 percent of missions will complete without any exceptions.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Retries also add time and require clear rules. A mobile cobot&amp;rsquo;s main value comes from automating these handoffs and ensuring that automation is reliable.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Choosing Workflows That Benefit from Mobility&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In effective industrial environments, tasks should be spread across several stations and each should require robotic part handling only at intervals. The cobot must have enough time to travel to the station and complete the exchange before production is delayed.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Total service time includes arm movement, travel, and docking time, while traffic or routine retries add variation. Engineers need to compare the complete service time with the rate at which stations request the cobot.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In the case of several CNC machines sharing one mobile cobot, each time a machine finishes a cycle, it requests a part exchange. The cobot may need about two minutes to travel to the machine, dock, and complete the exchange.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;If the requests are spaced apart, the cobot can move from one machine to the next without affecting production. But if two machines request service at the same time, one has to wait while the cobot finishes the first task. Engineers need to make sure these waiting times do not become long enough to delay production.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;This timing model helps identify suitable applications. In production flow, a mobile cobot can move works in progress between cells and place them at the next assembly stage. Material supply tasks can include preparing kits or replenishing line-side bins. Beneficial to these scenarios is that the cobot&amp;rsquo;s arm removes the need for a transfer mechanism at every destination.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Inspection and logistics are also examples where the task moves between locations. The cobot can carry an inspection instrument to a large workpiece, avoiding the need to move the part. In a warehouse, the cobot can transfer totes from storage to packing and bring items from the same order.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Software-based routes make it easier to reassign the platform when products or layouts change. When this occurs, engineers can update the map and task program without installing a new conveyor. However, each new task must be tested because the workstation and operating conditions have changed.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Mobile cobots make sense when the value of sharing a single arm across multiple locations outweighs the time lost to travel and docking.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Considerations for Reliable Deployment&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Engineers must address several key factors when designing mobile cobots into an automation environment. AMRs can arrive close enough to identify the correct station yet be too far for the cobot to place a part into a fixture. Most industrial systems solve this in two stages: Navigation brings the platform into the station area, and docking establishes the working frame for the arm.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;The final tool position can be affected by errors throughout the entire system. The AMR may not stop at the same point on every visit. Docking has a repeatability limit. Movement in the chassis changes the cobot&amp;rsquo;s base position, while arm repeatability and fixture position add further error.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Robot repeatability data assume that the arm is attached to a fixed base. It does not include movement from tires, suspension, or docking. Engineers have to work backward from the process tolerance and decide how much error each part of the system might contribute.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Mechanical integration also changes the working limits. The mobile base must be able to support the arm and its controller before any production payload is added. Tooling and onboard storage use more of the available capacity. The remaining payload availability must cover every part carried during the mission.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Battery state affects which missions the cobot accepts. The cobot needs to reserve the battery for picking up the part, completing the delivery, and reaching the charger. Time spent waiting for machines also reduces availability, with traffic holds and docking further reducing it.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Recovery logic is just as important as normal operation. Blocked routes can change arrival time and cause a station reservation to expire. If a workstation becomes unavailable after pickup, the cobot needs a safe place to wait or hold the part. These responses should be defined before deployment because an operator cannot safely improvise every recovery.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Mobile cobots bridge the gap between material transport and robotic handling, enabling a single automation platform to connect multiple production processes. Their strongest use case lies in environments where work is distributed across several stations and automation needs to adapt as production demands change.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;However, successful deployment depends on more than combining an AMR with a robotic arm. Engineers must account for travel time, docking accuracy, payload limits, battery management, and recovery logic to ensure reliable operation across the entire workflow. When these factors are addressed, mobile cobots can reduce manual handoffs, improve resource utilization, and provide a flexible alternative to fixed automation infrastructure.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;In the next installation of our cobot blog series, we turn our attention toward the advanced vision systems giving cobots enhanced depth perception and more precise object recognition.&lt;/p&gt;
+</description><guid isPermaLink="false">4697</guid></item><item><title>Selecting Anti-Vandal Switches for Industrial Control Panels</title><link>https://www.mouser.com/blog/selecting-anti-vandal-switches-industrial-control-panels</link><category>Industrial Automation</category><pubDate>Thu, 01 Oct 2026 21:32:22 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/d9fa8b4b-8e0f-4923-9c26-71fe31ce7975/Large/Adobe-Stock-284636772-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;(Source: Nuttapon/stock.adobe.com)&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
 
@@ -3464,99 +3529,4 @@ Jean-Jacques (JJ) DeLisle attended the Rochester Institute of Technology, where 
 &lt;p style="margin-bottom:11px"&gt;Connector standards are tools that define expectations and reduce doubt, but they do not automatically guarantee the best performance. Treating them as such can lead to unnecessary cost or misplaced confidence.&lt;/p&gt;
 
 &lt;p&gt;A practical approach is to start with the environment, the expected lifetime, and the consequences of failure. Then choose the level of compliance that supports those realities. Sometimes that will mean a fully qualified military connector, but it should never be the only option considered.&lt;/p&gt;
-</description><guid isPermaLink="false">3759</guid></item><item><title>Vector Control for BLDC Motors Using Advanced MCUs</title><link>https://www.mouser.com/blog/vector-control-for-bldc-motors-using-advanced-mcus</link><category>Industrial,Motor Control,Power</category><pubDate>Wed, 24 Jun 2026 12:48:49 GMT</pubDate><description>&lt;h2 style="font-style: italic; font-size: 16px;"&gt;&lt;em&gt;Smaller-scale applications can now use this advanced motor-control tech&lt;/em&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px; display: flex; align-items: center; justify-content: center;"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/1ce95f90-927f-4d67-8ffc-df1685f5504f/Large/Adobe-Stock-1978724225-jpg.png" style="width: 500px; height: 363px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;(Source: Wire_man/stock.adobe.com)&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The ubiquitous use of DC motors is a testament to ongoing technological advances and developments in specialties such as magnetics, materials science, processors, software, and power semiconductors. These motors are embedded in countless household products, from power tools to automobiles. In fact, the average car&amp;mdash;whether ICE, hybrid, or electric&amp;mdash;contains dozens of DC motors (&lt;strong&gt;Figure 1&lt;/strong&gt;), not including the traction motors in hybrids and electric vehicles (EVs).&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px; display: flex; align-items: center; justify-content: center;"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/39f2998c-20d3-42cc-ad0a-d4702ae45979/Large/Adobe-Stock-60968622-jpg.png" style="width: 500px; height: 363px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt;&amp;nbsp;Small and medium motors surround us and are embedded in our daily lives. (Source: anantachat/stock.adobe.com)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;DC motors come in three basic types: brushed, brushless (BLDC), and stepper. Brushed motors, powered directly from a DC rail, have been used since the late 1800s, and remain popular for their low cost and unique performance characteristics. BLDC motors offer higher efficiency, improved reliability, and greater control than brushed motors and are well-suited for continuous rotation, but they require more complex drive circuitry.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The brushless DC motor offers many operational advantages, but fully realizing these capabilities requires much more than the simple drive circuitry of the brushed motor. As a result, its use has traditionally been limited to applications using smaller fractional-horsepower motors, such as power tools and small appliances.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Among the various methods for controlling BLDC motors, one of the most advanced and widely used techniques is vector control, also known as field-oriented control (FOC). Vector control enables highly precise, efficient, and responsive motor operation, but requires complex algorithms to act on real-time current and voltage information. Now, advances in processors, combined with appropriate support functions, have made vector control a practical approach for BLDC motors in lower-power applications, including power tools, small appliances, and similar compact systems.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;This blog examines the fundamentals of BLDC motor operation, breaks down the principles behind FOC, and highlights how modern, integrated motor-control MCUs enable designers to implement high-efficiency, high-precision solutions in compact, smaller-scale applications such as power tools.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Motor Control Basics&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The objective of motor control is to determine a motor&amp;rsquo;s position, speed, and acceleration under fixed (static) and varying (dynamic) load conditions in real time and then adjust the drive currents to maintain the desired setpoints of these performance parameters.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;These setpoints are not constant but shift during motor operation. It&amp;#39;s the system&amp;#39;s higher-level controller task to determine the desired setpoint and the changes to the setpoint. For example, a motor may be instructed to smoothly accelerate from zero revolutions per minute (rpm) to a predefined rpm, run for a period, then stop and hold its position.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The motor driver takes the desired setpoint signal and drives the motor to reach and track it. The parameter to be controlled&amp;mdash;position, velocity, or acceleration&amp;mdash;depends on the application. The three parameters are related: velocity represents the rate of change of position, while acceleration represents the rate of change of velocity. Therefore, if the system continually knows the rotor position, it can determine the other two factors.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;In simple terms, the BLDC motor&amp;rsquo;s underlying principle is based on three coils spaced 120⁰ apart (&lt;strong&gt;Figure 2&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px; display: flex; align-items: center; justify-content: center;"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/fig2a-bldc-mortors-en.png?ver=XBMz7c24Dlu_iqqqYsXEeA%3d%3d" style="width: 300px; height: 319px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt;&amp;nbsp;A simplified explanation of the BLDC motor principle of operation uses three coils with 120⁰ spacing that are driven by controlling the phases and coil currents. (Source: Renesas Electronics)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;As current is applied to the coils in sequence, the rotor&amp;#39;s permanent magnet follows the rotating magnetic field produced by the coils. Although this explanation uses just three coils, real motors usually have six or more coils for smoother operation and high-resolution control, but the principle is the same.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The classic method for implementing current-drive timing is rotor feedback and closed-loop control. A position sensor senses the rotor position and sends a signal back to the controller (&lt;strong&gt;Figure 3&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px; display: flex; align-items: center; justify-content: center;"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/mouser-sinusoidal-controller-bldc-motor-msb331-redraw-en.png?ver=2EBUuK1Vo8rSoxO-dWqa1g%3d%3d" style="width: 600px; height: 300px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt;&amp;nbsp;In closed-loop motor control, the rotor position is sensed and fed back to the controller, which then sends a correcting signal to drive the actual position to that setpoint. (Source: Mouser Electronics)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;This sensor is typically a Hall-effect device, optical encoder, or resolver. The controller, in turn, adjusts the motor drive current to minimize the error difference between the desired setpoint and the measured value.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;A closed-loop algorithm, such as the well-known proportional-integral (PI) approach, is often used as the closed-loop control strategy. The controller that establishes the setpoint often applies additional &amp;ldquo;corrections&amp;rdquo; to compensate for real-world effects such as motor and load inertia, motor response characteristics, and desired application-specific velocity and acceleration profiles.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Vector Motor Control Principles&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;For many years, motor experts have explored the concept of sensorless vector control and its complex mathematical aspects. A major advantage of sensorless vector control is that it can eliminate the need for a physical position sensor in some implementations, thereby reducing costs, space requirements, and the risk of a potential failure point. However, there was a tradeoff: a relatively powerful processor was needed to calculate the matrix math and associated trigonometry that are key to vector control.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Vector control infers rotor position indirectly rather than relying on a physical sensor. The process begins with continuous, real-time measurement of two of the three stator-coil currents using current sensors and analog-to-digital converters (ADCs). In simple terms, the three currents are then resolved into two orthogonal constituents: an in-phase one that is aligned with the rotor poles, and a quadrature one that is perpendicular to the rotor poles and generates torque on the rotor. The motor controller performs complex calculations on the rotor position and speed vectors to drive the currents to the stator coils and so produce the desired rotor torque and speed.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Basic trapezoidal-current drive systems are popular for their simple control circuits, but they tend to induce torque ripple during commutation. Trapezoidal commutation does not deliver the smooth, precise control needed for brushless DC motors, especially at low speeds.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Sinusoidal commutation addresses this problem. This control delivers smooth rotation by using three-phase current to control the flux smoothly. Sinusoidal control is more complicated because it must accurately deliver differing amounts of current to all three phases. However, its system-level benefits often outweigh the technical cost.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Despite implementation challenges, vector motor control enables the motor to maintain high torque for power tools under varying load conditions; it also enables higher speeds to meet the demands of specialized motors, such as surgical drills, which can reach 100,000 rpm. Note that in some higher-performance systems, an encoder is used with vector control to cross-check the control loop and simplify motor start-up from a known position; despite this extra cost, vector control still offers significant performance benefits.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Implementing Vector Motor Control &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Sensorless vector control takes more than understanding equations and efficient ways to execute them. It requires a focused, application-optimized microcontroller unit (MCU) that is equipped to capture motor current measurements, rapidly solve the trigonometric functions needed to convert coordinate space, and use those results to control the MOSFET power devices. Until recently, the cost in dollars, power, and circuit-board footprint was prohibitive for lower-cost or highly portable applications.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Now, that situation has changed with the availability of devices such as these in the &lt;a href="https://www.mouser.com/new/renesas/renesas-ra2t1-mcus/"&gt;Renesas Electronics RA2T1 64MHz Entry Level Motor Control MCU family&lt;/a&gt;. The RA2T1 is part of a scalable family of software- and pin-compatible Arm&lt;sup&gt;&amp;reg;&lt;/sup&gt;-based 32-bit MCUs that share a common set of Renesas peripherals, facilitating design scalability (&lt;strong&gt;Figure 4&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px; display: flex; align-items: center; justify-content: center;"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/Renesas Motor Control MCU family Block Diagram_600.png?ver=R1Phwpnm6Y7N19ZcOVCFOA%3d%3d" style="width: 600px; height: 523px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 4:&lt;/strong&gt;&amp;nbsp;The internal block diagram of the Renesas Motor Control MCU family shows all available internal functions; the specific set depends on the selected model. (Source: Renesas Electronics Corp.)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;These MCUs are optimized for BLDC and permanent-magnet synchronous motor (PMSM) control and also integrate the necessary analog peripherals, such as high-speed ADCs, comparators, and timers, to enable precise motor operation. They include up to 64 kilobytes of code flash memory, 2 kilobytes of data flash memory, 8 kilobytes of static RAM, a 12-bit ADC, a high-speed analog comparator, safety features, and numerous other peripheral functions, such as timers.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Programming an MCU for vector control&amp;mdash;or any other control&amp;mdash;is a challenging task. For this reason, the MCUs are supported by &lt;a href="https://www.mouser.com/pdfDocs/fsp-flyer-r11pm0012eu0100-5.pdf"&gt;Renesas&amp;rsquo; Flexible Software Package&lt;/a&gt;, which includes firmware to simplify motor control development using the MCU&amp;rsquo;s onboard peripherals (&lt;strong&gt;Figure 5&lt;/strong&gt;). This package simplifies development and accelerates time-to-market for motor-driven applications in home appliances, power tools, and industrial automation. It includes configurable tools and automated code generation to streamline programming and debugging.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px; display: flex; align-items: center; justify-content: center;"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/Flexible Software Package.png?ver=pdE_V8k0v0xgpz70eor6HA%3d%3d" style="width: 500px; height: 302px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 5:&lt;/strong&gt;&amp;nbsp;The supporting Flexible Software Package includes the firmware, tools, and other elements needed to bundle an effective motion controller. (Source: Renesas Electronics Corp.)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The comprehensive suite enables designers to tailor system operation to application-specific preferences and profiles precisely. Relevant factors include the characteristics of the motor itself; desired dynamic performance, including ramp-up, ramp-down, acceleration, and deceleration profiles; response to transient load shifts; and tradeoffs between speed and acceleration and positioning precision and overshoots.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;It&amp;rsquo;s important to recognize that applications have different priorities. For example, a power tool may need to maximize torque across its operating range, while a robotic actuator may focus on smooth acceleration and precise stopping.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;In addition to the MCU and its firmware, Renesas offers high-performance MOSFETs for powering the stator coils. The &lt;a href="https://www.mouser.com/new/renesas/renesas-rexfet-1-power-mosfets/"&gt;Renesas Electronics REXFET-1 100V &amp;amp; 150V Power MOSFETs&lt;/a&gt; feature low R&lt;sub&gt;DS(ON) &lt;/sub&gt;values of 1.5mΩ, 2.9mΩ, 3.7mΩ, 6.7mΩ, 11.1mΩ, and 21mΩ, depending on the selected version, thereby improving efficiency at high current levels.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;These MOSFETs are designed for exceptional thermal performance for demanding applications. They are available in TO-Leadless (TOLL), TO Leaded Gullwing (TOLG), and TO top-side cooled (TOLT) packages for maximum power capability. Another important power-device consideration is the reliability of their attachment to the PC board, so they feature wettable-flank packaging for excellent solder joint performance (&lt;strong&gt;Figure 6&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px; display: flex; align-items: center; justify-content: center;"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/Large-105406215.png?ver=pdE_V8k0v0xgpz70eor6HA%3d%3d" style="width: 400px; height: 291px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 6:&lt;/strong&gt;&amp;nbsp;In addition to the MCU functions, a complete motion-control function requires low on-resistance MOSFETs with thermally efficient packaging, such as the REXFET-1 100V and 150V Power MOSFETs. (Source: Mouser Electronics)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Brushless DC motors are widely used for their reliability and potential for precise performance. FOC is an advanced algorithm that enables these motors to deliver accurate, efficient control of torque and speed through real-time current measurement and mathematical calculations. Compared to simpler control methods, FOC reduces torque ripple and enhances overall performance, but it also demands significant processing power for intensive computations, as well as specialized functionality and I/O. Until recently, these requirements limited the use of BLDC motors in lower‑power applications such as power tools. However, advances in microcontrollers and integrated components are now making FOC practical for smaller, cost-sensitive designs. Renesas addresses these needs with a scalable family of cost-effective MCUs optimized for vector control, along with high-performance MOSFETs for driving motor coils.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Author&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;img alt="" src="/blog/Portals/11/BillSchweber_blog.png" style="width: 100px; height: 140px; float: left; margin-right: 10px; margin-bottom: 5px;" /&gt;Bill Schweber is a contributing writer for Mouser Electronics and an electronics engineer who has written three textbooks on electronic communications systems, as well as hundreds of technical articles, opinion columns, and product features. In past roles, he worked as a technical website manager for multiple topic-specific sites for EE Times, as well as both the Executive Editor and Analog Editor at EDN. At Analog Devices, Inc. (a leading vendor of analog and mixed-signal ICs), Bill was in marketing communications (public relations); as a result, he has been on both sides of the technical PR function, presenting company products, stories, and messages to the media and also as the recipient of these. Prior to the MarCom role at Analog, Bill was associate editor of their respected technical journal, and also worked in their product marketing and applications engineering groups. Before those roles, Bill was at Instron Corp., doing hands-on analog- and power-circuit design and systems integration for materials-testing machine controls. He has an MSEE (Univ. of Mass) and BSEE (Columbia Univ.), is a Registered Professional Engineer, and holds an Advanced Class amateur radio license. Bill has also planned, written, and presented online courses on a variety of engineering topics, including MOSFET basics, ADC selection, and driving LEDs.&lt;/p&gt;
-</description><guid isPermaLink="false">3758</guid></item></channel></rss>
+</description><guid isPermaLink="false">3759</guid></item></channel></rss>
