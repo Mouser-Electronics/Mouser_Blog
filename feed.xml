@@ -1,4 +1,49 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=50" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>Industrial Ethernet Modernization with PoE Injectors</title><link>https://www.mouser.com/blog/industrial-ethernet-modernization-with-poe-injectors</link><category>Automation,Connectors,Industrial,IoT,Power</category><pubDate>Tue, 13 Oct 2026 14:46:42 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/92ede397-5729-405d-acf3-dea30c63aaa8/Large/Adobe-Stock-330133489-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=50" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>Exploring the Electronics Aboard AC75 and AC40 Foiling Yachts</title><link>https://www.mouser.com/blog/exploring-the-electronics-aboard-ac75-and-ac40-foiling-yachts</link><category>AllConnectors,General,Power,Sensors</category><pubDate>Wed, 14 Oct 2026 13:55:32 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/LRP06100_300626_cNicolasTouze-LRPST (1).jpg?ver=31MFSDqgBJCOfQdjBqcH3w%3d%3d" style="width: 600px; height: 400px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: &amp;copy;Nicolas Touze/La Roche-Posay Racing Team&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Modern America&amp;rsquo;s Cup racing yachts are high-speed embedded systems platforms that use onboard sensors, telemetry, control loops, power conversion, and cockpit interfaces to help crews manage stability, drag, hydraulic response, and foil position. The competition features two classes of foiling yachts: the 12-metre AC40, used for preliminary regattas and the Women&amp;rsquo;s and Youth America&amp;rsquo;s Cup, and the 23-metre AC75, the team-specific design that contests the match.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Mouser has joined La Roche-Posay Racing Team as an Official Supporter for the team&amp;rsquo;s campaign in the 38th Louis Vuitton America&amp;rsquo;s Cup. The partnership gives the French challenger access to performance-critical electronic components, supporting the onboard systems that keep the team&amp;rsquo;s foiling race yachts stable, fast, and reliable.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;This blog looks at why electronics have become central to America&amp;rsquo;s Cup performance, how the team&amp;rsquo;s AC75 boat copes with the demands of the marine environment, and what component availability and traceability mean for a campaign built on rapid, data-driven improvement.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Why Electronics Are Central to America&amp;rsquo;s Cup Performance&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Modern America&amp;rsquo;s Cup boats are tightly integrated, embedded platforms whose electronics&amp;mdash;including telemetry, sensor fusion, and networked electronics architectures&amp;mdash;support performance, control, monitoring, and safety-related functions. Mark Patrick, Technical Content Director at Mouser EMEA, describes today&amp;rsquo;s AC75s as &amp;ldquo;effectively flying embedded systems platforms,&amp;rdquo; where the deciding factor is how quickly a team can turn that data into performance improvements. For the 2027 AC75, batteries replace the cyclor teams&amp;mdash;crew members pedaling stationary bikes&amp;mdash;that previously supplied hydraulic power. A new onboard data crew member monitors how the limited stored energy is allocated among trimming, mast rotation, and foil-cant functions, making power monitoring and control part of the race strategy. Engineers analyse the data both during and after testing sessions to refine foil positioning, hydraulic response, and energy management, continuously updating the digital models that guide development.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;That speed of iteration puts real pressure on component reliability, system integration, and supply chain support. For critical systems, such as flight control, power conversion, and telemetry, teams typically apply dual sourcing to ensure supply continuity, along with full component traceability and life cycle monitoring to safeguard design decisions. Quality controls, including moisture-sensitive device (MSD) protection,&lt;a href="https://www.mouser.co.uk/en/c/circuit-protection/esd-protection-diodes-tvs-diodes/"&gt; &lt;/a&gt;electrostatic discharge (ESD)-safe storage and assembly practices, and authenticity verification, help ensure components perform reliably under extreme load.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Engineering for the Marine Environment&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Onboard&lt;a href="https://www.mouser.co.uk/en/c/connectors/circular-connectors/"&gt; &lt;/a&gt;electronics and interconnect systems must perform under conditions few embedded systems ever face: constant vibration, moisture exposure, saltwater, and&lt;a href="https://www.mouser.co.uk/blog/emc-emi-shielding-explained"&gt; &lt;/a&gt;&lt;a href="https://resources.mouser.com/rf-wireless/emc-emi-shielding-explained"&gt;electromagnetic interference&lt;/a&gt; (EMI)&amp;mdash;all at racing speed. That places significant demands on component quality, system integration, and long-term reliability, since even a small delay in actuator response or control-loop timing can affect drag, stability, and flight behaviour. Reliable electronics integration and deterministic system performance have become genuine competitive advantages, not just engineering requirements.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Powering the AC40 and AC75 Foiling Yachts&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;In both the AC40 and AC75 classes, real-time data from onboard sensors informs small adjustments, such as foil position or hydraulic response, that balance lift, drag, stability, and maneuverability over the course of a race. That level of responsiveness depends on&lt;a href="https://mouser.co.uk/c/sensors"&gt; &lt;/a&gt;instrumentation and control systems that continue performing accurately at speed, under load, and in a marine environment. To find out more, &lt;a href="https://te.mouser.com/harsh-environment/te-connectivity-why-are-there-electronics-on-a-sailboat"&gt;explore the Mouser eBook&lt;/a&gt; on how electronics are being used on La Roche-Posay Racing Team&amp;rsquo;s sailboats (&lt;strong&gt;Figure 1&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p class="FigureCaption"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/mouser-amphenol-aidatacenters-social-facebook-instagram-1080x1080-en.jpg?ver=shM76qpAHL5-qgGPBL1UUw%3d%3d" style="width: 600px; height: 600px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt;&amp;nbsp;A La Roche-Posay racing yacht on the water. (Source: &amp;copy;Nicolas Touze/La Roche-Posay Racing Team)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Component Supply as a Performance Driver&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Procurement quality, traceability, and handling directly affect the team&amp;rsquo;s preparation for on-water results. Missing parts limit testing time and compress validation cycles ahead of races, which can carry through to performance on the water. Authorised distribution also plays a role in compliant handling and supply continuity during these compressed cycles: Engineering teams often analyse telemetry immediately after a testing session, implement configuration updates overnight, and validate the changes during the next on-water run (&lt;strong&gt;Figure 2&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;div style="position: relative; display: block; max-width: 960px;"&gt;
+&lt;div style="padding-top: 10%;"&gt;&lt;iframe allow="encrypted-media" allowfullscreen="allowfullscreen" height="500" src="https://players.brightcove.net/618591172001/default_default/index.html?videoId=6404533487112" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;" width="600"&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt;&amp;nbsp;Pia Mathias, embedded systems engineer, discusses her project with the La Roche-Posay Racing Team. (Source: Mouser)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Looking Ahead to Naples 2027&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;The 38th Louis Vuitton America&amp;rsquo;s Cup will be held in Naples in 2027, the first time the event has been staged in Italy. &amp;ldquo;Performance in today&amp;rsquo;s America&amp;rsquo;s Cup is no longer driven by sailing talent alone, but by the ability to integrate cutting-edge technologies into every aspect of the project,&amp;rdquo; says Stephan Kandler, CEO of La Roche-Posay Racing Team. As the team continues development and testing ahead of the match, its partnership with Mouser is intended to enhance the reliability, precision, and competitiveness of its onboard electronic systems, reinforcing the growing role that component-level engineering plays in elite sailing performance.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;&lt;small&gt;&lt;em&gt;Sources&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://www.americascup.com/the-boats&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description><guid isPermaLink="false">4746</guid></item><item><title>Industrial Ethernet Modernization with PoE Injectors</title><link>https://www.mouser.com/blog/industrial-ethernet-modernization-with-poe-injectors</link><category>Automation,Connectors,Industrial,IoT,Power</category><pubDate>Tue, 13 Oct 2026 14:46:42 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/92ede397-5729-405d-acf3-dea30c63aaa8/Large/Adobe-Stock-330133489-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: thexfilephoto/stock.adobe.com&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
 
@@ -3244,228 +3289,4 @@ Jean-Jacques (JJ) DeLisle attended the Rochester Institute of Technology, where 
 &lt;small&gt;&lt;em&gt;&lt;a href="#_ednref8" name="_edn8"&gt;[8]&lt;/a&gt;&amp;nbsp;https://iotbusinessnews.com/2025/11/23/on-device-ai-for-iot-sensors-when-local-inference-finally-makes-sense/&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
 &lt;small&gt;&lt;em&gt;&lt;a href="#_ednref9" name="_edn9"&gt;[9]&lt;/a&gt;&amp;nbsp;https://www.allaboutcircuits.com/industry-articles/how-to-perform-fault-classification-with-an-ai-based-vibration-sensor-node&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
 &lt;small&gt;&lt;em&gt;&lt;a href="#_ednref10" name="_edn10"&gt;[10]&lt;/a&gt;&amp;nbsp;https://doi.org/10.1016/j.cobme.2025.100628&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">3746</guid></item><item><title>A Guide to the EU Machinery Regulation 2023/1230 in 2027</title><link>https://www.mouser.com/blog/eu-machinery-regulation-20231230-compliance-for-industrial-systems</link><category>AllAutomation,Industrial,IoT,Security</category><pubDate>Thu, 02 Jul 2026 16:52:04 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/mouser-riseat7-eumachineryregulation-facebook-linkedin-1200x630-en.png?ver=mLk97eI8WdUe-WTHZMKEAw%3d%3d" style="width: 600px; height: 315px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: Mouser Electronics&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The landscape of European manufacturing is undergoing one of the most significant regulatory shifts in two decades. The industry is rapidly approaching the January 20, 2027, deadline for the full application of the EU Machinery Regulation (2023/1230), meaning regulatory changes will be in full motion.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt; Replacing the Machinery Directive (2006/42/EC), the new policy isn&amp;rsquo;t simply a &amp;ldquo;software update&amp;rdquo; that enhances safety rules; it is a total overhaul designed for the age of artificial intelligence (AI), the Internet of Things (IoT), and cybersecurity.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;For design engineers and manufacturers, this regulation presents a dual challenge: navigating complex, new legal requirements while maintaining a competitive edge in a market plagued by rising energy costs and labour shortages. However, this transition opens an opportunity. By leveraging the latest semiconductor and sensing technologies from leading manufacturers such as NXP Semiconductors, Amphenol, and Murata, engineers can turn compliance requirements into a catalyst for unprecedented levels of productivity.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;What Is the EU Machinery Regulation 2023/1230?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The Machinery Regulation 2023/1230 is the upcoming regulation to be enforced across the European Union, setting mandatory health, safety, and conformity rules for machinery and related products. This new set of regulations seeks to protect workers and consumers from unsafe machinery while allowing the free-flowing movement of products across the EU market. This means that manufacturers, importers, and distributors in the EU are legally obliged to meet the increased safety standards set out in EU Machinery Regulation 2023/1230 in order to sell machinery across EU territories.&lt;/p&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;From Directive to Regulation: Why the Change?&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;One of the most important aspects of the EU Machinery Regulation 2023/1230 is that it will replace the Machinery Directive 2006/42/EC, changing the applicable policy framework from a directive to a regulation. In the EU legal hierarchy, a directive is a goal that each member state must achieve by writing its own national laws. This often leads to subtle differences in how safety is enforced internationally. The transition from directive to regulation means the policy is now a single law that applies across the entire EU. This shift eliminates legal fragmentation and ensures that a machine certified in one country meets the same standards in another.&lt;/p&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Safety-Related Software Compliance&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The 2023/1230 regulation was written specifically to address new challenges of Industry 4.0, such as the development of AI and emerging cybersecurity threats. As part of the new regulation, safety-related software is now recognised as an integral component, as opposed to an optional add-on at the manufacturer&amp;rsquo;s discretion. The regulation explicitly states that software critical to a machine&amp;rsquo;s safe operation must be protected against accidental or intentional corruption. This serves to protect manufacturers from new threats to health, safety, production, and profit caused by cyberattacks. The regulation&amp;rsquo;s requirements mean that manufacturers will need to monitor and document both legitimate and illegitimate interventions made to software for compliance purposes, and, in some cases, may even be required to complete a conformity assessment as part of CE marking.&lt;sup&gt;&lt;a href="#_edn3" name="_ednref3"&gt;[3]&lt;/a&gt;&lt;/sup&gt; This reflects a shift from the Machinery Directive 2006/42/EC, which did not directly address cybersecurity.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Core Pillars of EU Machinery Regulation (2023/1230) Compliance&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Once EU Machinery Regulation (2023/1230) is implemented in January 2027, manufacturers must address three primary pillars: Functional Safety, Cybersecurity, and Digital Documentation.&lt;/p&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Enhanced Functional Safety&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The Essential Health and Safety Requirements (EHSRs) in Annex III of Regulation (2023/1230) have been expanded to place greater emphasis on diagnostic coverage and fault tolerance.&lt;sup&gt;&lt;a href="#_edn4" name="_ednref4"&gt;[4]&lt;/a&gt;&lt;/sup&gt; This means that if a control system fails, the machine must transition to a safe state, therefore protecting the machine and outputs from further damage. For electronic components, this means a shift toward parts that support ISO 13849 (Performance Levels) and IEC 62061 (Safety Integrity Levels).&lt;sup&gt;&lt;a href="#_edn5" name="_ednref5"&gt;[5]&lt;/a&gt;&lt;/sup&gt; To comply with these standards, manufacturers can engineer components to include internal self-testing, redundancy, and the ability to report system health data to a central controller.&lt;/p&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Mandatory Cybersecurity: Protection Against Corruption&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Another significant shift in Section 1.1.9 of Annex III is the introduction of mandatory cybersecurity measures. This means manufacturers across EU member states are now legally required to enforce protection against corruption or hacking. Whether an attack is accidental or malicious, the regulation mandates that a machine&amp;rsquo;s safety functions cannot be compromised by remote access.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;This aligns with the Cyber Resilience Act (CRA), which mandates secure-by-design principles.&lt;a href="#_edn6" name="_ednref6" title=""&gt;&lt;sup&gt;&lt;sup&gt;[6]&lt;/sup&gt;&lt;/sup&gt;&lt;/a&gt; Manufacturers must ensure they enforce:&lt;/p&gt;
-
-&lt;ul&gt;
- &lt;li style="border:none; margin-left:8px"&gt;Hardware-based security can be achieved through practices such as Trusted Execution Environments (TEEs) and Secure Boot.&lt;/li&gt;
- &lt;li style="border:none; margin-left:8px"&gt;Life cycle support: Manufacturers must provide active support for at least five years (or the product&amp;rsquo;s estimated lifetime, whichever is longer) after the product is released to market. Further, documentation and security updates must be available for at least 10 years after introduction (or the remainder of the support period, whichever is longer).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Digitalisation and Technical Reporting&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;In contrast to the previous Directive (2006/42/EC), Regulation (2023/1230) embraces the digital age with digitised factory processes, allowing manufacturers to provide production resources using QR codes, web portals, PDFs, and other digital formats. However, in exchange for this flexibility, the technical file (known as the internal compliance dossier) must be more robust than previously required. This file includes detailed technical documentation, risk analysis, and evidence of cybersecurity testing and management.&lt;/p&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;The &amp;ldquo;Substantial Modification&amp;rdquo; Rule&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Another crucial aspect of Regulation (2023/1230) is how it addresses older machines. If a manufacturer makes a substantial modification to an existing machine that creates or increases a risk, the machine may need to be re-certified to the 2027 standards. The market demand for secure small-form-factor components that can be integrated into existing cabinets is therefore expected to boom as a result of the new regulation.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Turning EU Machinery Regulation (2023/1230) into Profit: The Predictive Maintenance Strategy&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;A predictive maintenance (PdM) strategy is an approach to machinery maintenance that uses data from installed sensors to predict when and how equipment may fail. This approach includes the continuous monitoring of variables across machinery, from vibrations to pressure, to predict potential issues ahead of time.&lt;/p&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Increasing Profitability&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Unplanned downtime, including that due to machinery failures, results in estimated annual losses of &amp;pound;80 billion.&lt;sup&gt;&lt;a href="#_edn7" name="_ednref7"&gt;[7]&lt;/a&gt;&lt;/sup&gt; EU Machinery Regulation (2023/1230) may indirectly reduce these downtime losses by preventing sudden machinery failures through increased compliance with risk assessment requirements, prompting manufacturers to take action to prevent issues. This restructuring of the maintenance strategy will help prevent machinery downtime, therefore preventing potential profit loss.&lt;/p&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;How PdM Strategy Supports Compliance&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;PdM uses real-time data to forecast when a component will fail. By integrating PdM, manufacturers will achieve:&lt;/p&gt;
-
-&lt;ul&gt;
- &lt;li style="border:none; margin-left:8px"&gt;Residual risk reduction: Continuous monitoring identifies early failures before they become safety hazards.&lt;/li&gt;
- &lt;li style="border:none; margin-left:8px"&gt;Overall Equipment Effectiveness (OEE) optimisation: OEE increases when maintenance is scheduled during planned shutdowns rather than during emergency stops.&lt;/li&gt;
- &lt;li style="border:none; margin-left:8px"&gt;Sustainability: PdM has been shown to increase equipment lifespan by 20&amp;ndash;25 percent, thereby potentially reducing the carbon footprint associated with equipment and part replacement.&lt;sup&gt;&lt;a href="#_edn8" name="_ednref8"&gt;[8]&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Component-Level Solutions for EU Machinery Regulation (2023/1230) Compliance&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Mouser Electronics stocks solutions to help manufacturers meet these rigorous standards. To support system compliance with the EU Machinery Regulation (2023/1230) and an integrated PdM strategy, you may engage a sensor-to-cloud hardware chain.&lt;/p&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Sensing for Diagnostics: Amphenol Advanced Sensors&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;To comply with the new monitoring requirements, sensors must be more than just on/off switches. They must provide granular digital data. The following sensors help enforce compliance:&lt;/p&gt;
-
-&lt;table border="1" cellpadding="1" cellspacing="1" class="Table" style="border-collapse:collapse;border-color:currentcolor;border-image:initial;border-style:none;border-width:medium;width:600px;" width="658"&gt;
- &lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; border-top:1px solid black; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
-   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Device&lt;/span&gt;&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; border-top:1px solid black; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Use Case&lt;/span&gt;&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; border-top:1px solid black; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Key Features&lt;/span&gt;&lt;/p&gt;
-   &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; height:62px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;&lt;a href="https://eu.mouser.com/new/amphenol/amphenol-npi-19-medium-pressure-sensors/"&gt;Amphenol Advanced Sensors NovaSensor NPI-19 Series&lt;/a&gt;&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; height:62px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Media-isolated pressure sensors for hydraulic systems in heavy machinery&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; height:62px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Digital &lt;span style="background:white"&gt;I&amp;sup2;C &lt;/span&gt;output; enables constant self-diagnostic checks; alerts controller if sensor drifts; suitable for high SIL ratings&lt;/p&gt;
-   &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;&lt;w:sdt id="-971949214" sdttag="goog_rdk_0"&gt;&lt;/w:sdt&gt;&lt;a href="https://eu.mouser.com/new/amphenol/amphenol-ztpd-2210-detector/"&gt;Amphenol Advanced Sensors ZTPD-2210&lt;/a&gt;&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Thermopile detector for non-contact temperature monitoring of moving parts&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Detects overheating due to friction or electrical overload; documents temperature output; provides evidence of safe operation for technical files&lt;/p&gt;
-   &lt;/td&gt;
-  &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Secure Edge Processing: NXP MCX Microcontrollers&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;A compliant machine&amp;rsquo;s edge controller must securely process sensor data, support AI‑enabled PdM, and enforce real‑time operation. NXP MCX E‑Series microcontrollers are well‑suited for this role:&lt;/p&gt;
-
-&lt;table border="1" cellpadding="1" cellspacing="1" class="Table" style="border-collapse:collapse;border-color:currentcolor;border-image:initial;border-style:none;border-width:medium;width:600px;" width="658"&gt;
- &lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; border-top:1px solid black; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
-   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Device&lt;/span&gt;&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; border-top:1px solid black; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Use Case&lt;/span&gt;&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; border-top:1px solid black; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Key Features&lt;/span&gt;&lt;/p&gt;
-   &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; height:116px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;&lt;a href="https://eu.mouser.com/new/nxp-semiconductors/nxp-semiconductors-mcx-e31-mcus/"&gt;NXP MCX E31 Series&lt;/a&gt;&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; height:116px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Secure edge controller for sensor fusion, signal preprocessing, feature extraction, and lightweight AI inference supporting PdM&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; height:116px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Robust 5V operation for high noise immunity in harsh industrial environments; integrated EdgeLock&lt;sup&gt;&amp;reg;&lt;/sup&gt; security for a hardware‑based root of trust; secure boot and key management to protect AI models and firmware from tampering; functional safety features suitable for safety‑critical industrial systems&lt;/p&gt;
-   &lt;/td&gt;
-  &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Secure Connectivity: Murata Wireless Modules&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;For machines to participate in a smart factory, they need wireless connectivity that meets the new regulations&amp;rsquo; life cycle security mandate. Murata Wi-Fi and Wi-Fi+&lt;b&gt;Bluetooth&lt;/b&gt;&lt;sup&gt;&amp;reg;&lt;/sup&gt; modules support secure connectivity:&lt;/p&gt;
-
-&lt;table border="1" cellpadding="1" cellspacing="1" class="Table" style="border-collapse:collapse;border-color:currentcolor;border-image:initial;border-style:none;border-width:medium;width:600px;" width="658"&gt;
- &lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; border-top:1px solid black; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
-   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Device&lt;/span&gt;&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; border-top:1px solid black; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Use Case&lt;/span&gt;&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; border-top:1px solid black; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Key Features&lt;/span&gt;&lt;/p&gt;
-   &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; height:65px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;&lt;w:sdt id="1221053330" sdttag="goog_rdk_2"&gt;&lt;/w:sdt&gt;&lt;a href="https://eu.mouser.com/new/murata/murata-wifi-bluetooth-modules/#RelatedContent-2"&gt;Murata Wi-Fi and Wi-Fi+Bluetooth Modules&lt;/a&gt;&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; height:65px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Wi-Fi 6 and Bluetooth Low Energy module designed for seamless integration with NXP i.MX platforms&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; height:65px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Pre-certified for easy deployment; works directly with NXP microcontrollers&lt;/p&gt;
-   &lt;/td&gt;
-  &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Reliable Power: Murata Power Solutions&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;A safety system is only as good as its power supply. EU Machinery Regulation (2023/1230) clarifies that systems must behave predictably and must not fail, even when the power supply fluctuates. The Murata NXJ1 isolated DC-DC converter supports this level of protection.&lt;/p&gt;
-
-&lt;table border="1" cellpadding="1" cellspacing="1" class="Table" style="border-collapse:collapse;border-color:currentcolor;border-image:initial;border-style:none;border-width:medium;width:600px;" width="658"&gt;
- &lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; border-top:1px solid black; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
-   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Device&lt;/span&gt;&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; border-top:1px solid black; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Use Case&lt;/span&gt;&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; border-top:1px solid black; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Key Features&lt;/span&gt;&lt;/p&gt;
-   &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; height:116px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;&lt;a href="https://eu.mouser.com/new/murata/murata-nxj1t-dc-dc-converters/"&gt;Murata Power Solutions NXJ1T 1W DC-DC Converters&lt;/a&gt;&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; height:116px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Provide reinforced isolation for industrial automation.&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid black; width:219px; padding:7px 7px 7px 7px; height:116px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Feature proprietary block-coil technology delivering high isolation and excellent transient immunity. They also include built-in short-circuit protection and undervoltage lockout.&lt;/p&gt;
-   &lt;/td&gt;
-  &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Designing Machinery for EU Regulation 2023/1230 Compliance&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;While the January 2027 deadline for EU Machinery Regulation (2023/1230) may seem distant, the complexity of these new requirements means that modification cycles within the industry must begin now.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;By focusing on PdM, industries will strategise to invest in long-term compliance, but with potentially higher returns on investment due to the prevention of unplanned downtime.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;With the right combination of Amphenol&amp;rsquo;s precision sensors, NXP&amp;rsquo;s secure processing, and Murata&amp;rsquo;s reliable connectivity, &lt;w:sdt id="119361409" sdttag="goog_rdk_3"&gt;&lt;/w:sdt&gt;&lt;w:sdt id="767255783" sdttag="goog_rdk_4"&gt;&lt;/w:sdt&gt;machinery will not only meet high safety standards but will also set new benchmarks for productivity. As a consequence of the new policy, we may see a fundamental shift toward a safer, more digital industrial world with a greater focus on profit protection and crime prevention.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://osha.europa.eu/no/legislation/directive/regulation-20231230eu-machinery&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://osha.europa.eu/en/legislation/directives/directive-2006-42-ec-of-the-european-parliament-and-of-the-council&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref3" name="_edn3"&gt;[3]&lt;/a&gt;&amp;nbsp;https://europa.eu/youreurope/business/product-requirements/labels-markings/ce-marking/index_en.htm&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref4" name="_edn4"&gt;[4]&lt;/a&gt;&amp;nbsp;https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R1230&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref5" name="_edn5"&gt;[5]&lt;/a&gt;&amp;nbsp;https://www.iso.org/obp/ui/#iso:std:iso:13849:-1:ed-3:v1:en; https://webstore.iec.ch/en/publication/59927&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref6" name="_edn6"&gt;[6]&lt;/a&gt;&amp;nbsp;https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref7" name="_edn7"&gt;[7]&lt;/a&gt;&amp;nbsp;https://idsindata.co.uk/manufacturing-downtime-costs-and-forecasting/&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref8" name="_edn8"&gt;[8]&lt;/a&gt;&amp;nbsp;https://doi.org/10.36227/techrxiv.173532375.50630906/v1&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-</description><guid isPermaLink="false">3769</guid></item></channel></rss>
+</description><guid isPermaLink="false">3746</guid></item></channel></rss>
