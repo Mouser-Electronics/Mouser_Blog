@@ -1,4 +1,123 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=50" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>Exploring the Electronics Aboard AC75 and AC40 Foiling Yachts</title><link>https://www.mouser.com/blog/exploring-the-electronics-aboard-ac75-and-ac40-foiling-yachts</link><category>AllConnectors,General,Power,Sensors</category><pubDate>Wed, 14 Oct 2026 13:55:32 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/LRP06100_300626_cNicolasTouze-LRPST (1).jpg?ver=31MFSDqgBJCOfQdjBqcH3w%3d%3d" style="width: 600px; height: 400px;" title="" /&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=50" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>Agentic AI for Industrial Energy Optimization</title><link>https://www.mouser.com/blog/agentic-ai-for-industrial-energy-optimization</link><category>Automation,Computing,Industrial,Industrial Automation,Power</category><pubDate>Thu, 15 Oct 2026 05:01:00 GMT</pubDate><description>&lt;h2 style="color:##333333; font-style:italic; font-size:16px;"&gt;&lt;em&gt;AI agents coordinate energy decisions while meeting production and equipment requirements&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/84df65f0-d24c-4f41-afc8-d301da2a4a78/Large/Adobe-Stock-2110972483-jpg.png" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Jiraporn/stock.adobe.com; generated with AI&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Energy use in industrial equipment is interconnected. For example, reducing consumption in one part of a plant can affect operating conditions or production elsewhere. However, simply seeing a lower reading on an energy-consumption meter does not indicate whether the reduction is workable.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;To assess a proposed change, engineers need to know current machine states, production schedules, and equipment operating limits. This information is stored in different systems and often changes during a shift. Artificial intelligence (AI) agents help bring this context together and assess the available options.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In the second part of our blog series on agentic AI&amp;rsquo;s role in industrial automation, we discussed the ways &lt;a href="https://www.mouser.com/en/blog/using-agentic-ai-predictive-maintenance-industrial-automation"&gt;AI enables predictive maintenance&lt;/a&gt; in industrial equipment. In this final blog of the series, we define energy optimization, examine how AI agents could improve energy use and efficiency, and explore how an implementation could work in an industrial automation setting.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Understanding Industrial Energy Optimization&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Industrial energy optimization is the practice of choosing how and when equipment operates to improve a defined energy outcome. A facility that aims to reduce electricity consumption, energy cost, peak demand, or emissions associated with its energy use still needs to meet production deadlines, maintain product quality, and stay within equipment and safety limits.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The target measurement will depend on the exact goal. For example, measuring kilowatt-hours per acceptable unit produced shows energy use relative to the output. Another key measurement involves identifying energy cost per production batch, which captures the effect of electricity rates on a particular cycle. Moreover, peak demand measures the highest power draw over a specific interval and idle consumption shows how much energy equipment uses when it is not producing any output.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;These measures are not interchangeable. Moving a batch production to a lower-priced period reduces its cost without reducing the energy it consumes. But by prioritizing a lower peak in demand, total consumption remains unchanged. So comparing energy per unit also requires comparable production conditions; otherwise, a change in output could be mistaken for an efficiency gain.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Energy-monitoring systems record these values and alert human operators about the changes. But optimization goes further, using measurements, production schedules, and equipment constraints to compare operating methods for the plant. For instance, high idle consumption points to an opportunity, but shutting down the equipment helps only if the next operation can still start on time.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Using Agentic AI to Support Energy-Efficient Operations&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;An AI agent brings together energy-monitoring data from separate systems. The agent can call a forecasting model to estimate upcoming demand and an optimization model to compare possible operating plans. The forecast predicts what may happen, while the optimizer evaluates options, such as which approved equipment combination should run. The agent coordinates among different tools and incorporates the results into a recommendation.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The ability to revise a plan becomes important when the operating conditions change frequently. For example, a fixed energy-saving rule follows its predefined response, but a delayed batch makes the response unsuitable. The agent has to retrieve the new schedule, request a forecast, compare the available options, and update its recommendation. Plant personnel would still need to approve consequential changes, showing the necessity for a human-in-the-loop workflow.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Implementing Agentic AI for Industrial Energy Management &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;As an example implementation, consider an industrial plant with several production lines and shared compressors and chillers. The plant must meet its production target and keep the facility&amp;rsquo;s demand below a defined limit.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Smart meters and equipment controllers send time-stamped energy measurements and machine states to an industrial data platform. The production system gives the current schedule and output figures.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The AI agent receives the production target and energy objective. It gathers the current operating data and calls forecasting software to estimate the facility&amp;rsquo;s load over the next several hours.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;If the forecasting model indicates a potential demand peak, the AI agent calls an optimization model to identify possible changes. These include changing a process within its completion window, reducing an idle period, or staggering the startup of high-load equipment.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The agent checks for proposed changes to the production schedule and equipment constraints. If the production order changes, the agent must update the analysis or refer the proposal to a human operator.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The implementation should begin in advisory mode, where the agent provides the expected energy effect, the affected equipment, and the constraints. The operator reviews and approves any specific changes. Then, confirmed schedules are applied through the existing manufacturing execution system (MES).&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;After the recommendations and verification process has proven reliable, the plant operator should consider allowing the agent to automatically submit narrowly defined, reversible actions within approved limits.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Balancing Energy Goals with Operational Constraints&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Agentic AI is not designed to magically remove constraints on industrial energy decisions. Many aspects, such as production targets and equipment limits, will continue to determine possible changes. An agent helps integrate current plant data with forecasting and optimization models to identify feasible options.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The significance of using agents lies in coordinating the response, which includes preparing a recommendation, routing approved changes, and verifying that energy performance has improved without disrupting production. However, throughout the process, operators should retain authority over plant operation.&lt;/p&gt;
+</description><guid isPermaLink="false">4752</guid></item><item><title>How Connectivity Enables Humanoid Robotics</title><link>https://www.mouser.com/blog/how-connectivity-enables-humanoid-robotics</link><category>Computing,Connectors,Industrial,Motor Control,Power,Robotics,Sensors</category><pubDate>Wed, 14 Oct 2026 22:21:23 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/79fe3a07-3240-4e36-ad7b-b2d23268f131/Large/Adobe-Stock-2042143475-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: DangThi/stock.adobe.com&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Robots have become common tools across a wide range of applications, each designed to serve a specific purpose. While humanoid robots are unlikely to be mistaken for humans, they are designed to operate in environments built for people, requiring them to navigate spaces, manipulate objects, and perform tasks that are not always optimized for automation. To accomplish this, they integrate machine vision, sensing, artificial intelligence (AI), and precise motion control to interact safely and effectively with the world around them.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Bringing these capabilities together requires the integration of multiple technologies into a single moving machine. From high-speed sensor data and compute systems to motor drives and power distribution networks, each subsystem places different demands on the connectors and cables that support it. Designers must balance electrical performance with the space constraints and mechanical demands of a robot that must maintain reliable operation while in motion.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;This blog examines how interconnects support the flow of data, signals, and power between the sensors, compute systems, motors, and power distribution networks that enable humanoid robots to operate in environments designed for people.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Perception&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;To navigate and interact safely with their surroundings, humanoid robots need to accurately perceive and interpret their environment. Cameras provide the visual information needed for navigation and object recognition, while proximity, force, torque, and other sensors help the robot build a detailed understanding of operating conditions and interactions with nearby objects.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The data generated by these systems places significant demands on the interconnects linking sensors to processing hardware. High-resolution machine-vision systems, in particular, can generate large volumes of data, making the interface essential to overall system performance. Connector selection is often influenced by the machine-vision protocol in use. For example, USB3 Vision is based on USB 3.x, while GigE Vision uses Ethernet connectivity. CoaXPress transmits high-speed image data over coaxial cable. Camera Link and Camera Link HS provide interfaces designed specifically for high-performance imaging applications, with copper and optical connectivity options.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt; Other imaging systems may use Mobile Industry Processor Interface (MIPI) CSI-2 interfaces with flexible flat cables (FFC). Compact FFC/ flexible printed circuit (FPC) connectors are suitable for confined spaces such as a robot&amp;#39;s head or torso. Some connectors feature a one-touch locking mechanism that provides secure cable retention.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Working in conjunction with the cameras, proximity, force, and torque sensors allow the robot to detect and measure its interactions with surrounding objects. Depending on the device, sensor outputs may be digital or analog and can have very different bandwidth requirements. As a result, connector selection should be based on each sensor&amp;#39;s specific requirements rather than treating perception as a single network.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Once collected, this sensor and imaging data must be transmitted to the robot&amp;#39;s compute systems and processed with minimal delay so the robot can respond effectively to changes in its environment.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Compute&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Processing sensor and imaging data with minimal latency is essential for humanoid robots that operate alongside humans. Transmitting large volumes of data to remote computing resources can introduce delays and make operation dependent on external networks. Edge computing helps address these challenges by enabling time-critical decisions to be made using onboard processing hardware.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Supporting these internal data flows places significant demands on the robot&amp;rsquo;s connectivity infrastructure. As data rates increase, maintaining signal integrity becomes more challenging because connectors, PCB traces, and cable assemblies are all part of the signal path and collectively affect the performance of the entire channel.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;These requirements are further complicated by the human-like form factors of humanoid robots. Unlike conventional industrial computers, components must fit within a compact, human-shaped structure that leaves little room for bulky connectors. Designers cannot simply increase the enclosure size to simplify packaging, and every additional component adds mass that the robot&amp;#39;s actuators must move.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;High-density connectors help support high data rates within the limited space available for the compute systems. Consequently, connector selection becomes a careful balance between electrical performance, mechanical packaging, and overall system design.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Actuation&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Humanoid robots must translate computational decisions into physical motion. Electric motors throughout the robot drive joints and other mechanisms, forming a complex control system that continuously responds to sensor inputs.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Motor drivers and controllers provide the interface between the robot&amp;#39;s computing system and its motors, which means they require connections for both control and power. Communication technologies such as SPI, EtherCAT, or RS-485 carry commands from the compute system, while separate power connections then deliver the energy required to drive the motors.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Controlling a humanoid joint involves more than simply commanding a motor to move. Motion occurs within a continuous feedback loop in which sensors monitor motor position, speed, and load, enabling the controller to compare expected and actual movement and make real-time adjustments.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;To balance, manipulate objects, and navigate uneven terrain, humanoid robots must coordinate movements across multiple joints simultaneously. These tasks depend on reliable data transfer to support rapid feedback and precise motion control.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;A single actuator assembly may require multiple connections for control signals, sensor feedback, and power within a limited space. Because connectors are often located near moving joints, they need to maintain reliable electrical and mechanical performance despite repeated motion and vibration. These demanding operating conditions require interconnect solutions that preserve signal integrity and electrical continuity while delivering long-term mechanical reliability throughout the robot&amp;#39;s motion-control system.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Power&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Power is distributed through the battery management system to the robot&amp;#39;s compute, sensing, and motion-control subsystems. These connections must deliver the required current while minimizing resistance and heat generation. Because the motors that enable complex humanoid motion can place substantial demands on the power system, efficient power distribution is essential for maximizing operating time.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Power connectors must remain securely mated even under repeated movement and vibration, which place mechanical stress on cables and connectors. Increased contact resistance in high-current connections can generate excess heat and increase the risk of arcing. As a result, positive locking mechanisms are especially valuable in mobile robotic systems. Connectors such as &lt;a href="https://www.mouser.com/en/new/molex/molex-minicirc-connectors"&gt;Molex MiniCirc Circular Connectors&lt;/a&gt; combine a compact circular design with vibration resistance and provide tactile feedback when fully mated.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Humanoid Connectivity Solutions&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;From sensor networks to power delivery systems, no single interconnect architecture is optimal for every robotic system. Humanoid robots place diverse demands on their interconnect infrastructure, highlighting the need for application-specific connectivity solutions. Perception and compute systems require compact, high-speed data connections, while actuation systems combine control, feedback, and power delivery within tightly constrained spaces. Power distribution systems place additional emphasis on current-carrying capacity, connector retention, and mechanical durability. Meeting these varied requirements requires designers to balance electrical performance, mechanical reliability, and packaging constraints across the robot.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Drawing on decades of experience in automotive and industrial applications, Molex offers &lt;a href="https://www.mouser.com/en/new/molex/molex-humanoid-robotics-interconnect/"&gt;connectivity solutions designed to meet the challenges of humanoid robotics&lt;/a&gt;, including SlimStack connectors for compact perception systems, Mirror Mezz backplane connectors for high-speed compute, and physically secure Micro-Lock Plus connectors for actuators.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt; Rather than relying on a single connectivity approach throughout the robot, designers can select interconnects tailored to the electrical, mechanical, and packaging requirements of each subsystem. This approach supports the reliable transfer of data, signals, and power throughout the robot.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Humanoid robots combine perception, compute, actuation, and power systems within a single moving platform. Reliable operation depends on interconnects that can support diverse signal, data, and power requirements while withstanding the space constraints and mechanical stresses inherent to humanoid robot designs. By matching connector and cable-assembly solutions to the specific needs of each subsystem, designers can help ensure reliable communication, control, and power delivery throughout the robot. As humanoid robots become more capable, interconnect selection will remain a foundational design consideration affecting performance, reliability and maintainability.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Author&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img align="left" alt="" src="https://www.mouser.com/blog/Portals/11/David_Pike_headshot.jpeg" style="text-align: left; margin-right: 10px; float: left;" width="100" /&gt;David Pike is well known across the interconnect industry for his passion and general geekiness. His online name is Connector Geek.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;&lt;small&gt;&lt;em&gt;Sources&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://www.automate.org/vision/vision-standards/vision-standards-additional-machine-vision-standards&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://www.molex.com/en-us/industries-applications/humanoid-robotics/humanoid-robotics-connectors&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description><guid isPermaLink="false">4714</guid></item><item><title>Exploring the Electronics Aboard AC75 and AC40 Foiling Yachts</title><link>https://www.mouser.com/blog/exploring-the-electronics-aboard-ac75-and-ac40-foiling-yachts</link><category>AllConnectors,General,Power,Sensors</category><pubDate>Wed, 14 Oct 2026 13:55:32 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/LRP06100_300626_cNicolasTouze-LRPST (1).jpg?ver=31MFSDqgBJCOfQdjBqcH3w%3d%3d" style="width: 600px; height: 400px;" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: &amp;copy;Nicolas Touze/La Roche-Posay Racing Team&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
 
@@ -31,7 +150,7 @@
 &lt;p style="margin-top:16px; margin-bottom:11px"&gt;Procurement quality, traceability, and handling directly affect the team&amp;rsquo;s preparation for on-water results. Missing parts limit testing time and compress validation cycles ahead of races, which can carry through to performance on the water. Authorised distribution also plays a role in compliant handling and supply continuity during these compressed cycles: Engineering teams often analyse telemetry immediately after a testing session, implement configuration updates overnight, and validate the changes during the next on-water run (&lt;strong&gt;Figure 2&lt;/strong&gt;).&lt;/p&gt;
 
 &lt;div style="position: relative; display: block; max-width: 960px;"&gt;
-&lt;div style="padding-top: 10%;"&gt;&lt;iframe allow="encrypted-media" allowfullscreen="allowfullscreen" height="500" src="https://players.brightcove.net/618591172001/default_default/index.html?videoId=6404533487112" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;" width="600"&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;div style="padding-top: 5%;"&gt;&lt;iframe allow="encrypted-media" allowfullscreen="allowfullscreen" height="300" src="https://players.brightcove.net/618591172001/default_default/index.html?videoId=6404533487112" style="top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; " width="550"&gt;&lt;/iframe&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt;&amp;nbsp;Pia Mathias, embedded systems engineer, discusses her project with the La Roche-Posay Racing Team. (Source: Mouser)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
@@ -55,7 +174,7 @@
 
 &lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/Legacy Security Camera Network.png?ver=Tql7k96D6A3v1htUT892OQ%3d%3d" style="width: 600px; height: 359px;" title="" /&gt;&lt;/p&gt;
 
-&lt;p class="FigureCaption"&gt;&lt;span style="font-style:italic"&gt;&lt;b&gt;Figure 1:&lt;/b&gt; A legacy security camera network requires separate connections for power and data to each camera. (Source: Author)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt;&amp;nbsp;A legacy security camera network requires separate connections for power and data to each camera. (Source: Author)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
 
 &lt;p style="margin-bottom:11px"&gt;For existing equipment in these facilities, many industrial networks already rely on Ethernet switches that do not provide PoE. Replacing those switches solely to add power delivery can increase cost and disrupt upgrades. PoE injectors offer an alternative by supplying power to the Ethernet connection between an existing non-PoE switch and a PoE-capable device, enabling designers to add power while continuing to use much of the existing network infrastructure. This solution also gives them more flexibility when equipment is added or relocated.&lt;/p&gt;
 
@@ -75,7 +194,7 @@
 
 &lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/POE Based Security Camera Network.png?ver=Vzist3jnbDgrG40SbAVgBQ%3d%3d" style="width: 600px; height: 356px;" title="" /&gt;&lt;/p&gt;
 
-&lt;p class="FigureCaption"&gt;&lt;span style="font-style:italic"&gt;&lt;b&gt;Figure 2&lt;/b&gt;: A PoE injector adds power to data from an existing non-PoE Ethernet switch, enabling power and data to be delivered over a single cable to connected devices. (Source: Author)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt;&amp;nbsp;A PoE injector adds power to data from an existing non-PoE Ethernet switch, enabling power and data to be delivered over a single cable to connected devices. (Source: Author)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
 
 &lt;p style="margin-bottom:11px"&gt;While simplifying the connection is important in an industrial environment, the equipment must also be protected from electrical conditions that could disrupt communication or damage connected devices.&lt;/p&gt;
 
@@ -1185,11 +1304,11 @@
 
 &lt;p style="margin-bottom:11px"&gt;Bounded industrial agentic AI will therefore reduce the gap between identifying a problem and implementing a coordinated and controlled response.&lt;/p&gt;
 
-&lt;p style="margin-bottom:11px"&gt;The next blog in this series will examine how AI agents can enhance predictive maintenance by integrating data, workflows, and decision-making across industrial systems.&lt;/p&gt;
+&lt;p style="margin-bottom:11px"&gt;The next blog in this series will examine how AI agents can enhance &lt;a href="https://www.mouser.com/en/blog/using-agentic-ai-predictive-maintenance-industrial-automation"&gt;predictive maintenance&lt;/a&gt; by integrating data, workflows, and decision-making across industrial systems.&lt;/p&gt;
 
 &lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;&lt;small&gt;&lt;em&gt;Sources&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://opcfoundation.org/news/press-releases/opc-foundation-advances-opc-ua-for-the-ai-era-with-companion-specifications-optimized-for-agentic-ai/&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
 </description><guid isPermaLink="false">4268</guid></item><item><title>New Tech Tuesdays: In-Cabin Infrared Sensing Expands Automotive Monitoring</title><link>https://www.mouser.com/blog/new-tech-in-cabin-infrared-sensing-expands-automotive-monitoring</link><category>All,Automotive,New Tech Tuesdays,Sensors</category><pubDate>Tue, 08 Sep 2026 05:02:00 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1788539581/NTT_Sept8_cabin_sensing_njpzly.jpg" style="height: 327px; width: 600px;" title="" /&gt;&lt;/p&gt;
@@ -3162,131 +3281,4 @@ Jean-Jacques (JJ) DeLisle attended the Rochester Institute of Technology, where 
 &lt;sup&gt;&lt;a href="#_edn4" name="_ednref4"&gt;[4]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;https://www.energy.gov/cmei/femp/bidirectional-charging-and-electric-vehicles-mobile-storage&lt;br /&gt;
 &lt;sup&gt;&lt;a href="#_edn5" name="_ednref5"&gt;[5]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;https://www.energy.gov/gmi/2023-grid-modernization-lab-call; https://www.energy.gov/articles/energy-department-announces-19b-investment-critical-grid-infrastructure-reduce-electricity&lt;br /&gt;
 &lt;sup&gt;&lt;a href="#_edn6" name="_ednref6"&gt;[6]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;https://energy.utexas.edu/research/ercot-blackout-2021&lt;/p&gt;
-</description><guid isPermaLink="false">3774</guid></item><item><title>New Tech Tuesdays: Multi-Port IoT Antennas Simplify Rugged Connected Designs</title><link>https://www.mouser.com/blog/new-tech-multi-port-iot-antennas-simplify-rugged-connected-designs</link><category>All,IoT,New Tech Tuesdays,Wireless</category><pubDate>Tue, 07 Jul 2026 05:01:00 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1783345034/NTT327_July_6_z5qtcs.jpg" style="height: 327px; width: 600px;" title="" /&gt;&lt;/p&gt;
-
-&lt;h2&gt;New Tech Tuesdays&lt;/h2&gt;
-
-&lt;h3&gt;&lt;em&gt;Join Mouser&amp;#39;s Technical Content team for a weekly look at all things interesting, new, and noteworthy for design engineers.&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Connected edge devices increasingly need to do two jobs at once: maintain reliable wide-area communications and provide accurate location awareness. That combination shows up across smart terminals, kiosks, charging systems, mobile platforms, and remote monitoring equipment. In these designs, engineers must support modern cellular Internet of Things (IoT) protocols while also enabling Global Navigation Satellite System (GNSS)-based tracking in a compact, durable package.&lt;/p&gt;
-
-&lt;p&gt;This week&amp;rsquo;s New Tech Tuesdays looks at why multi-port IoT antennas matter in modern connected designs, how ground-plane independence can simplify radio frequency (RF) and mechanical integration, and why environmental sealing is now a practical requirement for many indoor and outdoor deployments. The blog also explores how combining cellular and GNSS coverage in one compact antenna can help engineers reduce complexity without compromising flexibility.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Cellular Connectivity and GNSS in One Compact Node&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Connected systems need dependable cellular backhaul and location tracking simultaneously. Engineers increasingly design products around CAT-M, CAT-1 through CAT-4, and Narrowband IoT (NB-IoT) while also supporting GNSS for positioning and asset awareness. Consolidating those functions into a single antenna class simplifies system architecture, reduces the number of antenna elements that must be mounted and sealed, and makes compact product designs easier to implement.&lt;/p&gt;
-
-&lt;p&gt;This matters because each additional antenna, cable, or enclosure penetration increases mechanical complexity and creates more opportunities for integration issues. A compact multi-port approach can help reduce those trade-offs by supporting both communications and location services in one external form factor.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Ground-Plane Independence Reduces Installation Headaches&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Antenna placement is rarely just an RF decision. In real products, developers and engineers must balance enclosure materials, mounting surfaces, ingress protection (IP) goals, industrial design constraints, and the need for a single design to function across multiple installation environments. Traditional antenna configurations can become sensitive to the mounting surface because their performance depends on the host structure as part of the RF system. That is why ground-plane-independent antennas are such a practical option for IoT systems. Antennas designed to operate on both metallic and non-metallic surfaces can maintain more consistent performance across a wider range of installations. This gives engineers more flexibility to reuse a common hardware platform without redesigning the antenna system for each enclosure variant.&lt;/p&gt;
-
-&lt;p&gt;IoT systems now operate in environments far less forgiving than those of benchtop prototypes, making survivability just as critical as RF performance.&lt;/p&gt;
-
-&lt;p&gt;A ruggedized, low-profile antenna design can reduce the number of vulnerable external components and make the unit less prone to tampering or mechanical damage. For engineers working on systems that must remain connected through weather, grime, or aggressive cleaning cycles, achieving a high IP rating is increasingly a fundamental requirement rather than an optional feature.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Newest Products for Your Newest Designs&lt;sup&gt;&amp;reg;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href="https://www.mouser.com/new/te-connectivity/te-versante-puck-antennas/"&gt;TE Connectivity&amp;rsquo;s VersAnte&amp;trade; L000321-03&lt;/a&gt;&amp;nbsp;is a two-port external puck antenna that combines 4G/5G cellular and GNSS coverage in one compact package. The antenna is designed as part of a ground-plane-independent family, allowing operation on both metallic and non-metallic surfaces and helping simplify mounting across diverse enclosure types and installation conditions.&lt;/p&gt;
-
-&lt;p&gt;The antenna supports cellular operation across 698 MHz to 960 MHz, 1690 MHz to 2690 MHz, and 3300 MHz to 3800 MHz, as well as GNSS coverage from 1559 MHz to 1606 MHz. It also supports leading cellular IoT networks, including CAT-M, CAT-1 to CAT-4, and NB-IoT, making it a flexible option for connected systems that need both communication and location awareness in a single antenna solution.&lt;/p&gt;
-
-&lt;p&gt;These characteristics make the VersAnte antenna a practical fit for applications such as electric vehicle (EV) charging, smart lockers, digital signage, ticketing systems, smart terminals, mobile and vehicular platforms, and data monitoring systems. By combining cellular and GNSS coverage in a rugged, compact form factor, the antenna can help simplify system architecture and improve deployment flexibility in demanding environments.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Tuesday&amp;rsquo;s Takeaway&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;The value of multi-port IoT antennas lies in combining radio functions while addressing a practical design problem: delivering wide-area connectivity, location awareness, and environmental resilience without adding unnecessary RF, mechanical, or enclosure complexity.&lt;/p&gt;
-
-&lt;p&gt;When an antenna is compact, ground-plane independent, and rugged enough for indoor and outdoor use, it gives developers greater flexibility to design connected products that are easier to package, deploy, and maintain in real-world installation environments. For modern IoT endpoints, improved RF integration enhances performance and simplifies the entire product design conversation.&lt;/p&gt;
-</description><guid isPermaLink="false">3772</guid></item><item><title>Smart Sensors: Functionality and Integration in Electronics</title><link>https://www.mouser.com/blog/smart-sensors-functionality-and-integration-in-electronics</link><category>All,Sensors</category><pubDate>Tue, 07 Jul 2026 02:13:36 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/8537b763-04ab-450b-8e8e-c9949db9a290/Large/Adobe-Stock-598459931-jpg.png" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;(Source: FutureFocus/stock.adobe.com; generated with AI)&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Smart technology has a way of disappearing into the background. Over the past few years, the most transformative innovations have not come from flashy new devices but from the tiny, almost invisible sensors embedded inside them. These sensors discreetly track movement, temperature, vibration, light, pressure, and countless other variables&amp;mdash;often without most people noticing. Yet today, a new shift is underway. Sensors are becoming dramatically more energy efficient, more intelligent, and increasingly capable of powering themselves. In this evolution lies the foundation of what many are calling the ambient Internet of Things (IoT).&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Today&amp;rsquo;s smart sensors are no longer simple data collectors. They&amp;rsquo;ve evolved into autonomous subsystems capable of interpreting information, making decisions, and drawing power from the environment.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;This evolution is ushering in a new era in which engineers must rethink the fundamental skills required to build the next generation of smart, connected products. At the heart of it all is the relentless push toward ultra‑low‑power sensing.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The New Age of Low‑Power Intelligence&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Historically, sensor design revolved around optimizing performance, durability, and accuracy. As applications have scaled&amp;mdash;from a handful of sensors on a circuit board to thousands spread throughout a facility&amp;mdash;energy consumption has become the central challenge. In the latest generation of smart sensing systems, low-power intelligence has become the defining characteristic that unlocks everything from massive industrial IoT deployments to maintenance-free environmental monitoring. This shift did not happen overnight&amp;mdash;it emerged from the convergence of several foundational breakthroughs in sensor engineering. Each advancement reduced the amount of energy a device needs to function, allowing sensors to collect data more efficiently while dramatically extending their operational life.&lt;/p&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;MEMS Miniaturization&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;One of the most consequential developments has been the transformation brought about by modern micro-electromechanical systems (MEMS) technology. By shrinking mechanical structures to microscopic scales, MEMS sensors enabled the development of small, cost-effective, and precise devices. As manufacturing techniques matured, MEMS‑based sensors required only a fraction of the power once needed. This miniaturization not only reduced physical size but also allowed engineers to integrate multiple sensing elements into a single package. What once required an entire circuit board of components could now be embedded directly into a chip-sized module, dramatically lowering power consumption and enabling new classes of portable and battery-conscious devices.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Integrated Digital Signal Chains&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Alongside MEMS miniaturization, the transition from analog to digital signal chains fundamentally reshaped how sensors operate. Traditional analog systems required extensive external circuitry, such as converters, that added noise, increased complexity, and raised energy costs. Digitized sensing eliminates these inefficiencies by embedding the signal-conditioning logic directly into the sensor. This internalization removes many external components, reduces energy loss during conversions, and ensures that the sensor outputs clean, ready-to-process digital data. By reducing the need for continuous analog processing, digital sensors can spend more time in deep-sleep modes and wake only when necessary, conserving substantial energy over long periods.&lt;sup&gt;&lt;a href="#_edn3" name="_ednref3"&gt;[3]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Built-in Power-Saving Features&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Meanwhile, improvements in semiconductor engineering have allowed sensors to incorporate intelligent power management features. Modern devices are equipped with sophisticated sleep architectures, enabling them to operate in ultra‑low‑power states that draw mere microamps.&lt;sup&gt;&lt;a href="#_edn4" name="_ednref4"&gt;[4]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;Wake-up triggers can be tied to specific environmental conditions, such as motion, vibration, or light changes, allowing sensors to remain inactive until meaningful data need to be captured.&lt;sup&gt;&lt;a href="#_edn5" name="_ednref5"&gt;[5]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;This event-driven operation represents a dramatic departure from earlier continuous-sampling models, which consumed significant energy even when nothing noteworthy was happening.&lt;sup&gt;&lt;a href="#_edn6" name="_ednref6"&gt;[6]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;By embedding more logic into the sensor, manufacturers have created miniaturized subsystems capable of acting autonomously and minimizing energy usage.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Even as these features allow for streamlined hardware energy demands, they also support software and systems design. Because sensors now come preloaded with capabilities such as local preprocessing, internal filters, and adaptive data pathways, engineers must ensure that firmware and application-level logic can keep pace. The challenge is no longer about wiring up analog chains but about designing systems that allow sensors to operate efficiently within a broader architecture&amp;mdash;one that balances data processing, communication intervals, and energy budgets. This evolution forces developers to think holistically, blending hardware awareness with software optimization to get the most out of devices built for ultra‑low‑power operation.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Collectively, these breakthroughs have ushered in a new era, where sensors are smaller, more capable, and fundamentally more energy efficient. The ability to integrate intelligence directly into the sensing hardware means that systems can run longer, scale further, and operate in environments once considered impractical.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Benefits of Ambient IoT&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Low-power sensing is a key step toward the development of ambient IoT. Ambient IoT refers to a class of IoT devices designed to operate with little to no disposable battery power, instead harvesting energy from the environment: light, radio waves, movement, or temperature gradients. These devices are intended to run indefinitely, allowing engineers to install them and leave them to operate autonomously. The devices can run anywhere, even in locations that would otherwise be impossible to service regularly.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;For the first time, IoT networks can scale into the billions without being constrained by battery logistics. Analysts estimate over one billion ambient IoT devices will ship by 2030,&lt;sup&gt;&lt;a href="#_edn7" name="_ednref7"&gt;[7]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;marking a massive shift toward sustainable sensing on a global scale.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The benefits ripple across multiple fronts, including sustainability, scalability, and reliability. For example, battery‑free sensors eliminate countless replacement cycles in the field, reducing e‑waste. Devices can be deployed freely without the need for power lines or scheduled maintenance. Additionally, fewer moving parts and fewer batteries allow systems to operate continuously and predictably over time.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Achieving these benefits requires specialized engineering expertise that goes far beyond traditional IoT design. Developers must understand energy harvesting techniques, micro‑power system architectures, storage elements such as supercapacitors, and ultra‑efficient wireless communication protocols.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Rise of Thinking Sensors&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Low‑power design becomes even more powerful when combined with edge artificial intelligence (AI). Sensors can now process raw data locally on the device, identifying patterns or anomalies without transmitting every reading to the cloud. This dramatically reduces power-hungry wireless communication while enabling the system to respond faster and with greater intelligence.&lt;sup&gt;&lt;a href="#_edn8" name="_ednref8"&gt;[8]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Instead of waking the system every time a simple threshold is crossed, AI-enabled sensors wake only when a meaningful pattern emerges. For instance, a vibration sensor on an industrial motor can distinguish between harmless noise and early signs of mechanical failure.&lt;sup&gt;&lt;a href="#_edn9" name="_ednref9"&gt;[9]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;Similarly, a wearable device can analyze movement, temperature, and heart-rate data to detect health events before they become emergencies.&lt;sup&gt;&lt;a href="#_edn10" name="_ednref10"&gt;[10]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;This AI-driven approach extends battery life, minimizes cloud traffic, enhances privacy, and turns everyday sensors into powerful autonomous agents. However, it also means developers need new skill sets: AI model training, quantization, and algorithm optimization. Tools such as TensorFlow Lite and Edge Impulse can also assist developers. In many ways, the sensor engineer of tomorrow looks as much like a data scientist as a hardware designer.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Shift to Low-Power Sensing and Ambient IoT&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Low‑power sensing and ambient IoT are not just technological trends&amp;mdash;they represent a fundamental shift in how people often think about connected systems. In earlier generations, IoT devices were defined by limitations: short battery life, bulky designs, and dependence on cloud processing. Now, with ambient IoT and edge AI, sensors can perform the following actions:&lt;/p&gt;
-
-&lt;ul&gt;
- &lt;li class="MsoListBulletCxSpFirst" style="margin-left:8px"&gt;Operate independently for years or decades&lt;/li&gt;
- &lt;li class="MsoListBulletCxSpMiddle" style="margin-left:8px"&gt;Make real-time decisions&lt;/li&gt;
- &lt;li class="MsoListBulletCxSpMiddle" style="margin-left:8px"&gt;Run on harvested energy&lt;/li&gt;
- &lt;li class="MsoListBulletCxSpMiddle" style="margin-left:8px"&gt;Reduce infrastructure costs&lt;/li&gt;
- &lt;li class="MsoListBulletCxSpLast" style="margin-left:8px"&gt;Scale to massive deployments without maintenance overhead&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style="margin-bottom:1px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Technological advancements have reached a point where sensors blend into the environment completely&amp;mdash;embedded in walls, shipping crates, medical wearables, bridges, machines, farms, and consumer appliances. They will map the health of entire ecosystems, track supply chains with zero human intervention, and continuously monitor the safety of buildings and factories.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;As these systems evolve, the role of engineers evolves with them. The job is no longer about selecting components; instead, it is about orchestrating a carefully balanced system of hardware efficiency, AI intelligence, edge processing, and sustainable design.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Future of Tiny Devices&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Smart sensors may operate inconspicuously, but their impact is anything but subtle. They support sustainability by eliminating the need for disposable batteries. Additionally, they enable richer, more efficient data collection across industries&amp;mdash;from factories to healthcare, agriculture to smart homes.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;As ambient IoT technology evolves, so must the engineers behind it. The future of smart sensing will not be advanced by specialists in isolated disciplines, but by multidisciplinary creators capable of bridging hardware, software, and edge AI.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;For a deeper dive into this topic, read the full article, &amp;ldquo;&lt;a href="https://resources.mouser.com/sensor/new-skills-behind-smart-sensor-innovation"&gt;The New Skills Behind Smart Sensor Innovation&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&lt;em&gt;This blog was generated with assistance from Copilot for Microsoft 365.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://doi.org/10.1038/s44460-025-00011-1; https://www.britannica.com/technology/fluidics&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://community.element14.com/technologies/sensor-technology/b/blog/posts/mems-and-how-it-changed-the-sensing-world&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref3" name="_edn3"&gt;[3]&lt;/a&gt;&amp;nbsp;https://www.elec28.com/analog-vs-digital-sensors-what-are-the-key-differences-and-applications&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref4" name="_edn4"&gt;[4]&lt;/a&gt;&amp;nbsp;https://www.qoitech.com/blog/potato-vs-grapefruit-which-makes-the-best-battery&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref5" name="_edn5"&gt;[5]&lt;/a&gt;&amp;nbsp;https://www.ti.com/lit/an/spradl9/spradl9.pdf?ts=1781132093514&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref6" name="_edn6"&gt;[6]&lt;/a&gt;&amp;nbsp;https://www.elec28.com/analog-vs-digital-sensors-what-are-the-key-differences-and-applications/&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref7" name="_edn7"&gt;[7]&lt;/a&gt;&amp;nbsp;https://www.rcrwireless.com/20250425/internet-of-things/billion-ambient-iot&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref8" name="_edn8"&gt;[8]&lt;/a&gt;&amp;nbsp;https://iotbusinessnews.com/2025/11/23/on-device-ai-for-iot-sensors-when-local-inference-finally-makes-sense/&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref9" name="_edn9"&gt;[9]&lt;/a&gt;&amp;nbsp;https://www.allaboutcircuits.com/industry-articles/how-to-perform-fault-classification-with-an-ai-based-vibration-sensor-node&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref10" name="_edn10"&gt;[10]&lt;/a&gt;&amp;nbsp;https://doi.org/10.1016/j.cobme.2025.100628&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">3746</guid></item></channel></rss>
+</description><guid isPermaLink="false">3774</guid></item></channel></rss>
