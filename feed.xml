@@ -1,4 +1,130 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=50" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>Agentic AI for Industrial Energy Optimization</title><link>https://www.mouser.com/blog/agentic-ai-for-industrial-energy-optimization</link><category>Automation,Computing,Industrial,Industrial Automation,Power</category><pubDate>Thu, 15 Oct 2026 05:01:00 GMT</pubDate><description>&lt;h2 style="color:##333333; font-style:italic; font-size:16px;"&gt;&lt;em&gt;AI agents coordinate energy decisions while meeting production and equipment requirements&lt;/em&gt;&lt;/h2&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=50" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>New Tech Tuesdays: Engineering Reliability into Commercial Drones</title><link>https://www.mouser.com/blog/new-tech-engineering-reliability-into-commercial-drones</link><category>All,Industrial,Low Power,Motor Control,New Tech Tuesdays,Power,Robotics,Sensors</category><pubDate>Tue, 20 Oct 2026 19:53:41 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1792503103/NTT_Oct20_drones_jfore7.jpg" style="height: 327px; width: 600px;" title="" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;New Tech Tuesdays&lt;/h2&gt;
+
+&lt;h3&gt;&lt;em&gt;Join Mouser&amp;#39;s Technical Content team for a weekly look at all things interesting, new, and noteworthy for design engineers.&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Remote-controlled (RC) aircraft once meant foam wings, bulky transmitters, and a flight that had a high probability of ending in a tree. Today&amp;rsquo;s commercial drones&amp;mdash;the descendants of those RC aircraft&amp;mdash;are much more advanced, offering capabilities such as spreading fertilizer, capturing digital imagery, and transporting packages, among other things. Yet, while the aircraft may be more capable, every additional feature competes for the same limited battery capacity, weight allowance, and space.&lt;/p&gt;
+
+&lt;p&gt;Successful commercial drone design requires more than selecting an efficient motor or low-power sensor. This week&amp;rsquo;s New Tech Tuesdays examines how coordinated power management, propulsion control, and magnetic sensing can support reliable flight, protect critical circuitry, and preserve the energy available for its application-specific functions.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Commercial Drone Design Starts with the Propulsion Chain&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;A drone&amp;rsquo;s propeller motors produce the thrust required for vertical lift, directional movement, and attitude control. Each propulsion channel typically combines power conversion, a motor driver, current sensing, and closed-loop motor control. If these elements do not operate together effectively, the result can be wasteful operation, unstable movement, or inadequate protection against electrical faults.&lt;/p&gt;
+
+&lt;p&gt;Motor current provides useful feedback because it corresponds to the torque the motor produces. By monitoring current near the motor, the control system gains visibility into changing propulsion loads and can detect overcurrent conditions caused by overloads, short circuits, or other faults.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt; Magnetic current sensors perform this measurement without requiring direct electrical contact between the current-carrying conductor and the sensing circuitry. Depending on the implementation, they can also provide galvanic isolation between the power conductor path and measurement circuitry.&lt;/p&gt;
+
+&lt;p&gt;Sensor size and conductor resistance also matter. A compact sensor can fit close to the motor-drive circuitry, while low resistance helps limit conduction losses and heat generation. These characteristics are particularly important in multirotor aircraft because the circuitry is repeated across several propulsion channels.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Flight Time Is a System-Level Challenge&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;When a drone needs more time in the air, attention typically turns to the battery. Battery capacity is important, but adding a larger battery increases mass, which can require additional thrust and larger propellers, and can consume some of the energy the larger battery was intended to provide.&lt;/p&gt;
+
+&lt;p&gt;A more complete approach evaluates losses throughout the power chain. Battery monitoring, direct current-to-direct current (DC/DC) conversion, motor-current sensing, gate driving, lighting, and position sensing all contribute to the total energy budget. Reducing consumption and conduction losses at multiple points may be more practical than relying on a single component change to extend flight time automatically.&lt;/p&gt;
+
+&lt;p&gt;Power monitoring also gives the control system better visibility into the battery&amp;rsquo;s operating state, while efficient voltage regulation supplies lower-voltage electronics without unnecessarily consuming energy reserved for propulsion. The objective is not simply to minimize the power used by each component, but to coordinate the entire chain so that sensing, protection, and control do not impose excessive losses.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Magnetic Sensing Beyond the Propellers&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;Propulsion may keep a drone airborne, but position sensing helps many of its other functions operate predictably. A camera gimbal, for example, needs to measure angular position so its motors can compensate for aircraft movement and maintain a stable field of view (FOV). Magnetic position sensors can provide contactless angular feedback in compact mechanical assemblies, including configurations that measure movement along one, two, or three axes.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Similar sensing principles apply to handheld controllers. Joysticks, buttons, and triggers experience repeated movement throughout their operating lives. Replacing mechanically contacting position elements with magnetic sensing can reduce wear while maintaining consistent position feedback. Low-power operating modes can further limit controller battery consumption when an input is inactive.&lt;/p&gt;
+
+&lt;p&gt;Sensor selection still requires attention to magnetic range, accuracy, linearity, bandwidth, mechanical alignment, and nearby magnetic fields. Contactless operation removes a mechanical wear point, but it does not remove the need for careful design. Physics is still physics.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Newest Products for Your Newest Designs&lt;sup&gt;&amp;reg;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href="https://www.mouser.com/en/new/allegro/allegro-robotics"&gt;Allegro MicroSystems robotics portfolio&lt;/a&gt; includes solutions for power management, propulsion, and position sensing in commercial drones. The portfolio includes the ACS37800 power-monitoring integrated circuit, A8586 buck converter, ACS71240 current sensor, and A4919 three-phase brushless direct current gate driver for the power and propulsion chain.&lt;/p&gt;
+
+&lt;p&gt;For position feedback, the CT8150, CT310, and A31301 magnetic sensors support functions such as gimbal-angle measurement. Additionally, the A1391, A1392, A1393, and A1395 linear sensors can provide sensing for joysticks, buttons, and triggers. Together, these devices enable engineers to address battery monitoring, voltage regulation, motor control, current measurement, camera stabilization, and pilot interfaces as related parts of the drone architecture rather than isolated functions.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Tuesday&amp;rsquo;s Takeaway&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;Reliable commercial drones depend on coordinated power management, propulsion, and sensing. To meet these demands, current feedback helps control and protect propeller motors, power-chain optimization makes better use of stored energy, and magnetic position sensing supports stable camera operation and durable pilot-controller interfaces. Evaluating these functions at the system level helps engineers manage trade-offs among flight time, size, weight, protection, and reliability across the aircraft.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp; &amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;strong&gt;Sources&lt;/strong&gt;&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt; https://www.allegromicro.com/en/insights-and-innovations/blogs/current-sensors-in-robotics&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt; https://www.allegromicro.com/en/insights-and-innovations/technical-documents/magnetic-position-sensors-in-robotics&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description><guid isPermaLink="false">4788</guid></item><item><title>Ground Fault Protection in Commercial Environments</title><link>https://www.mouser.com/blog/ground-fault-protection-in-commercial-environments</link><category>All,Circuit Protection,Industrial</category><pubDate>Tue, 20 Oct 2026 04:33:23 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/a61ebdaf-016b-40ff-957c-e5db143cf9f3/Large/Adobe-Stock-356061349-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: Ekaterina/stock.adobe.com&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Electrical equipment is commonly used in a variety of applications where systems and components may be exposed to water. Water increases the risk of electric shock or ground faults by lowering electrical resistance and creating conductive paths for current flow. It can also provide a path for electricity to reach personnel or equipment. Implementing ground-fault circuit-interrupter (GFCI) protection is an effective way to reduce electric-shock risk by disconnecting a circuit when leakage current exceeds the device&amp;rsquo;s specified trip characteristic.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;This blog explores how GFCIs detect and interrupt ground faults and examines common applications where ground-fault protection is essential for safety and compliance.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;GFCI Definition and Standards&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;A GFCI is a device that monitors the outgoing and returning current in a circuit. A differential current transformer within the GFCI measures the difference between the two currents. Current that fails to return to the transformer has found another path to the ground, creating a shock hazard. The GFCI disconnects the circuit if the difference between the outgoing and returning current exceeds the trip threshold, which is 4mA to 6mA in residential circuits. This response occurs within fractions of a second, helping protect individuals from electrical shock if they come into contact with the current.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In contrast, standard circuit breakers are designed to protect equipment from overloads and short circuits. However, they typically cannot detect smaller current differentials that can result in shocks or fires in and around water-adjacent applications. There are several standards engineers should be aware of when implementing GFCIs:&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;UL Standards&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+ &lt;li style="margin-left:8px"&gt;&lt;b&gt;UL 943&lt;/b&gt; defines minimum safety standards for GFCI design and functionality, including interrupting the circuit when the ground-fault current falls within the specified Class A operating range, conventionally greater than 4mA and not greater than 6mA. It also requires reverse line-load miswire protection and auto-monitoring functionality to regularly self-check performance.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+ &lt;li style="margin-bottom:11px; margin-left:8px"&gt;&lt;b&gt;UL 1998&lt;/b&gt; defines a set of safety standards for programmable software with an emphasis on risk analysis and fault detection. UL 1998 requirements are intended to prevent conversion faults between software and hardware, coding faults, timing faults, memory faults, and microelectronic hardware failures.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;National Electrical Code (NEC&lt;sup&gt;&amp;reg;&lt;/sup&gt;) Standards &lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+ &lt;li style="margin-left:8px"&gt;&lt;b&gt;NEC 680.5&lt;/b&gt; requires Class A GFCI protection for receptacles and outlets covered by Article 680 on branch circuits rated 150V or less to ground and 60A or less. Class A GFCI devices trip when a ground-fault current of around 4mA to 6mA is detected. It also mandates special-purpose GFCI (SPGFCI) protection, where specified by Article 680, for single-phase and three-phase receptacles and outlets supplied by branch circuits exceeding 150V to ground and not exceeding 480V phase-to-phase. The SPGFCI protection must have a ground-fault trip level that does not exceed 20mA. This code section typically applies to pools, spas, fountains, and similar installations.&lt;sup&gt;&lt;a href="#_edn3" name="_ednref3"&gt;[3]&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+ &lt;li style="margin-left:8px"&gt;&lt;b&gt;NEC 210.8A&lt;/b&gt; requires GFCI protection for all 125V to 250V receptacles in indoor and outdoor spaces, regardless of the receptacle&amp;rsquo;s proximity to water. This regulation applies to equipment in residential settings (i.e., dwelling units), including kitchens, basements, and laundry rooms.&lt;sup&gt;&lt;a href="#_edn4" name="_ednref4"&gt;[4]&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+ &lt;li style="margin-left:8px"&gt;&lt;b&gt;NEC 210.8B&lt;/b&gt; extends the same protections as NEC 210.8A for workplaces (i.e., non-dwelling units).&lt;/li&gt;
+ &lt;li style="margin-bottom:11px; margin-left:8px"&gt;&lt;b&gt;NEC 210.8D&lt;/b&gt; requires general GFCI protection for specific appliances (e.g., dishwashers, pressure washers, sump pumps).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Users can trust that UL- and NEC-compliant GFCIs are designed with safety in mind. Safety considerations are especially important in commercial areas.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;GFCI Applications&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Many workplace environments have elevated risks of electric shock and fire due to their proximity to water.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Commercial Kitchens&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The combination of running water, wet surfaces, stainless-steel equipment, and conductive surfaces creates an environment where electrical shock hazards are a significant concern. Many commercial kitchen appliances, including ranges, fryers, and mixers, must be movable to meet sanitation requirements, necessitating that appliances be connected via plugs and flexible cords and cables. Repeated movement, cleaning, and daily operation can cause cords and cables to wear over time, increasing the likelihood of insulation damage and ground faults. Because of the elevated risks in commercial kitchens, NEC 210.8(B) broadly requires GFCI protection for commercial kitchen receptacles running on single-phase circuits up to 50A and three-phase circuits up to 100A, and NEC 210.8(D) identifies specific appliances that always require GFCI protection, such as dishwashers and microwave ovens.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Food and Beverage Processing Facilities&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Food and beverage processing facilities undergo frequent washdowns and strict sanitation procedures that expose electrical equipment to moisture, humidity, and other high-moisture conditions. These environments increase the risk of ground faults caused by damaged wiring, cordsets, plugs, and electrical connections. Because personnel routinely operate electrically powered equipment in wet processing areas, the National Electrical Code (NEC) 210.8(B) requires GFCI protection for many receptacles and electrical devices commonly used in these facilities.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Pools, Spas, Fountains, and Water Features&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Pumps, heating, lighting, and filtration systems mainly operate near water. To help address the potential electrical hazards, NEC 680.5 commonly applies to equipment implemented in pools, spas, fountains, and other related equipment. Pool pump motors in commercial environments often exceed the 150V-to-ground limit for Class A GFCI devices, so the code calls for SPGFCI protection for circuits above 150V-to-ground up to 480V phase-to-phase.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Vehicle Service and Maintenance Centers&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Portable, plug-in equipment is commonly used in automotive service and repair facilities. Welding torches, grinders, metal cutters, and drills all fall into this category. The risk of frayed cables, cords, and wires around water increases the likelihood of shock or fire. Large and hand-held vacuum cleaners, spray washers, and tire-inflation pumps require GFCI protection according to NEC 210.8B. Safety requirements are also rigorously applied to prevent workplace accidents and injuries. Wet floors and automobiles made from highly conductive materials increase those risks.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Although different environments where electricity and water often mix present a variety of challenges, the need for fast and reliable protection from electrical shocks or faults is common to all of the categories.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Ground Fault Protection for Commercial and Industrial Systems&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&lt;a href="https://www.mouser.com/new/littelfuse/littelfuse-sb4000-shock-block/"&gt;The Littelfuse SB4000 Industrial Shock Block&lt;/a&gt; is a versatile GFCI solution designed to meet the needs of a variety of water-adjacent applications. Supporting single-phase, split-phase, three-phase, and 4-wire systems, it is rated for 208V to 240V systems up to 30A and can be used in both solidly grounded and high-resistance grounded systems. The unit provides grounded-neutral protection and a fixed 6mA trip threshold in accordance with UL 943 requirements. Harmonic filtering, automatic self-testing, and UL 1998-compliant software help ensure reliable performance and continuous fault monitoring.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Built for demanding environments, the SB4000 features an IP69K and NEMA 4X-rated polycarbonate enclosure, conformal-coated circuit boards for corrosion resistance, and a 10,000A short-circuit current rating. Together, these features help ensure dependable performance in demanding indoor and outdoor commercial and industrial environments.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Ground fault protection is essential for the safety of personnel and equipment when electrical systems operate near water. Detecting conditions that could result in current leakage, electrical shock, or fire is critical to maintaining safe operation. GFCIs are also necessary to comply with a range of codes and standards that apply to water-adjacent systems and applications. Utilizing a GFCI, such as the SB4000 Shock Block, can provide a safer environment for personnel, maintain equipment integrity, and support regulatory compliance.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Author&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src="/blog/Portals/11/Alex-Pluemer-100px.jpg" style="margin-left: 10px; margin-right: 10px; float: left; width: 100px; height: 100px;" /&gt;Alex Pluemer is a senior technical writer for Wavefront Marketing specializing in advanced electronics, emerging technologies and responsible technology development.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://www.faithelectricm.com/self-test-gfci-requirements-ul-943-explained-everything-you-need-to-know/&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://test.stdstore.com/standards/UL-1998/&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref3" name="_edn3"&gt;[3]&lt;/a&gt;&amp;nbsp;https://www.electricallicenserenewal.com/Electrical-Continuing-Education-Courses/NEC-Content.php?sectionID=1537&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref4" name="_edn4"&gt;[4]&lt;/a&gt;&amp;nbsp;https://www.nssltd.com/posts/2026-code-year-nec-210-8&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description><guid isPermaLink="false">4772</guid></item><item><title>Agentic AI for Industrial Energy Optimization</title><link>https://www.mouser.com/blog/agentic-ai-for-industrial-energy-optimization</link><category>Automation,Computing,Industrial,Industrial Automation,Power</category><pubDate>Thu, 15 Oct 2026 05:01:00 GMT</pubDate><description>&lt;h2 style="color:##333333; font-style:italic; font-size:16px;"&gt;&lt;em&gt;AI agents coordinate energy decisions while meeting production and equipment requirements&lt;/em&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/84df65f0-d24c-4f41-afc8-d301da2a4a78/Large/Adobe-Stock-2110972483-jpg.png" title="" /&gt;&lt;/p&gt;
 
@@ -1169,7 +1295,7 @@
 
 &lt;p style="margin-top:16px; margin-bottom:11px"&gt;The value lies in reducing the manual effort required to investigate an alert and prepare an appropriate response. Agentic AI has the potential to make predictive maintenance workflows faster and more consistent while keeping maintenance authority with the people and systems responsible for plant operations.&lt;/p&gt;
 
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;In the final part of this series, we will examine how agentic AI improves energy usage and efficiency in industrial automation applications.&lt;/p&gt;
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;In the final part of this series, we will examine how &lt;a href="https://www.mouser.com/en/blog/agentic-ai-for-industrial-energy-optimization"&gt;agentic AI improves energy usage and efficiency&lt;/a&gt; in industrial automation applications.&lt;/p&gt;
 
 &lt;p style="margin-top:16px; margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
 
@@ -3173,112 +3299,4 @@ Jean-Jacques (JJ) DeLisle attended the Rochester Institute of Technology, where 
 
 &lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://ntrs.nasa.gov/citations/20200001093&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
 &lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://www.nanosats.eu/&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">3776</guid></item><item><title>New Tech Tuesdays: How Auracast Broadcast Audio Simplifies Accessibility in Public Spaces</title><link>https://www.mouser.com/blog/new-tech-how-auracast-broadcast-audio-simplifies-accessibility-in-public-spaces</link><category>Audio,IoT,New Tech Tuesdays,Wireless</category><pubDate>Tue, 14 Jul 2026 05:01:00 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1783347060/NTT329_July_14_medbtt.jpg" style="height: 327px; width: 600px;" title="" /&gt;&lt;/p&gt;
-
-&lt;h2&gt;New Tech Tuesdays&lt;/h2&gt;
-
-&lt;h3&gt;&lt;em&gt;Join Mouser&amp;#39;s Technical Content team for a weekly look at all things interesting, new, and noteworthy for design engineers.&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;A variety of solutions aim to help people with hearing loss in public settings, from hearing loops to infrared or FM transmitters. Unfortunately, this range of solutions relies on various protocols, which can lead to compatibility mismatches between the hearing accessibility option offered by a venue and a user&amp;rsquo;s hearing aid or implant. Auracast&amp;trade; broadcasts audio over the&amp;nbsp;&lt;strong&gt;Bluetooth&lt;/strong&gt;&lt;sup&gt;&amp;reg;&lt;/sup&gt;&amp;nbsp;LE Audio protocol, providing a convenient audio solution for venues and conference halls by enabling connection to users&amp;rsquo; existing mobile phones, hearing aids, or headphones.&lt;/p&gt;
-
-&lt;p&gt;This week&amp;rsquo;s New Tech Tuesdays explores the technology behind audio accessibility and how a universal protocol that requires minimal additional hardware could expand options for audio assistance.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Reimagining Audio Assistance Technologies&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;The most common form of audio assistance today is the hearing loop, an induction loop that surrounds a venue and transmits to telecoils in users&amp;rsquo; hearing aids or cochlear implants (&lt;strong&gt;Figure 1&lt;/strong&gt;). Hearing loops deliver clean audio directly from microphone or speaker feeds in conference halls, airports, taxis, places of worship, homes, and theaters. However, not every venue has a hearing loop, and not every hearing aid has a telecoil. As advocates for hearing accessibility push for more hearing loop installations, the number of hearing aids with telecoils is declining as more Bluetooth-enabled options become available.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/c885646e-b8f0-4333-b59d-3f20e5b35de2/Large/Adobe-Stock-82014231-jpg.png" style="width: 600px; height: 399px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt;&amp;nbsp;A sign showing an ear with a line through it and a capital &amp;ldquo;T&amp;rdquo; indicates a space is equipped with a hearing loop that transmits audio to users&amp;rsquo; telecoils. (Source: JuanCi Studio/stock.adobe.com)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Bluetooth Auracast offers a service similar to hearing loops, but with less hardware. Normally, Bluetooth audio connections are one-to-one, with a single audio source connecting to a single Bluetooth device. Auracast enables one-to-many connections, allowing a single device to broadcast to an unlimited number of Bluetooth receivers, such as hearing aids or headphones. Users experience clear audio, and venues need only install a Bluetooth transmitter rather than an entire induction loop system.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Newest Products for Your Newest Designs&lt;sup&gt;&amp;reg;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;The&amp;nbsp;&lt;a href="https://www.mouser.com/new/ezurio/ezurio-aurawave-aw100-auracast-platform/"&gt;Ezurio Aurawave AW100 Auracast Platform&lt;/a&gt;&amp;nbsp;simplifies the transition to Auracast systems with a convenient package and preconfigured firmware that can be tailored to users&amp;rsquo; specific needs. Rather than rebuilding an audio setup around Auracast, users can connect the Aurawave AW100 to their existing audio hardware. The platform supports audio over I&lt;sup&gt;2&lt;/sup&gt;S, USB, or line-level analog via&amp;nbsp;the 40-pin header. The internal antenna enables the platform to broadcast without additional RF hardware.&lt;/p&gt;
-
-&lt;p&gt;The platform is designed to be as simple as possible to deploy, without requiring Bluetooth expertise. Hands-on support from Cloud2GND is available to help get users&amp;rsquo; ideas to production if they have a unique use case.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt; The firmware supports standard Internet of Things (IoT) AT commands, and users can flash custom firmware via the 10-pin SWD header. The Auracast platform is suitable for a variety of applications, from hearing assistance in large public settings to personal devices such as speakers and athletic helmets. &amp;nbsp;&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Tuesday&amp;rsquo;s Takeaway&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Hearing loops are a beneficial technology for many users, and they are not facing obsolescence. Auracast systems will likely coexist with existing hearing loop installations, much as auxiliary ports have coexisted with Bluetooth audio systems since the 2010s.&lt;/p&gt;
-
-&lt;p&gt;Reimagining Bluetooth as a broadcast medium rather than a one-to-one connection opens new possibilities for accessibility and shared audio experiences. Beyond improving accessibility in public spaces, Auracast can power multi-speaker entertainment setups, silent TVs that broadcast to headphones, and other broadcast audio applications that benefit from higher fidelity levels than FM radio offers.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp; &amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;strong&gt;Sources&lt;/strong&gt;&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://hearingreview.com/hearing-products/accessories/assistive-technologies/whats-going-on-more-loops-and-fewer-telecoils&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://www.ezurio.com/product/aurawave-aw100-series-auracast-development-board&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">3773</guid></item><item><title>Modernizing Energy Supply from the Ground Up</title><link>https://www.mouser.com/blog/modernizing-energy-supply-from-the-ground-up</link><category>All,IoT,Power</category><pubDate>Mon, 13 Jul 2026 18:53:19 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/707ff450-e47c-4bcf-9339-431c24e6896c/Large/Adobe-Stock-988172697-jpg.png" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;(Source: improvee design/stock.adobe.com; generated with AI)&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Electricity is so deeply woven into modern life that most people rarely think about it&amp;mdash;until the moment it disappears. Yet beneath the surface of everyday convenience, the energy grid that powers the world is undergoing a significant transformation. A sweeping shift toward electrification, renewable generation, and real‑time digital control is pushing the grid from a rigid, one‑directional system into a responsive, intelligent network designed for the next century.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;This transformation is not just a technological upgrade. It is a complete reimagining of how electricity moves, how consumers participate, and how resilient society can become in the face of extreme weather, rising demand, and new forms of distributed energy. The emerging smart grid sits at the intersection of the Internet of Things (IoT), data science, and electrification, reshaping how consumers think about electric power.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;One‑Way Power Lines vs. Digital Energy Ecosystems&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;For most of its history, the electrical grid functioned like a one-way conveyor belt: Power plants generated electricity for consumers to use. That architecture worked well when generation was centralized, demand patterns were predictable, and the grid did not need to communicate with a multitude of devices.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Today&amp;rsquo;s landscape looks entirely different. Rooftop solar panels, home battery systems, smart thermostats, and electric vehicles (EVs) are no longer fringe technologies&amp;mdash;they are becoming core contributors to the energy mix. This shift demands a grid that can monitor, forecast, communicate, and respond in real time.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Smart grids meet this need by layering digital sensors, data analytics, communication networks, and automation on existing infrastructure. Much like the internet, this system creates a decentralized mesh of nodes that continually report their status and adjust based on conditions across the grid. The result is a dynamic energy environment capable of balancing supply, demand, and resilience in ways the old system could not.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Intelligent Grid Networks&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;As sensors, inverters, and connected devices multiply, the grid has effectively become one of the world&amp;rsquo;s largest IoT networks. By 2040, the volume of grid-related data is expected to grow significantly, with nearly half of that data coming from consumer-owned devices rather than utility infrastructure.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;This estimation marks a profound philosophical shift: Consumers are no longer passive recipients of electricity. Their devices&amp;mdash;solar inverters, EVs, and smart meters&amp;mdash;act as micro-participants in the grid ecosystem, generating valuable operational data and contributing power back to the system. Utilities gain unprecedented real-time visibility, and consumers gain more influence, flexibility, and potential economic benefit.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Rather than building expensive new telemetry from scratch, utilities can tap into communication systems already built into modern appliances and vehicles. In many cases, connectivity is integrated with devices, effectively democratizing data flow and enabling a more distributed, cooperative grid model.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Democratized Electricity Approaches&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;With so many independent energy sources joining the ecosystem, utilities are shifting from command‑and‑control organizations to orchestrators of a vast, decentralized marketplace. This approach mirrors ridesharing companies, which coordinate millions of rides without owning the vehicles themselves.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;In the smart grid context, homeowners and EV drivers become energy contributors; when properly incentivized, they can use their assets to support the grid. Regulators are now creating frameworks, such as pricing models and grid service programs, to encourage consumer participation by compensating them for their energy contributions.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;In this way, the electric grid is evolving into a marketplace where data, availability, and responsiveness carry just as much value as the electricity itself.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Electric Vehicles as Mobile Power Resources&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Electric vehicles introduce an intriguing opportunity: the ability for cars to supply power back to the grid. Known as vehicle-to-grid (V2G), this technology allows EVs to reduce or reverse their power draw, effectively acting as distributed batteries during peak demand.&lt;sup&gt;&lt;a href="#_edn3" name="_ednref3"&gt;[3]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The potential for advancement is massive. EV fleets, such as school buses, spend predictable hours parked with large battery reserves, making them ideal early adopters of bidirectional charging strategies. Pilot programs across the US demonstrate how these fleets can support grid stability, reduce strain on generation sources, and create new revenue streams for operators.&lt;sup&gt;&lt;a href="#_edn4" name="_ednref4"&gt;[4]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Unfortunately, many challenges must be addressed. Battery wear, warranty concerns, and the need for secure, interoperable communication standards have slowed widespread adoption. Still, V2G is steadily progressing, especially in commercial settings where controlled environments and predictable usage patterns simplify deployment.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Impacts of Grid Modernization&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;While technology is rapidly advancing, policy remains the most complex obstacle. Regulators must weigh the enormous long-term benefits of modernization against the burden of increasing costs to consumers. Growing electricity demand, especially from energy‑hungry data centers, intensifies this challenge.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;New frameworks are emerging to help regulators evaluate multivariable investments, justify modernization spending, and measure outcomes more effectively. Federal initiatives, including funding through recent infrastructure legislation, are accelerating progress by providing resources and guidance that support modernization on a national scale.&lt;sup&gt;&lt;a href="#_edn5" name="_ednref5"&gt;[5]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Tragic events, such as the 2021 Texas power crisis, underscore what is at stake. The blackout exposed systemic vulnerabilities and highlighted the essential role of resilience in an increasingly electrified world.&lt;sup&gt;&lt;a href="#_edn6" name="_ednref6"&gt;[6]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;Modernizing the grid is not optional&amp;mdash;it is a foundational step toward safeguarding communities, economies, and everyday life.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The evolution of the power grid is not merely an engineering challenge; it is a societal transformation. By shifting from a top-down system to a distributed, data-driven network, the smart grid promises greater resilience, cleaner energy, and more active participation from consumers. Technologies like V2G, IoT-driven data collection, and intelligent automation are not just innovations&amp;mdash;they are building blocks for a more sustainable and democratized energy future.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The smart grid will not emerge all at once. It will be built through collaboration among utilities, regulators, consumers, and the technologies that connect them. However, its benefits&amp;mdash;a more reliable, more flexible, and more resilient energy ecosystem&amp;mdash;are well worth the journey.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;For a deeper dive into this topic, read the full article, &amp;ldquo;&lt;a href="https://resources.mouser.com/smart-grid/smart-grid-evolution-iot-v2g-energy-democratization"&gt;Smart Grid Evolution: IoT, V2G, and Energy Democratization&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&lt;i&gt;This blog was generated with assistance from Copilot for Microsoft 365.&lt;/i&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&lt;em&gt;&lt;small&gt;Sources&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;https://resources.mouser.com/eit-smart-grid-en/eit2024-sg-podcast-2-en&lt;br /&gt;
-&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;https://prism.sustainability-directory.com/learn/how-can-vehicle-to-grid-v2g-technology-be-incentivized-to-encourage-ev-owners-to-support-grid-stability-during-peak-demand/&lt;br /&gt;
-&lt;sup&gt;&lt;a href="#_edn3" name="_ednref3"&gt;[3]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;https://news.gm.com/home.detail.html/Pages/news/us/en/2026/jun/0609-electrification-batteries-energy.html&lt;br /&gt;
-&lt;sup&gt;&lt;a href="#_edn4" name="_ednref4"&gt;[4]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;https://www.energy.gov/cmei/femp/bidirectional-charging-and-electric-vehicles-mobile-storage&lt;br /&gt;
-&lt;sup&gt;&lt;a href="#_edn5" name="_ednref5"&gt;[5]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;https://www.energy.gov/gmi/2023-grid-modernization-lab-call; https://www.energy.gov/articles/energy-department-announces-19b-investment-critical-grid-infrastructure-reduce-electricity&lt;br /&gt;
-&lt;sup&gt;&lt;a href="#_edn6" name="_ednref6"&gt;[6]&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;https://energy.utexas.edu/research/ercot-blackout-2021&lt;/p&gt;
-</description><guid isPermaLink="false">3774</guid></item></channel></rss>
+</description><guid isPermaLink="false">3776</guid></item></channel></rss>
