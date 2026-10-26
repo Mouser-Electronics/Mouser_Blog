@@ -1,4 +1,56 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=50" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>New Tech Tuesdays: Engineering Reliability into Commercial Drones</title><link>https://www.mouser.com/blog/new-tech-engineering-reliability-into-commercial-drones</link><category>All,Industrial,Low Power,Motor Control,New Tech Tuesdays,Power,Robotics,Sensors</category><pubDate>Tue, 20 Oct 2026 19:53:41 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1792503103/NTT_Oct20_drones_jfore7.jpg" style="height: 327px; width: 600px;" title="" /&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=50" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>How Scientific Research Benefits from Modern AI</title><link>https://www.mouser.com/blog/how-scientific-research-benefits-from-modern-ai</link><category>Computing,Medical</category><pubDate>Fri, 23 Oct 2026 21:24:23 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/609d40a5-af74-41e8-8799-e4eb726b30c6/Large/Adobe-Stock-1451762338-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: Deemerwha studio/stock.adobe.com&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Artificial intelligence (AI) is reshaping the pace and scope of scientific discovery in medicine, environmental science, and physics, often by making stages in the research pipeline faster or by altering them with new processes that require significantly less time. Much of that shift relates to a new generation of AI architectures that changed how models learn from data and the depth of representations they can capture. As a result, the progression from hypothesis to results is much faster, making failed attempts less costly in fields where success is rare, such as drug discovery.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;This blog explores how modern AI architectures are compressing research timelines across multiple scientific disciplines, where these advances are delivering measurable results today, and the challenges that must be addressed before they can be applied more broadly.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;What Changed in Scientific AI&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Older statistical machine learning (ML) in science depended on hand-built features. For example, chemists had to decide which molecular descriptors were important for drug design. However, deep learning models, such as transformer and graph-based architectures, instead learn directly from raw sequences, images, or structured graphs. This shift is significant because for many scientific problems, the limiting factor was knowing which features to encode manually. Learning from raw data also enables automated analysis of unstructured inputs like images, allowing experts to process volumes of data that would otherwise be impractical to handle manually. Protein folding is a clear example of a problem that challenged researchers for decades before AI models demonstrated that protein structures could be predicted directly from amino acid sequences.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Medicine: From Protein Structure to Candidate Molecule&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;AlphaFold2&amp;#39;s performance at the 14th Critical Assessment of Structure Prediction (CASP14) contest demonstrated protein structures at an accuracy rivaling experimental methods. Its database now covers over 214 million predicted structures, up from roughly 300,000 when it launched, and has been used by more than 3 million researchers across more than 190 countries.&lt;a href="#_edn1" name="_ednref1" title=""&gt;&lt;span class="MsoEndnoteReference" style="vertical-align:super"&gt;&lt;span class="MsoEndnoteReference" style="vertical-align:super"&gt;[1]&lt;/span&gt;&lt;/a&gt; That widespread availability fed directly into drug design. The preclinical phase&amp;mdash;from target identification to drug candidate nomination&amp;mdash;traditionally takes three to six years. However, AI-native firms like Insilico Medicine completed theirs in under 18 months and reached Phase I clinical trials within 30 months of program initiation.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt; Even though it&amp;#39;s not guaranteed that AI-assisted drugs will receive FDA approval, the reduction in both time to trial and costs means pharmaceutical companies have a greater chance of success than ever before.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;A similar case shows up in genomics. Missense variants are mutations that alter a single amino acid in a protein and may affect its function. Before the deep learning model AlphaMissense was developed, only about 2 percent of the roughly 4 million such variants in the human genome had been clinically classified.&lt;sup&gt;&lt;a href="#_edn3" name="_ednref3"&gt;[3]&lt;/a&gt;&lt;/sup&gt; Interpreting the rest required slow, case-by-case laboratory experiments, many of which were left unresolved. AlphaMissense predicts a pathogenicity score for each variant in seconds, though clinical classification still requires confirmation. Digital pathology follows the same pattern. Large deep learning models were trained on over a billion small, standardized image patches extracted from digitized tissue slides. Now, those models can detect rare cancers directly from a scanned biopsy sample.&lt;sup&gt;&lt;a href="#_edn4" name="_ednref4"&gt;[4]&lt;/a&gt;&lt;/sup&gt; This diagnostic ability previously required hours of manual review by specialist pathologists, an expertise that many hospitals lack.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Environmental Science: Faster Weather Forecasting&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In environmental science, AI-based weather models have improved the speed of discovery and the application of results. Traditional weather forecasting divides the atmosphere into a 3D grid of boxes, then uses supercomputers to solve physics equations forward in time, step by step. Where the grid is too coarse to compute directly, simplified representations of small-scale processes like cloud formation are used instead. Models such as GraphCast, however, learn from decades of historical atmospheric data to predict how weather patterns evolve, picking up the real statistical behavior of those small-scale processes instead of relying on simplified formulas.&lt;sup&gt;&lt;a href="#_edn5" name="_ednref5"&gt;[5]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Because GraphCast skips solving the full physics equations at runtime, it produces a forecast in under a minute on a single chip, compared to hours on a supercomputer, with accuracy that matches or beats traditional systems on most measures. This lets researchers run far more forecasts and scenarios in the same amount of time and at the same cost, accelerating the pace of follow-on research. These models inherit known precipitation biases from their training data, a limitation stemming from their reliance on historical patterns rather than physical laws. Even so, the speed and accuracy gains represent a substantial shift in what is computationally feasible for atmospheric science.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Physics: Predicting Crystal Stability&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In materials science, testing a candidate crystal&amp;rsquo;s stability has meant either synthesizing it in a lab or running quantum-mechanics-based density functional theory (DFT) calculations, both of which are slow and expensive enough to make exhaustive searches of the possible materials space impractical. DeepMind&amp;rsquo;s Graph Networks for Materials Exploration (GNoME) model predicts a candidate&amp;rsquo;s stability almost instantly, sends only the most promising ones to DFT for verification, and feeds those results back into the model. This active learning loop boosted the accuracy of stability predictions from around 50 percent to 80 percent on the field&amp;rsquo;s benchmark.&lt;sup&gt;&lt;a href="#_edn6" name="_ednref6"&gt;[6]&lt;/a&gt;&lt;/sup&gt; This approach accelerates research because low-cost computational screening combined with selective DFT checks allows GNoME to cover far more of the space of possible materials than DFT alone could. The result was 2.2 million candidate crystals identified, of which 381,000 were confirmed stable, delivered as a pre-filtered shortlist rather than requiring researchers to test candidates one by one.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Catch: Reproducibility and Opacity&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="border:none; margin-bottom:11px"&gt;Beyond the data bias and absence of guaranteed results already discussed, a lack of explainability and reproducibility can undermine the reliable use of AI in scientific research. In most cases, these models do not reveal how they arrived at a prediction, which is a more significant limitation in science than in many other uses of machine learning, since scientific outputs must typically support a testable hypothesis. The field of interpretability addresses this by developing methods to examine how input data leads to specific predictions in a measurable way. Reproducing a result also requires access to the same code, parameters, training data, and often comparable computing resources. When these are not shared openly, even non-proprietary results are difficult for others to verify or build on, reducing confidence in the findings and slowing broader adoption.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="border:none; margin-bottom:11px"&gt;A common pattern is emerging across medicine, environmental science, and physics. Tasks that once took years, or had no practical solution at all, can now be completed in days, hours, or even minutes, shortening the surrounding research pipeline in the process. Protein structures can be predicted in minutes, variant pathogenicity can be assessed in seconds rather than remaining unresolved indefinitely, and millions of candidate materials can be identified without exhaustive laboratory testing.&lt;/p&gt;
+
+&lt;p style="border:none; margin-bottom:11px"&gt;What these examples demonstrate is that the acceleration is already measurable, even though the end goal in each field, such as an approved drug or a synthesizable material, has not yet been fully realized. Significant challenges still remain, particularly in interpretability and reproducibility. Addressing these challenges will enable faster research to produce results that are trusted, verified, and ready for wider use cases.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;small&gt;Sources&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://deepmind.google/blog/alphafold-five-years-of-impact/&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://insilico.com/phase1&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref3" name="_edn3"&gt;[3]&lt;/a&gt;&amp;nbsp;https://www.nature.com/articles/s41576-023-00668-9&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref4" name="_edn4"&gt;[4]&lt;/a&gt;&amp;nbsp;https://www.nature.com/articles/s41591-024-03141-0&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref5" name="_edn5"&gt;[5]&lt;/a&gt;&amp;nbsp;https://www.science.org/doi/10.1126/science.adi2336&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref6" name="_edn6"&gt;[6]&lt;/a&gt;&amp;nbsp;https://deepmind.google/blog/millions-of-new-materials-discovered-with-deep-learning/&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description><guid isPermaLink="false">4807</guid></item><item><title>New Tech Tuesdays: Engineering Reliability into Commercial Drones</title><link>https://www.mouser.com/blog/new-tech-engineering-reliability-into-commercial-drones</link><category>All,Industrial,Low Power,Motor Control,New Tech Tuesdays,Power,Robotics,Sensors</category><pubDate>Tue, 20 Oct 2026 19:53:41 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1792503103/NTT_Oct20_drones_jfore7.jpg" style="height: 327px; width: 600px;" title="" /&gt;&lt;/p&gt;
 
 &lt;h2&gt;New Tech Tuesdays&lt;/h2&gt;
 
@@ -298,7 +350,7 @@
 
 &lt;p style="margin-bottom:11px"&gt;Separating power and data cabling complicates industrial network deployments because each additional cable must be routed, installed, and maintained. This increases installation time and the amount of infrastructure surrounding the connected equipment. As networks expand, those additional runs can add material and deployment costs and make future changes to physical layouts more difficult. Using a single Ethernet cable for both power and data can reduce the cabling burden and simplify connections to distributed devices (&lt;strong&gt;Figure 1&lt;/strong&gt;).&lt;/p&gt;
 
-&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/Legacy Security Camera Network.png?ver=Tql7k96D6A3v1htUT892OQ%3d%3d" style="width: 600px; height: 359px;" title="" /&gt;&lt;/p&gt;
+&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/Legacy Security Camera Network.png?ver=QFKADwhZT6aBiXumAZY1kQ%3d%3d" style="width: 600px; height: 359px;" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt;&amp;nbsp;A legacy security camera network requires separate connections for power and data to each camera. (Source: Author)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
 
@@ -318,7 +370,7 @@
 
 &lt;p style="margin-bottom:11px"&gt;By using twisted-pair network cabling, PoE injectors enable data and low-voltage direct current to be delivered simultaneously over a single transmission path. These injectors&amp;rsquo; ability to be implemented in conjunction with non-PoE switches helps avoid costly and time-consuming replacement of pre-existing equipment. Single-cable power and data delivery to edge devices in production environments and infrastructure significantly reduces the number of cables and connections required to operate those devices and provides designers with greater flexibility both during the initial design phase and when relocating equipment or integrating additional devices later (&lt;strong&gt;Figure 2&lt;/strong&gt;).&lt;/p&gt;
 
-&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/POE Based Security Camera Network.png?ver=Vzist3jnbDgrG40SbAVgBQ%3d%3d" style="width: 600px; height: 356px;" title="" /&gt;&lt;/p&gt;
+&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/POE Based Security Camera Network.png?ver=djNUorJgaJziwGjE_A890g%3d%3d" style="width: 600px; height: 356px;" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt;&amp;nbsp;A PoE injector adds power to data from an existing non-PoE Ethernet switch, enabling power and data to be delivered over a single cable to connected devices. (Source: Author)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
 
@@ -386,7 +438,7 @@
 
 &lt;p style="margin-bottom:11px"&gt;Across many types of agricultural machinery, advanced technologies perform specialized functions. Soil sensors monitor moisture saturation, pH, and nutrient levels, while embedded cameras provide real-time visibility of crop conditions. Global Navigation Satellite Systems (GNSS) supply the positioning data that guidance and control systems need for precision spraying, planting, and harvesting. Custom electronic control units (ECUs) embedded in equipment optimize fuel consumption and water distribution via automated irrigation systems, while actuators in harvesters and picking machines enhance efficiency and productivity. Telematics and AI algorithms integrate data from these technologies, analyzing camera and sensor data to improve equipment operation and resource utilization (&lt;strong&gt;Figure 1&lt;/strong&gt;).&lt;/p&gt;
 
-&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/TE_MSB318_Fig1_600.png?ver=PCloB9KQn1Fa01HSYWNJwA%3d%3d" style="width: 600px; height: 345px;" title="" /&gt;&lt;/p&gt;
+&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/TE_MSB318_Fig1_600.png?ver=FHBEV1CQvXMV5RPbBo2jJA%3d%3d" style="width: 600px; height: 345px;" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt;&amp;nbsp;Modern agricultural machinery integrates cameras, sensors, antennas, telemetry, displays, controllers, gateways, and network infrastructure throughout the vehicle, creating an increasingly interconnected electronic system. (Source: TE Connectivity, modified by Mouser)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
 
@@ -568,7 +620,7 @@
 
 &lt;p style="margin-bottom:11px"&gt;Environmental sealing helps protect switches from the dust and water they may encounter at the panel surface. The IP rating system (&lt;strong&gt;Figure 1&lt;/strong&gt;) defined in IEC 60529 classifies protection against the ingress of solids and water under specific standardized test conditions. For example, an IP65 rating indicates a dust-tight enclosure protected against water jets, while an IP67 rating indicates a dust-tight enclosure with protection against temporary immersion in water.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt; Because IP ratings apply only to the specific test conditions defined by the standard, designers should select a rating that aligns with the switch&amp;rsquo;s expected operating environment.&lt;/p&gt;
 
-&lt;p style="margin-bottom:11px"&gt;&lt;em&gt;&lt;em&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/Ingress-Protection-Ratings-Guide_1.jpg?ver=g3z5JJtbBmmM_8sACwZ_vA%3d%3d" style="width: 600px; height: 430px;" title="" /&gt;&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/Ingress-Protection-Ratings-Guide_1.jpg?ver=2OazkpLSlDuFVPSkoKaGjg%3d%3d" style="width: 600px; height: 430px;" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt;&amp;nbsp;The numbers in the IP ratings table correlate to the type and amount of protection provided. (Source: Mouser)&lt;/em&gt;&lt;/span&gt;&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;
 
@@ -979,7 +1031,7 @@
 
 &lt;p style="margin-bottom:11px"&gt;Several key CRA implementation dates stand out (&lt;strong&gt;Figure 2&lt;/strong&gt;). The CRA became legally binding in December 2024. In June 2026, conformity assessment bodies became operational. Manufacturers are obligated to report actively exploited vulnerabilities and severe incidents to the relevant authorities beginning September 2026. Come December 2027, compliance with the CRA will be mandatory for all devices sold in the EU that have the ability to connect to the internet.&lt;/p&gt;
 
-&lt;p style="margin-bottom: 11px; text-align: center;"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/digi_timeline_cra_blog_post_cropped.jpg?ver=BaTbqXFYr5354YOqhOQecA%3d%3d" style="width: 600px; height: 189px;" title="" /&gt;&lt;/p&gt;
+&lt;p style="margin-bottom: 11px; text-align: center;"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/digi_timeline_cra_blog_post_cropped.jpg?ver=45QwLjzIQQWJNxp_rbWWag%3d%3d" style="width: 600px; height: 189px;" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt;&amp;nbsp;An overview of the CRA Implementation timeline. (Source: Digi International)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
 
@@ -997,7 +1049,7 @@
 
 &lt;p style="margin-bottom:11px"&gt;Part of this support includes the &lt;a href="https://www.mouser.com/en/new/digi-international/digi-connectcore/"&gt;Digi ConnectCore&lt;/a&gt; ecosystem, developed to provide an easy route to CRA compliance. This family of products adheres to the CRA&amp;rsquo;s Annex I requirements and provides built-in tools for development and post-deployment.&lt;sup&gt;&lt;a href="#_edn7" name="_ednref7"&gt;[7]&lt;/a&gt;&lt;/sup&gt; Its hardware includes ConnectCore system-on-modules (SOMs).&lt;sup&gt;&lt;a href="#_edn8" name="_ednref8"&gt;[8]&lt;/a&gt;&lt;/sup&gt; Additionally, the Digi TrustFence framework enables products to be delivered with a secure default configuration, secure boot, an encrypted file system, and authenticated access (&lt;strong&gt;Figure 3&lt;/strong&gt;).&lt;/p&gt;
 
-&lt;p align="center" style="text-align:center; margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/Digi_TrustFence_solution.png?ver=xIuUXlPl8wiqQozXU-WvkQ%3d%3d" style="width: 377px; height: 377px;" title="" /&gt;&lt;/p&gt;
+&lt;p align="center" style="text-align:center; margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/Digi_TrustFence_solution.png?ver=uzlY7znyMHSySajYFh3BkA%3d%3d" style="width: 377px; height: 377px;" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt;&amp;nbsp;Digi&amp;rsquo;s TrustFence solution is a multi-pronged approach designed to protect devices from common attacks. (Source: Digi International)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
 
@@ -3221,82 +3273,4 @@ Jean-Jacques (JJ) DeLisle attended the Rochester Institute of Technology, where 
 &lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Author&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;img align="left" alt="" src="https://www.mouser.com/blog/Portals/11/David_Pike_headshot.jpeg" style="text-align: left; margin-right: 10px; float: left;" width="100" /&gt;David Pike is well known across the interconnect industry for his passion and general geekiness. His online name is Connector Geek.&lt;/p&gt;
-</description><guid isPermaLink="false">3775</guid></item><item><title>Miniaturisation in Space: Designing Compact Yet Robust Components for the Final Frontier</title><link>https://www.mouser.com/blog/miniaturisation-in-space-designing-compact-yet-robust-components-for-the-final-frontier</link><category>All,Connectors</category><pubDate>Wed, 15 Jul 2026 23:15:17 GMT</pubDate><description>&lt;h2 style="font-style: italic; font-size: 16px;"&gt;&lt;em&gt;The evolution of new launch systems has made space exploration more accessible than ever. Designers need low-profile connectors that will survive the harsh environments found in orbit. Find out how Harwin is developing connector solutions for the next generation of nanosatellites.&lt;/em&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;img alt="CubeSat nanosatellite orbiting Earth above cloud-covered surface" src="https://res.cloudinary.com/uf-554466/image/upload/v1784134077/Harwin_space_theme_o9mxfr.png" style="width: 600px; height: 400px;" title="CubeSat nanosatellite orbiting Earth above cloud-covered surface" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source:&amp;nbsp;NASA&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;By David Pike for Harwin&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;It is boom-time for the space industry. Around the globe, new research projects are being launched, and commercial companies are looking to the sky for new ventures. Recent years have seen consecutive records in the number of successful space launches, with this upward trend showing no signs of slowing.&lt;/p&gt;
-
-&lt;p&gt;Non-governmental applications for space flight have existed for many years. Communications, navigation and imaging have all been markets exploited by commercial ventures, but during this time, the mechanisms for launching equipment into space remained under the control of government institutions.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Making Spaceflight Affordable&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Commercial space launch companies are powered by new technologies that have significantly reduced costs. At the height of NASA&amp;rsquo;s Space Shuttle program, the cost to launch equipment into Low Earth Orbit (LEO) was more than $50,000 per kilogram. In contrast, today&amp;rsquo;s Falcon 9 from SpaceX can perform the same task at an advertised cost of less than $3,000 per kilogram.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;The reduced costs have combined with other changes, including rideshare programs and dedicated small satellite launch systems. The practical result is that it is now feasible for smaller organisations to launch small satellites.&lt;/p&gt;
-
-&lt;p&gt;The market has thus been created for an entirely new generation of devices: nanosatellites. They are small and lightweight &amp;ndash; often as little as a few kilograms. One example is the popular CubeSat concept, designed to a standardised form factor of 10cm cubes, which greatly simplifies their packing into launch systems.&lt;/p&gt;
-
-&lt;p&gt;Alongside reduced launch costs, designers are embracing the use of commercial-off-the-shelf systems (COTS). Using readily available components available on the commercial market further reduces the costs of space research and exploration. For the first time, it is even possible for schools and small businesses to create and launch their own satellites for pure scientific research as well as commercial applications. There are more than 4400 currently in orbit, and the number is growing every year.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;Advances in key technologies are contributing to this new generation of smaller satellites. Modern microelectronic systems are available in small and energy-efficient packages. These work in conjunction with miniaturised sensors, high-capacity battery systems, and high-speed communications to deliver powerful capabilities packed into small and light devices.&lt;/p&gt;
-
-&lt;p&gt;Nanosatellites are therefore masterpieces of compact design, with densely populated printed circuit boards delivering the greatest possible functionality within the limited space available. The key element that brings these systems together is the connector. Board-to-board connectors provide vital links between boards, while cables run up and down the outside of the board stack to carry power and data to all components.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Connectors for Extreme Conditions&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Despite the capabilities that can be packed into these small devices, designers of nanosatellites must also contend with one of the harshest environments experienced by any industry. The vacuum of space, combined with extreme temperatures and long-term exposure to radiation, makes designing satellites a unique challenge.&lt;/p&gt;
-
-&lt;p&gt;Without the protection of the Earth&amp;rsquo;s atmosphere, any object in space will receive the full force of the sun&amp;rsquo;s radiation. In locations exposed to direct sunlight, temperatures can rapidly rise to dangerous levels, while areas that remain in shadow become very cold. The materials from which components are constructed must be chosen with great care to deliver a wide operating temperature range.&lt;/p&gt;
-
-&lt;p&gt;The absence of atmospheric pressure also causes materials to behave in unusual ways. In vacuum conditions, some materials release gases that are trapped during their manufacture. This is a process known as outgassing, and is a common problem when plastic is exposed to a vacuum during spaceflight. Gas that is released can condense onto cold surfaces, including the sensors of scientific equipment, severely compromising their functionality.&lt;/p&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Reliability&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p&gt;Satellites must function for long periods whilst remaining far beyond the possibility of repair. Connectors designed for spaceflight, therefore, need to provide long-term reliability and resistance to the rigours of launch whilst remaining as light as possible.&lt;/p&gt;
-
-&lt;p&gt;Alongside the need for mechanical reliability, satellites must be designed for long-term missions. During their mission, power management becomes a major concern, and space vehicles must be designed to ensure the greatest possible duration. Operating within a strict power budget, any component that introduces unwanted electrical resistance can put the mission at risk.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Gecko from Harwin&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;The&amp;nbsp;&lt;a href="https://eu.mouser.com/en/new/harwin/harwin-g125/"&gt;Gecko connector series&lt;/a&gt;&amp;nbsp;from&amp;nbsp;&lt;a href="https://eu.mouser.com/en/manufacturer/harwin/"&gt;Harwin&lt;/a&gt;&amp;nbsp;is ideally suited for the three-dimensional puzzle that designers face when creating the latest generation of nanosatellites. They combine compact size with high performance and reliability, enabling them to withstand the conditions encountered in spaceflight applications.&lt;/p&gt;
-
-&lt;p&gt;At the heart of the Gecko connector is its machined contact. Using a 1.25mm pitch, these miniature contacts are highly durable, capable of over 1000 operations while resisting the shocks and vibration associated with space launch. Their low contact resistance minimises losses and enables efficient power and signal transmission throughout the satellite.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1784134501/Harwin_space_fig1_zazj8e.png" style="width: 600px; height: 428px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt;&amp;nbsp;Gecko connector contacts size comparison. (Source: Harwin)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;In the limited space available inside the satellite, the&amp;nbsp;&lt;a href="https://eu.mouser.com/en/new/harwin/harwin-gecko-mt-connectors/"&gt;Gecko-MT (&amp;ldquo;Mixed Technology&amp;rdquo;) series&lt;/a&gt;&amp;nbsp;combines the 1.25mm-pitch signal contacts with larger power contacts fitted within the same housing that can carry up to 10 Amps per circuit. With this mixed signal and power capability, Gecko-MT delivers a flexible and low-profile solution for areas where PCB real estate is at a premium.&lt;/p&gt;
-
-&lt;p&gt;Other features that make them ideal for spaceflight applications include the use of high-performance materials. The glass-filled thermoplastic insulator delivers an operating temperature range of -65&amp;deg;C to +150&amp;deg;C. It is also a material with low outgassing properties, making an ideal solution for exposure to the vacuum of space. The Gecko series can also be protected against electromagnetic interference (EMI) with the use of machined aluminium backshells.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1784134501/Harwin_space_fig2_gbdbpw.png" style="width: 600px; height: 400px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt;&amp;nbsp;The Gecko MT group. (Source: Harwin)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;The growing commercialisation of space offers small organisations the opportunity to create their own satellites. However, despite this commercialisation, the tough conditions of spaceflight require designers to pay close attention to the components they use.&lt;/p&gt;
-
-&lt;p&gt;Harwin manufactures connectors designed especially for high-reliability applications. The Gecko and Gecko-MT series provide ideal solutions for designers creating the next generation of nanosatellites and the further exploration of space.&lt;/p&gt;
-
-&lt;p&gt;The &amp;ldquo;&lt;a aria-label="Miniaturisation in Space blog on Wevolver website - Opens in a new tab" href="https://www.wevolver.com/article/miniaturisation-in-space-designing-compact-yet-robust-components-for-the-final-frontier" rel="noopener" target="_blank"&gt;Miniaturisation in Space: Designing Compact Yet Robust Components for the Final Frontier&lt;/a&gt;&amp;rdquo; blog was previously published by Wevolver and is republished here with permission.&amp;nbsp;&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Author&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;img align="left" alt="" src="https://www.mouser.com/blog/Portals/11/David_Pike_headshot.jpeg" style="text-align: left; margin-right: 10px; float: left;" width="100" /&gt;David Pike is well known across the interconnect industry for his passion and general geekiness. His online name is Connector Geek.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp; &amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp; &amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;strong&gt;Sources&lt;/strong&gt;&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://ntrs.nasa.gov/citations/20200001093&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://www.nanosats.eu/&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">3776</guid></item></channel></rss>
+</description><guid isPermaLink="false">3775</guid></item></channel></rss>
