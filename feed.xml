@@ -1,4 +1,198 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=20" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>Building Modular Machines with Cabinet-Free Distributed I/O Architecture</title><link>https://www.mouser.com/blog/building-modular-machines-cabinet-free-distributed-io-architecture</link><category>Automation,Industrial,Industrial Automation,IoT,Robotics</category><pubDate>Tue, 27 Oct 2026 05:41:15 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/5a1dac48-063c-4cef-ab27-1ace0e7b2e96/Large/Adobe-Stock-1556194127-jpg.png" title="" /&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=20" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>How ERVs Improve HVAC Efficiency and Indoor Air Quality</title><link>https://www.mouser.com/blog/how-ervs-improve-hvac-efficiency-indoor-air-quality</link><category>Industrial,Power,Sensors</category><pubDate>Fri, 30 Oct 2026 22:21:59 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/81ec5784-c452-4119-acb3-38db095d3d5a/Large/Adobe-Stock-1555396388-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: Evgenii Bakhchev/stock.adobe.com&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Heating, ventilation, and air conditioning (HVAC) systems play a critical role in maintaining clean, comfortable commercial spaces and meeting indoor air quality (IAQ) requirements. Because HVAC equipment often operates for extended periods during hot and cold seasons, energy efficiency remains a key design consideration. Energy recovery ventilators (ERVs) support mechanical ventilation also known as DOAS (Dedicated Outdoor Air System) by supplying outdoor air and exhausting indoor air while using the outgoing airstream to precondition the incoming air&amp;rsquo;s temperature and moisture content. By reducing the load on heating and cooling equipment, ERVs can significantly improve overall HVAC efficiency. However, achieving these benefits requires careful system design, control, and maintenance.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;This blog examines how ERVs enhance IAQ and HVAC efficiency and explains the role of airflow and pressure sensing in maintaining efficient operation.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Understanding ERVs in Commercial HVAC Systems&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Indoor commercial environments can accumulate carbon dioxide (CO&lt;sub&gt;2&lt;/sub&gt;), airborne particulates, and gaseous contaminants that degrade occupant comfort, health, and well-being. To maintain acceptable IAQ, ventilation systems must continuously introduce outdoor air while removing stale indoor air. Standards such as ASHRAE 62.1 with their VRP (Ventilation Rate Procedure) procedure set minimum ventilation requirements for commercial buildings, with required ventilation rates varying by factors such as space type, building area, and occupancy levels.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;How ERVs Reduce HVAC/DOAS Energy Demand&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;To meet ventilation requirements, HVAC systems use the demand controlled ventilation (DCV) control strategy to continuously manage airflow as building conditions and occupancy levels change. As a result, many commercial HVAC systems incorporate variable air volume (VAV) systems to monitor and maintain appropriate ventilation rates.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;HVAC systems must bring sufficient outdoor air into buildings as conditions and occupancy levels change to meet ventilation requirements, but doing so can create additional challenges. Depending on ambient conditions, incoming air may require heating, cooling, humidification, or dehumidification before it can be supplied to occupied spaces. This continuous conditioning increases HVAC energy consumption and operating costs and can also increase demand on mechanical components such as fans, pumps, and compressors. ERVs can help reduce this load by recovering energy from conditioned air as it is exhausted from the building.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;ERVs use outgoing air to precondition fresh air entering from the outside. Inside an ERV, the incoming and outgoing air streams remain separate, but the system transfers energy between them before the indoor air is exhausted from the building. This allows the ERV to recover energy (heat) and latent energy, which is associated with moisture, rather than allowing the energy to leave with the exhaust air.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Energy recovery typically occurs through a rotating enthalpy wheel, a static plate, or a core-based recovery system. In an enthalpy wheel-based ERV, the wheel rotates between the supply and exhaust air streams, absorbing and releasing heat and moisture as it moves between them. The wheel typically contains a material (desiccant) capable of absorbing the humidity in the wet airstream and releasing it in the dry airstream. Static systems keep the two air streams in separate channels within a fixed core, and heat and moisture are transferred through the material separating them. Regardless of the design, the goal is to moderate the temperature and humidity of incoming outdoor air before the HVAC system completes conditioning it.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Energy transfer varies by season. In winter, warm indoor exhaust air transfers heat to the cold, dry outdoor air entering the building. The incoming air is warmer and, in an ERV that transfers moisture, it&amp;#39;s also more humid before it reaches the HVAC system. In summer, cooler indoor exhaust air absorbs heat and moisture from the hot, humid outdoor air, so the incoming air is cooler and drier.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The ERV does not replace the HVAC system or even bring incoming air to the desired indoor temperature and humidity. Instead, it reduces the heating, cooling, humidification, and dehumidification required. The preconditioned outdoor air can then be further conditioned by the HVAC distributed through the building&amp;rsquo;s ductwork.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Maintaining ERV Performance Through Pressure Sensing&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;For ERVs to operate efficiently, the fans that move air in and out of the ERV housing and heat exchangers must be precisely controlled. This is because the air entering and exiting the ERV must have the proper airflow for the heat exchangers to operate at peak efficiency and achieve the desired air temperature and humidity exchange rates. The indoor and outdoor air temperatures, humidity levels, filter conditions, building occupancy levels, and main HVAC system operation all affect the air conditions for ERVs. Using a differential pressure sensor in an ERV blower control system enables the system to adapt to changes in these conditions with adequate response time to ensure efficient operation. By directly measuring the airflow by methods like a Bernoulli ring at the blower or Pitot Tube in the airduct or inside the ERV the EC motor driving the blower can be controlled to deliver the exact amount of air needed. In comparison to RPM and current based air volume control, true airflow is more accurate, failsafe and precise.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;One example of such a sensor is &lt;a href="https://www.mouser.com/en/new/sensirion/sensirion-sdp8xx-pressure-sensors"&gt;Sensirion&amp;rsquo;s SDP8xx Digital and Analog Pressure Sensors&lt;/a&gt;, which are designed to accurately measure air pressure in high-volume applications without offset drift. These sensors cover typical air-pressure ranges for commercial applications and provide rapid response times for real-time control. The performance advantages of these sensors are enabled by Sensirion&amp;#39;s patented CMOSens&lt;sup&gt;&amp;reg;&lt;/sup&gt; sensor technology, which integrates the sensing element, digital calibration, signal processing, and analog output on a compact CMOS chip that is fully calibrated, temperature-compensated, and offers outstanding long-term stability.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;High-quality, reliable monitoring of airflow at the ERV&amp;rsquo;s inputs, outputs, and internal components enables optimized fan speeds in response to changing conditions. With good data collection practices and intelligent control system design, pressure measurements can also reveal trends in ERV operation that indicate the need for service or maintenance. For example, as filters accumulate dirt, the resulting change in pressure can help indicate when they need to be replaced.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Accurate airflow play a key role in maximizing ERV energy efficiency. By transferring heat and moisture between exhaust and incoming air streams, ERVs help maintain indoor air quality while reducing DOAS HVAC energy consumption. Differential pressure sensors support this process by providing the feedback needed to optimize fan operation.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Author&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src="/blog/Portals/11/JJ_DeLisle_Headshot.png" style="margin-left: 10px; margin-right: 10px; float: left; width: 100px; height: 122px;" /&gt;&lt;b&gt;Principal of Information Exchange Services: Jean-Jacques DeLisle&lt;/b&gt;&lt;br /&gt;
+Jean-Jacques (JJ) DeLisle attended the Rochester Institute of Technology, where he graduated with a BS and MS degree in Electrical Engineering. Before completing his degree, JJ contracted as an IC layout and automated test design engineer for Synaptics Inc. Further pursuing his career, JJ moved to New York City, where he took on work as the Technical Engineering Editor for Microwaves &amp;amp; RF magazine. In the next phase of JJ&amp;rsquo;s career, he moved on to start his company, RFEMX, seeing a significant need in the industry for technically competent writers and objective industry experts. Progressing with that aim, JJ expanded his company&amp;rsquo;s scope and vision and started Information Exchange Services (IXS).&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://www.ashrae.org/technical-resources/bookstore/standards-62-1-62-2&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://renewaire.com/how-ervs-work/&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description><guid isPermaLink="false">4813</guid></item><item><title>How Industrial Automation Teams Reduce Commissioning Risk</title><link>https://www.mouser.com/blog/how-ia-teams-reduce-commissioning-risk</link><category>Automation,Industrial,Industrial Automation</category><pubDate>Fri, 30 Oct 2026 19:25:21 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/09b8412f-252d-4a35-8fa8-81f0cef5809e/Large/Adobe-Stock-1912617434-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: Andrey Popov/stock.adobe.com&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;When an automation project runs into trouble during commissioning, the first instinct is usually to look at the controls: the logic, sequencing, I/O, wiring, drive behavior, network configuration, or software. That instinct makes sense&amp;mdash;controls are tangible, testable, and present when the problem appears. But in practice, many commissioning issues blamed on control engineering actually originate much earlier.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;This blog explores how experienced industrial automation teams reduce commissioning risk by proving key assumptions early, designing for support, aligning operational technology (OT) and information technology (IT), and preparing operators before the project ships.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Reducing Risk Before Commissioning&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;I started as a programmer at B&amp;amp;R Industrial Automation, now part of ABB, and spent more than 24 years moving between technical and management roles across the industrial automation ecosystem. Technical execution matters enormously.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;In my experience, many project outcomes are shaped long before commissioning begins. The teams that consistently deliver successful projects are not necessarily those with the strongest control engineers. More often, they are the teams that got the coordination right early, surfaced risks while they were still inexpensive to address, and designed beyond the narrow goal of &amp;ldquo;passing startup.&amp;rdquo;&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;By the time a technician is troubleshooting on the floor, the controls often reveal only a problem that started months earlier: an assumption that was never documented, a tradeoff that was never confirmed with the people affected, or an agreement that existed only at one level of the organization. When the coordination tasks are executed effectively, commissioning is mostly a verification exercise. When it is not, commissioning turns into discovery, and discovery at that stage is typically more expensive because it adds field labor, rework, production delay, and prolonged stabilization on top of the engineering effort already invested.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;I learned this lesson early in my career. At a project kickoff, we discussed having a machine &amp;ldquo;running by summer&amp;rdquo;. Within the engineering group, that meant the motion layer: axes tuned, movements verified, and a stable platform ready for application code. To the customer, however, it meant something closer to a first usable version of the machine, with sequences implemented and the process functioning in a recognizable way.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Both interpretations were reasonable, and both groups spent months believing the project was on track. The gap surfaced only when the schedule tightened, and expectations were compared directly. What looked like an engineering delay turned out to be a coordination failure that had started in the very first conversation. The phrase &amp;quot;machine running&amp;quot; had meant two different things to two groups of professionals, and nobody had made either interpretation explicit.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;The cost was real. The engineering team faced the consequences of a misunderstanding that was not their fault. The schedule had not slipped because the work was poorly executed. It slipped because the milestone meant different things to different people, and that was never made concrete while it was still cheap to fix.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Small, aligned teams often resolve expectation mismatches and misunderstandings naturally through their day-to-day interactions. The person implementing the solution hears service concerns directly, while the person interacting with the customer understands the engineering team&amp;rsquo;s priorities and constraints. As a result, assumptions surface and are corrected while they are still easy to address.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Large projects tend to lose this advantage. Management talks to management, engineering talks to engineering, and operations enters the discussion later than it should. Everyone may leave a meeting believing there is alignment, but each group is carrying a slightly different version of the same decision. Nobody has to be careless for this to happen. The agreement exists at too high a level. Beneath it sit multiple versions of the same decision, each internally consistent and quietly incompatible. The challenge in a large project is to deliberately create the shared understanding that small teams develop naturally through everyday interactions. In my experience, four areas make the greatest difference in preventing misalignment across project teams and reducing risk before commissioning even begins:&lt;/p&gt;
+
+&lt;ol&gt;
+ &lt;li style="margin-left:8px"&gt;Strategic governance&lt;/li&gt;
+ &lt;li style="margin-left:8px"&gt;Operational continuity&lt;/li&gt;
+ &lt;li style="margin-left:8px"&gt;Technical resilience&lt;/li&gt;
+ &lt;li style="margin-bottom:11px; margin-left:8px"&gt;Adoption and sustainment&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Strategic Governance: Prove the Right Things Early&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The first area is strategic governance. The teams that handle strategic governance well start every project with an honest accounting of what they do not yet know. Not what they need to build, but what they need to prove. These are different questions, and failing to distinguish between them is one of the most common causes of late-stage rework. For most projects, the unknowns that matter most are the ones where being wrong is most expensive: new process behavior, unproven control strategies, integration constraints, and throughput assumptions. When one of these turns out to be wrong late in the project, the fix usually requires revisiting decisions that the rest of the work was already built around. A shared list of what the team must prove, in priority order, makes those unknowns visible early and forces a clearer conversation about what is known and what is still being assumed.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The same discipline applies to planning for the Factory Acceptance Test (FAT) and the Site Acceptance Test (SAT). Well-run projects decide early what will be verified at FAT and what will be explicitly deferred to SAT or startup. That clarity prevents risk from quietly migrating downstream with the schedule while strengthening the supplier-customer relationship, because both sides agree on what &amp;ldquo;ready&amp;rdquo; means before testing begins.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;When this step is skipped, the problems are predictable. A line may be mechanically complete before anyone proves the process can sustain the required throughput. A control sequence may work in simulation but fail when real device timing, network load, or the behavior of upstream and downstream equipment is introduced. These are not just technical misses. They are issues that could have been identified earlier but remained hidden until they became far more expensive to resolve.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Operational Continuity: Design for Support, Not Just for Testing&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The second area is operational continuity. The teams that get operational continuity right bring service and maintenance into the design conversation early, not as reviewers but as sources of requirements. The service and maintenance questions that determine whether a machine is supportable must be addressed during design, because addressing them later usually means revisiting decisions already embedded in the system.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The operational continuity questions are specific. Can the machine be diagnosed remotely? Does the event history provide enough context to explain what caused a fault, not just that one occurred? Can maintenance isolate a problem in the human-machine interface (HMI) without contacting the original equipment manufacturer (OEM)? What will a technician see when something goes wrong, and will it guide them to the fault or merely indicate that something is wrong?&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Mechanical teams usually ask these questions naturally. They consider access panels, replacement procedures, and component layout because those concerns are visible during design. In controls and software, the equivalent thinking is easier to skip precisely because the gaps remain invisible until the machine is in production.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The economics make early engagement worthwhile. Up to the point when the machine leaves the facility, mistakes primarily cost engineering time. After that, they can lead to production downtime, emergency support, site visits, and lost customer trust.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;A machine that passes every functional test can still generate excessive support calls if the diagnostic pathway is unclear. The operator sees one alarm, maintenance sees a different symptom, and support receives a description based largely on guesswork. At that point, a seemingly minor design decision becomes an ongoing operational cost.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Technical Resilience: Align OT and IT Before the Architecture Is Fixed&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The third area is technical resilience. Teams that manage it well treat OT and IT alignment as a design requirement rather than an integration task. They bring the right people from both sides into the same conversation before architecture choices are finalized, because the cost of misalignment rises sharply once those choices are locked in.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;OT teams optimize for uptime and recoverability, while IT teams optimize for control, security, and manageability. These perspectives are not incompatible, but they lead to different architectural choices when developed in isolation.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;When an OT team designs around a flat network topology for fast recovery and IT enters the conversation only after the architecture is committed, the machine may still be commissioned on time. But if segmentation is then required for security compliance, reliable software updates to field controllers can take months to resolve after handoff. The system worked at commissioning, but it becomes harder to update, secure, and support over its operating life.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;From a project standpoint, the requirement is straightforward: the system must be updatable, diagnosable, and supportable after deployment, not just functional at commissioning. This means version control, configuration baselines, diagnostic logging, and audit trails must be treated as design requirements from the start, not as documentation tasks at the end.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The practical shift is to treat OT/IT alignment as a project deliverable alongside the controls work, with clear owners and explicit readiness criteria, rather than leaving it to the two sides to resolve after the architecture is finalized.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Adoption and Sustainment: Prepare the Handoff Before the Project Team Leaves&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="border:none; margin-bottom:11px"&gt;The final area is adoption and sustainment. Well-run projects plan for operational handoff long before commissioning. The people who will run and maintain the system are part of the conversation before the design is finalized. Training focuses on the failure conditions most likely to occur in the field, not just on normal operation. Documentation reflects the software version that was actually released. Alarm messages provide the context a technician needs to act, not just a fault code.&lt;/p&gt;
+
+&lt;p style="border:none; margin-bottom:11px"&gt;The standard for holding the project to is not simply &amp;ldquo;does the machine work?&amp;rdquo; but &amp;ldquo;can the people responsible for it run it, troubleshoot it, and recover from failures without calling the project team?&amp;rdquo; These are different questions, and delivery pressure reliably leads teams to answer only the first.&lt;/p&gt;
+
+&lt;p style="border:none; margin-bottom:11px"&gt;In practice, the things that matter most here are often unglamorous: consistent alarm classes that help operators and maintenance personnel assess urgency, fault presentation that guides a technician to the problem rather than simply indicating that something is wrong, naming conventions that match what operators see on screen, and displays that provide enough context for technicians to understand the machine&amp;rsquo;s state without having to make a phone call. None of these are technically difficult. They become expensive only when treated as finishing details rather than as design requirements.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;What Needs to Be in Place Early&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;What helps most is usually simpler than teams expect, and most of it can be set up at the start of the project.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The single most useful habit is to write down assumptions. Every project runs on assumptions that everyone believes, but no one has documented. A shared list, with an owner and a review date for each item, makes them visible before they harden into commitments. It also shows that, while the cost of acting is still low, some beliefs are well-founded while others have never really been tested.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The same discipline applied to decisions helps just as much. A brief record of what was decided, by whom, and what must remain true for it to hold prevents those decisions from being quietly re-litigated as people change or the project evolves.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Two practices are especially worth establishing from the start because teams often leave them too late. The first is the test specification. Early in my career, our team shipped a new software version for a machine. We had done real engineering work: updates, feature changes, and improvements. Then the machine would not start. Not figuratively. The start button did not work. We were focused on what had changed and lacked a test specification that forced us to verify the most fundamental expected behavior first. Something everybody knows is often the very thing nobody explicitly checks. That experience is why the test specification matters.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;A test specification should start with the most fundamental expected machine behavior: the start button, the stop command, and the basic cycle, then build outward from there. Not because advanced behavior does not matter, but because basic behavior is exactly what everyone assumes has already been verified, even when it has not.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The second is traceability. Before the machine goes to the site, the team should be able to clearly state which software version is running, which configuration was deployed, and what diagnostic data will be available if something goes wrong in the field. If those answers require a search, field support will rely on guesswork rather than on evidence.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Goal Is to Surface Risk Early&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;This approach is not about replacing engineering with process. It is about equipping engineers, operators, service teams, and customers with the information they need to make good decisions while keeping the cost of those decisions manageable.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Every project runs on assumptions. What usually separates a manageable project from a painful one is when those assumptions are tested.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Found early, there are tradeoffs.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Found at commissioning, they are reworked.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Found in production, they become a cost, a delay, and a support burden.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The projects that go well are not the most formally managed or the best documented. They are the ones where the right people talk to each other early, before designs are finalized, before commitments are made, and before the machine leaves the building.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;That is how a large automation project begins to operate more like a small, aligned team. The useful question on every project is not just what might go wrong at commissioning, but what needs to be known early enough to keep the project on track.&lt;/p&gt;
+</description><guid isPermaLink="false">4821</guid></item><item><title>New Tech Tuesdays: Hydrogen Sensing Gives Battery Packs an Earlier Warning Signal</title><link>https://www.mouser.com/blog/new-tech-hydrogen-sensing-gives-battery-packs-earlier-warning-signal</link><category>All,Automotive,New Tech Tuesdays,Sensors</category><pubDate>Tue, 27 Oct 2026 18:23:22 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1792698144/NTT_Oct27_hydrogen_sensing_n9yqxz.jpg" style="height: 327px; width: 600px;" title="" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;New Tech Tuesdays&lt;/h2&gt;
+
+&lt;h3&gt;&lt;em&gt;Join Mouser&amp;#39;s Technical Content team for a weekly look at all things interesting, new, and noteworthy for design engineers.&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;As electric vehicles (EVs), battery energy storage systems (BESS), industrial backup systems, and high-power charging platforms continue to scale, the battery pack is becoming a more active, sensor-rich environment. The goal of battery management is not only to manage charge and discharge, but also to recognize abnormal cell behavior before it becomes a larger system-level event.&lt;/p&gt;
+
+&lt;p&gt;That is where early hydrogen-based thermal runaway detection is gaining attention. During certain lithium-ion cell failure conditions, gas generation can occur before a dramatic temperature rise or visible pack damage. Detecting hydrogen near the cell level gives designers another early warning indicator to pair with temperature, pressure, voltage, and current monitoring data.&lt;/p&gt;
+
+&lt;p&gt;In this week&amp;rsquo;s New Tech Tuesdays, we look at how hydrogen sensing is becoming part of the battery safety conversation, why the technology is moving closer to the cell, and how compact gas sensors can help engineers design safer EV and BESS packs.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Need for Earlier Battery Fault Detection&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;As EV and BESS designs move into more demanding operating environments, robust failure detection becomes increasingly critical. Vehicle packs must handle vibration, rapid load changes, fast charging, and wide temperature swings. Stationary storage systems may operate for years in outdoor cabinets, renewable-energy installations, or grid-support environments where maintenance access can be limited.&lt;/p&gt;
+
+&lt;p&gt;Legacy battery pack monitoring systems primarily monitor electrical and thermal signals. But as cell density increases, the time it takes for a localized fault to become a system-level failure shortens. As a result, battery designers need early-warning systems that can identify potential faults even before electrical and thermal warnings are triggered.&lt;/p&gt;
+
+&lt;p&gt;Stressed lithium-ion batteries begin off-gassing hydrogen and other gases as their internal pressure rises. Because ambient hydrogen concentrations are normally very low, a significant hydrogen increase within a battery enclosure can provide a useful fault indicator. Detection reliability, nevertheless, depends on sensor selectivity, environmental compensation, sensor placement, alarm thresholds, and potential hydrogen sources in the surrounding system.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt; When integrated with an appropriate safety system, hydrogen detection can trigger actions such as current interruption, pack isolation, ventilation, cooling, or an external warning before the event progresses further.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Enhancing Fault Detection Systems with Hydrogen Sensing&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;The next stage of battery safety will likely involve more sensor fusion. As this evolution takes shape, hydrogen detection will not replace monitoring of temperature, humidity, pressure, voltage, or current. Instead, it can give the system another independent signal that strengthens decision-making. A hydrogen rise near a module vent, combined with an unusual temperature gradient or voltage deviation, can provide more confidence than any single measurement alone.&lt;/p&gt;
+
+&lt;p&gt;For both EVs and BESS, early gas detection can become part of a layered safety approach that includes cell chemistry, mechanical spacing, thermal barriers, venting, power electronics, and system-level controls.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Newest Products for Your Newest Designs&lt;sup&gt;&amp;reg;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;As hydrogen detection becomes an important part of layered battery safety, the &lt;a href="https://www.mouser.com/en/new/sensirion/sensirion-stc42a-hydrogen-thermal-runaway-sensor"&gt;Sensirion STC42A Hydrogen Thermal Conductivity Sensor&lt;/a&gt; offers designers a compact solution for monitoring this early warning signal. Designed for early detection of hydrogen in battery environments, the STC42A gives engineers a compact sensing option for EV and BESS pack safety designs.&lt;/p&gt;
+
+&lt;p&gt;The STC42A is intended for applications where a thermal runaway warning must occur before a cell event grows into a broader pack-level issue. By focusing on hydrogen detection, the sensor can provide a signal that complements the electrical and thermal measurements already used in battery management systems. This feature makes it useful for designs that need to combine gas detection with temperature, and with humidity monitoring performed using a corresponding external humidity-and-temperature sensor, battery system diagnostics are able to offer significant safety enhancements.&lt;/p&gt;
+
+&lt;p&gt;The compact, low-power sensor uses proven sensor technology for high accuracy. With the sensor element, signal processing, digital calibration, and I&lt;sup&gt;2&lt;/sup&gt;C communication on a single chip, the STC42A conveniently adds a layer of safety to battery designs.&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Tuesday&amp;rsquo;s Takeaway&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;Battery safety is evolving from simply monitoring temperature and electrical performance to incorporating a broader range of diagnostic signals. By adding hydrogen detection to the sensing toolkit, designers can strengthen layered safety strategies and help improve fault detection, system awareness, and overall safety in next-generation EV and BESS platforms operating in increasingly demanding environments.&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;This blog was generated with assistance from Copilot for Microsoft 365.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp; &amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;strong&gt;Sources&lt;/strong&gt;&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt; https://www.sciencedirect.com/science/article/pii/S2666386425004588&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description><guid isPermaLink="false">4808</guid></item><item><title>Building Modular Machines with Cabinet-Free Distributed I/O Architecture</title><link>https://www.mouser.com/blog/building-modular-machines-cabinet-free-distributed-io-architecture</link><category>Automation,Industrial,IoT,Robotics</category><pubDate>Tue, 27 Oct 2026 05:41:15 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/5a1dac48-063c-4cef-ab27-1ace0e7b2e96/Large/Adobe-Stock-1556194127-jpg.png" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: HumblePride/stock/adobe.com, generated with AI&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
 
@@ -1062,196 +1256,4 @@
 &lt;h3&gt;&lt;small&gt;Author Bio&lt;/small&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;img alt="Kevin Dykyj" src="https://res.cloudinary.com/uf-554466/image/upload/v1790707632/Kevin_Dykyj_qk79fv.jpg" style="margin-left: 10px; margin-right: 10px; float: left; width: 150px; height: 150px;" title="Kevin Dykyj" /&gt;&lt;em&gt;&lt;small&gt;Kevin Dykyj is a Principal Digital Marketing Specialist at Microchip Technology with a focus on power semiconductor solutions. His background includes developing technical content and product positioning focused on SiC, IGBTs, and power modules. He brings a technically grounded perspective shaped by real-world system considerations in industrial, data center, sustainability, and electrification applications.&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">4686</guid></item><item><title>Easing EU Cyber Resilience Act Compliance with Integrated SOMs</title><link>https://www.mouser.com/blog/easing-eu-cyber-resilience-act-compliance-integrated-soms</link><category>All,Security</category><pubDate>Tue, 29 Sep 2026 06:40:08 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/37d59ce4-b1aa-4664-820e-6e5ea27ddc58/Large/Adobe-Stock-584754272-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;(Source: Ruslan/stock.adobe.com; generated with AI)&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;As connected products have become more widespread, cybersecurity can no longer depend primarily on voluntary industry practices or user configuration. Considering the serious consequences of security breaches, the European Union (EU) has introduced the Cyber Resilience Act (CRA). This regulatory framework defines the security measures required for products with digital elements that are to be sold in the European single market.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Manufacturers typically release products and patch vulnerabilities as they are found. The CRA makes a purely reactive patching approach insufficient. Under this legislation, manufacturers must assess cybersecurity risks, satisfy applicable product requirements during design and development, and maintain vulnerability-handling and security-update processes throughout the defined support period. The legislation also holds manufacturers responsible for their entire hardware and software supply chain. While there are limited exceptions, such as certain products already covered by other EU regulatory frameworks (e.g., medical devices, motor vehicles, and civil aviation systems), most other connected products with digital elements are likely to fall within the scope of CRA.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;This blog examines the requirements of CRA legislation and the challenges manufacturers will face. It also demonstrates how an integrated hardware-software platform can offer a streamlined path to facilitating compliance.&amp;nbsp;&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;CRA Legislation Overview&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Digi International summarizes the CRA through six implementation areas, as shown in &lt;strong&gt;Figure 1&lt;/strong&gt;. This is an explanatory framework rather than the regulation&amp;rsquo;s formal legal structure.&lt;/p&gt;
-
-&lt;p style="margin-bottom: 11px; text-align: center;"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/DIGI_six pillars of CRA legislation.jpg?ver=XmP3BKDtdAicCBStmd6eNw%3d%3d" style="width: 600px; height: 380px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt;&amp;nbsp;Digi International&amp;rsquo;s framework summarizing six CRA implementation areas, including cybersecurity design, conformity assessments, incident notification, product classification, audits, and communication. (Source: Digi International)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The CRA establishes requirements for the security characteristics that must be designed into products with digital elements. Additionally, the requirements include vulnerability management processes that manufacturers must follow after products are on the market.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Within this legislation, Annex I: Essential Cybersecurity Requirements mandates that products with digital elements are without known exploitable vulnerabilities at launch and sold with a secure-by-default configuration. Products must protect against unauthorized access through appropriate controls, including authentication, identity management, or access management. Separately, products must support security updates and, where applicable, automatic security updates enabled by default with a clear opt-out mechanism. Data must be protected at all stages of processing, transmission, and storage, typically through encryption, and processed only when relevant to the application. Additionally, data and settings must be securely deleted or transferred to other products upon request. The product must be able to monitor and record internal activities, providing information about access to or modification of data, services, or functions. Devices should limit the exposed entry points and interfaces, known as attack surfaces. Those surfaces should be secured and include exploitation-mitigation mechanisms to reduce the impact of breaches on the system itself and on other connected devices. These requirements may pose challenges for engineers, particularly when designing access points or Joint Test Action Group (JTAG) ports.&lt;sup&gt;&lt;a href="#_edn3" name="_ednref3"&gt;[3]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The Vulnerability Handling Requirements in Part II of Annex I describe the manufacturer&amp;rsquo;s responsibilities regarding lifecycle risk management, security updates, vulnerability tracking, addressing and disclosure, auditing, and public transparency. A machine-readable software bill of materials (SBOM) must be produced in accordance with recognized international standards. The SBOM should detail the software&amp;rsquo;s structure and dependencies to provide a transparent view of the full supply chain. The SBOM should also be updated regularly to reflect any patches or changes.&lt;sup&gt;&lt;a href="#_edn4" name="_ednref4"&gt;[4]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;To ensure their products comply with the legislation, manufacturers must also understand the CRA implementation requirements.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;CRA Implementation&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Several key CRA implementation dates stand out (&lt;strong&gt;Figure 2&lt;/strong&gt;). The CRA became legally binding in December 2024. In June 2026, conformity assessment bodies became operational. Manufacturers are obligated to report actively exploited vulnerabilities and severe incidents to the relevant authorities beginning September 2026. Come December 2027, compliance with the CRA will be mandatory for all devices sold in the EU that have the ability to connect to the internet.&lt;/p&gt;
-
-&lt;p style="margin-bottom: 11px; text-align: center;"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/digi_timeline_cra_blog_post_cropped.jpg?ver=45QwLjzIQQWJNxp_rbWWag%3d%3d" style="width: 600px; height: 189px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt;&amp;nbsp;An overview of the CRA Implementation timeline. (Source: Digi International)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Once the CRA is fully enforced, all applicable products will need a CE mark to be sold in the region. Companies that fail to comply face fines of up to &amp;euro;15 million or 2.5 percent of their global annual turnover, whichever is higher.&lt;sup&gt;&lt;a href="#_edn5" name="_ednref5"&gt;[5]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The CRA legislation is designed to ensure that connected devices sold in the European single market are as protected as possible against cyber threats, and that devices can be monitored for vulnerabilities and updated to mitigate security risks after deployment in the field. The legislation also outlines reporting processes intended to mitigate and contain damage when it does occur.&lt;sup&gt;&lt;a href="#_edn6" name="_ednref6"&gt;[6]&lt;/a&gt;&lt;/sup&gt; Other jurisdictions are introducing their own connected-product cybersecurity requirements. Designing products around secure-by-design, vulnerability management, and lifecycle support principles may help manufacturers prepare for overlapping requirements, but compliance with the CRA does not automatically establish compliance elsewhere.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;To remain fully compliant, manufacturers should consider trustworthy hardware and software solutions that provide the ability to proactively manage field-deployed devices.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;CRA Compliance&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The detailed requirements of CRA legislation can make the typical design cycle much more complex, lengthy, and expensive. While many microcontrollers include extensive security features, implementing them and meeting the CRA&amp;rsquo;s mandates requires significant engineering effort, as well as ongoing monitoring, patching, and SBOM updates. If software is sourced from a different supplier, the manufacturer is responsible for ensuring the product&amp;rsquo;s cybersecurity is not compromised.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Due to the rigorous steps required to comply with the CRA, manufacturers may consider alternative solutions to simplify the design process and accelerate product launches. For example, &lt;a href="https://www.mouser.com/new/digi-international/digi-cyber-resilience-act-solutions/"&gt;Digi&amp;rsquo;s CRA solutions&lt;/a&gt; can handle most CRA compliance, leaving the manufacturer free to focus on design and conformance. Even then, &lt;a href="https://www.mouser.com/en/manufacturer/digi-international/"&gt;Digi&lt;/a&gt; offers guidance to support in-house design and testing.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Part of this support includes the &lt;a href="https://www.mouser.com/en/new/digi-international/digi-connectcore/"&gt;Digi ConnectCore&lt;/a&gt; ecosystem, developed to provide an easy route to CRA compliance. This family of products adheres to the CRA&amp;rsquo;s Annex I requirements and provides built-in tools for development and post-deployment.&lt;sup&gt;&lt;a href="#_edn7" name="_ednref7"&gt;[7]&lt;/a&gt;&lt;/sup&gt; Its hardware includes ConnectCore system-on-modules (SOMs).&lt;sup&gt;&lt;a href="#_edn8" name="_ednref8"&gt;[8]&lt;/a&gt;&lt;/sup&gt; Additionally, the Digi TrustFence framework enables products to be delivered with a secure default configuration, secure boot, an encrypted file system, and authenticated access (&lt;strong&gt;Figure 3&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;p align="center" style="text-align:center; margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/Digi_TrustFence_solution.png?ver=uzlY7znyMHSySajYFh3BkA%3d%3d" style="width: 377px; height: 377px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt;&amp;nbsp;Digi&amp;rsquo;s TrustFence solution is a multi-pronged approach designed to protect devices from common attacks. (Source: Digi International)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;To facilitate compliance with CRA Annex I, Part II, Digi ConnectCore Security Services track vulnerabilities and exposures while managing the SBOM. These services are also capable of performing automated patch deployments, sending over-the-air updates, and reporting common vulnerabilities and exposures (CVEs).&lt;sup&gt;&lt;a href="#_edn9" name="_ednref9"&gt;[9]&lt;/a&gt;&lt;/sup&gt; For applications that require cloud access, Digi ConnectCore Cloud Services are designed to provide extensive process automation, monitoring, and remote device management capabilities, as well as automated mass firmware and software updates, bi-directional communication, and real-time alerts.&lt;sup&gt;&lt;a href="#_edn10" name="_ednref10"&gt;[10]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The EU&amp;rsquo;s CRA legislation will be fully enforced starting on December 11, 2027. The comprehensive framework is intended to protect devices marketed to the EU from cyber threats. Therefore, any manufacturer intending to sell connected products in the EU single market must be fully compliant. An easy way to ensure compliance is to adopt an integrated hardware-software ecosystem, such as Digi&amp;rsquo;s ConnectCore ecosystem, which has been developed specifically to map all essential CRA requirements.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Author&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/allistair-winning-100_1.jpg?ver=NhVoAVUdOmLzeiJZbjmfcA%3d%3d" style="margin-left: 10px; margin-right: 10px; float: left; width: 70px; height: 122px;" title="" /&gt;Since graduating with a BSc in Electronic Systems from the University of the West of Scotland in 1997, Alistair Winning has worked in electronics media across marketing, PR, and journalism roles. During that time, he worked as the editor of Electronics Engineering, Embedded Systems Europe, EENews Embedded, Technology First, Electronic Product Design and Test, and Panel Building and Systems Integration magazines. Currently, Allistair is the European Editor of Power Systems Design and a freelance writer, specializing in electronics and engineering.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://www.cyberresilienceact.eu/explained.html&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://www.digi.com/blog/post/cyber-resilience-act&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref3" name="_edn3"&gt;[3]&lt;/a&gt;&amp;nbsp;https://www.cyberresilienceact.eu/annexes.html&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref4" name="_edn4"&gt;[4]&lt;/a&gt;&amp;nbsp;https://www.cyberresilienceact.eu/annexes.html&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref5" name="_edn5"&gt;[5]&lt;/a&gt;&amp;nbsp;https://www.digi.com/blog/post/cyber-resilience-act&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref6" name="_edn6"&gt;[6]&lt;/a&gt;&amp;nbsp;https://www.cyberresilienceact.eu/reporting.html&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref7" name="_edn7"&gt;[7]&lt;/a&gt;&amp;nbsp; https://www.mouser.com/en/new/digi-international/digi-cyber-resilience-act-solutions&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref8" name="_edn8"&gt;[8]&lt;/a&gt;&amp;nbsp;https://www.mouser.com/pdfDocs/complying-with-the-cyber-resilience-act-cra-wp.pdf&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref9" name="_edn9"&gt;[9]&lt;/a&gt;&amp;nbsp;https://www.mouser.com/en/new/digi-international/digi-cyber-resilience-act-solutions&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref10" name="_edn10"&gt;[10]&lt;/a&gt;&amp;nbsp;https://www.mouser.com/pdfDocs/complying-with-the-cyber-resilience-act-cra-wp.pdf&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">4682</guid></item><item><title>New Tech Tuesdays: Scaling 48V Data Center Power for Open Rack V3</title><link>https://www.mouser.com/blog/new-tech-scaling-48v-data-center-power-open-rack-v3</link><category>AllComputing,General,New Tech Tuesdays,Power</category><pubDate>Tue, 29 Sep 2026 06:36:20 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1790368872/NTT_Sept29_48v_data_center_gqugd2.jpg" style="height: 327px; width: 600px;" title="" /&gt;&lt;/p&gt;
-
-&lt;h2&gt;New Tech Tuesdays&lt;/h2&gt;
-
-&lt;h3&gt;&lt;em&gt;Join Mouser&amp;#39;s Technical Content team for a weekly look at all things interesting, new, and noteworthy for design engineers.&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Expanding a server rack once involved little more than locating an open slot and connecting the necessary cables. However, at today&amp;rsquo;s rack-level power densities, expansion also affects conversion efficiency, cooling, distribution, monitoring, and maintenance.&lt;/p&gt;
-
-&lt;p&gt;Designers planning an Open Rack V3 deployment must design around a nominal 48V rack-level power system. In such designs, the applicable specifications and selected equipment define the exact operating range.&lt;/p&gt;
-
-&lt;p&gt;This week&amp;rsquo;s New Tech Tuesdays explores scalable 48V power architectures for Open Rack V3 and the design considerations required to balance efficiency, redundancy, serviceability, and monitoring in high-density data centers.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Why 48V Data Center Power Matters&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Densely packed high-performance compute equipment in server racks requires more power per rack than traditional setups. Increasing the power level by increasing voltage helps mitigate resistive conduction losses that scale with the square of current, expressed as P&lt;sub&gt;loss &lt;/sub&gt;= I&lt;sup&gt;2&lt;/sup&gt;R. For the same delivered DC power, and neglecting conversion losses, increasing the distribution voltage from 12V to 48V reduces current to one-quarter. Actual system performance still depends on factors such as busbar resistance, connector design, loading, and conversion efficiency.&lt;/p&gt;
-
-&lt;p&gt;Designers must still account for voltage-drop limits, thermal rise, insulation, protection, connector ratings, and downstream conversion. Voltage selection is only one part of the design. The power shelf, busbar, protection, downstream converters, cooling, and monitoring interfaces must operate as a coordinated system.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Building Scalable Rack Power&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;A scalable design must account for future load as well as the initial deployment, including expected growth, transient demand, reserve capacity, redundancy, upstream power availability, and thermal limits.&lt;/p&gt;
-
-&lt;p&gt;Modular power shelves enable capacity to be installed incrementally rather than requiring the complete system to be replaced when demand increases. Incremental expansion still depends on sufficient capacity in the surrounding architecture. Busbars, connectors, branch protection, airflow, and downstream conversion stages must all have sufficient headroom.&lt;/p&gt;
-
-&lt;p&gt;Conversion efficiency also becomes increasingly important at scale. Nearly all electrical power lost during conversion ultimately becomes heat, and the location and thermal design of the conversion equipment determine where additional cooling may be needed. Efficiency across the expected operating range provides a more useful design measure than the peak rating alone.&lt;/p&gt;
-
-&lt;p&gt;For instance, a conversion stage delivering 30kW at 97 percent efficiency draws approximately 30.93kW, leaving about 0.93kW for the cooling system to remove. This example calculation shows why even a few percentage points of conversion loss matter in a high-power rack.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Design for Serviceability and Visibility&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Building resilience into a power architecture requires more than redundant hardware; it also demands service-friendly design and the visibility needed to detect issues early. Hot-pluggable power modules can be inserted or removed while the shelf remains energized. With sufficient redundant capacity and a supported replacement procedure, technicians can replace a failed module without shutting down the powered equipment. In an N+1 configuration, the remaining modules must carry the full load after input voltage, temperature, cooling, and derating limits are applied. Validation must cover normal operation, maintenance, and fault conditions.&lt;/p&gt;
-
-&lt;p&gt;Further adding visibility, telemetry provides power-system data for fault detection, troubleshooting, and maintenance. When combined with defined response procedures, this visibility helps operators detect and address emerging problems. Available telemetry may include electrical measurements, module status, temperature, and fault indications. Before selecting the telemetry interface, designers need to identify the required measurements and alarms and determine how that data will integrate with the existing management environment.&lt;/p&gt;
-
-&lt;p&gt;Telemetry can also support troubleshooting, trend analysis, and maintenance planning. Predictive maintenance, however, requires additional historical data, analytical models, and operational validation.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Newest Products for Your Newest Designs&lt;sup&gt;&amp;reg;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;The &lt;a href="https://www.mouser.com/en/new/bel-power/bel-power-data-solutions"&gt;Bel Power Solutions Data Solutions portfolio&lt;/a&gt; addresses multiple stages of data center power delivery. The portfolio includes AC-DC and DC-DC front-end power supplies ready to fit into hot-pluggable power shelves. These high-performance power supplies provide up to 28kW of power in a single power shelf within a single-busbar Open Rack V3 configuration, enabling designs to use more next-generation compute hardware per rack.&lt;/p&gt;
-
-&lt;p&gt;Each selected shelf, rack, controller, and distribution product must meet the applicable mechanical, electrical, communications, and power-interface requirements. General Open Compute Project (OCP) compatibility does not necessarily establish Open Rack V3 conformity or formal recognition as an OCP product.&lt;/p&gt;
-
-&lt;p&gt;Product selection, therefore, requires a review of documented Open Rack V3 compatibility, including:&lt;/p&gt;
-
-&lt;ul&gt;
- &lt;li&gt;output-voltage range,&lt;/li&gt;
- &lt;li&gt;power rating,&lt;/li&gt;
- &lt;li&gt;efficiency,&lt;/li&gt;
- &lt;li&gt;derating curves,&lt;/li&gt;
- &lt;li&gt;cooling requirements,&lt;/li&gt;
- &lt;li&gt;redundancy behavior,&lt;/li&gt;
- &lt;li&gt;current sharing,&lt;/li&gt;
- &lt;li&gt;busbar interface,&lt;/li&gt;
- &lt;li&gt;mechanical fit, addressing and management interfaces,&lt;/li&gt;
- &lt;li&gt;protection requirements, and&lt;/li&gt;
- &lt;li&gt;certifications.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Compatibility or compliance demonstrated within one product family should not be extended to the complete portfolio without product-specific documentation. Still, these front-end power supplies comply with UL/CSA/IEC/EN 62368-1 international safety standards and are available in various form factors to accommodate specific environments, operating within the -5&amp;deg;C to 65&amp;deg;C temperature range.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Tuesday&amp;rsquo;s Takeaway&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Supply capacity is only the starting point for a scalable 48V data center power architecture. Designers must balance efficiency, density, thermal performance, serviceability, redundancy, telemetry, and downstream distribution across the entire rack.&lt;/p&gt;
-
-&lt;p&gt;Modular shelves, hot-pluggable power modules, redundant configurations, and networked monitoring provide key building blocks for scalable designs. A well-planned architecture supports the initial deployment and reserves verified electrical, thermal, mechanical, protection, monitoring, and facility capacity for planned expansion.&lt;/p&gt;
-</description><guid isPermaLink="false">4681</guid></item><item><title>New Tech Tuesdays: Industrial Wi-Fi 7 for Factory Connectivity</title><link>https://www.mouser.com/blog/new-tech-industrial-wifi-7-for-factory-connectivity</link><category>AllAutomation,Industrial,New Tech Tuesdays,Wireless</category><pubDate>Tue, 29 Sep 2026 05:01:00 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1789661661/NTT_Sept22_wifi7_vl8vnn.jpg" style="height: 327px; width: 600px;" title="" /&gt;&lt;/p&gt;
-
-&lt;h2&gt;New Tech Tuesdays&lt;/h2&gt;
-
-&lt;h3&gt;&lt;em&gt;Join Mouser&amp;#39;s Technical Content team for a weekly look at all things interesting, new, and noteworthy for design engineers.&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Wireless connectivity has become a critical part of modern factory automation. Factory floors increasingly rely on mobile equipment such as autonomous mobile robots (AMRs) and automated guided vehicles (AGVs), all of which require continuous network access. Production lines and workcells must also adapt as products evolve and equipment is reconfigured. At the same time, many factory devices generate large volumes of data that must be transferred reliably.&lt;/p&gt;
-
-&lt;p&gt;In this week&amp;rsquo;s New Tech Tuesdays, we examine how Wi-Fi&lt;sup&gt;&amp;reg;&lt;/sup&gt; 7 technologies, such as Multi-Link Operation (MLO) and wider 6GHz channels, help address the throughput, latency, roaming, and reliability challenges of modern factory automation networks.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Wireless Performance in the Real World&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Wi-Fi 7 implements technologies defined in IEEE 802.11be, including MLO. It also supports channel widths of up to 320MHz in the 6GHz band, subject to device capabilities, available spectrum, and regional regulations. With MLO, a compatible device is not limited to a single wireless link. Wider channels increase the amount of data that the network can carry.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;In March 2026, the Wireless Broadband Alliance reported results from enterprise testing of MLO. Under interference, uplink throughput improved by as much as 116 percent. The trials also showed a 66 percent reduction in uplink latency for real-time traffic.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;As manufacturers become more dependent on these connected systems, throughput alone is no longer an adequate measure of wireless performance. A fast connection is of limited use if interference, congestion, or roaming between access points introduces unpredictable delays. Likewise, coverage alone does not guarantee the performance these applications require. Network design must also account for congestion, interference, roaming, and traffic fluctuations across the factory floor.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Why Factory Wi-Fi Is Different&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;The factory floor presents unique challenges for wireless communication. Metal structures and machinery can affect how radio signals propagate through a facility, and wireless devices or industrial equipment may introduce interference. The radio frequency (RF) environment can change as equipment moves or production conditions change.&lt;sup&gt;&lt;a href="#_edn3" name="_ednref3"&gt;[3]&lt;/a&gt;&lt;/sup&gt; As a result, a wireless network that performs well in one location or under light traffic may behave very differently when production is running at capacity.&lt;/p&gt;
-
-&lt;p&gt;It is the factory&amp;rsquo;s dynamic nature that makes interference management and spectrum utilization increasingly important. Networks also cannot rely on users being static. An AMR moving through a factory may pass through the coverage areas of several access points, so maintaining communication depends not only on signal strength but also on how efficiently the client can transition between them.&lt;/p&gt;
-
-&lt;p&gt;MLO changes how compatible devices use available wireless links. Instead of relying on a single link, data can be transmitted across multiple frequency bands simultaneously, thereby increasing throughput and reducing latency.&lt;/p&gt;
-
-&lt;p&gt;The 6GHz band provides additional spectrum for Wi-Fi operation. Wi-Fi 7 supports channel widths of up to 320MHz. Wider channels allow more data to be transmitted at once, although their use depends on available spectrum and regional regulations. Access point and antenna placement remain critical considerations when planning the facility layout. Higher wireless data rates require suitable wired backhaul to prevent bottlenecks elsewhere in the network. As more operational data moves across the wireless network, security also becomes a critical part of network design.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Newest Products for Your Newest Designs&lt;sup&gt;&amp;reg;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Bringing Wi-Fi 7 to the factory floor requires hardware designed for industrial installations.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href="https://www.mouser.com/en/new/advantech/advantech-eki-6333be-4gd-wi-fi-7-access-point"&gt;Advantech EKI-6333BE-4GD Industrial Wi-Fi 7 Access Point&lt;/a&gt; supports IEEE 802.11be operation across the 2.4GHz, 5GHz, and 6GHz bands. It also supports MLO, enabling compatible devices to use multiple wireless links as network conditions change.&lt;/p&gt;
-
-&lt;p&gt;For mobile applications, the EKI-6333BE-4GD supports IEEE 802.11r Fast Transition, which can reduce the time required for compatible clients to move between access points. This capability is particularly relevant to AMRs and AGVs that may travel through several coverage areas as they move around a facility.&lt;/p&gt;
-
-&lt;p&gt;The wired network infrastructure is equally important. Four 2.5GBASE-T Ethernet ports provide high-speed backhaul connectivity to the wider industrial network. The access point also supports Wi-Fi Protected Access 3 (WPA3)-Personal and WPA3-Enterprise security. The metal enclosure and wide operating temperature range of -40&amp;deg;C to +75&amp;deg;C make it well suited for demanding industrial environments. DIN-rail mounting and redundant 12V&lt;sub&gt;DC&lt;/sub&gt; to 48V&lt;sub&gt;DC&lt;/sub&gt; power inputs further support installation in industrial control environments.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Tuesday&amp;rsquo;s Takeaway&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Inside a factory, wireless networks must maintain reliable connections even as equipment moves and conditions change across the production floor. Wi-Fi 7 gives network designers greater flexibility in using the available spectrum. For mobile equipment, Fast Transition can reduce the time spent transitioning between access points. Together, these features help address practical challenges that become increasingly important as factories connect more of their equipment to wireless networks.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp; &amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;strong&gt;Sources&lt;/strong&gt;&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt; https://wballiance.com/wi-fi-7-phase-2-trials-mlo-latency&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt; https://wballiance.com/wba-validates-wifi-7-mlo-reliability-att-intel-ruckus/&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref3" name="_edn3"&gt;[3]&lt;/a&gt; https://www.nist.gov/programs-projects/industrial-wireless-systems&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">4673</guid></item></channel></rss>
+</description><guid isPermaLink="false">4686</guid></item></channel></rss>
