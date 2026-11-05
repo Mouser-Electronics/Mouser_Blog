@@ -1,4 +1,163 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=20" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>How ERVs Improve HVAC Efficiency and Indoor Air Quality</title><link>https://www.mouser.com/blog/how-ervs-improve-hvac-efficiency-indoor-air-quality</link><category>Industrial,Power,Sensors</category><pubDate>Fri, 30 Oct 2026 22:21:59 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/81ec5784-c452-4119-acb3-38db095d3d5a/Large/Adobe-Stock-1555396388-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=20" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>Machine Vision for Cobots and Industrial Sensors</title><link>https://www.mouser.com/blog/machine-vision-for-cobots-and-industrial-sensors</link><category>Automation,Industrial,Industrial Automation,Robotics</category><pubDate>Wed, 04 Nov 2026 22:28:45 GMT</pubDate><description>&lt;h2 style="color:##333333; font-style:italic; font-size:16px;"&gt;&lt;em&gt;Machine vision pairs with conventional sensing to make cobots more flexible&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/7b7cf430-f26a-4fcd-aa6e-c4a03590030e/Large/Adobe-Stock-2171891634-jpg.png" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: MstRowshanara/stock.adobe.com, generated with AI&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Conventional automation performs well when each object arrives in a known position and the workspace stays consistent. However, when the consistency changes, a programmed movement can no longer suit the task. This challenge is being felt more in today&amp;rsquo;s automation environments as collaborative robots (cobots) enter applications where part placement, human activity, and working environments can constantly change.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;A cobot can adjust if its control system receives enough information about what has changed. While confirmation that a part is present may be enough at a fixed loading point, this information provides less guidance when the part arrives in a different position or orientation. Therefore, machine vision adds information about the workspace to help cobot systems locate objects, identify visible features, and assess conditions before choosing their next action.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Our previous blog in this cobot series focused on the &lt;a href="https://www.mouser.com/en/blog/mobile-cobots-for-flexible-industrial-automation"&gt;automation workflows that benefit most from cobot mobility.&lt;/a&gt; Here, we explore how machine vision differs from conventional sensing, how visual data enables cobots to adapt their motion, and the critical design challenges engineers must address when implementing these systems in production environments.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;What Internal and External Sensors Tell the Cobot&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Cobots already use many internal sensors to control their movement. But external sensors provide data about the surrounding environment and physical interaction. For example, a proximity sensor indicates whether an object has entered a defined range, while a photoelectric sensor detects an object through changes in received light.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Each sensor data point informs the cobot on a very specific aspect of position, presence, or contact. Cameras are also sensors, with imaging able to support several measurements across a scene. In the case of a 2D camera, it records light intensity and, with a color sensor, color information. Software analyzes this data to identify features and object position within the image plane.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;3D vision systems add depth information. Software uses this information to estimate an object&amp;rsquo;s position and orientation in three-dimensional space. However, this estimate still depends on which surfaces are visible and how reliably the system measures them.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Simply adding more information does not make vision the best choice for every cobot. Sometimes, a proximity sensor can provide a more reliable presence check. Vision can estimate where contact should occur, but force sensing measures the actual interaction.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Therefore, complementary sensing assigns each method a clear role, where vision identifies and locates the object, internal feedback controls movement, contact sensors verify interaction, and safety-rated devices support protective functions.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Adaptive Navigation Uses Vision to Adapt the Robot&amp;rsquo;s Motion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In a scenario where different parts in an industrial factory are arriving at different positions and angles on a work surface, a fixed robot program expects each part at predetermined coordinates. If its placement changes, the programmed approach can miss the target. Vision enables the cobot to adjust its approach based on the observed position and orientation.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The workflow starts by capturing an image or 3D depth information. Next, software separates the objects from their backgrounds, identifies relevant features, and calculates the locations and orientations. A calibrated system converts this information into the robot&amp;rsquo;s coordinates.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;For parts identified on a known plane, 2D vision can locate their position and planar rotation. Different characteristics like shape, color, labels, and edges can be useful for identification, while visible surface defects can be used for inspection. But when these parts vary in height, tilt, or overlap, 3D vision comes into play to add depth information required to understand the setup.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Furthermore, artificial intelligence (AI)-based vision can classify objects with variable appearances or identify features that are difficult to describe using fixed image-processing rules.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Designing the Vision System for Real-World Production Conditions&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Designing a reliable vision system for cobots requires carefully accounting for environmental variables on the factory floor. In a real operating factory floor, changing ambient light, glare, reflections, and shadow can alter the features visible to the camera. For example, transparent surfaces may reveal the background while dark surfaces return little light.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Camera placement determines what information can be processed. A fixed camera provides a stable view of a larger workspace, but the robot or neighboring parts may create blind spots. Each measurement must be associated with the arm&amp;rsquo;s position at capture, using a calibrated relationship between the camera and the robot.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Selection starts with understanding the required field of view and working distance. These determine how much of the scene is covered and how many pixels represent a critical feature.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;With a wider view at the same pixel count, the vision system reduces spatial detail. For 3D systems, depth accuracy needs to meet the task tolerance over the required range and production surfaces. Additionally, frame rates determine how often observations are available.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Image or depth data can improve feature detection, but it also increases bandwidth and latency requirements. For a moving object, delayed coordinates relay an earlier position. For example, at 0.5m/s, a 40ms delay corresponds to 20mm of travel. In the case of stationary parts, processing delays still consume cycle time.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Ultimately, the complete sensing system should be selected from the information and accuracy the task requires. The most advanced camera adds value only when its capabilities resolve a relevant uncertainty under production conditions.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;As working environments constantly change, leveraging the right mix of sensory data is critical for operational success. Adding cameras to the sensing design is not an either/or choice. Conventional sensors are effective for precise, limited measurements and vision provides the spatial and contextual information cobots need to handle variation. The strongest cobot systems support automated operations by combining vision with different internal sensors, depending on the task.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;The last part of this cobot blog series will review the various end effectors and discuss the ideal applications for each within industrial environments.&lt;/p&gt;
+</description><guid isPermaLink="false">4834</guid></item><item><title>New Tech Tuesdays: Combining HMI Processing and Real-Time Control on One MCU</title><link>https://www.mouser.com/blog/new-tech-combining-hmi-processing-real-time-control-one-mcu</link><category>All,Automation,Computing,Industrial,Low Power,Medical,Memory,Motor Control,New Tech Tuesdays,Sensors</category><pubDate>Tue, 03 Nov 2026 06:01:00 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1793290593/NTT_Nov3_hmi_processing_italmn.jpg" style="height: 327px; width: 600px;" title="" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;New Tech Tuesdays&lt;/h2&gt;
+
+&lt;h3&gt;&lt;em&gt;Join Mouser&amp;#39;s Technical Content team for a weekly look at all things interesting, new, and noteworthy for design engineers.&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;High-resolution displays are common in everyday life, being integrated into applications ranging from medical and industrial equipment to consumer appliances. As these human-machine interfaces (HMIs) become more sophisticated, they increasingly combine displays, touch controls, voice interaction, and local data processing. While these advancing features give users a better experience, the equipment controlled by these interfaces still needs to perform its primary functions reliably and respond to events in real time.&lt;/p&gt;
+
+&lt;p&gt;What is changing amid this evolution is how much of the work a microcontroller unit (MCU) can handle by itself. GHz-class processing, vector acceleration, larger amounts of on-chip memory, and multicore architectures are expanding how much HMI processing, local analytics, and real-time control designers can handle on a single MCU.&lt;/p&gt;
+
+&lt;p&gt;Combining these requirements can make embedded systems more complex. Designers need enough processing performance for graphics and data analysis while still maintaining deterministic control of sensors, motors, and other hardware. While previous generations of equipment might have required multiple processors or moving from an MCU to a more powerful application processor, newer, higher-performance MCUs are beginning to shift that boundary between functions.&lt;/p&gt;
+
+&lt;p&gt;This week&amp;rsquo;s New Tech Tuesdays reveals how advanced microcontrollers are blurring the lines with application processors, the architectural benefits of bringing more processing onto a single device, and how the latest MCU designs are transforming modern embedded systems.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Bringing More Processing onto the MCU&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;Traditionally, MCUs have been optimized for control. Integrating processing, memory, and peripherals has made them a good fit for applications that require predictable responses and direct interaction with hardware. Application processors support more compute-intensive workloads and feature-rich operating systems such as Linux, while MCUs are designed around embedded control and deterministic response.&lt;/p&gt;
+
+&lt;p&gt;As embedded HMIs have become more capable, the distinction between these two solutions has become less clear. Modern MCUs can combine GHz-class processing with large amounts of embedded memory in hardware designed to accelerate demanding workloads.&lt;/p&gt;
+
+&lt;p&gt;Some of the extra processing power goes toward jobs that once needed additional hardware. For example, audio and sensor data involve repetitive calculations that vector processing can handle efficiently. The same hardware is also useful for machine learning (ML) workloads, such as voice recognition and equipment monitoring.&lt;/p&gt;
+
+&lt;p&gt;Multicore devices give designers another way to manage the competing demands. HMI processing might run on one core, while the other responds to sensors or controls a motor. Separating those jobs helps prevent a busy interface or processing task from interfering with tasks that need predictable timing. Meanwhile, keeping more functions on one device can reduce the number of components on the board and how much communication is needed between processors.&lt;/p&gt;
+
+&lt;p&gt;Combining workloads this way requires careful allocation of processing time, memory, and peripherals. The question for designers is becoming more about whether the HMI and local processing workload actually require a separate application processor.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Newest Products for Your Newest Designs&lt;sup&gt;&amp;reg;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="https://www.mouser.com/en/new/renesas/renesas-ra8m2-microcontrollers/"&gt;Renesas RA8M2 microcontrollers&lt;/a&gt; demonstrate how this new generation of high-performance MCUs can support greater integration. Built around a 1GHz Arm&lt;sup&gt;&amp;reg;&lt;/sup&gt; Cortex&lt;sup&gt;&amp;reg;&lt;/sup&gt;-M85 core, the RA8M2 provides the processing performance needed for demanding embedded applications while retaining an MCU architecture suited to real-time control.&lt;/p&gt;
+
+&lt;p&gt;The Cortex-M85 includes Arm Helium&amp;trade; technology, providing vector processing capabilities that can accelerate digital signal processing (DSP) and ML workloads, enabling applications such as audio processing, local analytics, and other compute-intensive functions to operate alongside conventional embedded control tasks. Selected RA8M2 devices also include a 250MHz Cortex-M33 core, giving designers another way to partition workloads within the same MCU.&lt;/p&gt;
+
+&lt;p&gt;Large integrated memory further supports this approach. With up to 1MB of magnetoresistive random-access memory (MRAM) and 2MB of static random-access memory (SRAM), the RA8M2 can accommodate application code and working data while reducing reliance on external memory. A parallel camera interface and a broad range of communications and peripheral interfaces also allow the MCU to connect directly with many of the devices used by modern embedded systems.&lt;/p&gt;
+
+&lt;p&gt;The RA8M2 is targeted at applications where designers need to combine responsive interfaces, connectivity, and local processing while still handling the real-time control expected from an MCU.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Tuesday&amp;rsquo;s Takeaway&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;As advanced microcontrollers continue to transform embedded system architecture, high-performance MCUs are changing where designers draw the line between an MCU and an application processor. As MCUs take on more HMI and data-processing work, designers have more options for keeping those functions alongside real-time control. In some systems, that means an MCU may now be enough.&lt;/p&gt;
+</description><guid isPermaLink="false">4829</guid></item><item><title>Bringing Sensor Intelligence to Legacy Industrial Machines</title><link>https://www.mouser.com/blog/bringing-sensor-intelligence-legacy-industrial-machines</link><category>Automation,Industrial,Industrial Automation,Sensors</category><pubDate>Tue, 03 Nov 2026 05:29:51 GMT</pubDate><description>&lt;h2 style="color:##333333; font-style:italic; font-size:16px;"&gt;&lt;em&gt;How connectivity, motor monitoring, and vision inspection add capabilities to legacy industrial equipment.&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/6e99cfc5-f228-4c5d-b6f7-641090cba084/Large/Adobe-Stock-2207369132-jpg.png" style="height: 436px; width: 600px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: Ahmed/stock.adobe.com, generated with AI&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Industrial machines often remain mechanically reliable for decades but, over time, provide very limited information about their current operating condition and performance. Operators may believe that production is continuing normally even when they lack sufficient information to detect developing equipment issues or declining performance.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Replacing legacy industrial equipment can be difficult to justify when the production process continues to operate effectively. Beyond the capital expenditure, replacement comes with downtime, installation, and commissioning before production can resume.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Brownfield modernization adds capabilities to existing industrial equipment and infrastructure. When appropriate automation technologies are implemented, engineers can address specific operational limitations while retaining valuable assets.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In the first part of this blog series on updating brownfield operations, we examine three practical retrofit approaches: connecting isolated machines, monitoring motors, and adding vision inspection to production lines. Other options include energy monitoring, human-machine interface (HMI) upgrades, and asset tracking, but these three practical approaches demonstrate how manufacturers can improve visibility into machine operation, equipment condition, and product quality.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Data Access Paths That Fit Existing Infrastructure&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Production counts can track output, but fault information explains why a cycle stopped. If the question is whether a shaft is rotating, a motor run command only shows that the controller requested movement. Each requirement calls for information that answers the question at the necessary update rate.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Choosing a data access method starts with understanding what the manufacturer needs to know about the machine.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Some of this information may already be stored in the programmable logic controller (PLC), machine controller, or installed instruments, even when the equipment is disconnected from plant information systems. Before using these values, engineers need to understand their source and what they represent. This includes verifying how a measurement is converted to engineering units and whether it updates frequently enough for the intended application.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;A supported controller interface can provide this information, and a compatible gateway can provide access when the installed equipment uses an older interface. However, a gateway only makes existing data accessible. Additional sensing can help when the required measurement is unavailable.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The controller requires checking interface support, documentation, available communication capacity, and the polling frequency. Even read requests consume resources. Requesting information too frequently can affect controller performance. Engineers should acquire only the necessary information at a rate suited to the application.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Commissioning should confirm that measured values align with observed machine conditions. Other factors that influence the choice include installation costs, permitted network access, cybersecurity exposure, commissioning time, and recovery arrangements.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Engineers should choose the least intrusive access method that provides adequate information for the intended application.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Match Motor Monitoring to the Behavior Needing Detection&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Monitoring vibration and temperature helps maintenance teams identify changes in equipment condition that might otherwise go unnoticed. But adding these measurements to existing industrial machines can provide earlier indication of potential problems without replacing the equipment or its control system.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Let&amp;rsquo;s suppose an existing motor driving a centrifugal pump that maintenance teams inspect periodically.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Adding monitoring solutions starts with the behavior to be observed. If the concern is a change in bearing vibration, an accelerometer mounted near the bearing housing can provide relevant information, while a temperature sensor can track heating at that location. These measurements offer different views of the pump. A change in any one does not necessarily indicate deterioration.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The usefulness of these measurements depends heavily on how they are installed. For example, an accelerometer attached to a loose cover may not capture the actual bearing housing vibration. However, a stiff mounting will improve mechanical coupling, and consistent thermal contact will help a temperature sensor follow the measured surface.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;How the data is collected also depends on the behavior being observed. To capture rapid vibration, the sensor and acquisition system need enough bandwidth and sampling rate. Anti-alias filtering prevents higher-frequency signals from appearing as false lower-frequency components in the recorded data. If the system retains only an overall vibration metric, the original time waveform and most of the frequency-domain detail are unavailable for later analysis.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;After installation, engineers need to establish how measurements vary under normal operating conditions. Baselines should include representative speeds and loads, as these conditions can affect readings even when the machine has not deteriorated. Startup and idle measurements should be treated separately from steady-state operation.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;More advanced analysis becomes useful when the installation provides reliable evidence of abnormal behavior.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Fit Vision Inspection Into the Existing Constraints&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Adding machine vision to an existing production line enables manufacturers to automate quality checks. For example, a camera captures an image, inspection software analyzes it against specified criteria, and the result can then be sent to an existing control system to identify or reject defective products.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;For an existing industrial packaging line where a camera will check for label presence and read an identification code, the inspection task determines where the camera should be integrated and what it needs to see. The field of view needs to cover the label position and retain sufficient image detail to read the code.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Lighting is an important aspect of the vision system. Available mounting space and working conditions can constrain this arrangement. For example, a camera mounted on a vibrating guard moves relative to the product, and inconsistent part presentation can place labels outside the focus range. Therefore, the camera and light require stable mounts.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;When the relevant part reaches the inspection position, the camera should capture the feature before movement blurs the image. While the part sensor triggers the capture, a short exposure can limit how far the product moves during capture because shorter exposure reduces the light collected.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;The inspection result should be integrated with the existing controls. If a reject mechanism sits downstream, the controls need to follow that part from inspection to rejection and allow time for the mechanism to respond. Encoder feedback can help coordinate this action with conveyor travel when speed changes.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Commissioning should confirm that this sequence works through line speed changes, lighting variation, unreadable codes, and missing results.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;A brownfield upgrade should begin with the operational uncertainty the manufacturer needs to resolve. Once that question is clear, engineers can select a capability that provides reliable evidence while working within existing infrastructure constraints.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;The retrofit should leave operators and maintenance teams with equipment they can understand, verify, and maintain as part of their everyday operations.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;In the next part of this blog series, we examine practical examples of how machine data can support brownfield modernization efforts.&lt;/p&gt;
+</description><guid isPermaLink="false">4831</guid></item><item><title>How ERVs Improve HVAC Efficiency and Indoor Air Quality</title><link>https://www.mouser.com/blog/how-ervs-improve-hvac-efficiency-indoor-air-quality</link><category>Industrial,Power,Sensors</category><pubDate>Fri, 30 Oct 2026 22:21:59 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/81ec5784-c452-4119-acb3-38db095d3d5a/Large/Adobe-Stock-1555396388-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: Evgenii Bakhchev/stock.adobe.com&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
 
@@ -858,7 +1017,7 @@ Jean-Jacques (JJ) DeLisle attended the Rochester Institute of Technology, where 
 
 &lt;p style="margin-top:16px; margin-bottom:11px"&gt;However, successful deployment depends on more than combining an AMR with a robotic arm. Engineers must account for travel time, docking accuracy, payload limits, battery management, and recovery logic to ensure reliable operation across the entire workflow. When these factors are addressed, mobile cobots can reduce manual handoffs, improve resource utilization, and provide a flexible alternative to fixed automation infrastructure.&lt;/p&gt;
 
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;In the next installation of our cobot blog series, we turn our attention toward the advanced vision systems giving cobots enhanced depth perception and more precise object recognition.&lt;/p&gt;
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;In the next installation of our cobot blog series, we turn our attention toward the &lt;a href="https://www.mouser.com/en/blog/machine-vision-for-cobots-and-industrial-sensors"&gt;advanced vision systems &lt;/a&gt;giving cobots enhanced depth perception and more precise object recognition.&lt;/p&gt;
 </description><guid isPermaLink="false">4697</guid></item><item><title>Selecting Anti-Vandal Switches for Industrial Control Panels</title><link>https://www.mouser.com/blog/selecting-anti-vandal-switches-industrial-control-panels</link><category>Industrial Automation</category><pubDate>Thu, 01 Oct 2026 21:32:22 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/d9fa8b4b-8e0f-4923-9c26-71fe31ce7975/Large/Adobe-Stock-284636772-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;(Source: Nuttapon/stock.adobe.com)&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
@@ -989,271 +1148,4 @@ Jean-Jacques (JJ) DeLisle attended the Rochester Institute of Technology, where 
 
 &lt;p&gt;&lt;i&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://www2.eecs.berkeley.edu/Pubs/TechRpts/2006/EECS-2006-183.html&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
 &lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://arxiv.org/pdf/1907.02064; https://people.eecs.berkeley.edu/~ysshao/assets/papers/shao2016-dissertation.pdf&lt;/em&gt;&lt;/small&gt;&lt;/i&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">4008</guid></item><item><title>Choosing Between Domain-Specific and General Purpose AI Models</title><link>https://www.mouser.com/blog/choosing-between-domain-specific-general-purpose-ai-models</link><category>Computing,General,Medical</category><pubDate>Wed, 30 Sep 2026 17:53:49 GMT</pubDate><description>&lt;h2 style="color:##333333; font-style:italic; font-size:16px;"&gt;&lt;em&gt;When specialized models outperform general-purpose ones&lt;/em&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/4becef30-c926-4135-a37e-ff5de93362e9/Large/Adobe-Stock-1798511489-jpg.png" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: Father_Studio/stock.adobe.com&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;As AI tools spread across industries, a clear distinction has emerged between general-purpose models built for broad linguistic and reasoning tasks and domain-specific models optimized for narrow, high-stakes applications. This blog defines what makes a model &amp;quot;domain-specific&amp;quot; and examines how targeted training data, fine-tuning approaches, and evaluation criteria differ from their general counterparts. Use cases in law, medicine, and finance illustrate where specialization delivers measurable advantages and where it introduces new constraints related to flexibility and maintenance costs.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;What Makes a Model Domain-Specific&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;General-purpose models are trained on a broad mix of internet text, code, and books, then tuned to follow instructions across a wide range of tasks. A model becomes domain-specific when it is fine-tuned or trained from scratch on domain-relevant datasets typically compiled by subject-matter experts. Domain-specific models are also evaluated using benchmarks designed for the specific field rather than the broader tasks used to assess general-purpose models.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Fine-tuning adapts a model with general language and reasoning capabilities by exposing it to more specialized data and adjusting its parameters, for example, via Low-Rank Adaptation (LoRA) to shift its behavior toward a specific domain. This approach works well when the base model already contains most of the relevant knowledge, and what is missing is domain-specific vocabulary or task-specific judgment. By contrast, training a model from scratch requires a custom mix of domain-specific and general text so the model learns language structure, general knowledge, and domain knowledge simultaneously from the training data. The dataset must therefore be large and diverse enough to teach the model to write coherently while also developing the required specialization. This approach is appropriate when a domain&amp;#39;s vocabulary, structure, or proprietary data is sufficiently distinct that no existing model has adequate prior knowledge of it.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;There are also approaches that fall between these two, as illustrated by the real-world examples that follow. Regardless of the approach, the decision to use a domain-specific model may be driven by the need to host AI systems internally due to data privacy or regulatory constraints. The most capable general-purpose models may outperform domain-specific alternatives, but they are not always easy to use. Many are too large to host internally, making self-hosting impractical. In some cases, self-hosting those models is not possible because their parameters are proprietary and not publicly released. In other words, the model cannot be run outside the provider&amp;#39;s infrastructure. In these situations, smaller general-purpose models fine-tuned for a specific domain can serve as a practical alternative. While self-hosting comes with added costs for infrastructure and for building the right datasets for training and evaluation, it can give companies complete control over the deployed models and the data that runs through them.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Real World Examples&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;BloombergGPT, a finance-focused large language model (LLM), demonstrates the from-scratch approach. Trained on a 700-billion-token mix of general and domain-specific data, it beat similarly sized open models on financial tasks by wide margins. For example, it scored 43.41 percent versus 30.06 percent on ConvFinQA, a benchmark that tests multi-step numerical reasoning in conversational finance question answering, and 75.07 percent versus 50.59 percent on FiQA SA, a financial sentiment analysis benchmark, while remaining competitive on general-purpose benchmarks.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt; FinGPT took a lower-cost approach, fine-tuning an existing open model with LoRA, and reportedly matched or outperformed BloombergGPT on several tasks at considerably lower training cost.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt; A separate evaluation later found that BloombergGPT underperformed newer general-purpose models released after it, suggesting that a domain-specific model&amp;#39;s advantage can narrow as general-purpose models continue to improve.&lt;sup&gt;&lt;a href="#_edn3" name="_ednref3"&gt;[3]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Medicine illustrates a related dynamic. Med-PaLM 2, fine-tuned specifically on medical question-answering data, achieved 86.5 percent accuracy on a dataset of questions similar to those on the United States Medical Licensing Examination (USMLE), making it the first model to reach expert-level performance on that benchmark.&lt;sup&gt;&lt;a href="#_edn4" name="_ednref4"&gt;[4]&lt;/a&gt;&lt;/sup&gt; GPT-4, a general-purpose model with no medical fine-tuning, then reached 90.2 percent on the same benchmark using prompting techniques alone. Microsoft researchers found that a sufficiently capable general-purpose model, when prompted effectively, could match or exceed the performance of specialized medical fine-tuning across several benchmarks.&lt;sup&gt;&lt;a href="#_edn5" name="_ednref5"&gt;[5]&lt;/a&gt;&lt;/sup&gt; Their findings show that a sufficiently large general-purpose model can eliminate most of the performance advantage that domain-specific fine-tuning was designed to provide, at least for knowledge already well represented in publicly available medical literature.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Law presents a third approach. Harvey, used across major law firms, does not train a single model from scratch. Instead, it routes each request through a combination of fine-tuned and general-purpose models, supplemented by retrieval systems that draw on case law, filings, and firm-specific documents.&lt;sup&gt;&lt;a href="#_edn6" name="_ednref6"&gt;[6]&lt;/a&gt;&lt;/sup&gt; In an independent benchmark, Harvey&amp;#39;s tools outperformed a human lawyer baseline on most tasks tested, including document question-answering and document extraction.&lt;sup&gt;&lt;a href="#_edn7" name="_ednref7"&gt;[7]&lt;/a&gt;&lt;/sup&gt; Harvey&amp;#39;s design shows that domain specialization can be achieved through an orchestration layer of routing, retrieval, and fine-tuning built around general-purpose models, rather than through a single specialized model.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Limits of Domain-Specific Training&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Two of the three examples above follow the same pattern. BloombergGPT&amp;#39;s advantage over open models narrowed once newer general-purpose models became available, and Med-PaLM 2&amp;#39;s advantage over an untuned GPT-4 disappeared once prompting techniques improved. Domain-specific training can produce an accuracy advantage at a given point in time, though not always a lasting one, since general-purpose models continue to incorporate more of the public knowledge that previously required specialization to access. In addition, a domain-specific model will still require retraining or fine-tuning whenever its field changes, such as when new case law is introduced or treatment guidelines are updated. Harvey&amp;#39;s approach, which routes requests through a combination of general-purpose and domain-specific fine-tuned models selected according to the task, with retrieval systems providing access to relevant documents, indicates the direction several fields are likely to move toward.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Domain-specific and general-purpose models differ in how they are built and evaluated. Domain-specific models are created by fine-tuning an existing model or training one from scratch to better align with a field&amp;#39;s vocabulary and task-specific requirements. They also require domain-specific evaluation methods, tailored to the domain, often requiring practitioners in the field to assess outputs and construct evaluation sets, rather than relying on generic benchmarks.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;In practice, domain-specific models can sometimes achieve higher accuracy than general-purpose alternatives. However, as general-purpose models improve and prompting techniques advance, that performance gap tends to narrow. Even so, there are other reasons for choosing a domain-specific model. Data privacy requirements, regulatory obligations, or other operational constraints may prevent organizations from using externally hosted AI services. In these situations, developing an internal domain-specific model may be justified, even if a larger general-purpose model would otherwise perform better.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Choosing that path, however, also means accepting responsibility for keeping the domain-specific system current as the field evolves. The decision between general-purpose and domain-specific, therefore, comes down to identifying which constraints apply to a given situation before committing to either approach.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://arxiv.org/abs/2303.17564&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://arxiv.org/pdf/2505.19819&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref3" name="_edn3"&gt;[3]&lt;/a&gt;&amp;nbsp;https://arxiv.org/pdf/2401.14777&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref4" name="_edn4"&gt;[4]&lt;/a&gt;&amp;nbsp;https://www.nature.com/articles/s41591-024-03423-7&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref5" name="_edn5"&gt;[5]&lt;/a&gt;&amp;nbsp;https://www.microsoft.com/en-us/research/blog/advances-in-run-time-strategies-for-next-generation-foundation-models/&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref6" name="_edn6"&gt;[6]&lt;/a&gt;&amp;nbsp;https://help.harvey.ai/articles/what-ai-models-does-harvey-use&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref7" name="_edn7"&gt;[7]&lt;/a&gt;&amp;nbsp;https://www.vals.ai/industry-reports/vlair-2-27-25&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">4687</guid></item><item><title>AGVs or AMRs for Material Handling</title><link>https://www.mouser.com/blog/agvs-or-amrs-for-material-handling</link><category>Automation,Computing,Industrial,Industrial Automation,Low Power,Robotics,Sensors,Wireless</category><pubDate>Wed, 30 Sep 2026 17:33:39 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/0908e605-ed1e-44fd-b644-88083c4d3661/Large/Adobe-Stock-886415861-jpg.png" style="height: 436px; width: 600px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;(Source: Anna/stock.adobe.com; generated with AI)&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:16px"&gt;Automated guided vehicles (AGVs) and autonomous mobile robots (AMRs) are both important technologies in industrial automation, but they address operational challenges in fundamentally different ways. Each brings its own set of strengths, weaknesses, and design choices that influence how it integrates into a facility.&lt;/p&gt;
-
-&lt;p style="border:none; margin-top:16px; margin-bottom:16px"&gt;For decision-makers, choosing the right platform affects everything from infrastructure investment to long-term scalability. In this article, we examine the key differences between AGVs and AMRs and the factors that engineers and operations managers should consider when selecting a platform to meet both current and future operational requirements.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Navigational Differences Between AGVs and AMRs&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:16px"&gt;One core difference between AGVs and AMRs is their navigation. AGVs generally follow fixed guidance systems, such as magnetic tape, floor-embedded wires, optical markers, laser reflectors, or other facility-based references, to move materials along predetermined routes. Vehicle movement typically follows predetermined paths, and fleet coordination is often managed by a centralized control system. AGVs use sensors for functions such as localization, motion control, obstacle detection, docking, and safety monitoring, but navigation typically follows predetermined routes rather than relying on dynamic path planning.&lt;/p&gt;
-
-&lt;p style="margin-bottom:16px"&gt;An AMR, on the other hand, uses onboard sensing and processing to localize itself and navigate within its operating environment. Using lidar, stereo or depth cameras, ultrasonic sensors, and sensor-fusion algorithms, it localizes itself and dynamically plans routes. AMRs also use simultaneous localization and mapping (SLAM) to adapt in real time, rerouting around unexpected obstacles without operator input.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Differences in Architecture and Integration&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:16px"&gt;The different navigation models lead to significant differences in system architecture and in facility integration.&lt;/p&gt;
-
-&lt;p style="margin-bottom:16px"&gt;In an AGV system, route planning typically begins during facility design, and vehicles operate on predefined routes and guidance methods. Depending on the navigation technology, route changes may require physical modifications, software updates, or both, which can disrupt planning and operation. System integration focuses on ensuring the supervisory control system can reliably monitor vehicle status, manage start/stop commands, and coordinate with production schedules.&lt;/p&gt;
-
-&lt;p style="margin-bottom:16px"&gt;AMRs replace much of this physical guidance infrastructure with digital mapping and wireless communication. Rather than requiring changes to the physical floor layout, AMRs can often accommodate route and workflow changes by updating maps, mission parameters, or system configuration. Because they operate dynamically, they require reliable edge computing resources and tight integration with warehouse management or enterprise resource planning systems.&lt;/p&gt;
-
-&lt;p style="margin-bottom:16px"&gt;However, AMR sensor arrays and navigation software generate and process large volumes of data, so system designers must plan for sufficient bandwidth and processing power to support real-time decision-making. AMRs can also read pick lists from boxes and determine their destination (e.g., the shipping area, a specific cell, or a warehouse) based on the box&amp;rsquo;s contents.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;How Navigation Architecture Shapes Safety&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:16px"&gt;Navigation architecture directly affects safety-system design. Because AGVs follow predictable routes at controlled speeds, engineers can define fixed safety zones and focus obstacle detection on immediate path clearance and emergency stopping.&lt;/p&gt;
-
-&lt;p style="margin-bottom:16px"&gt;AMRs, by contrast, select routes dynamically, so their safety systems must account for a broader range of operating conditions. Their sensors must detect obstacles, respond proportionally, and coordinate with other autonomous systems in the area. Although these demands increase the complexity of both hardware validation and software safety protocols, they also enable AMRs to operate in dynamic environments.&lt;/p&gt;
-
-&lt;p style="margin-bottom:16px"&gt;Regardless of the platform, safety measures must comply with applicable industry standards. For example, ANSI/ITSDF B56.5 addresses safety requirements for driverless, automated guided industrial vehicles and the automated functions of manned industrial vehicles, while ISO 3691-4 addresses safety requirements for driverless industrial trucks, including AGVs and AMRs. ISO 10218-2 provides safety requirements for industrial robot applications and robot cells. RIA R15.08 addresses safety considerations for industrial mobile robots. Additionally, guidance on capabilities such as dynamic obstacle avoidance and artificial intelligence (AI)-based control continues to evolve.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Where AGVs Are a Better Fit&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:16px"&gt;While AMRs attract attention for their flexibility, AGVs remain well-suited to stable, highly structured environments. Manufacturing lines with fixed routes and repetitive material-handling tasks benefit from AGVs&amp;rsquo; predictable operation. Once installed, AGVs operate with consistent timing and minimal variability. Their simpler electronics and lower computational demands also reduce maintenance complexity and, under stable operating conditions, contribute to a longer service life.&lt;/p&gt;
-
-&lt;p style="margin-bottom:16px"&gt;Facilities that rarely need to implement route changes can benefit significantly from this predictability. Because AGVs follow predefined routes, they can often operate for extended periods with routine maintenance and consistent performance. In applications where efficiency depends more on repetition than adaptability, the guided model is a practical material-handling solution.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Where AMRs Deliver Greater Operational Flexibility&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:16px"&gt;AGVs&amp;rsquo; predictability becomes less advantageous when routes, obstacles, and workflows change frequently. AMRs excel in more dynamic environments, such as distribution centers and fulfillment hubs. Because they navigate using real-time perception and route planning, route modifications and layout changes can often be implemented more easily than in fixed-path systems, although broader workflow changes may still require configuration, validation, and integration. For example, if a pallet blocks an aisle, an AMR can calculate an alternative path instead of stopping until the obstruction is removed. This flexibility makes AMRs well-suited for environments where routes, layouts, and traffic patterns change frequently.&lt;/p&gt;
-
-&lt;p style="margin-bottom:16px"&gt;AMRs&amp;rsquo; strength comes from advanced sensing and processing capabilities. They can identify moving objects, track their trajectories, and adjust to maintain safe, efficient travel. Their ability to operate without halting for minor obstructions significantly improves throughput in fast-paced facilities. However, this capability depends on advanced sensing hardware and high-performance computing to make decisions quickly enough to avoid collisions and maintain workflow efficiency.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;A Decision Framework for Selecting AGVs or AMRs&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:16px"&gt;Deciding between AGVs and AMRs ultimately comes down to balancing current operational requirements with anticipated workflow changes (&lt;strong&gt;Table 1&lt;/strong&gt;). For facilities with fixed, repetitive material-handling tasks and stable layouts, AGVs can offer a lower total cost of ownership and reliable long-term performance. Operations that prioritize adaptability may benefit from AMRs, which provide the flexibility to respond to changing production demands, facility layouts, or order-fulfillment patterns without physical reconfiguration.&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Table 1:&lt;/strong&gt;Decision factors for AGVs vs. AMRs&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;table border="1" cellpadding="1" cellspacing="1" class="TableNormal" style="border-collapse:collapse;border-color:currentcolor;border-image:none;border-style:none;border-width:medium;margin-left:1px;width:600px;"&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th scope="col" style="border-width: 1px; border-style: solid; border-color: rgb(117, 117, 117); padding: 0in 0in 0in 0.1in;" valign="top"&gt;
-   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Decision Factor&lt;/span&gt;&lt;/p&gt;
-   &lt;/th&gt;
-   &lt;th scope="col" style="border-width: 1px 1px 1px medium; border-style: solid solid solid none; border-color: rgb(117, 117, 117) rgb(117, 117, 117) rgb(117, 117, 117) currentcolor; padding: 0in 0in 0in 0.1in;" valign="top"&gt;
-   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;AGVs&lt;/span&gt;&lt;/p&gt;
-   &lt;/th&gt;
-   &lt;th scope="col" style="border-width: 1px 1px 1px medium; border-style: solid solid solid none; border-color: rgb(117, 117, 117) rgb(117, 117, 117) rgb(117, 117, 117) currentcolor; padding: 0in 0in 0in 0.1in;" valign="top"&gt;
-   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;AMRs&lt;/span&gt;&lt;/p&gt;
-   &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:1px solid #757575" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Navigation&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Fixed guidance infrastructure&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Dynamic navigation using maps and sensors&lt;/p&gt;
-   &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:1px solid #757575" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Route changes&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Usually require physical modifications&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Usually handled through software or digital mapping&lt;/p&gt;
-   &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:1px solid #757575" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Obstacle response&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Detect and stop&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Detect, evaluate, and reroute&lt;/p&gt;
-   &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:1px solid #757575" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Computing requirements&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Lower&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Higher&lt;/p&gt;
-   &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:1px solid #757575" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Best fit&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Stable, repetitive workflows&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Dynamic, frequently changing workflows&lt;/p&gt;
-   &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:1px solid #757575" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Primary infrastructure needs&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Tape, wires, markers, or similar guidance&lt;/p&gt;
-   &lt;/td&gt;
-   &lt;td style="border-bottom:1px solid #757575; padding:0in 0in 0in .1in; border-top:none; border-right:1px solid #757575; border-left:none" valign="top"&gt;
-   &lt;p class="TableText" style="margin-bottom:4px"&gt;Wireless networking, charging infrastructure, maps, fleet-management systems, workstation interfaces, and facility integration&lt;/p&gt;
-   &lt;/td&gt;
-  &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p style="margin-bottom:16px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p style="margin-bottom:16px"&gt;The decision also has implications for integration and support infrastructure. AGVs require less data handling but more physical guidance infrastructure. AMRs reduce physical installation requirements but place greater demands on networking, computing, and IT integration.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Emerging Trends in Mobile Robotics&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:16px"&gt;Emerging technologies are narrowing the gap between AGVs and AMRs. For example, advances in low-power processing, AI navigation algorithms, and sensor miniaturization are making AMRs more cost-effective. Meanwhile, AGVs are adopting enhanced perception systems that provide limited autonomy while retaining their guided model.&lt;/p&gt;
-
-&lt;p style="margin-bottom:16px"&gt;Moving forward, advances in connectivity will enhance both platforms by enabling faster data exchange and more robust sensor integration. As mobile robotics evolves, AMRs are likely to remain well-suited to operations that prioritize adaptability, while AGVs will continue to support high-throughput, predictable workflows that rely on fixed infrastructure. Hybrid approaches may enable facilities to combine predictable transport on stable routes with autonomous navigation in dynamic environments.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:16px"&gt;The choice between AGVs and AMRs is not simply a matter of fixed versus flexible navigation. Rather, it reflects decisions about how a facility invests in physical infrastructure, sensing, computing, networking, safety, and system integration.&lt;/p&gt;
-
-&lt;p style="margin-bottom:16px"&gt;AGVs deliver the greatest value when routes and workflows remain stable, while AMRs are better suited to environments that require frequent operational changes. As these technologies continue to evolve, hybrid systems may offer a third option by applying each navigation model where it provides the greatest operational benefit.&lt;/p&gt;
-</description><guid isPermaLink="false">4685</guid></item><item><title>Modular Building Blocks Help Scale High‑Voltage Power Systems</title><link>https://www.mouser.com/blog/modular-building-blocks-help-scale-highvoltage-power-systems</link><category>Automotive,Computing,Industrial,Power,Wide Bandgap</category><pubDate>Wed, 30 Sep 2026 00:01:09 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/mouser-Microchip-HighVoltagePowerSystems-twitter-1024x512-en.jpg?ver=rSM7dv9sf31QNOL1tNTs4w%3d%3d" style="width: 600px; height: 300px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;Source: Mouser&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;By Kevin Dykyj, Senior Digital Marketing Specialist, Microchip Technology, for Mouser&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Scaling Power Without Overengineering&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;As power electronics move into the medium-voltage domain, designers are discovering that scaling power is no longer just a matter of selecting a bigger device. Higher bus voltages introduce new constraints around insulation, switching behavior, layout, and long-term reliability. In many systems, these factors dominate the design effort well before current limits are reached.&lt;/p&gt;
-
-&lt;p&gt;An alternative design philosophy is gaining traction. Instead of scaling primarily through current, designers are building systems from voltage-rated power blocks that can be repeated and combined. In this approach, 3.3kV silicon carbide power modules form the backbone of scalable architectures, allowing systems to grow by replication rather than reinvention.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Traction Auxiliary Power Systems: Designing for the Real Load&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Auxiliary loads are typically supplied from the same high-voltage DC bus that feeds the traction inverter. While bus voltage is substantial, associated current levels are far lower than those seen in propulsion stages. This imbalance makes auxiliary systems well suited to voltage-optimized power stages rather than high-current devices designed for traction duty.&lt;/p&gt;
-
-&lt;p&gt;Using 3.3kV SiC modules allows auxiliary converters to connect directly to the traction bus without stacking devices in series (&lt;strong&gt;Figure 1&lt;/strong&gt;). Operating at higher switching frequencies reduces magnetic component size and enables higher power output by replicating proven converter stages.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1790707714/Microchip_hv_power_systems_fig1_dfavdh.jpg" style="height: 340px; width: 600px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt;&amp;nbsp;Block diagram of a traction auxiliary system showing modular high-voltage DC-DC and inverter stages.&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Auxiliary converters often operate continuously in harsh thermal and mechanical environments for decades. In this context, insulation robustness, partial-discharge performance, and stable switching behavior can matter more than headline current capability. High-voltage, moderate-current modules align more closely with these long-term requirements than oversized propulsion-class devices.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Solid-State Transformers in Data Centers: Voltage as the Organising Principle&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Solid-state transformer architectures are modular by necessity, typically built from multiple medium-voltage conversion cells that share the load and provide isolation. In these systems, allowable DC-link voltage largely determines how much power each cell can process, with voltage rating and switching performance setting practical design limits.&lt;/p&gt;
-
-&lt;p&gt;Using 3.3kV SiC power modules enables higher DC-link voltage operation, increasing the power handled by each conversion cell. As a result, fewer modules are required to achieve a given system power level (&lt;strong&gt;Figure 2&lt;/strong&gt;). Reducing module count simplifies interconnections, lowers system losses, and improves overall efficiency while keeping control and protection schemes manageable.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1790707714/Microchip_hv_power_systems_fig2_vk4loj.png" style="height: 106px; width: 600px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt;&amp;nbsp;Simplified solid-state transformer architecture using 3.3kV MOSFETs with higher DC-link voltage&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;When fewer, higher-power conversion cells share a common electrical and mechanical foundation, maintenance is simplified and system expansion is less disruptive compared to architectures built from many lower-voltage or heavily paralleled high-current stages.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Medium Voltage Ultrafast Chargers: AC-DC PFC and DC-DC Conversion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Medium-voltage-fed ultra-fast chargers are emerging as a practical path to megawatt-class charging, allowing systems to draw power directly from MV infrastructure while reducing input current, cabling losses, and upstream equipment size. These architectures typically use an AC/DC power-factor-correction stage followed by isolated DC/DC conversion, with each stage optimised around voltage rather than extreme current.&lt;/p&gt;
-
-&lt;p&gt;In these systems, the most critical semiconductor parameter is drain-to-source voltage rating (VDSS). Using 3.3kV devices enables higher DC-link voltage operation, increasing the power handled by each conversion stage. This capability simplifies system architecture by reducing the number of series-connected devices and lowering the total module count required to reach target power levels.&lt;/p&gt;
-
-&lt;p&gt;Both the AC/DC PFC stage and the primary side of the DC/DC stage (&lt;strong&gt;Figure 3&lt;/strong&gt;) typically operate in resonant or quasi-resonant modes that achieve soft switching across a wide operating range. Under these conditions, switching losses are reduced and conduction loss becomes dominant, making lower on-resistance devices particularly beneficial at the system level.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1790707714/Microchip_hv_power_systems_fig3_wrzkv2.png" style="height: 534px; width: 600px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt;&amp;nbsp;MV-Fed USC Charger in 420 kW Series Input Parallel Output Configuration with Six 70 kW Stages&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;The secondary side of the isolated DC/DC stage operates at lower voltage and higher current, shifting design emphasis toward current handling. On the MV-fed front end and primary-side stages, however, the combination of high DC-link voltage and soft-switching operation favors lower RDS(on) devices, especially in solid-state transformer and ultra-fast charging architectures.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Why Voltage-Optimised Modules Are Finding Their Place&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Across these applications, a common theme emerges. In many medium-voltage systems, current is not the limiting factor. Designers instead focus on insulation, switching behavior, layout constraints, and qualification effort.&lt;/p&gt;
-
-&lt;p&gt;High-current SiC modules remain essential where large motor currents dominate, such as in main traction inverters. In the auxiliary, conversion, and distribution stages, however, high-voltage modules optimised for moderate current often lead to simpler architectures and more predictable scaling.&lt;/p&gt;
-
-&lt;p&gt;By treating 3.3kV SiC modules as standardised building blocks, engineers can scale systems through repetition, reducing design risk, shortening validation cycles, and creating architectures that are easier to extend as requirements evolve.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Building Scalable Systems One Voltage-Rated Module at a Time&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;As medium-voltage power systems expand across transportation, data centers, and renewable energy, modular design is moving from theory into practice. High-voltage SiC modules make it possible to design power stages around voltage constraints first, then scale power by replication rather than escalation.&lt;/p&gt;
-
-&lt;p&gt;Solutions such as the &lt;a href="https://www.mouser.com/en/new/microchip/microchip-hv-d3-msic-power-modules/"&gt;HV-D3 3.3kV mSiC&amp;reg; power modules&lt;/a&gt; from &lt;a href="https://www.mouser.com/en/manufacturer/microchip/"&gt;Microchip Technology&lt;/a&gt; reflect this approach. Rather than targeting maximum current, they focus on voltage margin, insulation integrity, and consistent switching performance. In traction auxiliary systems, solid-state transformers and renewable energy converters, this alignment supports architectures that scale cleanly and predictably.&lt;/p&gt;
-
-&lt;p&gt;As designers look ahead to higher voltages and more distributed power systems, building around voltage-optimised modules offers a practical path forward that balances efficiency, reliability, and long-term flexibility.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3&gt;&lt;small&gt;Author Bio&lt;/small&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img alt="Kevin Dykyj" src="https://res.cloudinary.com/uf-554466/image/upload/v1790707632/Kevin_Dykyj_qk79fv.jpg" style="margin-left: 10px; margin-right: 10px; float: left; width: 150px; height: 150px;" title="Kevin Dykyj" /&gt;&lt;em&gt;&lt;small&gt;Kevin Dykyj is a Principal Digital Marketing Specialist at Microchip Technology with a focus on power semiconductor solutions. His background includes developing technical content and product positioning focused on SiC, IGBTs, and power modules. He brings a technically grounded perspective shaped by real-world system considerations in industrial, data center, sustainability, and electrification applications.&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">4686</guid></item></channel></rss>
+</description><guid isPermaLink="false">4008</guid></item></channel></rss>
