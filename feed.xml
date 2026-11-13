@@ -1,4 +1,196 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=20" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>Real-Time Temperature Monitoring with Schneider Electric</title><link>https://www.mouser.com/blog/real-time-temperature-monitoring-schneider-electric</link><category>Automation,Industrial,Industrial Automation,Sensors</category><pubDate>Sat, 07 Nov 2026 01:39:30 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1793993207/mouser-schneider-spsdemo-blog_tzfspg.jpg" style="height: 315px; width: 600px;" title="" /&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=20" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>How Laser Power Beaming Enables In-Flight UAV Charging</title><link>https://www.mouser.com/blog/how-laser-power-beaming-enables-in-flight-uav-charging</link><category>AllEnergy Harvesting,Power,Sensors,Wireless</category><pubDate>Thu, 12 Nov 2026 23:57:06 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/1c558516-e272-4f2f-aa77-5b8d5e74e48c/Large/Adobe-Stock-119172565-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;&lt;span style="font-style:italic"&gt;Source: Sergey/stock.adobe.com&lt;/span&gt;&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;For an uncrewed aerial vehicle (UAV), staying in the air longer usually means carrying a larger battery. However, a bigger battery adds weight, which can limit how much equipment the aircraft can carry. Solar power can help, but it depends on weather conditions and the amount of available sunlight. At some point, the aircraft encounters a simple yet challenging constraint: A UAV can carry only a limited amount of onboard energy.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;One approach engineers are using to address this challenge is laser power beaming. In this technique, a ground-based laser beam delivers energy to photovoltaic cells on the UAV, allowing it to recharge while remaining in flight. While the concept dates back to the 1960s, several recent tests suggest it is getting closer to practical implementation.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Researchers are working to improve the efficiency of lightweight receivers designed to convert laser energy into electricity aboard UAVs. The US Naval Research Laboratory (NRL) has tested laser power beaming under real-world field conditions. And wireless power technology company PowerLight Technologies has also been working with a fixed-wing UAV, autonomously tracking the aircraft and delivering power to it during flight.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;These independent efforts together raise a broader question about UAV endurance. Instead of focusing solely on how much more energy engineers can store onboard, it may be equally important to consider how energy can be delivered to the aircraft while it is operating.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Powering a UAV in Flight&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Tom Nugent, co-founder and chief technology officer (CTO) of PowerLight Technologies, describes laser power beaming as a &amp;ldquo;wireless extension cord&amp;rdquo; into the sky. The comparison makes the idea sound simple, but building that extension cord requires several technologies to work together. The laser must deliver sufficient energy over distance, the beam must remain aligned with a moving aircraft, and the receiver must convert the incoming light into useful electrical power without adding excess weight or heat.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;PowerLight has been testing its Aerial ReCharge&amp;trade; system with Kraus Hamdani Aerospace&amp;rsquo;s K1000ULE fixed-wing UAV (&lt;strong&gt;Figure 1&lt;/strong&gt;). During flight, the system tracks the aircraft and directs the laser toward photovoltaic cells tuned to the laser&amp;#39;s wavelength. Conventional solar cells are designed to convert a broad spectrum of sunlight, whereas these cells receive a specific wavelength of near-infrared light, allowing them to convert the incoming energy more efficiently. The current system is designed to deliver power at distances of up to 1.6km (1mi).&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/K1000ULE fixed wing UAV.png?ver=erThS8Jiu-oPQV29EZfGig%3d%3d" style="width: 600px; height: 417px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt;&amp;nbsp;Kraus Hamdani Aerospace&amp;rsquo;s K1000ULE fixed-wing UAV equipped with a PowerLight laser power receiver for the Aerial ReCharge&amp;trade; system. (Source: PowerLight Technologies)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The goal of power beaming is not just to keep the aircraft running while it&amp;rsquo;s inside the beam. According to Nugent, who also co-authored a book on the theory and practice of power beaming, the system is designed to provide enough power to operate the UAV and its onboard equipment while returning excess energy to the UAV&amp;rsquo;s battery. The UAV could then leave the beam to carry out a mission, returning when it needs more energy.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The receiver (&lt;strong&gt;Figure 2&lt;/strong&gt;) adds its own weight, but Nugent says its power-to-weight ratio could eventually allow a reduction in battery capacity without sacrificing as much of the UAV&amp;rsquo;s payload capacity.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&amp;ldquo;In some cases, we&amp;rsquo;ve made them so that the power-to-weight ratio is higher than what batteries are, which means that you can do interesting trade-offs as well. For example, let&amp;rsquo;s get a slightly smaller battery and put on this power beaming, and now we don&amp;rsquo;t have as much impact on our payload mass budget,&amp;rdquo; adds Nugent.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/PowerLight UAV receiver.png?ver=ujEe7UgI3cHdstvbcUiOuQ%3d%3d" style="width: 600px; height: 748px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt;&amp;nbsp;PowerLight&amp;rsquo;s UAV receiver. (Source: PowerLight Technologies)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;PowerLight&amp;rsquo;s current tests involve UAVs that still carry a battery. Nugent says the company&amp;rsquo;s systems assume that some form of energy storage will remain onboard. If the beam has to shut off, the aircraft still needs enough stored energy to keep flying.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Making Power Beaming Practical &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;To deliver power to a UAV while it&amp;rsquo;s in flight, the system must convert electricity into light, convert the light back into energy, manage the heat generated along the way, keep the beam aligned with the moving aircraft, and shut it down safely if something crosses its path. It also has to operate effectively outside a controlled environment (such as a lab).&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Efficiency&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Efficiency remains a major challenge. Electricity first powers the ground-based laser, which converts electrical energy into light. According to Nugent, today&amp;#39;s lasers typically convert energy at 40 to 60 percent efficiency, depending on the type of laser and other factors. When the beam reaches the UAV, the receiver&amp;rsquo;s photovoltaic cells convert the laser light back into electricity. Nugent says that because the cells can be tuned to the laser&amp;#39;s wavelength, the conversion efficiency at the receiver can range from about 40 to 70 percent.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In separate research, the Civil Aviation University of China and Tsinghua University recently approached the receiver side of the problem with a lightweight photovoltaic-thermoelectric design for UAVs. In static tests, the receiver converted 38.49 percent of the incoming laser energy into electricity, enough to power a propeller.&lt;sup&gt;&lt;a href="#_edn3" name="_ednref3"&gt;[3]&lt;/a&gt;&lt;/sup&gt; The work also addressed heat, a consequence of concentrating laser energy on a small receiver.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Keeping the Beam on Target&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Conversion efficiency matters only if the laser energy reaches the receiver in the first place. A UAV is constantly moving, causing vibration and other small disturbances that can shift the receiver relative to the beam.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;PowerLight treats this as a cooperative tracking problem. A beacon on the receiver gives the ground system a target to follow, while machine vision, gimbals, and motors on the transmitter adjust the beam as the aircraft moves. The ground-based transmitter system, including the wide-field-of-view camera, beam director, laser power supply, and stabilization hardware, helps track the UAV and direct laser energy toward the airborne receiver (&lt;strong&gt;Figure 3&lt;/strong&gt;). Movement from the aircraft motors and other sources can introduce small amounts of jitter into the tracking system, but the size of the power beam provides some tolerance for such jitter.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/PowerLight ground based transmitter.jpg?ver=8QMOEpRiI6H2Ig6XSYkAKQ%3d%3d" style="width: 600px; height: 889px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt;&amp;nbsp;PowerLight&amp;rsquo;s ground-based transmitter includes a wide-field-of-view camera and beam director used as part of the system that tracks the UAV and delivers laser power to the receiver. (Source: PowerLight Technologies)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&amp;ldquo;Our beam is generally dinner plate size. It&amp;#39;s not like the tiny little beam of a laser weapon. So, if we jitter a few centimeters back and forth, that doesn&amp;#39;t change the power output very much,&amp;rdquo; says Nugent.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Outside Factors&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;To maintain the link, the beam must remain aligned. However, because laser power beaming requires line of sight, weather can affect how much energy reaches the receiver or whether the link works at all. Nugent says rain can reduce the power that reaches the receiver, and heavy fog can block the beam enough to prevent power delivery. The UAV&amp;#39;s onboard battery kicks in to keep it flying during those interruptions.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Recent testing by the NRL subjected a laser power-beaming system to much harsher conditions. Working with Boeing and the US Army Combat Capabilities Development Command Ground Vehicle Systems Center, NRL transmitted power across an airfield to remote receivers, with testing continuing despite wind and snow. According to NRL, snowfall eventually approached whiteout conditions and visibility became too poor to continue.&lt;sup&gt;&lt;a href="#_edn4" name="_ednref4"&gt;[4]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Is It Safe?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Sending a high-power laser through open air raises safety concerns. The near-infrared light that PowerLight uses is invisible, and Nugent says the primary concern is preventing the beam from reaching a person&amp;rsquo;s eyes. The company uses multiple layers of sensing to detect objects approaching the beam and shut off the laser before they are exposed to it.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;PowerLight observed the system&amp;rsquo;s response during a 2019 test at the Port of Seattle. The team was transmitting power horizontally when the receiver&amp;rsquo;s telemetry suddenly dropped to zero. The cause was an eagle flying into the beam&amp;#39;s path, which triggered the safety system to shut off the laser before the eagle could be exposed.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The system must respond quickly to such external factors. Nugent calls this response the &amp;ldquo;D&amp;sup3; time&amp;rdquo;: the time required to detect an object entering the beam, determine whether a shutdown is required, and deactivate the laser. The required response time depends on factors such as the area being monitored and how quickly an object could enter the beam.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Beyond Longer Flight Times&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;While the most immediate benefit of laser power beaming in this context is extending flight time by delivering power to a UAV in flight, Nugent sees applications that go beyond keeping a single aircraft airborne longer. For example, laser power beaming could enable persistent intelligence, surveillance, and reconnaissance (ISR) by allowing a UAV to hover over an area without repeatedly landing to recharge or swap batteries.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;PowerLight is also looking further ahead. Nugent says the company is developing designs to reach aircraft operating at 20 km to 30 km above the ground. The aircraft would not necessarily need to remain over a single transmitter. Nugent describes a future network of power-beaming stations that could provide UAVs with multiple battery-recharging locations as they travel.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;At higher altitudes, the same approach could also be used for communications. Nugent describes the idea as putting &amp;ldquo;cell towers in the sky,&amp;rdquo; with aircraft providing coverage from above rather than relying solely on ground infrastructure.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In addition, PowerLight previously collaborated with Ericsson to demonstrate wireless power delivery to a 5G base station.&lt;sup&gt;&lt;a href="#_edn5" name="_ednref5"&gt;[5]&lt;/a&gt;&lt;/sup&gt; PowerLight also participated in DARPA&amp;#39;s LunA-10 program as part of a Blue Origin-led team to explore power distribution for lunar infrastructure.&lt;sup&gt;&lt;a href="#_edn6" name="_ednref6"&gt;[6]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;For Nugent, the larger opportunity is not only about generating or storing more energy, but also about changing how that energy gets to where it is needed.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Laser power beaming does not eliminate the need for batteries or the engineering constraints associated with keeping a UAV airborne. It introduces challenges related to efficiency, thermal management, tracking, weather, and safety. However, recent work suggests that it is a viable approach for extending UAV endurance. Instead of focusing solely on how much energy an aircraft can carry, engineers can also consider how and where that energy can be delivered during operation.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Like any engineering tool, power beaming presents both advantages and limitations. It may not be suitable for every application, but it provides engineers with an additional option beyond simply increasing battery capacity.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&lt;small&gt;Sources&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://www.nasa.gov/wp-content/uploads/2023/06/newsnotes-40-2.pdf?emrc=6984966f062d3&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://powerlighttech.com/powerlight-wireless-power-beaming-drone-test-geekwire/&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref3" name="_edn3"&gt;[3]&lt;/a&gt;&amp;nbsp;https://www.sciencedirect.com/science/article/pii/S3117584826000669&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref4" name="_edn4"&gt;[4]&lt;/a&gt;&amp;nbsp;https://www.nrl.navy.mil/Media/News/Article/4518270/nrl-demonstrates-dual-use-laser-system-for-power-beaming-and-counter-uas-operat/&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref5" name="_edn5"&gt;[5]&lt;/a&gt;&amp;nbsp;https://powerlighttech.com/powerlight-technologies-ships-5g-prototype&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref6" name="_edn6"&gt;[6]&lt;/a&gt;&amp;nbsp;https://powerlighttech.com/plt-blue-origin-luna-10-team/&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description><guid isPermaLink="false">4872</guid></item><item><title>Contactless Connectors for Rotating Power and Data Interfaces </title><link>https://www.mouser.com/blog/contactless-connectors-rotating-power-data-interfaces</link><category>AllConnectors,Industrial,Robotics,Wireless</category><pubDate>Thu, 12 Nov 2026 02:54:27 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/3a70e1e9-7b5c-448d-90b9-ccdddf1f4f6c/Large/AdobeStock_569596236.png" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: gumpapa/stock.adobe.com&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:16px"&gt;Many connectors never have to accommodate movement. They are installed once, connected, and left in place for the life of the equipment. Power distribution networks, communications infrastructure, and most fixed installations follow this model. Even where some flexibility is required, it is usually limited. A charging cable or patch lead may be plugged and unplugged regularly, but it is not expected to operate continuously while in motion.&lt;/p&gt;
+
+&lt;p style="margin-bottom:16px"&gt;The situation changes when a connector must operate as part of a moving system. In industrial machinery, motion is often constant. Robots articulate through repeated cycles, inspection systems rotate components for analysis, and mechanical assemblies are designed to spin, index, or oscillate as part of their operation.&lt;/p&gt;
+
+&lt;p style="margin-bottom:16px"&gt;This blog explores how contactless connectors address the challenge of transferring power and data across continuously moving interfaces. It also compares contactless connectors with flexible cables and slip rings and examines their advantages and limitations in dynamic industrial systems.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Delivering Power and Data Through Moving Interfaces&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:16px"&gt;Conventional cables are not always well-suited for continuous dynamic applications, particularly where repeated rotation introduces sustained torsional stress. While flexible cables can tolerate some movement, repeated rotation introduces a different type of stress. The cable bundle twists, and over time this twisting (i.e., torsion) leads to fatigue in both the conductors and the insulation. Eventually, a failure occurs, either gradually or as a sudden break. In either case, cable fatigue creates a maintenance problem. Cable routing can be carefully controlled to minimize the effects of dynamic operations. Cable chains or slip loops can help limit torsion and reduce cable wear, but they add mechanical complexity.&lt;/p&gt;
+
+&lt;p style="margin-bottom:16px"&gt;Slip rings were developed to solve the problem of connecting across constantly rotating joints. A slip ring allows electrical power and data signals to pass between stationary and rotating parts using a set of conductive rings and sliding contacts. Instead of twisting a cable, the connection is maintained through a rotating interface. Slip rings have been used for decades in applications ranging from radar systems to wind turbines, and modern designs can support high-speed communication.&lt;/p&gt;
+
+&lt;p style="margin-bottom:16px"&gt;A slip ring&amp;rsquo;s interface relies on physical contact between brushes and rings, so some degree of wear is inevitable. Over time, the contact surfaces degrade and require maintenance or replacement. In some applications, electrical noise generated by the sliding contact can also be a concern, particularly when low-level signals or high-speed data are involved.&lt;/p&gt;
+
+&lt;p style="margin-bottom:16px"&gt;Maintaining signal integrity across a slip ring is possible, but it often requires a more specialized design, such as shielding, dedicated signal paths, or hybrid approaches that combine different transmission methods. As a result, the solution can be more complex and more expensive than it initially appears.&lt;/p&gt;
+
+&lt;p style="margin-bottom:16px"&gt;Existing wireless protocols already deliver information without physical contact. Technologies such as Wi-Fi&lt;sup&gt;&amp;reg;&lt;/sup&gt; and Bluetooth&lt;sup&gt;&amp;reg;&lt;/sup&gt; can transmit data without a physical link and are widely used across many applications. In some cases, they can work well in industrial environments. However, these technologies have limitations. Industrial environments are often electrically noisy, with motors, switching equipment, and high currents contributing to a challenging electromagnetic environment. Maintaining a reliable wireless link under these conditions can be challenging. Latency and security can also be concerns, especially in critical control systems. In addition, while wireless connectivity can solve the data problem, it does not address power delivery needs.&lt;/p&gt;
+
+&lt;p style="margin-bottom:16px"&gt;Contactless connectors operate across a very short, controlled gap between the two mating halves. Rather than broadcasting signals over a wide area, power and data are transferred across a small, defined space between two aligned components. This approach avoids many of the issues associated with conventional wireless systems and eliminates the need for physical contact.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Maintaining Reliable Connections Without Physical Contact&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:16px"&gt;Contactless connectors transfer power via inductive or capacitive coupling and data via a dedicated short-range communication link over the same interface. The two halves of the connector are positioned close together, typically within a few millimeters, and remain aligned during operation. As long as alignment is maintained, the connection remains continuous.&lt;/p&gt;
+
+&lt;p style="margin-bottom:16px"&gt;Because there are no sliding contacts or mating pins, there is no mechanical wear at the interface. The connection does not degrade like a slip ring, and there are no exposed contacts that can become contaminated or corroded. The interface can also be sealed, which is useful in harsh or dirty environments.&lt;/p&gt;
+
+&lt;p style="margin-bottom:16px"&gt;Contactless connectors eliminate the need for a sliding electrical interface or for managing cable twist. They feature a simpler mechanical design with fewer maintenance requirements than rotating or moving connections. The connectors are especially useful in systems that combine continuous motion with the need for high reliability. For example, industrial robots have multiple rotating joints that must transmit power and data. Replacing a cable or slip-ring interface with a contactless link allows those joints to rotate freely without causing physical wear.&lt;/p&gt;
+
+&lt;p style="margin-bottom:16px"&gt;Contactless technologies also offer reliability in high-cycle applications, such as in robot tool changers, where connectors may be mated thousands of times during normal operation. Removing physical contacts reduces mechanical wear from repeated mating cycles and minimizes the risk of signal loss.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Applications and Design Considerations for Contactless Connectors&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:16px"&gt;Contactless technology cannot replace all conventional connectors. Removing physical contact limits the amount of power that can be transmitted. For low- to moderate-power levels, where efficiency and thermal performance can be managed within a compact interface, contactless connectors&amp;rsquo; capabilities are more than sufficient.&lt;/p&gt;
+
+&lt;p style="margin-bottom:16px"&gt;Contactless connectors can be suitable for moderate-power applications. For example, autonomous guided vehicles and mobile robots often use rotating sensor modules to monitor their surroundings. A contactless connection allows these sensors to operate continuously without stressing cables or relying on mechanical contacts. At higher power levels, slip rings may still be preferable, depending on the application&amp;rsquo;s efficiency, thermal, maintenance, and operating requirements.&lt;/p&gt;
+
+&lt;p style="margin-bottom:16px"&gt;Despite this, flexible cables and slip rings each have their own limitations. Contactless connectors do not solve every problem in dynamic industrial settings, but they do eliminate one of the most common sources of failure. Eliminating physical contact at the interface makes it easier to deliver power and data in systems where motion is part of normal operation.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Matching the Connection Method to the Application&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:16px"&gt;Contactless connectors offer a practical alternative for transferring power and data across moving interfaces where cable fatigue or mechanical wear presents a reliability concern. Although power limitations mean they cannot replace conventional connectors or slip rings in every application, their contact-free operation can simplify mechanical design, reduce maintenance requirements, and support continuous movement in industrial robots, rotating equipment, and other high-cycle systems. Selecting the appropriate connection method ultimately depends on the application&amp;rsquo;s power, data, alignment, and operational requirements.&lt;/p&gt;
+</description><guid isPermaLink="false">4865</guid></item><item><title>New Tech Tuesdays: Smart Connectors Add Memory at the Edge</title><link>https://www.mouser.com/blog/new-tech-smart-connectors-add-memory-at-the-edge</link><category>Connectors,Industrial,Memory,New Tech Tuesdays</category><pubDate>Tue, 10 Nov 2026 06:01:00 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1794244763/NTT_Nov10_local_id_configuration_pd19hd.jpg" style="height: 327px; width: 600px;" title="" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;New Tech Tuesdays&lt;/h2&gt;
+
+&lt;h3&gt;&lt;em&gt;Join Mouser&amp;#39;s Technical Content team for a weekly look at all things interesting, new, and noteworthy for design engineers.&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Anyone who has connected the wrong accessory and received the electronic equivalent of a blank stare understands the value of identification. As products gain interchangeable batteries, attachments, and modules, the host system must identify what is connected before applying the correct settings. Embedding memory in the connector places that identity and configuration data at the connection point without requiring a separate identification circuit.&lt;/p&gt;
+
+&lt;p&gt;In this week&amp;rsquo;s New Tech Tuesdays, we examine how smart connectors with embedded electrically erasable programmable read-only memory (EEPROM) store identification and configuration data, enabling host systems to recognize connected modules and apply the appropriate operating profile.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Smart Connectors Give Hardware a Local Identity&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;Conventional connectors carry power, signals, or data, but do not inherently identify the connected hardware. Instead, the host may rely on separate identification circuitry or manual configuration. These approaches can be practical when only a few hardware variants are supported, but managing the correct operating settings becomes more complex as additional models or attachments are introduced.&lt;/p&gt;
+
+&lt;p&gt;A smart connector pairs the interconnect with EEPROM, a type of nonvolatile memory that retains model identifiers, revision information, configuration parameters, and service data when power is removed. When the module is connected, host firmware reads and validates the stored identifier, then selects the corresponding operating profile without requiring manual model selection.&lt;/p&gt;
+
+&lt;p&gt;Service equipment can retrieve the module identity through the existing connection, supplementing labels and service records without a separate identification board. The connector continues to carry power or signals while providing the host with locally stored module information.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Embedded EEPROM Supports Configurable Platforms&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;Reliable configuration depends on how stored information is organized and validated. A versioned memory format allows firmware to interpret data consistently as hardware and configuration requirements evolve. An integrity check, such as a cyclic redundancy check (CRC), can detect accidental data corruption. If a record is corrupted, unsupported, or incompatible with the host hardware, firmware should prevent operations that depend on that configuration and enter a predefined restricted or fault state.&lt;/p&gt;
+
+&lt;p&gt;Maintaining that reliability also requires careful management of memory updates. While identification data generally remains unchanged, configuration parameters may need occasional revisions. Since EEPROM has finite write endurance and programming can be interrupted by power loss, engineers should minimize unnecessary writes and implement procedures to detect or recover from incomplete updates.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Connector-Level Identification in Real Applications&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;Replaceable batteries illustrate the basic identification workflow. The stored record can identify the pack or its supported operating profile before the host enables charging or a high-current load. Similar identification needs arise in appliance attachments, medical accessories, and industrial tools when mechanically compatible modules require different operating profiles.&lt;/p&gt;
+
+&lt;p&gt;On a production line, the stored identifier can replace manual model selection. During service, it helps confirm that a replacement matches the host configuration. The same interconnect may serve compatible product variants.&lt;/p&gt;
+
+&lt;p&gt;Adding memory does not make mechanically compatible modules electrically or functionally interchangeable. Contact ratings, retention, mating life, environmental exposure, and applicable spacing requirements remain part of the connector selection. The advantage of storing the identifier in the replaceable module is that it keeps the configuration record with the hardware it describes.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Newest Products for Your Newest Designs&lt;sup&gt;&amp;reg;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href="https://www.mouser.com/en/new/te-connectivity/te-eeprom-embedded-smart-connector/"&gt;TE Connectivity EEPROM embedded smart connector&lt;/a&gt; combines an Economy Power 2.5 connector assembly with an integrated Microchip Technology EEPROM. The 1Kbit device operates from 3V to 4.5V, draws 0.3mA during reads and 0.5mA during writes, and is rated for 1,000,000 write cycles across an operating temperature range of -25&amp;deg;C to +85&amp;deg;C.&lt;/p&gt;
+
+&lt;p&gt;The integrated EEPROM design allows host firmware to recognize programmed model identifiers and retrieve compact configuration records without requiring a separate memory board. Its 128-byte storage capacity is suitable for small data structures, such as model codes, revision fields, or selected operating parameters. The connector mounts directly to the printed circuit board (PCB), an arrangement intended to improve vibration resistance. These smart connectors are compatible with the Economy Power 2.5 platform, allowing the connection system to be used across supported product variants. Target applications include batteries, appliances, medical products, consumer electronics, and industrial or consumer attachments.&lt;/p&gt;
+
+&lt;p&gt;Production still requires reliable header soldering, complete latch engagement, appropriate electrostatic discharge (ESD) controls, and firmware developed around the EEPROM requirements. Engineers should also plan for connector replacement because the assembled unit is not field-repairable at the component level.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Tuesday&amp;rsquo;s Takeaway&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;Smart connectors keep identification and configuration data with interchangeable hardware, helping support automatic model recognition during production. Embedded EEPROM can reduce manual setup, eliminate a separate identification board, and give production or service equipment direct access to module data. This connectivity solution proves most useful when the host must identify attached hardware before applying operating limits.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp; &amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;strong&gt;Sources&lt;/strong&gt;&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt; https://www.mouser.com/pdfDocs/TE_2350948-1_AS.pdf&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description><guid isPermaLink="false">4856</guid></item><item><title>Real-Time Temperature Monitoring with Schneider Electric</title><link>https://www.mouser.com/blog/real-time-temperature-monitoring-schneider-electric</link><category>Automation,Industrial,Industrial Automation,Sensors</category><pubDate>Sat, 07 Nov 2026 01:39:30 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1793993207/mouser-schneider-spsdemo-blog_tzfspg.jpg" style="height: 315px; width: 600px;" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: Mouser&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
 
@@ -965,176 +1157,4 @@ Jean-Jacques (JJ) DeLisle attended the Rochester Institute of Technology, where 
 
 &lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://www.ers.usda.gov/data-products/charts-of-note/110550&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
 &lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://www.aef-online.org/about-us/activities/high-speed-isobus.html&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">4708</guid></item><item><title>New Tech Tuesdays: Scaling High-Voltage Interconnection Systems for EV Architectures</title><link>https://www.mouser.com/blog/new-tech-scaling-high-voltage-interconnection-systems-for-ev-architectures</link><category>Automotive,Connectors,New Tech Tuesdays,Power</category><pubDate>Tue, 06 Oct 2026 08:00:10 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1790880744/NTT_Oct6_ev_architecture_zwf7nj.jpg" style="height: 327px; width: 600px;" title="" /&gt;&lt;/p&gt;
-
-&lt;h2&gt;New Tech Tuesdays&lt;/h2&gt;
-
-&lt;h3&gt;&lt;em&gt;Join Mouser&amp;#39;s Technical Content team for a weekly look at all things interesting, new, and noteworthy for design engineers.&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;The increasing trend toward vehicle electrification has changed the demands placed on high-voltage interconnects. Beyond carrying substantial current between the battery, inverter, motor, and power-distribution equipment, these systems must fit within limited installation space while controlling electrical losses, heat, and mechanical stress.&lt;/p&gt;
-
-&lt;p&gt;In this week&amp;rsquo;s New Tech Tuesdays, we examine how scalable contact architectures and flexible connector packaging help engineers optimize high‑voltage interconnects for different vehicle platforms, and why electrical, thermal, mechanical, and serviceability requirements must be balanced to achieve reliable EV power distribution.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;High-Voltage Interconnection Systems Carry More Than Current&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;In an electric vehicle (EV) or hybrid electric vehicle (HEV), the high-voltage network connects multiple power-conversion and propulsion subsystems. The US Department of Energy states that vehicle power electronics process and control electrical energy flow, with inverters converting battery-supplied direct current into alternating current for the traction motor.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;Every connection along that path contributes some electrical resistance. Since resistive power loss increases with the square of current, even a small connector resistance can become significant as current rises. The resulting heat affects conductor selection, terminal design, surrounding materials, and the thermal margin available under sustained load.&lt;/p&gt;
-
-&lt;p&gt;Rated current by itself provides incomplete selection criteria. Engineers need to consider conductor cross-section, ambient temperature, duty cycle, terminal resistance, and the connector&amp;rsquo;s validated operating conditions. Changes in any of these conditions can affect the connector&amp;rsquo;s current-carrying capacity and thermal performance.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Matching the EV Connector to the Architecture&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;A mid-power passenger vehicle and a heavier all-wheel-drive vehicle place distinctly different demands on EV power distribution. Acceleration, towing, hill climbing, and sustained operation under load can require higher current delivery, but selecting the largest available connector for every vehicle may add unnecessary cable mass, packaging volume, integration complexity, and cost.&lt;/p&gt;
-
-&lt;p&gt;A tiered high-voltage interconnection system gives engineers another option. An EV/HEV platform can use an interconnect sized for its expected load profile while retaining a related, higher-capacity architecture for more demanding vehicle options. This approach supports design reuse without forcing every model to carry the penalties associated with the highest power tier.&lt;/p&gt;
-
-&lt;p&gt;The US Department of Energy identifies reduced weight and volume, improved efficiency and reliability, and modular, scalable design as important objectives for electric-drive systems.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt; Connector selection contributes to each of these factors since the interconnect can influence cable size, routing, thermal performance, assembly space, and mechanical interfaces.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Packaging and Serviceability Join the Circuit&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Selecting the conductor size is only one part of high-voltage cable integration. High-voltage cables also require routing clearance, bend space, strain management, shielding continuity, and access for assembly. Connector orientation can determine whether the cable follows a practical path or competes with structural members, coolant lines, and other nearby electronics.&lt;/p&gt;
-
-&lt;p&gt;Service access deserves equal attention. Lever-assisted mating, visible assurance features, and configurable cable exits can simplify installation and help technicians verify that a connection is fully seated. For high-voltage equipment, touch protection and environmental sealing are also essential design considerations. International Electrotechnical Commission (IEC) 60529 defines the IP Code, which classifies enclosure protection against access to hazardous parts, ingress of solid foreign objects, and harmful effects caused by water ingress.&lt;sup&gt;&lt;a href="#_edn3" name="_ednref3"&gt;[3]&lt;/a&gt;&lt;/sup&gt; By addressing routing, accessibility, and protection early in the design process, engineers can create safer and more serviceable high-voltage systems.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Newest Products for Your Newest Designs&lt;sup&gt;&amp;reg;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href="https://www.mouser.com/en/new/te-connectivity/te-hc-stak-25-xe-hv-interconnection-systems"&gt;TE Connectivity&amp;rsquo;s HC-STAK 25 XE High-Voltage Interconnection System&lt;/a&gt; targets mid-power EV and HEV applications. The system supports up to 1,000V&lt;sub&gt;DC&lt;/sub&gt; and up to 296A continuously at +85&amp;deg;C with a 70mm&amp;sup2; conductor. Its layered 2.5mm fork-terminal architecture provides up to 40 contact points per circuit, while optional bidirectional cable routing permits 180&amp;deg; plug rotation. A cam-driven lever and front-facing connector position-assurance feature support installation and service access.&lt;/p&gt;
-
-&lt;p&gt;For higher-output and heavier vehicle platforms, the &lt;a href="https://www.mouser.com/en/new/te-connectivity/te-hc-stak-35-hv-interconnection-systems"&gt;TE Connectivity HC-STAK 35 High-Voltage Interconnection System&lt;/a&gt; supports up to 1,000V&lt;sub&gt;DC&lt;/sub&gt; and up to 400A continuously at +85&amp;deg;C with a 95mm&amp;sup2; conductor. Its 3.5mm double-ended fork terminals provide up to 64 contact points per circuit. Both systems specify a &amp;minus;40&amp;deg;C to +125&amp;deg;C operating range and incorporate shielded, touch-safe, vibration-resistant construction for demanding vehicle environments.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Tuesday&amp;rsquo;s Takeaway&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Selecting a high-voltage interconnection system is ultimately an exercise in balanced engineering. The best choice provides sufficient current capacity and design margin while controlling resistance, heat, cable mass, packaging demands, and service complexity. Connectors with different current tiers allow engineers to use a common design approach while matching interconnect performance to each vehicle&amp;rsquo;s specific power requirements.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp; &amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;strong&gt;Sources&lt;/strong&gt;&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt; https://www.energy.gov/cmei/vehicles/power-electronics-research-and-development&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt; https://www.energy.gov/cmei/vehicles/electric-drive-systems-research-and-development&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref3" name="_edn3"&gt;[3]&lt;/a&gt; https://www.iec.ch/basecamp/ingress-protection-ip-ratings-guide&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">4702</guid></item><item><title>Mobile Cobots for Flexible Industrial Automation</title><link>https://www.mouser.com/blog/mobile-cobots-for-flexible-industrial-automation</link><category>Automation,Industrial,Industrial Automation,Robotics</category><pubDate>Mon, 05 Oct 2026 16:50:03 GMT</pubDate><description>&lt;h2 style="color:##333333; font-style:italic; font-size:16px;"&gt;&lt;em&gt;Mobile cobots combine autonomous transport with robotic handling across industrial workflows&lt;/em&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/cf42da64-6881-4845-9787-e9701b4ec05b/Large/Adobe-Stock-506021228-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: Nay/stock.adobe.com&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Industrial manufacturers must constantly adapt to changing production schedules, batch sizes, and labor constraints. These conditions make it harder to justify fixed automation designed for a single product or workstation. Automation must move where work is needed and switch between tasks as demand changes.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;For example, mobile collaborative robots (cobots) combine robotic arms that can handle and manipulate parts with autonomous mobile robots (AMRs) that can navigate between locations. This combination gives the cobot a facility-wide working area and enables it to connect production steps that depend on manual transfers.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;In this first part of our blog series on cobots in automation, we look at how mobile cobots automate handoffs between operations and which workflows benefit from this mobility. We also examine the engineering work needed to make the complete system reliable.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Automating the Handoffs Between Operations&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Combining mobility and part handling is useful for automating handoffs between separate production steps.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;For example, consider a mobile cobot tending a computer numerical control (CNC) machine. Production software sends a service request once the machine finishes its cycle, and the cobot collects the correct blank from a staging area.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;When the cobot reaches the CNC machine, it must establish the correct working position. The machine controller checks that the spindle has stopped and the door is open before giving access.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The cobot removes the finished part and places it in onboard storage. It loads the new blank and confirms the exchange. The CNC machine can then start its next cycle as the cobot takes the finished part to inspection.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;This sequence has to operate as one mission. If a mission has 10 stages and each stage succeeds on 99 percent of attempts, only about 90 percent of missions will complete without any exceptions.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Retries also add time and require clear rules. A mobile cobot&amp;rsquo;s main value comes from automating these handoffs and ensuring that automation is reliable.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Choosing Workflows That Benefit from Mobility&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;In effective industrial environments, tasks should be spread across several stations and each should require robotic part handling only at intervals. The cobot must have enough time to travel to the station and complete the exchange before production is delayed.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Total service time includes arm movement, travel, and docking time, while traffic or routine retries add variation. Engineers need to compare the complete service time with the rate at which stations request the cobot.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;In the case of several CNC machines sharing one mobile cobot, each time a machine finishes a cycle, it requests a part exchange. The cobot may need about two minutes to travel to the machine, dock, and complete the exchange.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;If the requests are spaced apart, the cobot can move from one machine to the next without affecting production. But if two machines request service at the same time, one has to wait while the cobot finishes the first task. Engineers need to make sure these waiting times do not become long enough to delay production.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;This timing model helps identify suitable applications. In production flow, a mobile cobot can move works in progress between cells and place them at the next assembly stage. Material supply tasks can include preparing kits or replenishing line-side bins. Beneficial to these scenarios is that the cobot&amp;rsquo;s arm removes the need for a transfer mechanism at every destination.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Inspection and logistics are also examples where the task moves between locations. The cobot can carry an inspection instrument to a large workpiece, avoiding the need to move the part. In a warehouse, the cobot can transfer totes from storage to packing and bring items from the same order.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Software-based routes make it easier to reassign the platform when products or layouts change. When this occurs, engineers can update the map and task program without installing a new conveyor. However, each new task must be tested because the workstation and operating conditions have changed.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Mobile cobots make sense when the value of sharing a single arm across multiple locations outweighs the time lost to travel and docking.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Considerations for Reliable Deployment&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Engineers must address several key factors when designing mobile cobots into an automation environment. AMRs can arrive close enough to identify the correct station yet be too far for the cobot to place a part into a fixture. Most industrial systems solve this in two stages: Navigation brings the platform into the station area, and docking establishes the working frame for the arm.&lt;/p&gt;
-
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;The final tool position can be affected by errors throughout the entire system. The AMR may not stop at the same point on every visit. Docking has a repeatability limit. Movement in the chassis changes the cobot&amp;rsquo;s base position, while arm repeatability and fixture position add further error.&lt;/p&gt;
-
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Robot repeatability data assume that the arm is attached to a fixed base. It does not include movement from tires, suspension, or docking. Engineers have to work backward from the process tolerance and decide how much error each part of the system might contribute.&lt;/p&gt;
-
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Mechanical integration also changes the working limits. The mobile base must be able to support the arm and its controller before any production payload is added. Tooling and onboard storage use more of the available capacity. The remaining payload availability must cover every part carried during the mission.&lt;/p&gt;
-
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Battery state affects which missions the cobot accepts. The cobot needs to reserve the battery for picking up the part, completing the delivery, and reaching the charger. Time spent waiting for machines also reduces availability, with traffic holds and docking further reducing it.&lt;/p&gt;
-
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Recovery logic is just as important as normal operation. Blocked routes can change arrival time and cause a station reservation to expire. If a workstation becomes unavailable after pickup, the cobot needs a safe place to wait or hold the part. These responses should be defined before deployment because an operator cannot safely improvise every recovery.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Mobile cobots bridge the gap between material transport and robotic handling, enabling a single automation platform to connect multiple production processes. Their strongest use case lies in environments where work is distributed across several stations and automation needs to adapt as production demands change.&lt;/p&gt;
-
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;However, successful deployment depends on more than combining an AMR with a robotic arm. Engineers must account for travel time, docking accuracy, payload limits, battery management, and recovery logic to ensure reliable operation across the entire workflow. When these factors are addressed, mobile cobots can reduce manual handoffs, improve resource utilization, and provide a flexible alternative to fixed automation infrastructure.&lt;/p&gt;
-
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;In the next installation of our cobot blog series, we turn our attention toward the &lt;a href="https://www.mouser.com/en/blog/machine-vision-for-cobots-and-industrial-sensors"&gt;advanced vision systems &lt;/a&gt;giving cobots enhanced depth perception and more precise object recognition.&lt;/p&gt;
-</description><guid isPermaLink="false">4697</guid></item><item><title>Selecting Anti-Vandal Switches for Industrial Control Panels</title><link>https://www.mouser.com/blog/selecting-anti-vandal-switches-industrial-control-panels</link><category>Industrial Automation</category><pubDate>Thu, 01 Oct 2026 21:32:22 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/d9fa8b4b-8e0f-4923-9c26-71fe31ce7975/Large/Adobe-Stock-284636772-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;(Source: Nuttapon/stock.adobe.com)&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Push buttons and switches are among the simplest components on an industrial control panel, but they are also among the most exposed. Industrial controls require durable, easy-to-use interfaces between the operator and the panel. These interfaces must withstand repeated actuation and exposure to harsh operating conditions. They are frequently subjected to moisture, liquids, dust, and other particles. Outdoor installations may also encounter temperature extremes, changing weather conditions, and tampering.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Because switches are mounted at the enclosure boundary, they must hold up to both repeated operator use and environmental exposure. Anti-vandal switches are panel-mounted push buttons designed for these demanding conditions, combining metal housings with environmental sealing to provide added protection.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Selecting an anti-vandal switch involves more than choosing a rugged push button. This blog explores how Ingress Protection (IP) ratings, housing construction, actuator style, illumination options, and switch behavior affect switch selection, helping designers match environmental protection, operator needs, and control functions to industrial control panel applications.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Protecting the Operator Interface in Harsh Environments&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Front-panel industrial controls form the physical interface between operators and an industrial control system. These controls are subjected to physical contact, repeated actuation, and environmental exposure that can contribute to mechanical wear over time.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Environmental sealing helps protect switches from the dust and water they may encounter at the panel surface. The IP rating system (&lt;strong&gt;Figure 1&lt;/strong&gt;) defined in IEC 60529 classifies protection against the ingress of solids and water under specific standardized test conditions. For example, an IP65 rating indicates a dust-tight enclosure protected against water jets, while an IP67 rating indicates a dust-tight enclosure with protection against temporary immersion in water.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt; Because IP ratings apply only to the specific test conditions defined by the standard, designers should select a rating that aligns with the switch&amp;rsquo;s expected operating environment.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/Ingress-Protection-Ratings-Guide_1.jpg?ver=2OazkpLSlDuFVPSkoKaGjg%3d%3d" style="width: 600px; height: 430px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt;&amp;nbsp;The numbers in the IP ratings table correlate to the type and amount of protection provided. (Source: Mouser)&lt;/em&gt;&lt;/span&gt;&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Proper sealing extends beyond the switch itself. Panel cutout dimensions, mounting hardware, gasket design, and installation quality all influence how effectively a switch maintains environmental protection at the enclosure boundary. Even small gaps or misaligned sealing components can reduce protection against moisture and particle ingress.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;In addition to environmental exposure, switches must also endure the mechanical demands of daily operation. Stainless steel and metal alloy housings can help resist the physical wear from repeated use while protecting the switch from accidental impacts and other physical stress commonly encountered in industrial environments.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Meeting the varying challenges of industrial settings requires designers to balance environmental protection and mechanical durability with usability and system integration.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Designing for Operator Interaction and Panel Integration&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;There has been a growing emphasis on ruggedized human-machine interfaces (HMIs), placing greater attention on the durability and reliability of front-panel controls.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt; As a result, switch selection is increasingly affected not only by environmental requirements but also by how the switch integrates into the overall control panel and operator interface.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Operators in modern industrial automation environments often need to quickly identify and engage the correct controls while working in demanding industrial environments. Actuator design can help support these tasks. For example, operators can benefit from flat actuators that reduce the risk of accidental activation. In contrast, raised actuators provide greater tactile feedback, making controls easier to locate and operate by touch.&lt;sup&gt; &lt;/sup&gt;LED illumination and emblem markings offer additional visual cues, helping operators quickly distinguish between control functions and interact with equipment more confidently and efficiently.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Designers should consider the switch&amp;rsquo;s functionality in relation to the intended control behavior. A momentary switch returns to its normal state when released, while a maintained switch stays in its selected state until actuated again. Momentary off-(on) and maintained off-on configurations enable designers to select the behavior that is appropriate for the required control action within the overall system.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Matching Switch Features to Control Panel Requirements&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Generally, selecting an anti-vandal switch comes down to matching its features to the application&amp;rsquo;s requirements. Designers should begin by evaluating the expected operating environment. The switch&amp;rsquo;s IP rating should align with the panel&amp;rsquo;s expected exposure to weather, liquids, dust, and particle ingress. From there, designers can consider the housing materials and design based on the application&amp;rsquo;s mechanical and operational requirements.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;After deciding on the type of switch, designers must integrate it into the overall panel design. Selecting a switch with the appropriate cutout and mounting, along with the correct termination and electrical requirements, is necessary to ensure optimal panel integration. Designers should also verify that switch selection aligns with system-level safety and control logic to help ensure safe operation and reliable performance.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The &lt;a href="https://www.mouser.com/en/new/same-sky/same-sky-anti-vandal-switches"&gt;Same Sky Anti-Vandal Switches product line&lt;/a&gt; illustrates how these considerations can be combined within a single product family. Available in stainless steel or black metal alloy housings, the switches offer IP65 or IP67-rated protection for rugged operation in harsh environments. Options include multiple voltage ratings and LED-illuminated colors, with optional power emblem markings for simpler operator differentiation and ease of use. The switches are available in 12mm, 16mm, 19mm, and 22mm cutout dimensions, offering flexible panel design and integration options and have an operating temperature range of -20&amp;deg;C to 85&amp;deg;C to provide reliable operation in extreme temperatures. They boast a typical operating force of 450gf to 600gf and offer SPST, SPDT, or SPST-NO circuits with momentary or maintained on/off switch functions, and come with flat or raised actuators.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Anti-vandal switches are a practical option for use in industrial control panels operating in rugged conditions, where durability and reliability are especially important at the point of user interaction. Matching the housing, cutout dimensions, and environmental sealing to the panel&amp;rsquo;s requirements can help reduce wear over the switch&amp;rsquo;s life while supporting reliable operation. Options such as different LED colors and actuator styles also give designers greater flexibility to match the interface to the application&amp;rsquo;s needs.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Author&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;em&gt;&lt;img src="/blog/Portals/11/Alex-Pluemer-100px.jpg" style="margin-left: 10px; margin-right: 10px; float: left; width: 100px; height: 100px;" /&gt;Alex Pluemer is a senior technical writer for Wavefront Marketing specializing in advanced electronics, emerging technologies and responsible technology development.&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&lt;em&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&lt;em&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&lt;small&gt;&lt;em&gt;&lt;em&gt;Sources&lt;/em&gt;&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;em&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://webstore.iec.ch/en/publication/2452&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://pubmed.ncbi.nlm.nih.gov/27393326/&lt;/em&gt;&lt;/small&gt;&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">4689</guid></item></channel></rss>
+</description><guid isPermaLink="false">4708</guid></item></channel></rss>
