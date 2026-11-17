@@ -1,4 +1,99 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=20" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>How Laser Power Beaming Enables In-Flight UAV Charging</title><link>https://www.mouser.com/blog/how-laser-power-beaming-enables-in-flight-uav-charging</link><category>AllEnergy Harvesting,Power,Sensors,Wireless</category><pubDate>Thu, 12 Nov 2026 23:57:06 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/1c558516-e272-4f2f-aa77-5b8d5e74e48c/Large/Adobe-Stock-119172565-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=20" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>New Tech Tuesdays: Scaling Edge AI Inference with M.2 Modules</title><link>https://www.mouser.com/blog/new-tech-scaling-edge-ai-inference-with-m2-modules</link><category>All,Computing,Industrial,New Tech Tuesdays</category><pubDate>Tue, 17 Nov 2026 06:01:00 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1794603406/NTT_Nov17_scaling_ai_gu0c0m.png" style="height: 327px; width: 600px;" title="" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;New Tech Tuesdays&lt;/h2&gt;
+
+&lt;h3&gt;&lt;em&gt;Join Mouser&amp;#39;s Technical Content team for a weekly look at all things interesting, new, and noteworthy for design engineers.&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Artificial intelligence (AI) processing does not always take place in the cloud. Factory equipment can analyze sensor data on site, while inspection cameras can process images as products move through production. Retail systems are also using local processing for certain AI workloads. In these applications, processing data close to its source reduces the amount of information that must travel over the network and eliminates the need to send data to a remote server before a result is returned.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Moving inference to the edge, however, places a processing burden on the local hardware. The system must provide sufficient computing performance for the AI workload without exceeding the device&amp;rsquo;s power, space, or thermal constraints. As models grow more complex or a system needs to handle several tasks simultaneously, these constraints become even more significant.&lt;/p&gt;
+
+&lt;p&gt;Many edge applications run inference continuously. For example, a camera inspecting a production line might analyze images throughout a production shift. Adding another camera or AI model increases the system&amp;rsquo;s processing requirements. Increasing the processing workload can also increase power consumption and heat generation. In compact embedded equipment, cooling can be limited, so the hardware must maintain the required inference performance within the system&amp;#39;s power and thermal limits.&lt;/p&gt;
+
+&lt;p&gt;This week&amp;#39;s New Tech Tuesdays examines the role of M.2 AI accelerators in edge computing, highlighting how they can expand neural-network processing performance without requiring a complete redesign of existing embedded platforms.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Adding AI Processing at the Edge&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;One way to handle a growing inference workload is to use a dedicated AI accelerator alongside the host processor. The accelerator handles neural-network processing, while the host processor continues to run the operating system, application software, and other system functions.&lt;/p&gt;
+
+&lt;p&gt;One option for adding dedicated AI processing is an M.2 accelerator module. M.2 is a compact module form factor used for devices ranging from storage and wireless connectivity to other types of expansion hardware. In this case, the accelerator plugs into a compatible M.2 socket and communicates with the host over Peripheral Component Interconnect Express (PCIe).&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;The module must work with the system&amp;rsquo;s existing hardware and software. Embedded platforms may use x86- or Arm&amp;reg;-based host processors, and developers may create models with frameworks such as TensorFlow or PyTorch, or exchange them using formats such as Open Neural Network Exchange (ONNX). Support for common host architectures and model-development ecosystems can simplify integration, although models must still be translated, optimized, and compiled for the accelerator using a comprehensive software toolchain.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Newest Products for Your Newest Designs&lt;sup&gt;&amp;reg;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;For systems that require additional inference performance, &lt;a href="https://www.mouser.com/new/hailo/hailo-hailo-8-m2-ai-acceleration-modules/"&gt;Hailo-8 M.2 AI Acceleration Modules&lt;/a&gt; provide dedicated AI processing via a standard M.2 socket. The modules use the Hailo-8 processor, which delivers up to 26 trillion operations per second (TOPS), and connect to the host via PCIe Gen 3. Hailo offers M.2 Key M, B+M, and A+E versions to support different host configurations.&lt;/p&gt;
+
+&lt;p&gt;The modules support both x86- and Arm-based hosts, as well as Linux and Windows operating systems. Models developed with TensorFlow, TensorFlow Lite, Keras, PyTorch, and ONNX are also supported through Hailo&amp;#39;s software tools. This enables engineers to add dedicated inference processing while continuing to use the existing host architecture and development tools.&lt;/p&gt;
+
+&lt;p&gt;The Hailo-8 also supports simultaneous processing of multiple streams and models. A system that starts with a single inference workload can use the same accelerator to support additional camera streams or models as processing requirements increase. The modules are available with an extended operating temperature range of -40&amp;deg;C to +85&amp;deg;C for embedded and industrial environments.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Tuesday&amp;rsquo;s Takeaway&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;Moving AI inference to the edge places greater processing demands on embedded hardware. Dedicated AI accelerators provide an additional way to handle those workloads without placing the entire burden on the host processor. M.2 modules also offer engineers a compact and scalable method for adding AI processing capabilities to existing platforms as inference requirements continue to grow.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp; &amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;strong&gt;Sources&lt;/strong&gt;&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt; https://www.ibm.com/think/topics/edge-ai&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt; https://pcisig.com/specification-overview/pci-express-m2&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description><guid isPermaLink="false">4884</guid></item><item><title>Brownfield Machine Data for Plant Modernization</title><link>https://www.mouser.com/blog/brownfield-machine-data-for-plant-modernization</link><category>Automation,Industrial,Industrial Automation</category><pubDate>Mon, 16 Nov 2026 21:36:50 GMT</pubDate><description>&lt;h2 style="color:##333333; font-style:italic; font-size:16px;"&gt;&lt;em&gt;Manufacturers can use machine data to improve maintenance and guide further modernization.&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/d423f869-db09-462e-b69f-51aebe7dbecc/Large/Adobe-Stock-2180153509-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: Bruno Stock/stock.adobe.com; generated with AI&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Connecting existing industrial equipment to new and advanced plant monitoring software gives manufacturers a comprehensive view of different operating data. The challenge then shifts to using this information efficiently to support predictive maintenance and dynamic production schedules.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;As more assets are connected, teams need a manageable way to incorporate huge amounts of data into operations and decision-making. Otherwise, simply adding more data will increase the workload of reviewing it without making necessary upgrades to existing operations.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The first part of this brownfield modernization blog series discussed approaches to &lt;a href="https://www.mouser.com/en/blog/bringing-sensor-intelligence-legacy-industrial-machines"&gt;connecting isolated machines, monitoring motors, and adding vision inspection to production lines&lt;/a&gt;. Here, we explore how manufacturers can transform information into maintenance responses, organize mixed-generation equipment around consistent data models, and accurately measure modernization benefits against their full implementation costs.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Transforming Machine Signals into Accountable Maintenance Response&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Let&amp;rsquo;s take an example of a motor monitoring system that reports abnormal vibration. Before maintenance teams can understand the reading, they need to know which motor it belongs to, its operating state, when the measurements were taken, and whether the data is still valid.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;This context changes the maintenance team&amp;rsquo;s response. For example, vibration can rise during the motor start, but an increase that continues during steady operation requires closer inspection. Furthermore, if the measurements are outdated, it cannot establish the motor&amp;rsquo;s current condition, which can lead to false diagnosis.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;An analytics platform organizes these measurements and compares them with established baseline operating rules. Depending on the equipment being monitored, the system can notify maintenance personnel only when a measurement deviation persists for a defined period. But some use cases may require a prompt alert because excessive delay can hide a developing problem.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;When an anomaly triggers an alert, its severity should determine the response time. For example, a reliability engineer might review gradual drift during maintenance planning but arrange prompt inspection for a more consequential change. The notification should include the motor identity, recent trend, operating context, and data quality.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;If inspection justifies maintenance, a work order in a computerized maintenance management system records the work and responsibility. The inspection findings and subsequent monitored conditions help the maintenance team assess whether the alert was useful and if its settings need adjustment. Ultimately, every actionable alert must lead to a defined response.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Organizing Mixed-Generation Equipment Around Consistent Data Models&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Machines from different vendors may define an operating state differently.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;For example, &amp;ldquo;running&amp;rdquo; could mean that one machine has received a run command and that another is actively producing parts. Engineers therefore need to check these definitions before combining the data. Gateways can translate the communication protocols and make the values accessible, but the state mappings still need to preserve what each machine reports.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;For instance, Open Platform Communications Unified Architecture (OPC UA) gives measurements, states, and relationships of equipment in a structured information model. On the other hand, Message Queuing Telemetry Transport (MQTT) distributes published messages through a broker to subscribing applications. These technologies can work together, but neither protocol alone can ensure that applications interpret the information consistently.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Engineers can use a shared asset model to give each machine a persistent identity and organize its measurements, states, and events. They can then map machine-specific information into this structure, aligning names, engineering units, state definitions, timestamps, and data quality information.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;From that point, the information can be organized and shared through a unified namespace, giving plant applications a consistent way to find the data they need. For example, an existing inspection result can be made available to production software along with its machine identity, inspection outcome, timestamp, and product context. Production software can then use the defined result without having to interpret the machine&amp;rsquo;s original data format.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Measuring Retrofit Benefits Against the Full Cost of Modernization&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Before retrofitting existing equipment, manufacturers should define the improvements they want and record how the machines currently perform.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;If the aim is to shorten unplanned stoppages, engineers can compare downtime duration and troubleshooting time before and after the changes. Other applications may focus on scrap rate, maintenance response time, energy use, or hours spent manually collecting readings.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Comparisons should consider the changes in production volume, product mix, and operating hours. The downtime should be compared with scheduled production hours, or scrap with comparable output, to help separate the retrofit&amp;rsquo;s effect from changes in demand. Maintenance campaigns and other process changes should also be recorded.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Engineers can directly measure a reduction in troubleshooting time. However, if an alert leads to a repair before a breakdown occurs, the avoided downtime and its cost should be estimated because the failure did not occur.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;The value of recovered production also depends on if the plant needs the extra output and could have made it later using spare capacity. The calculation should also use the revenue remaining after variable production costs and count that benefit only once. The cost calculation must also include hardware, integration, installation downtime, software, cybersecurity, calibration, training, and life cycle support.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Measured results can serve as a guide for expansion into assets where the operational need and expected return justify the full cost of modernization.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;As manufacturers transform machine signals into accountable actions and organize mixed-generation equipment, brownfield modernization should be guided by evidence from the first deployments. Manufacturers need to know whether the information helped teams make better decisions, whether people acted on it, and whether the improvements justified the cost.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Expansion should therefore focus on machines where demonstrated value supports the next investment and where the organization has the resources to maintain the added capability.&lt;/p&gt;
+</description><guid isPermaLink="false">4883</guid></item><item><title>How Laser Power Beaming Enables In-Flight UAV Charging</title><link>https://www.mouser.com/blog/how-laser-power-beaming-enables-in-flight-uav-charging</link><category>AllEnergy Harvesting,Power,Sensors,Wireless</category><pubDate>Thu, 12 Nov 2026 23:57:06 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/1c558516-e272-4f2f-aa77-5b8d5e74e48c/Large/Adobe-Stock-119172565-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;&lt;span style="font-style:italic"&gt;Source: Sergey/stock.adobe.com&lt;/span&gt;&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
 
@@ -26,7 +121,7 @@
 
 &lt;p style="margin-bottom:11px"&gt;&amp;ldquo;In some cases, we&amp;rsquo;ve made them so that the power-to-weight ratio is higher than what batteries are, which means that you can do interesting trade-offs as well. For example, let&amp;rsquo;s get a slightly smaller battery and put on this power beaming, and now we don&amp;rsquo;t have as much impact on our payload mass budget,&amp;rdquo; adds Nugent.&lt;/p&gt;
 
-&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/PowerLight UAV receiver.png?ver=ujEe7UgI3cHdstvbcUiOuQ%3d%3d" style="width: 600px; height: 748px;" title="" /&gt;&lt;/p&gt;
+&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/PowerLight UAV receiver.png?ver=ujEe7UgI3cHdstvbcUiOuQ%3d%3d" style="width: 500px; height: 623px;" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt;&amp;nbsp;PowerLight&amp;rsquo;s UAV receiver. (Source: PowerLight Technologies)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
 
@@ -48,7 +143,7 @@
 
 &lt;p style="margin-bottom:11px"&gt;PowerLight treats this as a cooperative tracking problem. A beacon on the receiver gives the ground system a target to follow, while machine vision, gimbals, and motors on the transmitter adjust the beam as the aircraft moves. The ground-based transmitter system, including the wide-field-of-view camera, beam director, laser power supply, and stabilization hardware, helps track the UAV and direct laser energy toward the airborne receiver (&lt;strong&gt;Figure 3&lt;/strong&gt;). Movement from the aircraft motors and other sources can introduce small amounts of jitter into the tracking system, but the size of the power beam provides some tolerance for such jitter.&lt;/p&gt;
 
-&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/PowerLight ground based transmitter.jpg?ver=8QMOEpRiI6H2Ig6XSYkAKQ%3d%3d" style="width: 600px; height: 889px;" title="" /&gt;&lt;/p&gt;
+&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/PowerLight ground based transmitter.jpg?ver=8QMOEpRiI6H2Ig6XSYkAKQ%3d%3d" style="width: 500px; height: 741px;" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt;&amp;nbsp;PowerLight&amp;rsquo;s ground-based transmitter includes a wide-field-of-view camera and beam director used as part of the system that tracks the UAV and delivers laser power to the receiver. (Source: PowerLight Technologies)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
 
@@ -409,7 +504,7 @@
 
 &lt;p style="margin-top:16px; margin-bottom:11px"&gt;The retrofit should leave operators and maintenance teams with equipment they can understand, verify, and maintain as part of their everyday operations.&lt;/p&gt;
 
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;In the next part of this blog series, we examine practical examples of how machine data can support brownfield modernization efforts.&lt;/p&gt;
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;In the next part of this blog series, we examine practical examples of how &lt;a href="https://www.mouser.com/en/blog/brownfield-machine-data-for-plant-modernization"&gt;machine data can support brownfield modernization efforts&lt;/a&gt;.&lt;/p&gt;
 </description><guid isPermaLink="false">4831</guid></item><item><title>How ERVs Improve HVAC Efficiency and Indoor Air Quality</title><link>https://www.mouser.com/blog/how-ervs-improve-hvac-efficiency-indoor-air-quality</link><category>Industrial,Power,Sensors</category><pubDate>Fri, 30 Oct 2026 22:21:59 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/81ec5784-c452-4119-acb3-38db095d3d5a/Large/Adobe-Stock-1555396388-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: Evgenii Bakhchev/stock.adobe.com&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
@@ -1056,105 +1151,4 @@ Jean-Jacques (JJ) DeLisle attended the Rochester Institute of Technology, where 
 &lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Author&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src="/blog/Portals/11/Alex-Pluemer-100px.jpg" style="margin-left: 10px; margin-right: 10px; float: left; width: 100px; height: 100px;" /&gt;Alex Pluemer is a senior technical writer for Wavefront Marketing specializing in advanced electronics, emerging technologies and responsible technology development.&lt;/p&gt;
-</description><guid isPermaLink="false">4735</guid></item><item><title>New Tech Tuesdays: Giving Voice Interfaces a Better Sense of Direction</title><link>https://www.mouser.com/blog/new-tech-giving-voice-interfaces-better-sense-of-direction</link><category>AllAudio,Industrial,New Tech Tuesdays,Robotics</category><pubDate>Tue, 13 Oct 2026 05:06:00 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1791821730/NTT_Oct13_voice_recognition_jhj8jt.jpg" style="height: 327px; width: 600px;" title="" /&gt;&lt;/p&gt;
-
-&lt;h2&gt;New Tech Tuesdays&lt;/h2&gt;
-
-&lt;h3&gt;&lt;em&gt;Join Mouser&amp;#39;s Technical Content team for a weekly look at all things interesting, new, and noteworthy for design engineers.&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Voice interfaces are moving into devices that must hear people from across a room or in spaces where other sounds compete with speech, finding their way into everything from robots and kiosks to collaborative displays, speakerphones, and other interactive devices. Distance can make clear audio difficult to receive. The microphones capture the speaker along with room reflections and background noise. A device with its own loudspeaker also has to contend with acoustic echo.&lt;/p&gt;
-
-&lt;p&gt;Recent work with compact microphone arrays shows how much of this processing can now be handled in embedded hardware. Researchers demonstrated a four-microphone system that uses real-time beamforming and direction-of-arrival processing to locate and track a speaker.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt; The system&amp;rsquo;s combination of fast audio processing and minimal resource use makes it suitable for real-time applications ranging from voice interfaces to videoconferencing and service robots.&lt;/p&gt;
-
-&lt;p&gt;This voice processing technology is appearing in newer types of interactive hardware. At CES 2026, the Reachy Mini desktop robot was demonstrated with a ReSpeaker module. The four-microphone system provides far-field voice capture and speaker localization, enabling the robot to determine where a voice is coming from.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;In both examples, a combination of directional information from microphone arrays and onboard processing provides clear voice signals.&lt;/p&gt;
-
-&lt;p&gt;In this week&amp;rsquo;s New Tech Tuesdays, we explore how microphone arrays, beamforming, acoustic echo cancellation, and other onboard processing techniques improve far-field voice capture in interactive devices.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;From Microphone Array to Usable Speech&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Because a microphone array captures the same sound at slightly different times at each microphone, the differences give the processor information about the direction the sound came from. Direction-of-arrival (DoA) processing uses this information to estimate the speaker&amp;rsquo;s location. Beamforming combines the microphone signals to focus on the direction from which they arrive. Sound arriving from anywhere else can then be reduced relative to the desired speech.&lt;/p&gt;
-
-&lt;p&gt;An onboard loudspeaker can introduce another signal that must be removed, since some of the speaker&amp;rsquo;s sound will feed back into the microphones. Acoustic echo cancellation (AEC) compares the microphone input with a reference of the audio being sent to the loudspeaker, allowing the processor to identify and reduce the loudspeaker audio that comes back through the microphones.&lt;sup&gt;&lt;a href="#_edn3" name="_ednref3"&gt;[3]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;Other processing can clean up the remaining audio interference. Noise suppression reduces unwanted background sound, and automatic gain control adjusts the signal level when a person speaks more quietly or moves further away from the microphone. These combined techniques help produce a cleaner voice signal for speech recognition, communications, or other processing.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Newest Products for Your Newest Designs&lt;sup&gt;&amp;reg;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Handling these audio processing functions in real time requires significant processing at the endpoint. The &lt;a href="https://www.mouser.com/new/xmos/xmos-vocalfusion-xvf3800-voice-processor/"&gt;XMOS VocalFusion&lt;sup&gt;&amp;reg;&lt;/sup&gt; XVF3800&lt;/a&gt; voice processor combines far-field voice processing for four digital microphones in a single device. It provides acoustic echo cancellation, adaptive beamforming, and noise suppression, along with automatic gain control and direction-of-arrival information.&lt;/p&gt;
-
-&lt;p&gt;The XVF3800, the voice processor behind the ReSpeaker module used in the Reachy Mini demonstration at CES 2026, uses three beams to locate and follow speakers. One scans for a new speaker, and the other two beams can track individual speakers. It covers 360 degrees and has a specified operating distance of up to 5m. The microphone array can be arranged in either a linear or square configuration.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Tuesday&amp;rsquo;s Takeaway&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Far-field voice depends on more than just detecting speech. A device must also determine where the voice is coming from and separate it from other sounds reaching the microphone. Microphone arrays paired with onboard audio processing enable much of this work to be handled at the endpoint, opening the door to more responsive voice control in robots, kiosks, and other interactive devices.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp; &amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;strong&gt;Sources&lt;/strong&gt;&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt; https://www.mdpi.com/2079-9292/15/15/3410&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt; https://www.xmos.com/ces-2026-reachy-mini-powered-by-xvf3800&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref3" name="_edn3"&gt;[3]&lt;/a&gt; https://www.xmos.com/documentation/XM-014888-PC/html/modules/fwk_xvf/doc/programming_guide/02_theory_of_operation.html&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">4733</guid></item><item><title>More Data, More Failure Points: Engineering Smarter Farm Machinery</title><link>https://www.mouser.com/blog/more-data-more-failure-points-engineering-smarter-farm-machinery</link><category>Automation,Connectors,Industrial,IoT,RF,Sensors,Wireless</category><pubDate>Wed, 07 Oct 2026 19:44:27 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/66ce62aa-5dc8-466d-acaf-3f46497101c8/Large/Adobe-Stock-834253434-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: Paul/stock.adobe.com, generated with AI&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Automation has transformed agricultural machinery. Modern tractors, sprayers, harvesters, and other farm equipment are no longer merely mechanical equipment. Instead, they function as distributed embedded systems that integrate sensors, cameras, positioning data, electronic controls, actuators, telematics, and artificial intelligence (AI) to monitor conditions, make decisions, and manage resources.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Across many types of agricultural machinery, advanced technologies perform specialized functions. Soil sensors monitor moisture saturation, pH, and nutrient levels, while embedded cameras provide real-time visibility of crop conditions. Global Navigation Satellite Systems (GNSS) supply the positioning data that guidance and control systems need for precision spraying, planting, and harvesting. Custom electronic control units (ECUs) embedded in equipment optimize fuel consumption and water distribution via automated irrigation systems, while actuators in harvesters and picking machines enhance efficiency and productivity. Telematics and AI algorithms integrate data from these technologies, analyzing camera and sensor data to improve equipment operation and resource utilization (&lt;strong&gt;Figure 1&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/TE_MSB318_Fig1_600.png?ver=FHBEV1CQvXMV5RPbBo2jJA%3d%3d" style="width: 600px; height: 345px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt;&amp;nbsp;Modern agricultural machinery integrates cameras, sensors, antennas, telemetry, displays, controllers, gateways, and network infrastructure throughout the vehicle, creating an increasingly interconnected electronic system. (Source: TE Connectivity, modified by Mouser)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The adoption of these technologies is already widespread. According to the USDA Economic Research Service, 70 percent of large-scale US crop farms in 2023 reported using autosteering guidance systems for machinery, while 68 percent reported using yield monitors and yield or soil mapping technologies.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt; As agricultural equipment becomes more automated and connected, power requirements, data processing demands, and the need for greater interconnectivity increase.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;As additional sensors, cameras, and connected systems are integrated into agricultural equipment, designers must ensure that power, data, and control signals move reliably across increasingly complex machines. This article examines the engineering challenges that accompany that complexity and the technologies that help maintain dependable system performance.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Maintaining End-to-End System Reliability&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;More sensors, cameras, and connected systems in automated agricultural environments increase the potential for technical issues with systems and components. Every new device added to a machine brings more than just another data source. Depending on the system architecture, it may also introduce additional connectors, cabling, network traffic, processing requirements, and power demands. Each of those creates another potential point of failure where power delivery or communication can be disrupted.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;As system complexity grows, designers must also address challenges related to signal integrity and electromagnetic interference (EMI), particularly for cameras that generate and transmit large volumes of visual data while sharing network resources with other sensors and control systems. A poor connection, degraded signal, transmission delay, or power interruption anywhere along the data path can affect the flow of information from the sensor to the systems that depend on it. As a result, maintaining reliable operation requires preserving the integrity of the entire system and maintaining processes to continuously monitor its performance.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The operation of an automated precision sprayer illustrates this challenge. The process begins when an embedded camera captures an image depicting the condition of crops. The system transmits the image to an edge processor that analyzes it and determines what action the sprayer should take. A controller issues a command to the sprayer, which is transmitted via the network to begin an operation. An actuator opens the appropriate valve or nozzle, and feedback&amp;mdash;such as valve position, flow rate, pressure, or actuator status&amp;mdash;verifies that the controller&amp;rsquo;s command has been executed. A fault in a single component anywhere along the path from edge sensor to performance confirmation can derail the operation. When scaled across a large farm managing fleets of sprayers, tillers, tractors, and other connected equipment, the number of potential failure points increases rapidly. Therefore, ensuring reliable machine operation requires robust interconnects, dependable communication pathways, and continuous monitoring throughout the system.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Designing for Agricultural Operating Conditions&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Another major challenge when automating farming processes is the physical environment in which components and equipment must perform. Outdoor farming exposes the physical data path to a variety of potential threats and contaminants that can cause short- and long-term faults and degradation. Dust, mud, and moisture are constantly present in agricultural applications and can potentially damage or erode components, cables, and connectors. Large agricultural machines are susceptible to vibrations from normal operation or from the rugged surroundings they operate in. They are often exposed to chemicals and fertilizers that corrode metals or chemically degrade susceptible cables and surfaces, and typically must be pressure-washed to be thoroughly cleaned. In addition, temperature cycling in motorized equipment creates mechanical strain, and UV exposure can erode cables and components over time.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;As a result, equipment and components require strong sealing to prevent the ingress of liquids and particles. Shielding from UV exposure also reduces long-term degradation and increases equipment lifespan, a major factor in reducing overall costs. Cable routing and strain relief are essential for reducing cable exposure to heat, contaminants, and weather, thereby maintaining overall system reliability. It is critical that automated agricultural equipment be robust and reliable enough to meet the spectrum of challenges posed by their physical environments.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Managing Growing Data and Bandwidth Demands&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Cameras, sensors, and automation all increase demand for bandwidth as they become more integrated into agricultural machinery and equipment. Modern farming machinery contains embedded cameras that stream data over the network to edge processors or control centers. Machine vision and lidar systems generate large volumes of information that must be transmitted and processed quickly enough to support real-time operational decisions. GNSS positioning accuracy depends on factors such as satellite geometry, signal quality, multipath, atmospheric errors, receiver design, and, in high-precision systems, the availability of correction data such as real-time kinematic (RTK) and precise point positioning (PPP).&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Imagery, data collected from soil sensors, and satellite positioning can be used to create prescription maps that help farmers optimize crop production and resource management, thereby further increasing demand for bandwidth. Telematics systems help farmers monitor and coordinate fleets of agricultural equipment in real time, while onboard diagnostics continuously assess equipment health to identify issues before they lead to costly repairs or downtime.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The Agricultural Industry Electronics Foundation (AEF) High-Speed ISOBUS Project conducted simulations of automated farming machines equipped with three to five cameras, operating at speeds ranging from 14Mbps to 75Mbps and delivering packets varying from 42 bytes to 1500 bytes. The simulation indicated that a 100Mbps network could meet immediate and readily forecast needs, although a 1Gbps network may be required for larger-scale and future use cases.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt; As the number of sensors and inputs grows, network speeds will have to increase to meet the greater demand. Large-scale agricultural operations may be operating hundreds of interconnected machines simultaneously, and sufficient bandwidth is necessary to maintain efficient and reliable performance&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;As of 2026, High-Speed ISOBUS remains under development, with AEF targeting HSI 1.0 for 2028.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Building Robust Agricultural Connectivity Systems&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;To meet the data transmission and reliability needs of modern precision agriculture, TE Connectivity offers a suite of robust &lt;a href="https://www.mouser.com/en/new/te-connectivity/te-agriculture-solutions"&gt;agriculture solutions&lt;/a&gt;. TE&amp;rsquo;s AMPSEAL connectors provide environmental sealing for applications exposed to moisture, dust, and extreme temperatures, and DEUTSCH DT environmentally sealed connectors support wire-to-wire and wire-to-board connections. Single- and multi-port antennas support wireless connectivity across agricultural machinery, while cable assemblies and heat-shrink tubing help protect and maintain connections throughout the physical data path. Together, these technologies provide designers with options for building the robust power, data, and signal paths required by increasingly connected and automated agricultural equipment.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Enabling the Next Generation of Smart Farm Equipment&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;As agricultural machinery becomes more automated and connected, reliable operation depends on more than rugged equipment. Power, data, and control signals must move dependably across increasingly complex systems while withstanding harsh environmental conditions. Robust interconnect solutions help maintain connectivity, support growing bandwidth demands, and enable reliable performance across modern agricultural equipment.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Author&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src="/blog/Portals/11/Alex-Pluemer-100px.jpg" style="margin-left: 10px; margin-right: 10px; float: left; width: 100px; height: 100px;" /&gt;Alex Pluemer is a senior technical writer for Wavefront Marketing specializing in advanced electronics, emerging technologies and responsible technology development.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&lt;em&gt;&lt;small&gt;Sources&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://www.ers.usda.gov/data-products/charts-of-note/110550&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://www.aef-online.org/about-us/activities/high-speed-isobus.html&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">4708</guid></item></channel></rss>
+</description><guid isPermaLink="false">4735</guid></item></channel></rss>
