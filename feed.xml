@@ -1,4 +1,704 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=20" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>IT vs. OT: A Cybersecurity Perspective</title><link>https://www.mouser.com/blog/it-vs-ot-a-cybersecurity-perspective</link><category>Automation,Industrial,Industrial Automation,IoT,Security</category><pubDate>Thu, 19 Nov 2026 17:59:33 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/d876b5b1-3b1a-444b-a1c1-96fa35eeb50c/Large/Adobe-Stock-687564787-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><atom:link href="https://www.mouser.com/blog/DesktopModules/LiveBlog/Handlers/Syndication.ashx?mid=1009&amp;PortalId=11&amp;tid=545&amp;ItemCount=20" rel="self" type="application/rss+xml" /><title>Bench Talk</title><description>Bench Talk for Design Engineers | The Official Blog of Mouser Electronics</description><link>https://www.mouser.com/blog</link><item><title>Selecting End-Of-Arm Tooling for Cobots</title><link>https://www.mouser.com/blog/selecting-end-of-arm-tooling-cobots</link><category>Automation,Industrial,Industrial Automation,Robotics</category><pubDate>Wed, 25 Nov 2026 04:21:15 GMT</pubDate><description>&lt;h2 style="color:##333333; font-style:italic; font-size:16px;"&gt;&lt;em&gt;End effectors enable cobots to handle components and perform production tasks reliably&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p class="MsoSubtitle" style="margin-bottom:11px"&gt;&lt;img alt="" src=" https://mouser.bynder.com/asset/ca437d77-756e-4fc7-b7ba-69b2e47a6f00/Large/Adobe-Stock-2048418727-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: Wong/stock.adobe.com, generated with AI&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The success of an industrial cobot depends on many factors. One of them is how the cobot interacts with the workpiece. For example, during computer numerical control (CNC) machine tending, a coolant-coated component can slip from the tooling as the arm accelerates away from the machine.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Reach, payload, speed, and repeatability are often the starting points when manufacturers evaluate cobots. These specifications describe the arm&amp;rsquo;s motion and load capacity. However, they do not indicate how reliably it can handle a particular component or perform a production task.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;End-of-arm tooling (EOAT) provides this interaction through a device attached to the robot wrist. EOAT design affects how reliably the robot handles components and whether the operation meets cycle time requirements. It also affects the safety of the workers sharing the workspace.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In the last part of our cobot blog series, we detailed &lt;a href="https://www.mouser.com/en/blog/machine-vision-for-cobots-and-industrial-sensors"&gt;how machine vision enhances motion capabilities&lt;/a&gt;. This final blog in the series explores the primary cobot tooling mechanisms, the key criteria for selecting EOAT based on the workpiece, and the critical integration requirements for safe, reliable cobot operation.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Mechanism Selection: Matching Tooling to the Application&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;EOAT can be divided into two groups: handling tools that move workpieces and process tools that perform industrial manufacturing operations.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Handling tools typically involve various grippers and gripper jaws. Mechanical grippers clamp components using moving jaws. Parallel jaws move along straight paths to grasp opposing faces. Angular jaws allow the fingers to clear fixtures during loading.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;When parts have different shapes or arrive out of position, fixed fingers can become restrictive. Adaptive grippers use linkages or compliant joints that conform to the object to reduce the need for a separate finger design. Soft grippers use flexible materials to spread contact pressure, making them suitable for delicate products.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Other tools hold parts without closing fingers around them. Vacuum grippers use a pressure difference at the suction point to lift the object. They can also handle packaged goods if the surface provides sufficient sealing. Magnetic grippers attract ferromagnetic materials and can transfer compatible steel blanks into a machine.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Process EOAT has a very different purpose. Screwdrivers tighten fasteners to a controlled torque, while welding torches join metal parts. Dispensing tools lay adhesive or sealant along a defined path. Sanding and polishing tools control abrasive contact with a surface. These process tools allow the cobot to complete an operation rather than simply transport the workpiece.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Design Variables: Evaluating the Workpiece and Process for EOAT Selection&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Engineers can start the tool selection process by understanding the workpiece requirements, such as its dimensions, load, and geometry. These factors determine where the tool can make contact. While material and surface condition affect grip reliability, stiffness and fragility limit the pressure it can tolerate.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Consider a machined steel part. Mechanical fingers can grasp a shoulder, a magnetic gripper can lift a compatible steel component, and a vacuum gripper can grip a sufficiently smooth, nonporous face. But the choice will depend on the available surface area, since the holding force needs to counter acceleration and orientation changes.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Engineers should also allow for part variation, acceptable surface marks, and possible deformation. They need to establish what happens if power or air fails. Grip and release times must fit the production cycle.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In addition, the selected tool will affect robot loading. Payload consists of the tool, hoses, cables, fittings, and the workpiece. Additional weight further away from the cobot wrist results in more torque and angular inertia. Thus, an assembly that is below the nominal load capacity will still be over the permissible wrist loads.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Another aspect to understand is the operating environment. Dust or water may harm the seals and mechanisms. Electronics processing requires electrostatic discharge (ESD) protection while hazardous environments need certified tools.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Throughout all these considerations, the best tool is the one that performs reliably under real-world industrial production conditions.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;System Architecture: Integrating the Tool with the Complete Cobot System&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Mounting the tool to the wrist is the first step towards integration. The flange and adapter need to maintain alignment without excessive flexing. Cables and hoses also need clearance throughout the arm&amp;rsquo;s motion to prevent snagging or fatigue.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;After the mounting process, the controller has to calibrate the Tool Center Point (TCP). This gives a description of the location and orientation of the working point with respect to the wrist. An incorrect calibration can result in mistakenly positioning a screwdriver bit off the fastener, even with correct movement of the arm.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Operating the tool requires discrete electrical input/output (I/O), industrial communication protocols, or pneumatic valves. Feedback gives confirmation on the presence of the parts, sufficient gripping force, or vacuum. But for process tooling, verification of completion gives assurance that the fastening has been done properly.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;For high-mix production, automatic tool changers let one cobot switch from handling a part to performing an operation. This reduces manual changeovers, but the changer also requires docking stations, utility connections, and tool-specific calibration.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;The safety measures of collaborative arms&amp;rsquo; tooling are also very important for floor operators. Powered tools can cause severe injuries, as in the case of a heated surface causing burns. Therefore, risk assessment should cover the arm, tool, workpiece, process, and surrounding equipment together.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Reliability also depends on the maintenance of cobots. Monitoring tool feedback and replacing worn components before failure helps maintain consistent gripping and process quality.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;To ensure reliable operations across applications, end-of-arm tooling converts a cobot&amp;rsquo;s programmed motion into useful production work. Selecting the right tool begins with understanding the workpiece and the process it must support, followed by the conditions it will encounter in production.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Engineers need to balance reliable operation with the capacity and cycle time requirements. Utility needs and maintenance demands also influence the design, along with the safety of the complete application.&lt;/p&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Carefully selected and integrated EOAT can extend the same cobot platform across different tasks. However, this flexibility provides value only when each operation performs consistently under actual production conditions.&lt;/p&gt;
+</description><guid isPermaLink="false">4903</guid></item><item><title>New Tech Tuesdays: Compact Surge Protection for Demanding Power Systems</title><link>https://www.mouser.com/blog/new-tech-compact-surge-protection-demanding-power-systems</link><category>Circuit Protection,Industrial,New Tech Tuesdays,Power</category><pubDate>Tue, 24 Nov 2026 23:51:51 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1795476398/NTT_Nov24_surge_protection_epvpse.jpg" style="height: 327px; width: 600px;" title="" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;New Tech Tuesdays&lt;/h2&gt;
+
+&lt;h3&gt;&lt;em&gt;Join Mouser&amp;#39;s Technical Content team for a weekly look at all things interesting, new, and noteworthy for design engineers.&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Severe weather and other environmental factors regularly cause power grid faults, sometimes resulting in outages or surges. While flickering lights and blinking digital clocks are just a mild inconvenience, these grid faults can not only significantly disrupt sensitive electronics by interrupting communications, resetting embedded controllers, or overstressing power stages, but also damage electronic systems.&lt;/p&gt;
+
+&lt;p&gt;This week&amp;rsquo;s New Tech Tuesdays examines the causes of electrical surges, the design considerations behind compact surge protection, and how thermal disconnects and status monitoring improve protection coordination and system reliability.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;When Microseconds Mean Danger&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;Electrical transients can originate outside the equipment from lightning-related disturbances and utility switching, or inside it when inductive loads, contactors, and motors are switched. Although these transients may last only a short time, the resulting voltage and current can exceed the normal operating envelope of power semiconductors, controllers, communications interfaces, and insulation systems.&lt;/p&gt;
+
+&lt;p&gt;A surge protective device (SPD) limits exposure to dangerous voltage and current levels by diverting surge current and constraining voltage for downstream circuitry. Metal-oxide varistors (MOVs) are well-suited to this task because they create a temporary current path around the protected load when the applied voltage exceeds their characteristic threshold, causing their resistance to drop sharply.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Why Compact Surge Protection Is a System Problem&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;In many designs, space remains one of engineering&amp;rsquo;s most constrained resources. Minimizing enclosure volume and printed circuit board (PCB) area reduces manufacturing and shipping costs, so designers often find themselves optimizing for size.&lt;/p&gt;
+
+&lt;p&gt;Size constraints encourage layered protection. No single component substitutes for coordination across the installation. An upstream SPD can absorb a large portion of an incoming event, while protection closer to a control panel or load can reduce the remaining stress. Short, direct connections also add a layer of protection because lead and trace inductance can add voltage during rapid current changes.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Heat Behind the Clamp&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;An MOV absorbs energy each time it conducts. However, repeated surges, temporary overvoltage, or operating beyond rated conditions can change its characteristics and increase leakage current over time. That leakage produces heat, and under abnormal sustained conditions, this can lead to a thermal runaway.&lt;/p&gt;
+
+&lt;p&gt;A thermally protected varistor addresses this failure mode by connecting a thermal disconnect in series just next to the MOV. If the varistor overheats, the disconnect opens the current path, preventing a thermal runaway.&lt;/p&gt;
+
+&lt;p&gt;MOVs are connected in parallel to their loads, so a circuit can continue operating even after a thermal fuse disconnects the varistor. A remote indication contact or visual indicator notifies a controller or maintenance technician that the protection element has opened. That turns a hidden loss of protection into a service event that can be logged and corrected.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Selecting Protection Without Guesswork&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;Protection selection begins with the power source. The selected maximum continuous operating voltage must withstand normal line variations, and the clamping performance must remain fast enough to protect downstream equipment. AC and DC ratings are not interchangeable assumptions; designers should use the values specified for the intended operating mode.&lt;/p&gt;
+
+&lt;p&gt;Once the parameters for normal operation are determined, designers can then test against surges using the applicable equipment, installation, and regional standards. The standard 8/20μs pulse is used to simulate lightning strikes and switching transients with a nominal virtual front time of 8μs and a half-value time of 20μs.&lt;/p&gt;
+
+&lt;p&gt;Engineers also need to consider manufacturability when thermal fuses are involved in the design. Thermal fuses generally cannot undergo reflow soldering and require either manual soldering or wave soldering.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Newest Products for Your Newest Designs&lt;sup&gt;&amp;reg;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;Bringing surge suppression, thermal safety, and status monitoring together in a compact design is an approach &lt;a href="https://www.mouser.com/en/manufacturer/tdk/"&gt;TDK&lt;/a&gt; uses to address the protection demands of modern power systems. &lt;a href="https://www.mouser.com/en/new/tdk/epcos-tdk-mt40-thermofuse-varistors/"&gt;TDK MT40 Series ThermoFuse varistors&lt;/a&gt; combine a strap-terminated MOV with an integrated thermal disconnect in a 38.0mm &amp;times; 15.2mm &amp;times; 40.9mm package. The series supports maximum continuous operating AC voltages from 150V to 550V and DC voltages from 200V to 750V, with a nominal discharge-current rating of 20kA for 15 pulses and a peak surge-current capability of 50kA for one pulse, both using an 8/20μs pulse.&lt;/p&gt;
+
+&lt;p&gt;For fault coordination, the MT40 series varistors provide a short-circuit current rating (SCCR) of up to 200kA according to UL 1449 and are recognized as a UL 1449 Type 1CA component assembly for AC and DC applications. A galvanically isolated, normally open micro-switch supports remote status indication. The variants share a common electrode footprint, which can simplify board reuse across voltage options.&lt;/p&gt;
+
+&lt;p&gt;The operating temperature range is &amp;minus;40&amp;deg;C to +85&amp;deg;C, and the encapsulation is rated UL 94 V-0. MT40 ThermoFuse varistors offer solutions in several applications, including photovoltaic systems, industrial power supplies, outdoor lighting, telecommunications systems, and SPD assemblies.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Tuesday&amp;rsquo;s Takeaway&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;Compact surge protection works best when engineers account for it throughout the power architecture. MOV ratings must align with the operating voltage and expected surge environment, while connection length, grounding, fault current, temperature, and layered coordination determine how effectively the system performs.&lt;/p&gt;
+
+&lt;p&gt;Designs are moving toward an integrated thermal disconnect that isolates an overheated varistor, while the status contact indicates when surge protection is no longer available. For industrial and energy equipment, that combination can reduce protection-system complexity while preserving the monitoring and maintenance visibility needed for reliable operation.&lt;/p&gt;
+</description><guid isPermaLink="false">4901</guid></item><item><title>MOSFET FAQs: 10 Essential Questions Answered</title><link>https://www.mouser.com/blog/mosfet-faq</link><category>All,Audio,Automotive,Industrial,Motor Control,Power,RF,Wide Bandgap</category><pubDate>Tue, 24 Nov 2026 23:11:42 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/330c4f5e-5c19-4612-a9e0-e1b5d5dbfccf/Blog-Article-Image-AdobeStock/Adobe-Stock-2086496339-jpg.jpg" style="height: 398px; width: 600px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;strong&gt;Image Source:&lt;/strong&gt; ALEKSFILM/stock.adobe.com&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;The sudden, unmistakable pop of a failing power device is a sound familiar to any engineer. More often than not, that acoustic failure indicates that a power semiconductor has been pushed past its limits by electrical, thermal, or transient overstress.&lt;/p&gt;
+
+&lt;p&gt;Although the world of power electronics is changing, silicon-based MOSFETs remain the most common type. To clear up common ambiguities in terminology, type, structure, usage, and selection, this guide focuses on silicon MOSFETs and answers 10 essential questions to help engineers with this mainstay electronic component.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;What Does MOSFET Stand For?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;MOSFET is an acronym for metal-oxide-semiconductor field-effect transistor. Each part of the name describes an aspect of its construction or operation:&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li&gt;Metal: The gate electrode of the MOS structure. Although modern devices do not always use a metallic gate material, the original terminology has been retained.&lt;/li&gt;
+ &lt;li&gt;Oxide: The gate insulator layer, traditionally silicon dioxide.&lt;/li&gt;
+ &lt;li&gt;Semiconductor: The silicon substrate forming the conductive channel.&lt;/li&gt;
+ &lt;li&gt;Field effect: The voltage-driven control mechanism modulating conductivity via an electric field.&lt;/li&gt;
+ &lt;li&gt;Transistor: A semiconductor device that controls current or voltage and can be used for switching or amplification.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;What Is a MOSFET?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;A MOSFET is a voltage-controlled semiconductor used to switch or amplify signals. Unlike bipolar junction transistors (BJTs), MOSFETs do not require continuous control current during conduction, although their gates require transient current during switching.&lt;/p&gt;
+
+&lt;p&gt;While structurally a four-terminal device, the body is usually tied to the source, creating three terminals (&lt;strong&gt;Figures 1 and 2&lt;/strong&gt;):&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li&gt;Gate (G): The isolated control terminal that establishes the internal electric field.&lt;/li&gt;
+ &lt;li&gt;Drain (D): One of the two main current-carrying terminals. In conventional first-quadrant operation of an N-channel MOSFET, conventional current enters the drain and leaves the source, although an enhanced channel can conduct in either direction.&lt;/li&gt;
+ &lt;li&gt;Source (S): The reference terminal for gate-source voltage (V&lt;sub&gt;GS&lt;/sub&gt;) and one of the main current-carrying terminals.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;An insulating dielectric layer separates the gate from the channel, providing high input impedance by blocking DC conduction. This allows a gate voltage to efficiently control the current between source and drain.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="" height="400" src="https://res.cloudinary.com/uf-554466/image/upload/v1795193574/mosfet-faq-fig1_bs9bpq.png" width="400" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt;&amp;nbsp;The schematic symbol for an N-channel MOSFET, with the gate, drain, and source labelled. (Source: Public Domain, https://commons.wikimedia.org/w/index.php?curid=829685)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1795193574/mosfet-faq-fig2_xcad15.png" style="width: 400px; height: 400px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt;&amp;nbsp;The schematic symbol for a P-channel MOSFET, with the gate, source, and drain labelled. (Source: Public Domain, https://en.wikipedia.org/wiki/MOSFET#/media/File:IGFET_P-Ch_Enh_Labelled.svg)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;How Does a MOSFET Differ from Other Transistors?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;The MOSFET is a type of field-effect transistor (FET) that uses an insulated gate to control current flow between the drain and source terminals. The following are some of the key differences between MOSFETs and BJTs:&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li&gt;Control parameter: Silicon MOSFETs are voltage-controlled devices that rely on the gate-source voltage (V&lt;sub&gt;GS&lt;/sub&gt;), whereas BJTs are controlled by the base current (I&lt;sub&gt;B&lt;/sub&gt;).&lt;/li&gt;
+ &lt;li&gt;Input impedance: Silicon MOSFETs have extremely high input impedance because the gate is insulated from the channel, while BJTs typically exhibit much lower input impedance.&lt;/li&gt;
+ &lt;li&gt;Drive requirements: MOSFETs require very little steady-state gate current, simplifying the design of gate-drive circuits. BJTs require a continuous base current while conducting.&lt;/li&gt;
+ &lt;li&gt;Switching speeds: MOSFETs generally switch faster than comparable power BJTs, making them well-suited for switching power supplies, motor drives, and other high-frequency applications.&lt;/li&gt;
+ &lt;li&gt;Temperature coefficient: When fully enhanced in the ohmic region, silicon power MOSFETs generally exhibit a positive temperature coefficient of R&lt;sub&gt;DS(on)&lt;/sub&gt;, which can improve static current sharing between properly matched and thermally coupled parallel devices.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These characteristics have made MOSFETs widely used in high-frequency switching and power-conversion applications, particularly at low and moderate voltage levels. Higher switching frequencies also enable the use of smaller magnetic components, helping create more compact and efficient systems.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;What Is a MOSFET Used For?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;MOSFETs are widely used for power switching, load control, signal amplification, and digital logic. Most applications can be grouped into four key areas:&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li&gt;Power switching: The dominant switching device in DC-DC converters, switched-mode power supplies, inverters, and motor drives.&lt;/li&gt;
+ &lt;li&gt;Signal amplification: Used in many audio amplifiers, Radio frequency (RF) power stages, analogue integrated circuits, and active-load configurations.&lt;/li&gt;
+ &lt;li&gt;Logic circuits: Paired as complementary N-channel and P-channel devices to form energy-efficient Complementary metal-oxide-semiconductor (CMOS) logic used throughout modern digital electronics.&lt;/li&gt;
+ &lt;li&gt;Power distribution and load switching: Used as solid-state switches in battery management systems, eFuses, power-path control, hot-swap protection, and general load switching.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Explore more MOSFET use cases from a practical motor drive perspective in the &lt;a href="https://resources.mouser.com/explore-all/basics-of-mosfets-and-igbts-for-motor-control"&gt;Basics of MOSFETs and IGBTs for Motor Control&lt;/a&gt; application analysis.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;How Does a MOSFET Work?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;A MOSFET is controlled by the gate-to-source voltage (V&lt;sub&gt;GS&lt;/sub&gt;), which determines whether current can flow between the drain and source. In an enhancement-mode MOSFET, the device is normally off, meaning little or no current flows when V&lt;sub&gt;GS&lt;/sub&gt; is zero.&lt;/p&gt;
+
+&lt;p&gt;When a positive voltage is applied to the gate of an N-channel MOSFET, an electric field is created across the insulating oxide layer. This field attracts electrons toward the semiconductor surface beneath the gate, eventually creating a conductive channel. Once the gate voltage exceeds the threshold voltage (V&lt;sub&gt;TH&lt;/sub&gt;), current can flow through this channel from the drain to the source.&lt;/p&gt;
+
+&lt;p&gt;Increasing the gate voltage strengthens this channel, reducing the device&amp;rsquo;s on-resistance (R&lt;sub&gt;DS(on)&lt;/sub&gt;) and allowing it to conduct more efficiently.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;What Are the Main Types of MOSFETs?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;MOSFETs are commonly classified by their channel type (N-channel or P-channel) and operating mode (enhancement or depletion). Combining these characteristics produces four fundamental MOSFET variants:&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li&gt;N-channel enhancement mode: The most common type used in power electronics. It is a normally OFF device that requires a positive V&lt;sub&gt;GS&lt;/sub&gt; for conduction. Because electrons have higher mobility than holes in silicon, N-channel devices typically offer lower R&lt;sub&gt;DS (on)&lt;/sub&gt;, higher current capability, and better overall efficiency than equivalent P-channel devices.&lt;/li&gt;
+ &lt;li&gt;P-channel enhancement mode: A normally OFF device requiring a negative V&lt;sub&gt;GS&lt;/sub&gt; to conduct. These are often used in high-side switching applications because they simplify gate-drive circuitry for positive supply rails.&lt;/li&gt;
+ &lt;li&gt;N-channel depletion mode: A normally ON device with a pre-existing channel. A current-conducting channel exists at V&lt;sub&gt;GS&lt;/sub&gt; = 0V, so a negative V&lt;sub&gt;GS&lt;/sub&gt; is required to deplete the channel and turn the device OFF. These devices are typically used in specialised applications, such as constant-current circuits, startup circuits, and fail-safe designs.&lt;/li&gt;
+ &lt;li&gt;P-channel depletion mode: A normally ON device requiring a positive V&lt;sub&gt;GS&lt;/sub&gt; to turn OFF. This is the least common MOSFET variant, typically found in specialised analogue and process-specific applications.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For a deeper look into selecting these specific types, see the &lt;a href="https://www.mouser.com/en/blog/mosfet-guide"&gt;Ultimate Guide to Silicon MOSFET Technology&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;What Is the Structure of a MOSFET?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;The physical construction of an N-channel enhancement-mode MOSFET is built on a P-type silicon substrate. Two heavily doped N+ regions are formed in the substrate to serve as the source and drain. Above the area between them sits a thin layer of insulating silicon dioxide (SiO₂), topped by the gate electrode (&lt;strong&gt;Figure 3&lt;/strong&gt;). The oxide layer insulates the gate from the underlying silicon, which gives rise to the device&amp;rsquo;s high input impedance.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1795193660/mosfet-faq-fig3_ad7epv.jpg" style="height: 326px; width: 600px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt;&amp;nbsp;A cross-sectional diagram showing the internal structure of a MOSFET, highlighting the N-type and P-type materials, the oxide layer, and metal contacts. (Source: Mouser)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;MOSFETs are available in three main structure types:&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li&gt;Planar: These use a channel formed near the silicon surface. In power MOSFETs, current flows through a surface channel before passing vertically through the device to the drain.&lt;/li&gt;
+ &lt;li&gt;Trench: Vertical trenches contain the gate electrode and gate dielectric, forming channels along the trench sidewalls. This arrangement can increase cell density and reduce on-resistance, particularly in low- and medium-voltage power MOSFETs.&lt;/li&gt;
+ &lt;li&gt;Superjunction: This structure uses alternating columns of P-type and N-type material to improve the trade-off between breakdown voltage and on-resistance, enabling lower conduction losses at higher voltages.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;How Do You Test a MOSFET on a Circuit Board?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;When testing a MOSFET, initial diagnostics can be performed in-circuit, but definitive testing often requires removing the device.&lt;/p&gt;
+
+&lt;p&gt;The following steps present a typical troubleshooting process:&lt;/p&gt;
+
+&lt;ol&gt;
+ &lt;li&gt;Power down: Disconnect power and discharge all capacitors before making resistance or diode measurements.&lt;/li&gt;
+ &lt;li&gt;Check for shorts: With the gate discharged and held at the source potential, use a multimeter to check for an unintended low-resistance drain-to-source path. Use diode-test mode to check for the expected intrinsic body-diode conduction in the polarity appropriate to the device. These checks can identify gross failures but do not validate all MOSFET characteristics.&lt;/li&gt;
+ &lt;li&gt;Verify circuit operation: If energized testing can be performed safely, use appropriately rated differential or isolated measurement equipment to inspect the gate-to-source and drain-to-source waveforms. Do not connect an earth-referenced oscilloscope probe to a switching node unless the measurement arrangement is specifically designed for it.&lt;/li&gt;
+ &lt;li&gt;Remove and test, if necessary: If measurements prove inconclusive, remove the MOSFET from the PCB and test it separately. This eliminates the influence of surrounding components and provides a more reliable assessment of device health.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;How Do You Use a MOSFET in a Circuit?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;The exact implementation depends on the application, but most MOSFET switching circuits require attention to gate drive, load protection, thermal management, and PCB layout. Common design considerations include:&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li&gt;Gate-drive voltage: Ensure the available gate-drive voltage is sufficient to fully enhance the MOSFET. The threshold voltage (V&lt;sub&gt;TH&lt;/sub&gt;) indicates when conduction begins, not when the device reaches its specified low R&lt;sub&gt;DS(on)&lt;/sub&gt;.&lt;/li&gt;
+ &lt;li&gt;Gate resistor selection: A series resistor placed close to the gate pin helps control gate charging and discharging currents, manage switching speed, and reduce ringing and parasitic oscillation.&lt;/li&gt;
+ &lt;li&gt;Gate-to-source bias resistor: A resistor between the gate and source pins returns V&lt;sub&gt;GS&lt;/sub&gt; to the device&amp;rsquo;s off-state value when the driver is inactive or in high-impedance mode. This is commonly called a pull-down resistor for a ground-referenced N-channel MOSFET.&lt;/li&gt;
+ &lt;li&gt;Flyback diode placement: When switching inductive loads such as relays, solenoids, or motors, a flyback diode is placed across the load to suppress potentially damaging voltage spikes during turn-off.&lt;/li&gt;
+ &lt;li&gt;Heat dissipation considerations: Conduction and switching losses generate heat within the MOSFET. Calculating these losses helps determine whether a heatsink or additional cooling is required.&lt;/li&gt;
+ &lt;li&gt;Layout optimisation: Minimising the inductance of gate and power loops helps reduce voltage overshoot, ringing, electromagnetic interference (EMI), and potential device stress.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;What MOSFET Should I Buy?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;MOSFET selection typically involves these key application-level requirements:&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li&gt;Voltage rating: Choose a V&lt;sub&gt;DS&lt;/sub&gt; rating comfortably above the highest operating and transient voltages.&lt;/li&gt;
+ &lt;li&gt;Current and conduction losses: Use the expected load current and R&lt;sub&gt;DS(on)&lt;/sub&gt; to estimate conduction losses and temperature rise.&lt;/li&gt;
+ &lt;li&gt;Gate-drive compatibility: Ensure the available gate voltage is sufficient to fully enhance the MOSFET.&lt;/li&gt;
+ &lt;li&gt;Switching performance: For high-frequency applications, evaluate parameters such as gate charge (Q&lt;sub&gt;g&lt;/sub&gt;) and output capacitance.&lt;/li&gt;
+ &lt;li&gt;Package and thermal management: Verify that the package and cooling arrangement can safely dissipate the expected power loss.&lt;/li&gt;
+ &lt;li&gt;Device technology: Trench MOSFETs generally dominate lower-voltage applications, while superjunction devices are widely used at higher voltages.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For a more in-depth guide on device selection, see the &lt;a href="https://www.mouser.com/en/blog/mosfet-guide"&gt;Ultimate Guide to Silicon MOSFET Technology&lt;/a&gt;, which offers a step-by-step process for selecting a silicon MOSFET.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Knowing When to Choose MOSFET Alternatives&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;While silicon MOSFETs are often a great choice for many applications, some alternatives can offer significant advantages under specific operating conditions:&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li&gt;IGBTs: Often preferred in very high-power and high-voltage applications where switching frequencies are relatively low, such as wind turbines and large industrial motor drives.&lt;/li&gt;
+ &lt;li&gt;Silicon carbide (SiC) MOSFETs: Preferred for high-efficiency, high-temperature, and high-voltage power conversion. Currently popular for electric vehicle (EV) traction systems and high-power EV chargers.&lt;/li&gt;
+ &lt;li&gt;Gallium nitride (GaN) FETs: Ideal for ultra-high switching frequencies and high-power-density designs. Found in compact USB Type-C smartphone chargers and laptop power supplies.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For a detailed comparative breakdown for your technology selection, see Mouser&amp;rsquo;s &lt;a href="https://www.mouser.com/en/blog/mosfet-vs-igbt"&gt;guide on MOSFETs versus IGBTs&lt;/a&gt;. To source components for an active design, explore Mouser&amp;rsquo;s full inventory of &lt;a href="https://www.mouser.com/en/c/semiconductors/discrete-semiconductors/transistors/mosfets/"&gt;MOSFETs&lt;/a&gt;.&lt;/p&gt;
+</description><guid isPermaLink="false">4897</guid></item><item><title>MOSFET vs. IGBT: Choosing the Correct Switch for Your Power Application</title><link>https://www.mouser.com/blog/mosfet-vs-igbt</link><category>All,Automotive,Industrial,Motor Control,PowerWide Bandgap</category><pubDate>Tue, 24 Nov 2026 22:50:35 GMT</pubDate><description>&lt;p style="margin-bottom:16px"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/01d4b87f-5436-4b18-a95d-1ca6ae334459/mouser-mosfet-vs-igbt-blog-1000x560.jpg" style="width: 600px; height: 336px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Choosing between a metal-oxide-semiconductor field-effect transistor (MOSFET) and an insulated-gate bipolar transistor (IGBT) is one of the most important decisions in power electronics design. The selected switch influences efficiency, power density, thermal performance, system cost, and achievable switching frequency.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Why MOSFET vs. IGBT Switching Matters in Power Electronics&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Power semiconductors form the backbone of modern power electronics design. MOSFETs and IGBTs are the two dominant options, each with distinct operating characteristics. Selecting the wrong switching device can result in failure to meet efficiency targets, thermal issues, or development cost overruns in inverters, motor drives, switching power supplies, and power converters. For foundational context, explore &lt;a href="https://www.mouser.com/en/blog/mosfet-faq"&gt;MOSFET FAQs: 10 Essential Questions Answered&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;MOSFET vs. IGBT Device Characteristics&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;MOSFETs and IGBTs differ in several important respects:&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li class="MsoListBulletCxSpFirst" style="margin-left:8px"&gt;&lt;strong&gt;MOSFET:&lt;/strong&gt; A voltage-controlled device that can achieve switching frequencies in the megahertz range. Silicon MOSFETs are deployed in applications ranging from low-voltage systems to systems operating at up to 900V, with devices rated at 1,200V and above available.&lt;/li&gt;
+ &lt;li class="MsoListBulletCxSpLast" style="margin-left:8px"&gt;&lt;strong&gt;IGBT:&lt;/strong&gt; A voltage-controlled device that combines a MOSFET input structure with a bipolar transistor output. Designers select IGBTs for their robustness in higher-voltage applications (up to 6,500V) or where switching speeds of 20kHz to 50kHz are acceptable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style="margin-bottom:11px"&gt;For device structural variants, explore Mouser&amp;rsquo;s &lt;a href="https://www.mouser.com/en/blog/mosfet-guide"&gt;Ultimate Guide to Silicon MOSFET Technology&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Voltage Ratings and Breakdown Voltage&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;While there are devices that support higher voltages, silicon MOSFETs are widely used from low-voltage applications through the 600V to 900V classes. Silicon MOSFETs rated at 1,200V and above are available, although their relatively high on-state resistance can limit their suitability for high-current applications. By comparison, IGBTs operate comfortably from 600V to 6,500V.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The blocking voltage range of 500V to 900V represents an application-dependent crossover region where other factors, such as robustness, thermal considerations, and space requirements, guide designers towards the optimal device.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Conduction Losses&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Conduction losses are one aspect to be considered during the selection process:&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li class="MsoListBulletCxSpFirst" style="margin-left:8px"&gt;&lt;strong&gt;MOSFET:&lt;/strong&gt; Conduction losses are dominated by drain-to-source on-state resistance (R&lt;sub&gt;DS(on)&lt;/sub&gt;). Lower-voltage devices achieve milliohm on-resistance, but this rises sharply with increased voltage rating, penalising applications that handle high continuous currents.&lt;/li&gt;
+ &lt;li class="MsoListBulletCxSpLast" style="margin-left:8px"&gt;&lt;strong&gt;IGBT:&lt;/strong&gt; Conduction losses are dominated by collector-emitter saturation voltage (V&lt;sub&gt;CE(sat)&lt;/sub&gt;). Because the voltage drop increases less dramatically with voltage rating than MOSFET R&lt;sub&gt;DS(on)&lt;/sub&gt;, IGBTs often provide lower conduction losses in high-voltage, high-current applications.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Switching losses invert this balance. MOSFET switching losses are dominated by capacitive effects from gate charge and output capacitance, scaling linearly with frequency. IGBT switching losses arise from turn-on diode interaction and turn-off tail currents, which dominate total losses at higher frequencies. At low frequencies, IGBTs yield lower total losses; at high frequencies, the MOSFET&amp;#39;s switching-loss advantage is decisive.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Body Diodes and Reverse Recovery&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Bridge topologies impose strict demands on diode behaviour:&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li class="MsoListBulletCxSpFirst" style="margin-left:8px"&gt;&lt;strong&gt;MOSFET body diode:&lt;/strong&gt; Incorporates an inherent antiparallel diode formed by the device structure. In bridge circuits, reverse-recovery charge and reverse-recovery time cause shoot-through spikes, switching losses, and electromagnetic interference.&lt;/li&gt;
+ &lt;li class="MsoListBulletCxSpLast" style="margin-left:8px"&gt;&lt;strong&gt;IGBT:&lt;/strong&gt; Lacks an inherent body diode, requiring either an external antiparallel freewheeling diode or an integrated co-packed diode whose recovery characteristics dictate switching losses.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Reverse-recovery behaviour directly affects dead-time requirements, switching losses, and electromagnetic interference in half-bridge and full-bridge power converter topologies.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Thermal Performance, Paralleling and Fault Robustness&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Operating conditions expose distinct thermal trade-offs:&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li class="MsoListBulletCxSpFirst" style="margin-left:8px"&gt;&lt;strong&gt;Thermal runaway and paralleling:&lt;/strong&gt; A MOSFET&amp;rsquo;s room-temperature resistance can double during operation, helping balance current between paralleled devices and reducing the risk of thermal runaway. Conversely, higher temperatures increase IGBT tail currents, reducing switching efficiency. Paralleling IGBTs generally requires greater attention to V&lt;sub&gt;CE(sat)&lt;/sub&gt; matching and current sharing.&lt;/li&gt;
+ &lt;li class="MsoListBulletCxSpMiddle" style="margin-left:8px"&gt;&lt;strong&gt;Cooling costs:&lt;/strong&gt; Thermal management depends on electrical losses and operating conditions. Many high-power systems, regardless of the switch selected, require forced-air or liquid cooling.&lt;/li&gt;
+ &lt;li class="MsoListBulletCxSpMiddle" style="margin-left:8px"&gt;&lt;strong&gt;Short-circuit robustness:&lt;/strong&gt; IGBTs often specify short-circuit withstand times of several microseconds, providing valuable response time for protection circuits. MOSFETs lack such saturation limits, so they require faster protection.&lt;/li&gt;
+ &lt;li class="MsoListBulletCxSpLast" style="margin-left:8px"&gt;&lt;strong&gt;Derating:&lt;/strong&gt; Keeping operating temperatures well below the maximum junction-temperature rating preserves long-term reliability.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Quick Comparison of MOSFET vs. IGBT Device Characteristics&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-top:16px; margin-bottom:16px"&gt;&lt;strong&gt;Table 1&lt;/strong&gt; provides an overview to help engineers apply these selection criteria across diverse topologies.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Table 1:&lt;/strong&gt;&amp;nbsp;Comparison of MOSFET and IGBT characteristics&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;style type="text/css"&gt;td, th {
+padding: 5px !important;
+}
+&lt;/style&gt;
+&lt;table class="Table" style="border-collapse:collapse; border:none" width="629"&gt;
+ &lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="border-bottom:1px solid black; width:203px; padding:8px 12px 8px 12px; height:.2in; border-top:1px solid black; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Characteristic&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:209px; padding:8px 12px 8px 12px; height:.2in; border-top:1px solid black; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Silicon MOSFET&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:217px; padding:8px 12px 8px 12px; height:.2in; border-top:1px solid black; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;IGBT&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="border-bottom:1px solid black; width:203px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Typical Voltage Range&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:209px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;12V to 950V, with some reaching 1,200V&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:217px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;600V to 6,500V&lt;/p&gt;
+   &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="border-bottom:1px solid black; width:203px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Switching Frequency&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:209px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;Tens of kHz to more than 1MHz&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:217px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;Typically below 50kHz&lt;/p&gt;
+   &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="border-bottom:1px solid black; width:203px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Conduction Loss Mechanism&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:209px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;R&lt;sub&gt;DS(on)&lt;/sub&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:217px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;V&lt;sub&gt;CE(sat)&lt;/sub&gt;&lt;/p&gt;
+   &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="border-bottom:1px solid black; width:203px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Switching Loss Profile&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:209px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;Switching-transition, gate-charge/output-capacitance, and reverse-recovery losses&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:217px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;Switching-transition losses, with significant turn-off tail-current loss&lt;/p&gt;
+   &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="border-bottom:1px solid black; width:203px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Gate Drive Requirements&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:209px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;Typically +10V to +12V drive&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:217px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;Typically +15V on, 0V to -5V off&lt;/p&gt;
+   &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="border-bottom:1px solid black; width:203px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Short-Circuit Robustness&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:209px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;Generally requires fast protection&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:217px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;Often specified for short-circuit withstand time&lt;/p&gt;
+   &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="border-bottom:1px solid black; width:203px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Typical Applications&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:209px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;Power supplies, motor drives, switching regulators, amplifiers, computing devices, low-voltage automotive electronics&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:217px; padding:8px 12px 8px 12px; height:.2in; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;Industrial motor drives, traction inverters, high-power inverters, welding, UPS, renewable-energy conversion, induction heating&lt;/p&gt;
+   &lt;/td&gt;
+  &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;For common implementation questions, see &lt;a href="https://www.mouser.com/en/blog/mosfet-faq"&gt;MOSFET FAQs: 10 Essential Questions Answered&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Choosing a MOSFET or IGBT for Your Power Application&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Application-Specific Recommendations&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;While device-level parameters help narrow the choice, final selection depends heavily on the intended application (&lt;strong&gt;Table 2&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&lt;strong&gt;Note:&lt;/strong&gt; The ranges listed in &lt;strong&gt;Table 2&lt;/strong&gt; are representative. Final device selection requires loss calculations using the intended topology, bus voltage, load current, switching conditions, gate drive, diode behavior, cooling system, and worst-case junction temperature.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Table 2:&lt;/strong&gt;&amp;nbsp;Comparison of MOSFET and IGBT selection criteria&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;style type="text/css"&gt;td, th {
+padding: 10px !important;
+}
+&lt;/style&gt;
+&lt;table class="Table" style="border-collapse:collapse; border:none" width="600"&gt;
+ &lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="border-bottom:1px solid black; width:120px; padding:8px 12px 8px 12px; height:31px; border-top:1px solid black; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Application&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:102px; padding:8px 12px 8px 12px; height:31px; border-top:1px solid black; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Voltage Range&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:96px; padding:8px 12px 8px 12px; height:31px; border-top:1px solid black; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Switching Frequency&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:144px; padding:8px 12px 8px 12px; height:31px; border-top:1px solid black; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Device Preference&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:144px; padding:8px 12px 8px 12px; height:31px; border-top:1px solid black; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Selection Factors&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="border-bottom:1px solid black; width:120px; padding:8px 12px 8px 12px; height:92px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Switch-Mode Power Supplies (SMPS)&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:102px; padding:8px 12px 8px 12px; height:92px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;12V to 800V&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:96px; padding:8px 12px 8px 12px; height:92px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;50kHz to more than 1MHz&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:144px; padding:8px 12px 8px 12px; height:92px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;Silicon MOSFETs are strongly preferred, while IGBTs are limited to high-power, lower-frequency designs.&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:144px; padding:8px 12px 8px 12px; height:92px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;Designers prioritise low gate charge and switching losses, fast switching speeds, and low R&lt;sub&gt;DS(on)&lt;/sub&gt;.&lt;/p&gt;
+   &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="border-bottom:1px solid black; width:120px; padding:8px 12px 8px 12px; height:133px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Industrial Motor Drives and Inverters&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:102px; padding:8px 12px 8px 12px; height:133px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;230V&lt;sub&gt;AC&lt;/sub&gt; to 690V&lt;sub&gt;AC&lt;/sub&gt; systems&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:96px; padding:8px 12px 8px 12px; height:133px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;2kHz to 20kHz&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:144px; padding:8px 12px 8px 12px; height:133px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;IGBTs are favoured for high power levels, though silicon MOSFETs remain competitive in lower-voltage, higher-frequency setups such as small servo drives.&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:144px; padding:8px 12px 8px 12px; height:133px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;IGBTs remain widely used at higher power levels because of their combination of conduction performance, robustness, and cost at higher voltage/current ratings.&lt;/p&gt;
+   &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="border-bottom:1px solid black; width:120px; padding:8px 12px 8px 12px; height:125px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Renewable Energy Inverters and Grid-Tied Applications&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:102px; padding:8px 12px 8px 12px; height:125px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;400V to 1500V DC bus&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:96px; padding:8px 12px 8px 12px; height:125px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;5kHz to 50kHz&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:144px; padding:8px 12px 8px 12px; height:125px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;IGBTs remain widely used in high-power solar and wind converters; silicon MOSFETs are common in lower-power and higher-frequency converters.&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:144px; padding:8px 12px 8px 12px; height:125px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;Efficiency, power density, thermal management, switching frequency, and system cost are key selection factors.&lt;/p&gt;
+   &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="border-bottom:1px solid black; width:120px; padding:8px 12px 8px 12px; height:130px; border-top:none; border-right:1px solid black; border-left:1px solid black" valign="top"&gt;
+   &lt;p class="TableHeading" style="margin-bottom:8px"&gt;&lt;span style="font-weight:bold"&gt;Automotive and EV Power Electronics&lt;/span&gt;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:102px; padding:8px 12px 8px 12px; height:130px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;12V/48V/400V/800V&lt;/p&gt;
+
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;&amp;nbsp;&lt;/p&gt;
+
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;&amp;nbsp;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:96px; padding:8px 12px 8px 12px; height:130px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;Varies considerably&lt;/p&gt;
+
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;&amp;nbsp;&lt;/p&gt;
+
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;&amp;nbsp;&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:144px; padding:8px 12px 8px 12px; height:130px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;Silicon MOSFETs dominate low-voltage functions (12V and 48V systems). IGBTs have traditionally been widely used in high-voltage traction inverters, although SiC MOSFETs are increasingly used.&lt;/p&gt;
+   &lt;/td&gt;
+   &lt;td style="border-bottom:1px solid black; width:144px; padding:8px 12px 8px 12px; height:130px; border-top:none; border-right:1px solid black; border-left:none" valign="top"&gt;
+   &lt;p class="TableText" style="margin-bottom:4px"&gt;Subsystem voltage and operating frequency dictate the choice, with MOSFETs generally preferred wherever high-frequency performance or lower system voltages are required.&lt;/p&gt;
+   &lt;/td&gt;
+  &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p style="margin-bottom:11px"&gt;For drive-specific design rules, review the&lt;a href="https://www.mouser.co.uk/en/publicrelations_techarticle_basicsmosfetsigbts_moco_2015final/?srsltid=AU7gw4W22BR2dfK0tGA2YBCfLy9ClnjObad80nQipQtCq5w8nCOmxcpe"&gt; &lt;/a&gt;&lt;a href="https://resources.mouser.com/explore-all/basics-of-mosfets-and-igbts-for-motor-control"&gt;Basics of MOSFETs and IGBTs for Motor Control&lt;/a&gt; application analysis.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Emerging Alternatives to MOSFETs and IGBTs&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Silicon carbide (SiC) MOSFETs represent a high-voltage, high-frequency alternative that challenges the traditional IGBT domain, offering lower dynamic losses. However, silicon MOSFETs and IGBTs remain the dominant, cost-effective choice for mainstream power conversion today. To evaluate whether next-generation materials change the calculation, review&lt;a href="https://www.google.com/search?q=https://www.mouser.co.uk/blog/gan-power-electronics"&gt; &lt;/a&gt;&amp;ldquo;&lt;a href="https://resources.mouser.com/power-management/gan-gaining-traction-but-still-short-of-fulfilling-its-promise-in-power-electronics"&gt;GaN: Gaining Traction, But Still Short of Fulfilling Its Promise in Power Electronics&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In summary, low voltage and high switching frequency typically favour MOSFETs, while high voltage, high current, and moderate switching frequencies often favour IGBTs. Selection should always be validated against loss calculations and thermal limits.&lt;/p&gt;
+
+&lt;p&gt;Explore Mouser&amp;rsquo;s comprehensive inventory of&lt;a href="https://www.mouser.co.uk/c/semiconductors/discrete-semiconductors/"&gt; &lt;/a&gt;&lt;a href="https://www.mouser.com/en/c/semiconductors/discrete-semiconductors/"&gt;power semiconductors&lt;/a&gt; to configure your next power&lt;/p&gt;
+</description><guid isPermaLink="false">4893</guid></item><item><title>The Ultimate Guide to Silicon MOSFET Technology</title><link>https://www.mouser.com/blog/mosfet-guide</link><category>All,Audio,Industrial,Motor Control,PowerWide Bandgap</category><pubDate>Tue, 24 Nov 2026 21:48:13 GMT</pubDate><description>&lt;p style="margin-bottom:16px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/mouser-the-ultimate-guide-to-silicon-mosfet-technology-header-image.jpg?ver=m7IqpQ2LCfxq7qqAxf2hhw%3d%3d" style="width: 600px; height: 310px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;If there is one silicon device that almost everyone has used, it&amp;rsquo;s a MOSFET. MOSFET technology underpins applications ranging from integrated digital processors to discrete power switches and analogue amplifiers. This guide focuses primarily on discrete silicon MOSFETs used in power and analogue circuits.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;What Does MOSFET Stand For?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;A MOSFET is an acronym for a metal-oxide-semiconductor field-effect transistor.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;MOSFETs are versatile components that come in a variety of sizes, packages, and designs. But which silicon MOSFET is best for a specific application or project? And will silicon MOSFETs remain the most popular choice for years to come?&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;What Is a Silicon MOSFET?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;A silicon MOSFET is a semiconductor device commonly used as an electronic switch or as a power-control element. Its name comes from its structure, which consists of a metal gate separated from a semiconductor channel by a thin insulating oxide layer. Unlike bipolar junction transistors (BJTs), which require continuous base current during conduction, MOSFETs are voltage-controlled devices that can operate as switches or amplifying elements. This insulated-gate structure gives the device a very high input impedance, allowing it to control large currents while requiring very little drive power.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;For a quick breakdown of common circuit design queries and troubleshooting tips, refer to &lt;a href="https://www.mouser.com/en/blog/mosfet-faq"&gt;MOSFET FAQs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Silicon MOSFET Structure and Physical Construction&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The structural architecture of a discrete silicon MOSFET (&lt;strong&gt;Figure 1&lt;/strong&gt;) dictates its electrical performance, power-handling limits, and suitability for specific applications. A MOSFET is fundamentally a four-terminal device with gate, drain, source, and body terminals. In most discrete power MOSFETs, the body is internally connected to the source, leaving three externally accessible terminals:&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li class="MsoListBulletCxSpFirst" style="margin-left:8px"&gt;Gate (G): The control terminal, consisting of a metal or heavily doped polycrystalline silicon layer that is physically and electrically isolated from the substrate.&lt;/li&gt;
+ &lt;li class="MsoListBulletCxSpMiddle" style="margin-left:8px"&gt;Drain (D): One end of the channel conduction path, conventionally treated as the current-entry terminal for an N-channel MOSFET.&lt;/li&gt;
+ &lt;li class="MsoListBulletCxSpLast" style="margin-left:8px"&gt;Source (S): The terminal used as the reference for gate-to-source voltage and the opposite end of the channel conduction path.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/mouser-the-ultimate-guide-to-silicon-mosfet-technology-image-1.jpg?ver=P0qaAIM1jLapyxFvHErRHQ%3d%3d" style="width: 600px; height: 327px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt;&amp;nbsp;A structural diagram of an N-Channel MOSFET Vs a P-Channel MOSFET. (Source: Mouser)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The defining element of this device structure is the gate insulator, a microscopically thin layer of silicon dioxide (SiO&lt;sub&gt;2&lt;/sub&gt;) grown directly over the silicon substrate. This barrier provides very high DC isolation, requiring almost no steady-state gate current. The discrete power MOSFET structure also creates an intrinsic body diode with a fixed orientation between source and drain. This diode conducts when forward-biased, whereas the enhanced MOSFET channel can conduct current in either direction. The body (or substrate) is the underlying silicon material in which the MOSFET structure is created.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;How a Silicon MOSFET Works&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;MOSFET operation is controlled by the voltage applied between the gate and source terminals (V&lt;sub&gt;GS&lt;/sub&gt;). When the V&lt;sub&gt;GS&lt;/sub&gt; reaches the threshold voltage (V&lt;sub&gt;GS(th)&lt;/sub&gt;), a conductive channel forms. The threshold value represents the onset of conduction at a small specified current, not full enhancement. Switching applications require the gate voltage specified for the desired on-state resistance (R&lt;sub&gt;DS(on)&lt;/sub&gt;) and drain current.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;MOSFETs are available in two channel types:&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li class="MsoListBulletCxSpFirst" style="margin-left:8px"&gt;N-type (NMOS) devices, which use electrons as the primary charge carriers. Because electrons move more easily through silicon than through holes, NMOS devices typically offer lower R&lt;sub&gt;DS(on)&lt;/sub&gt;, higher current capability, and better switching performance. As a result, they are the preferred choice for most power-switching applications.&lt;/li&gt;
+ &lt;li class="MsoListBulletCxSpLast" style="margin-left:8px"&gt;P-type (PMOS) devices use holes as the primary charge carriers. Their lower carrier mobility generally results in higher R&lt;sub&gt;DS(on)&lt;/sub&gt; than comparable NMOS devices. However, PMOS devices remain useful in applications requiring simple high-side switching, where they can be driven directly without specialised gate-drive circuitry.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Silicon MOSFET Types&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Silicon MOSFETs are classified by three main criteria: enhancement-mode vs depletion-mode operation, N-channel vs P-channel, and vertical vs. lateral structure.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Enhancement Mode vs. Depletion Mode MOSFETs&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;The primary distinction between MOSFET operating modes is whether the device is normally on or normally off. Enhancement-mode devices are normally off and require a gate-to-source voltage of the appropriate polarity and magnitude to create a conductive channel. By contrast, depletion-mode devices are normally on. Depletion-mode devices are uncommon, but remain important in specialised applications, such as current sources.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;NMOS vs. PMOS: N-Channel and P-Channel MOSFETs&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;As mentioned, NMOS devices use electrons as their charge carriers, while PMOS devices use holes. Because electrons have higher mobility in silicon, NMOS devices achieve a lower on-resistance and higher current capability. This makes NMOS the preferred choice for most power-switching applications. PMOS devices, however, remain valuable in high-side switching circuits, where they can often be driven more simply than an equivalent NMOS. Therefore, designers frequently use NMOS devices where efficiency is critical and PMOS devices where circuit simplicity is the priority.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Lateral vs.Vertical Structure&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;While the preceding classifications focused on electrical behaviour, the lateral or vertical structure of a MOSFET describes its physical implementation. This structure affects the voltage rating, current capability, on-resistance, and suitability for specific applications.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Lateral MOSFETs (&lt;strong&gt;Figure 2&lt;/strong&gt;) conduct across the silicon surface, resulting in smaller gate-to-drain and gate-to-source capacitances. However, they typically handle less voltage and current than vertical MOSFETs, making them best suited to integrated circuits, radio frequency (RF) amplifiers, and lower-power applications.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/mouser-the-ultimate-guide-to-silicon-mosfet-technology-image-2.jpg?ver=P0qaAIM1jLapyxFvHErRHQ%3d%3d" style="width: 600px; height: 326px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt;&amp;nbsp;A structural diagram of a lateral silicon MOSFET. (Source: Mouser)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In contrast, vertical MOSFETs (&lt;strong&gt;Figure 3&lt;/strong&gt;) conduct current through the thickness of the silicon die from a top source to a bottom drain. Because lateral layouts are unsuitable for high-voltage applications, nearly all discrete power MOSFETs used in power supplies, motor drives, and inverters employ a vertical structure, allowing much larger current-carrying areas and higher voltage ratings. Modern vertical power MOSFETs are further optimised with trench gate technology, which embeds the gate vertically into the silicon substrate to maximise channel density and minimise R&lt;sub&gt;DS(on)&lt;/sub&gt;, and superjunction structures, which use alternating vertical N-type and P-type columns to achieve low resistance while maintaining high breakdown voltage.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/mouser-the-ultimate-guide-to-silicon-mosfet-technology-image-3.jpg?ver=8a2IiS7B1972GLYiqOtpXw%3d%3d" style="width: 600px; height: 326px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt;&amp;nbsp;A structural diagram of a vertical silicon MOSFET. (Source: Mouser)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;For an extensive comparison between these power switches and alternative technologies, consult the guide on whether to use &lt;a href="https://www.mouser.com/en/blog/mosfet-vs-igbt"&gt;MOSFETs or IGBTs&lt;/a&gt; for different power applications.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Silicon MOSFET Design Applications&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;MOSFETs in Switching Power Supplies&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In switched-mode power supplies (SMPS), silicon MOSFETs serve as the primary power switches for converters. Modern high-efficiency converters often use synchronous rectification, replacing passive rectifier diodes with actively controlled MOSFETs to reduce conduction loss associated with diode forward-voltage (V&lt;sub&gt;F&lt;/sub&gt;) drops. Selecting the right device requires balancing R&lt;sub&gt;DS(on)&lt;/sub&gt; and gate charge (Q&lt;sub&gt;g&lt;/sub&gt;) to optimise both conduction and switching losses for the target operating frequency.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Gate Drive Design for Switching MOSFET Applications&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;During switching, the gate driver must source and sink transient current to move the MOSFET&amp;rsquo;s gate charge, including the gate-to-drain charge associated with the Miller plateau. Datasheet gate-charge values are generally more useful than the internal capacitance (often represented by C&lt;sub&gt;iss&lt;/sub&gt;) alone for estimating driver current and switching time requirements. To satisfy these dynamic switching requirements while managing circuit parasitics, voltage offsets, and system safety, gate drive designs rely on several core circuit techniques:&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li class="MsoListBulletCxSpFirst" style="margin-left:8px"&gt;Gate resistors (R&lt;sub&gt;g&lt;/sub&gt;): Tuned to balance switching speed against electromagnetic interference (EMI) ringing caused by circuit parasitics.&lt;/li&gt;
+ &lt;li class="MsoListBulletCxSpMiddle" style="margin-left:8px"&gt;Galvanic isolation: High-voltage or safety-critical designs use optocouplers, pulse transformers, or digital isolators to protect low-voltage control circuitry.&lt;/li&gt;
+ &lt;li class="MsoListBulletCxSpLast" style="margin-left:8px"&gt;Bootstrap circuits: High-side N-channel MOSFETs require a gate-drive voltage above the switching-node voltage. A bootstrap diode-capacitor network is one common approach, although it requires periodic recharge and may not support continuous 100 percent duty-cycle operation without additional circuitry.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;MOSFETs in Motor Control Applications&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In motor control systems, silicon MOSFETs are arranged in H-bridge or three-phase inverter networks to drive AC or brushed and brushless DC motors (&lt;strong&gt;Figure 4&lt;/strong&gt;). Achieving high efficiency requires selecting low-R&lt;sub&gt;DS(on) &lt;/sub&gt;devices to minimise conduction losses, along with fast switching edges to minimise transition losses. Designers must provide an appropriate commutation path for inductive current using the bridge devices&amp;rsquo; body diodes, actively controlled MOSFET channels, or external freewheeling diodes. Parasitic-inductance voltage overshoot may require additional voltage margin, optimized layout, snubbers, or clamps to keep the MOSFET within its drain-source voltage (V&lt;sub&gt;DS&lt;/sub&gt;) and avalanche limits.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/mouser-the-ultimate-guide-to-silicon-mosfet-technology-image-4.jpg?ver=EYMOy8M0Rwhk3fsm_cAxRQ%3d%3d" style="width: 600px; height: 527px;" title="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 4:&lt;/strong&gt;&amp;nbsp;An H-bridge circuit (top) with four MOSFETs, flyback diodes, a DC motor, and an operational truth table. A three-phase BLDC inverter bridge (bottom) featuring six MOSFET switches, PWM control signals, and Wye-connected motor phases U, V, and W.&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;For details on integrating motor drives, refer to the &lt;a href="https://resources.mouser.com/explore-all/basics-of-mosfets-and-igbts-for-motor-control"&gt;Basics of MOSFETs and IGBTs for Motor Control&lt;/a&gt; application analysis.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;MOSFETs as Amplifiers&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In amplifier circuits, a MOSFET is operated in its saturation region rather than as an on/off switch. Small changes in the gate-to-source voltage (V&lt;sub&gt;GS&lt;/sub&gt;) produce corresponding changes in drain current, allowing the device to amplify analogue signals. This voltage-controlled behaviour makes MOSFETs widely used in audio amplifiers, RF amplifiers, and analogue signal-processing circuits.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;For high-power linear applications, engineers often consider planar MOSFETs because they offer a more robust forward-biased safe operating area than trench devices, which are optimised primarily for switching. Device selection must nevertheless be based on the datasheet safe operating area, pulse duration, junction temperature, and thermal-stability limits.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;MOSFETs in Power Management and Load Switching&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;In power distribution networks, silicon MOSFETs serve as highly efficient electronic switches for load sequencing, reverse-polarity protection, and hot-swap control. Combined with suitable control circuitry, a low-R&lt;sub&gt;DS(on)&lt;/sub&gt; MOSFET can implement an ideal diode function, greatly reducing the voltage drop, power loss, and heat generation associated with conventional diodes.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;MOSFETs are also widely used for power-path management. In redundant power supplies, MOSFETs can implement power-supply OR-ing, allowing multiple sources to feed a common rail while blocking reverse current into an inactive or failed source. They are also used for hot-swap and soft-start circuits where controlled gate drive limits inrush current when connecting large capacitive loads. Because the MOSFET may dissipate substantial power in linear operation during startup, its safe operating area must be verified for the expected voltage, current, pulse duration, and temperature.&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Silicon MOSFET Selection Guide: Choosing the Right Device&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Defining Application Requirements Before Selection&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Selecting the right MOSFET begins with understanding the application&amp;rsquo;s electrical, thermal, mechanical, and environmental requirements. Key electrical parameters include voltage rating, current rating, R&lt;sub&gt;DS(on)&lt;/sub&gt;, switching speed, and gate-drive voltage. Thermal considerations determine the cooling strategy and package type, while environmental factors, such as vibration, shock, and operating temperature, may further influence device selection. Once engineers understand these requirements, they can choose a MOSFET technology and package that best suits the intended circuit topology.&lt;/p&gt;
+
+&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Step-by-Step Silicon MOSFET Selection Process&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style="margin-bottom:11px"&gt;For standard switching applications, MOSFET selection should follow a structured process that considers electrical, thermal, and reliability requirements:&lt;/p&gt;
+
+&lt;ol&gt;
+ &lt;li class="MsoListNumberCxSpFirst" style="margin-left:8px"&gt;Define topology: Identify the MOSFET&amp;rsquo;s role (e.g., switch, driver) to set requirements.&lt;/li&gt;
+ &lt;li class="MsoListNumberCxSpMiddle" style="margin-left:8px"&gt;Determine voltage rating: Ensure the V&lt;sub&gt;DS&lt;/sub&gt; rating allows sufficient margin for spikes and transients.&lt;/li&gt;
+ &lt;li class="MsoListNumberCxSpMiddle" style="margin-left:8px"&gt;Check current and conduction: Select R&lt;sub&gt;DS(on)&lt;/sub&gt; using the root mean square (RMS) and peak currents, the available gate-drive voltage, the temperature-adjusted on-resistance, and the thermal budget.&lt;/li&gt;
+ &lt;li class="MsoListNumberCxSpMiddle" style="margin-left:8px"&gt;Confirm gate-drive capability: Verify that the driver provides the required V&lt;sub&gt;GS&lt;/sub&gt; and can source and sink sufficient current to move the specified gate charge (Q&lt;sub&gt;g&lt;/sub&gt;) within the target switching time.&lt;/li&gt;
+ &lt;li class="MsoListNumberCxSpMiddle" style="margin-left:8px"&gt;Analyse switching: Evaluate Q&lt;sub&gt;g&lt;/sub&gt;, Miller charge, and capacitances (C&lt;sub&gt;oss&lt;/sub&gt;/C&lt;sub&gt;rss&lt;/sub&gt;) for efficient high-frequency performance.&lt;/li&gt;
+ &lt;li class="MsoListNumberCxSpMiddle" style="margin-left:8px"&gt;Evaluate body diode: Check reverse-recovery characteristics (t&lt;sub&gt;rr&lt;/sub&gt;/Q&lt;sub&gt;rr&lt;/sub&gt;) for hard-switched or inductive circuits.&lt;/li&gt;
+ &lt;li class="MsoListNumberCxSpMiddle" style="margin-left:8px"&gt;Verify fault and transient capability: Check the safe operating area (SOA) for the applicable voltage, current, pulse duration, and temperature. Where avalanche may occur, evaluate the relevant avalanche-current and energy ratings under the datasheet test conditions, including any limits on repetitive operation.&lt;/li&gt;
+ &lt;li class="MsoListNumberCxSpMiddle" style="margin-left:8px"&gt;Validate thermal/package: Confirm heat dissipation maintains junction temperature (T&lt;sub&gt;J&lt;/sub&gt;) within safe limits.&lt;/li&gt;
+ &lt;li class="MsoListNumberCxSpLast" style="margin-left:8px"&gt;Simulate and test: Validate via Simulation Program with Integrated Circuit Emphasis (SPICE), then bench-test under real-world operating conditions.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;How Does a MOSFET Compare to Alternatives?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Wide-bandgap semiconductors, such as gallium nitride (GaN) and silicon carbide (SiC), can operate more efficiently at higher voltages, switching frequencies, and temperatures than conventional silicon devices. These characteristics enable smaller, lighter, and higher-power-density systems. However, silicon MOSFETs benefit from a mature manufacturing ecosystem, lower cost, and widespread availability. As a result, silicon remains the dominant material in the global power semiconductor market, while silicon MOSFETs continue to be widely used in cost-sensitive and mass-market power-conversion applications.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p style="margin-bottom:11px"&gt;Silicon MOSFETs remain a foundational technology in modern electronic design, offering high input impedance, efficient switching performance, and a mature, cost-effective manufacturing ecosystem. By understanding their operating modes, device structures, and key datasheet parameters, engineers can make informed component selection decisions across applications ranging from power supplies and motor drives to load switching and analogue circuits. Despite the emergence of wide-bandgap technologies such as GaN and SiC, silicon MOSFETs remain the default choice for many power-conversion and control applications due to their availability, reliability, and cost-effectiveness.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;To get started with a MOSFET project, explore Mouser&amp;rsquo;s extensive &lt;a href="https://www.mouser.com/en/c/semiconductors/discrete-semiconductors/transistors/mosfets/"&gt;MOSFET selection&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://www.mordorintelligence.com/industry-reports/power-semiconductor-market&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description><guid isPermaLink="false">4896</guid></item><item><title>IT vs. OT: A Cybersecurity Perspective</title><link>https://www.mouser.com/blog/it-vs-ot-a-cybersecurity-perspective</link><category>Automation,Industrial,Industrial Automation,IoT,Security</category><pubDate>Thu, 19 Nov 2026 17:59:33 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/d876b5b1-3b1a-444b-a1c1-96fa35eeb50c/Large/Adobe-Stock-687564787-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: Alexandr/stock.adobe.com&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
 
@@ -459,7 +1159,7 @@
 
 &lt;p style="margin-top:16px; margin-bottom:11px"&gt;As working environments constantly change, leveraging the right mix of sensory data is critical for operational success. Adding cameras to the sensing design is not an either/or choice. Conventional sensors are effective for precise, limited measurements and vision provides the spatial and contextual information cobots need to handle variation. The strongest cobot systems support automated operations by combining vision with different internal sensors, depending on the task.&lt;/p&gt;
 
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;The last part of this cobot blog series will review the various end effectors and discuss the ideal applications for each within industrial environments.&lt;/p&gt;
+&lt;p style="margin-top:16px; margin-bottom:11px"&gt;The last part of this cobot blog series will &lt;a href="https://www.mouser.com/en/blog/selecting-end-of-arm-tooling-cobots"&gt;review the various end effectors and discuss the ideal applications&lt;/a&gt; for each within industrial environments.&lt;/p&gt;
 </description><guid isPermaLink="false">4834</guid></item><item><title>New Tech Tuesdays: Combining HMI Processing and Real-Time Control on One MCU</title><link>https://www.mouser.com/blog/new-tech-combining-hmi-processing-real-time-control-one-mcu</link><category>All,Automation,Computing,Industrial,Low Power,Medical,Memory,Motor Control,New Tech Tuesdays,Sensors</category><pubDate>Tue, 03 Nov 2026 06:01:00 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1793290593/NTT_Nov3_hmi_processing_italmn.jpg" style="height: 327px; width: 600px;" title="" /&gt;&lt;/p&gt;
 
 &lt;h2&gt;New Tech Tuesdays&lt;/h2&gt;
@@ -873,294 +1573,4 @@ Jean-Jacques (JJ) DeLisle attended the Rochester Institute of Technology, where 
 &lt;small&gt;&lt;em&gt;&lt;a href="#_ednref4" name="_edn4"&gt;[4]&lt;/a&gt;&amp;nbsp;https://www.nature.com/articles/s41591-024-03141-0&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
 &lt;small&gt;&lt;em&gt;&lt;a href="#_ednref5" name="_edn5"&gt;[5]&lt;/a&gt;&amp;nbsp;https://www.science.org/doi/10.1126/science.adi2336&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
 &lt;small&gt;&lt;em&gt;&lt;a href="#_ednref6" name="_edn6"&gt;[6]&lt;/a&gt;&amp;nbsp;https://deepmind.google/blog/millions-of-new-materials-discovered-with-deep-learning/&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">4807</guid></item><item><title>New Tech Tuesdays: Engineering Reliability into Commercial Drones</title><link>https://www.mouser.com/blog/new-tech-engineering-reliability-into-commercial-drones</link><category>All,Industrial,Low Power,Motor Control,New Tech Tuesdays,Power,Robotics,Sensors</category><pubDate>Tue, 20 Oct 2026 19:53:41 GMT</pubDate><description>&lt;p&gt;&lt;img alt="" src="https://res.cloudinary.com/uf-554466/image/upload/v1792503103/NTT_Oct20_drones_jfore7.jpg" style="height: 327px; width: 600px;" title="" /&gt;&lt;/p&gt;
-
-&lt;h2&gt;New Tech Tuesdays&lt;/h2&gt;
-
-&lt;h3&gt;&lt;em&gt;Join Mouser&amp;#39;s Technical Content team for a weekly look at all things interesting, new, and noteworthy for design engineers.&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Remote-controlled (RC) aircraft once meant foam wings, bulky transmitters, and a flight that had a high probability of ending in a tree. Today&amp;rsquo;s commercial drones&amp;mdash;the descendants of those RC aircraft&amp;mdash;are much more advanced, offering capabilities such as spreading fertilizer, capturing digital imagery, and transporting packages, among other things. Yet, while the aircraft may be more capable, every additional feature competes for the same limited battery capacity, weight allowance, and space.&lt;/p&gt;
-
-&lt;p&gt;Successful commercial drone design requires more than selecting an efficient motor or low-power sensor. This week&amp;rsquo;s New Tech Tuesdays examines how coordinated power management, propulsion control, and magnetic sensing can support reliable flight, protect critical circuitry, and preserve the energy available for its application-specific functions.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Commercial Drone Design Starts with the Propulsion Chain&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;A drone&amp;rsquo;s propeller motors produce the thrust required for vertical lift, directional movement, and attitude control. Each propulsion channel typically combines power conversion, a motor driver, current sensing, and closed-loop motor control. If these elements do not operate together effectively, the result can be wasteful operation, unstable movement, or inadequate protection against electrical faults.&lt;/p&gt;
-
-&lt;p&gt;Motor current provides useful feedback because it corresponds to the torque the motor produces. By monitoring current near the motor, the control system gains visibility into changing propulsion loads and can detect overcurrent conditions caused by overloads, short circuits, or other faults.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt; Magnetic current sensors perform this measurement without requiring direct electrical contact between the current-carrying conductor and the sensing circuitry. Depending on the implementation, they can also provide galvanic isolation between the power conductor path and measurement circuitry.&lt;/p&gt;
-
-&lt;p&gt;Sensor size and conductor resistance also matter. A compact sensor can fit close to the motor-drive circuitry, while low resistance helps limit conduction losses and heat generation. These characteristics are particularly important in multirotor aircraft because the circuitry is repeated across several propulsion channels.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Flight Time Is a System-Level Challenge&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;When a drone needs more time in the air, attention typically turns to the battery. Battery capacity is important, but adding a larger battery increases mass, which can require additional thrust and larger propellers, and can consume some of the energy the larger battery was intended to provide.&lt;/p&gt;
-
-&lt;p&gt;A more complete approach evaluates losses throughout the power chain. Battery monitoring, direct current-to-direct current (DC/DC) conversion, motor-current sensing, gate driving, lighting, and position sensing all contribute to the total energy budget. Reducing consumption and conduction losses at multiple points may be more practical than relying on a single component change to extend flight time automatically.&lt;/p&gt;
-
-&lt;p&gt;Power monitoring also gives the control system better visibility into the battery&amp;rsquo;s operating state, while efficient voltage regulation supplies lower-voltage electronics without unnecessarily consuming energy reserved for propulsion. The objective is not simply to minimize the power used by each component, but to coordinate the entire chain so that sensing, protection, and control do not impose excessive losses.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Magnetic Sensing Beyond the Propellers&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Propulsion may keep a drone airborne, but position sensing helps many of its other functions operate predictably. A camera gimbal, for example, needs to measure angular position so its motors can compensate for aircraft movement and maintain a stable field of view (FOV). Magnetic position sensors can provide contactless angular feedback in compact mechanical assemblies, including configurations that measure movement along one, two, or three axes.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;Similar sensing principles apply to handheld controllers. Joysticks, buttons, and triggers experience repeated movement throughout their operating lives. Replacing mechanically contacting position elements with magnetic sensing can reduce wear while maintaining consistent position feedback. Low-power operating modes can further limit controller battery consumption when an input is inactive.&lt;/p&gt;
-
-&lt;p&gt;Sensor selection still requires attention to magnetic range, accuracy, linearity, bandwidth, mechanical alignment, and nearby magnetic fields. Contactless operation removes a mechanical wear point, but it does not remove the need for careful design. Physics is still physics.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;The Newest Products for Your Newest Designs&lt;sup&gt;&amp;reg;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;The &lt;a href="https://www.mouser.com/en/new/allegro/allegro-robotics"&gt;Allegro MicroSystems robotics portfolio&lt;/a&gt; includes solutions for power management, propulsion, and position sensing in commercial drones. The portfolio includes the ACS37800 power-monitoring integrated circuit, A8586 buck converter, ACS71240 current sensor, and A4919 three-phase brushless direct current gate driver for the power and propulsion chain.&lt;/p&gt;
-
-&lt;p&gt;For position feedback, the CT8150, CT310, and A31301 magnetic sensors support functions such as gimbal-angle measurement. Additionally, the A1391, A1392, A1393, and A1395 linear sensors can provide sensing for joysticks, buttons, and triggers. Together, these devices enable engineers to address battery monitoring, voltage regulation, motor control, current measurement, camera stabilization, and pilot interfaces as related parts of the drone architecture rather than isolated functions.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Tuesday&amp;rsquo;s Takeaway&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;Reliable commercial drones depend on coordinated power management, propulsion, and sensing. To meet these demands, current feedback helps control and protect propeller motors, power-chain optimization makes better use of stored energy, and magnetic position sensing supports stable camera operation and durable pilot-controller interfaces. Evaluating these functions at the system level helps engineers manage trade-offs among flight time, size, weight, protection, and reliability across the aircraft.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp; &amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;strong&gt;Sources&lt;/strong&gt;&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt; https://www.allegromicro.com/en/insights-and-innovations/blogs/current-sensors-in-robotics&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt; https://www.allegromicro.com/en/insights-and-innovations/technical-documents/magnetic-position-sensors-in-robotics&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">4788</guid></item><item><title>Ground Fault Protection in Commercial Environments</title><link>https://www.mouser.com/blog/ground-fault-protection-in-commercial-environments</link><category>All,Circuit Protection,Industrial</category><pubDate>Tue, 20 Oct 2026 04:33:23 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/a61ebdaf-016b-40ff-957c-e5db143cf9f3/Large/Adobe-Stock-356061349-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: Ekaterina/stock.adobe.com&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Electrical equipment is commonly used in a variety of applications where systems and components may be exposed to water. Water increases the risk of electric shock or ground faults by lowering electrical resistance and creating conductive paths for current flow. It can also provide a path for electricity to reach personnel or equipment. Implementing ground-fault circuit-interrupter (GFCI) protection is an effective way to reduce electric-shock risk by disconnecting a circuit when leakage current exceeds the device&amp;rsquo;s specified trip characteristic.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;This blog explores how GFCIs detect and interrupt ground faults and examines common applications where ground-fault protection is essential for safety and compliance.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;GFCI Definition and Standards&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;A GFCI is a device that monitors the outgoing and returning current in a circuit. A differential current transformer within the GFCI measures the difference between the two currents. Current that fails to return to the transformer has found another path to the ground, creating a shock hazard. The GFCI disconnects the circuit if the difference between the outgoing and returning current exceeds the trip threshold, which is 4mA to 6mA in residential circuits. This response occurs within fractions of a second, helping protect individuals from electrical shock if they come into contact with the current.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;In contrast, standard circuit breakers are designed to protect equipment from overloads and short circuits. However, they typically cannot detect smaller current differentials that can result in shocks or fires in and around water-adjacent applications. There are several standards engineers should be aware of when implementing GFCIs:&lt;/p&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;UL Standards&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
- &lt;li style="margin-left:8px"&gt;&lt;b&gt;UL 943&lt;/b&gt; defines minimum safety standards for GFCI design and functionality, including interrupting the circuit when the ground-fault current falls within the specified Class A operating range, conventionally greater than 4mA and not greater than 6mA. It also requires reverse line-load miswire protection and auto-monitoring functionality to regularly self-check performance.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
- &lt;li style="margin-bottom:11px; margin-left:8px"&gt;&lt;b&gt;UL 1998&lt;/b&gt; defines a set of safety standards for programmable software with an emphasis on risk analysis and fault detection. UL 1998 requirements are intended to prevent conversion faults between software and hardware, coding faults, timing faults, memory faults, and microelectronic hardware failures.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;National Electrical Code (NEC&lt;sup&gt;&amp;reg;&lt;/sup&gt;) Standards &lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
- &lt;li style="margin-left:8px"&gt;&lt;b&gt;NEC 680.5&lt;/b&gt; requires Class A GFCI protection for receptacles and outlets covered by Article 680 on branch circuits rated 150V or less to ground and 60A or less. Class A GFCI devices trip when a ground-fault current of around 4mA to 6mA is detected. It also mandates special-purpose GFCI (SPGFCI) protection, where specified by Article 680, for single-phase and three-phase receptacles and outlets supplied by branch circuits exceeding 150V to ground and not exceeding 480V phase-to-phase. The SPGFCI protection must have a ground-fault trip level that does not exceed 20mA. This code section typically applies to pools, spas, fountains, and similar installations.&lt;sup&gt;&lt;a href="#_edn3" name="_ednref3"&gt;[3]&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
- &lt;li style="margin-left:8px"&gt;&lt;b&gt;NEC 210.8A&lt;/b&gt; requires GFCI protection for all 125V to 250V receptacles in indoor and outdoor spaces, regardless of the receptacle&amp;rsquo;s proximity to water. This regulation applies to equipment in residential settings (i.e., dwelling units), including kitchens, basements, and laundry rooms.&lt;sup&gt;&lt;a href="#_edn4" name="_ednref4"&gt;[4]&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
- &lt;li style="margin-left:8px"&gt;&lt;b&gt;NEC 210.8B&lt;/b&gt; extends the same protections as NEC 210.8A for workplaces (i.e., non-dwelling units).&lt;/li&gt;
- &lt;li style="margin-bottom:11px; margin-left:8px"&gt;&lt;b&gt;NEC 210.8D&lt;/b&gt; requires general GFCI protection for specific appliances (e.g., dishwashers, pressure washers, sump pumps).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Users can trust that UL- and NEC-compliant GFCIs are designed with safety in mind. Safety considerations are especially important in commercial areas.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;GFCI Applications&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Many workplace environments have elevated risks of electric shock and fire due to their proximity to water.&lt;/p&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Commercial Kitchens&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The combination of running water, wet surfaces, stainless-steel equipment, and conductive surfaces creates an environment where electrical shock hazards are a significant concern. Many commercial kitchen appliances, including ranges, fryers, and mixers, must be movable to meet sanitation requirements, necessitating that appliances be connected via plugs and flexible cords and cables. Repeated movement, cleaning, and daily operation can cause cords and cables to wear over time, increasing the likelihood of insulation damage and ground faults. Because of the elevated risks in commercial kitchens, NEC 210.8(B) broadly requires GFCI protection for commercial kitchen receptacles running on single-phase circuits up to 50A and three-phase circuits up to 100A, and NEC 210.8(D) identifies specific appliances that always require GFCI protection, such as dishwashers and microwave ovens.&lt;/p&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Food and Beverage Processing Facilities&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Food and beverage processing facilities undergo frequent washdowns and strict sanitation procedures that expose electrical equipment to moisture, humidity, and other high-moisture conditions. These environments increase the risk of ground faults caused by damaged wiring, cordsets, plugs, and electrical connections. Because personnel routinely operate electrically powered equipment in wet processing areas, the National Electrical Code (NEC) 210.8(B) requires GFCI protection for many receptacles and electrical devices commonly used in these facilities.&lt;/p&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Pools, Spas, Fountains, and Water Features&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Pumps, heating, lighting, and filtration systems mainly operate near water. To help address the potential electrical hazards, NEC 680.5 commonly applies to equipment implemented in pools, spas, fountains, and other related equipment. Pool pump motors in commercial environments often exceed the 150V-to-ground limit for Class A GFCI devices, so the code calls for SPGFCI protection for circuits above 150V-to-ground up to 480V phase-to-phase.&lt;/p&gt;
-
-&lt;h3 style="border:none; padding:0in; margin-top:14px; margin-bottom:14px"&gt;&lt;span style="font-size:12pt"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#0099FF"&gt;&lt;em&gt;Vehicle Service and Maintenance Centers&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Portable, plug-in equipment is commonly used in automotive service and repair facilities. Welding torches, grinders, metal cutters, and drills all fall into this category. The risk of frayed cables, cords, and wires around water increases the likelihood of shock or fire. Large and hand-held vacuum cleaners, spray washers, and tire-inflation pumps require GFCI protection according to NEC 210.8B. Safety requirements are also rigorously applied to prevent workplace accidents and injuries. Wet floors and automobiles made from highly conductive materials increase those risks.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Although different environments where electricity and water often mix present a variety of challenges, the need for fast and reliable protection from electrical shocks or faults is common to all of the categories.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Ground Fault Protection for Commercial and Industrial Systems&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&lt;a href="https://www.mouser.com/new/littelfuse/littelfuse-sb4000-shock-block/"&gt;The Littelfuse SB4000 Industrial Shock Block&lt;/a&gt; is a versatile GFCI solution designed to meet the needs of a variety of water-adjacent applications. Supporting single-phase, split-phase, three-phase, and 4-wire systems, it is rated for 208V to 240V systems up to 30A and can be used in both solidly grounded and high-resistance grounded systems. The unit provides grounded-neutral protection and a fixed 6mA trip threshold in accordance with UL 943 requirements. Harmonic filtering, automatic self-testing, and UL 1998-compliant software help ensure reliable performance and continuous fault monitoring.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Built for demanding environments, the SB4000 features an IP69K and NEMA 4X-rated polycarbonate enclosure, conformal-coated circuit boards for corrosion resistance, and a 10,000A short-circuit current rating. Together, these features help ensure dependable performance in demanding indoor and outdoor commercial and industrial environments.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Ground fault protection is essential for the safety of personnel and equipment when electrical systems operate near water. Detecting conditions that could result in current leakage, electrical shock, or fire is critical to maintaining safe operation. GFCIs are also necessary to comply with a range of codes and standards that apply to water-adjacent systems and applications. Utilizing a GFCI, such as the SB4000 Shock Block, can provide a safer environment for personnel, maintain equipment integrity, and support regulatory compliance.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Author&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src="/blog/Portals/11/Alex-Pluemer-100px.jpg" style="margin-left: 10px; margin-right: 10px; float: left; width: 100px; height: 100px;" /&gt;Alex Pluemer is a senior technical writer for Wavefront Marketing specializing in advanced electronics, emerging technologies and responsible technology development.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://www.faithelectricm.com/self-test-gfci-requirements-ul-943-explained-everything-you-need-to-know/&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://test.stdstore.com/standards/UL-1998/&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref3" name="_edn3"&gt;[3]&lt;/a&gt;&amp;nbsp;https://www.electricallicenserenewal.com/Electrical-Continuing-Education-Courses/NEC-Content.php?sectionID=1537&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref4" name="_edn4"&gt;[4]&lt;/a&gt;&amp;nbsp;https://www.nssltd.com/posts/2026-code-year-nec-210-8&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">4772</guid></item><item><title>Agentic AI for Industrial Energy Optimization</title><link>https://www.mouser.com/blog/agentic-ai-for-industrial-energy-optimization</link><category>Automation,Computing,Industrial,Industrial Automation,Power</category><pubDate>Thu, 15 Oct 2026 05:01:00 GMT</pubDate><description>&lt;h2 style="color:##333333; font-style:italic; font-size:16px;"&gt;&lt;em&gt;AI agents coordinate energy decisions while meeting production and equipment requirements&lt;/em&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/84df65f0-d24c-4f41-afc8-d301da2a4a78/Large/Adobe-Stock-2110972483-jpg.png" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Jiraporn/stock.adobe.com; generated with AI&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Energy use in industrial equipment is interconnected. For example, reducing consumption in one part of a plant can affect operating conditions or production elsewhere. However, simply seeing a lower reading on an energy-consumption meter does not indicate whether the reduction is workable.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;To assess a proposed change, engineers need to know current machine states, production schedules, and equipment operating limits. This information is stored in different systems and often changes during a shift. Artificial intelligence (AI) agents help bring this context together and assess the available options.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;In the second part of our blog series on agentic AI&amp;rsquo;s role in industrial automation, we discussed the ways &lt;a href="https://www.mouser.com/en/blog/using-agentic-ai-predictive-maintenance-industrial-automation"&gt;AI enables predictive maintenance&lt;/a&gt; in industrial equipment. In this final blog of the series, we define energy optimization, examine how AI agents could improve energy use and efficiency, and explore how an implementation could work in an industrial automation setting.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Understanding Industrial Energy Optimization&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Industrial energy optimization is the practice of choosing how and when equipment operates to improve a defined energy outcome. A facility that aims to reduce electricity consumption, energy cost, peak demand, or emissions associated with its energy use still needs to meet production deadlines, maintain product quality, and stay within equipment and safety limits.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The target measurement will depend on the exact goal. For example, measuring kilowatt-hours per acceptable unit produced shows energy use relative to the output. Another key measurement involves identifying energy cost per production batch, which captures the effect of electricity rates on a particular cycle. Moreover, peak demand measures the highest power draw over a specific interval and idle consumption shows how much energy equipment uses when it is not producing any output.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;These measures are not interchangeable. Moving a batch production to a lower-priced period reduces its cost without reducing the energy it consumes. But by prioritizing a lower peak in demand, total consumption remains unchanged. So comparing energy per unit also requires comparable production conditions; otherwise, a change in output could be mistaken for an efficiency gain.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Energy-monitoring systems record these values and alert human operators about the changes. But optimization goes further, using measurements, production schedules, and equipment constraints to compare operating methods for the plant. For instance, high idle consumption points to an opportunity, but shutting down the equipment helps only if the next operation can still start on time.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Using Agentic AI to Support Energy-Efficient Operations&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;An AI agent brings together energy-monitoring data from separate systems. The agent can call a forecasting model to estimate upcoming demand and an optimization model to compare possible operating plans. The forecast predicts what may happen, while the optimizer evaluates options, such as which approved equipment combination should run. The agent coordinates among different tools and incorporates the results into a recommendation.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The ability to revise a plan becomes important when the operating conditions change frequently. For example, a fixed energy-saving rule follows its predefined response, but a delayed batch makes the response unsuitable. The agent has to retrieve the new schedule, request a forecast, compare the available options, and update its recommendation. Plant personnel would still need to approve consequential changes, showing the necessity for a human-in-the-loop workflow.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Implementing Agentic AI for Industrial Energy Management &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;As an example implementation, consider an industrial plant with several production lines and shared compressors and chillers. The plant must meet its production target and keep the facility&amp;rsquo;s demand below a defined limit.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Smart meters and equipment controllers send time-stamped energy measurements and machine states to an industrial data platform. The production system gives the current schedule and output figures.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The AI agent receives the production target and energy objective. It gathers the current operating data and calls forecasting software to estimate the facility&amp;rsquo;s load over the next several hours.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;If the forecasting model indicates a potential demand peak, the AI agent calls an optimization model to identify possible changes. These include changing a process within its completion window, reducing an idle period, or staggering the startup of high-load equipment.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The agent checks for proposed changes to the production schedule and equipment constraints. If the production order changes, the agent must update the analysis or refer the proposal to a human operator.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The implementation should begin in advisory mode, where the agent provides the expected energy effect, the affected equipment, and the constraints. The operator reviews and approves any specific changes. Then, confirmed schedules are applied through the existing manufacturing execution system (MES).&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;After the recommendations and verification process has proven reliable, the plant operator should consider allowing the agent to automatically submit narrowly defined, reversible actions within approved limits.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Balancing Energy Goals with Operational Constraints&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Agentic AI is not designed to magically remove constraints on industrial energy decisions. Many aspects, such as production targets and equipment limits, will continue to determine possible changes. An agent helps integrate current plant data with forecasting and optimization models to identify feasible options.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The significance of using agents lies in coordinating the response, which includes preparing a recommendation, routing approved changes, and verifying that energy performance has improved without disrupting production. However, throughout the process, operators should retain authority over plant operation.&lt;/p&gt;
-</description><guid isPermaLink="false">4752</guid></item><item><title>How Connectivity Enables Humanoid Robotics</title><link>https://www.mouser.com/blog/how-connectivity-enables-humanoid-robotics</link><category>Computing,Connectors,Industrial,Motor Control,Power,Robotics,Sensors</category><pubDate>Wed, 14 Oct 2026 22:21:23 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="https://mouser.bynder.com/asset/79fe3a07-3240-4e36-ad7b-b2d23268f131/Large/Adobe-Stock-2042143475-jpg.png" style="width: 600px; height: 436px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: DangThi/stock.adobe.com&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Robots have become common tools across a wide range of applications, each designed to serve a specific purpose. While humanoid robots are unlikely to be mistaken for humans, they are designed to operate in environments built for people, requiring them to navigate spaces, manipulate objects, and perform tasks that are not always optimized for automation. To accomplish this, they integrate machine vision, sensing, artificial intelligence (AI), and precise motion control to interact safely and effectively with the world around them.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Bringing these capabilities together requires the integration of multiple technologies into a single moving machine. From high-speed sensor data and compute systems to motor drives and power distribution networks, each subsystem places different demands on the connectors and cables that support it. Designers must balance electrical performance with the space constraints and mechanical demands of a robot that must maintain reliable operation while in motion.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;This blog examines how interconnects support the flow of data, signals, and power between the sensors, compute systems, motors, and power distribution networks that enable humanoid robots to operate in environments designed for people.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Perception&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;To navigate and interact safely with their surroundings, humanoid robots need to accurately perceive and interpret their environment. Cameras provide the visual information needed for navigation and object recognition, while proximity, force, torque, and other sensors help the robot build a detailed understanding of operating conditions and interactions with nearby objects.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;The data generated by these systems places significant demands on the interconnects linking sensors to processing hardware. High-resolution machine-vision systems, in particular, can generate large volumes of data, making the interface essential to overall system performance. Connector selection is often influenced by the machine-vision protocol in use. For example, USB3 Vision is based on USB 3.x, while GigE Vision uses Ethernet connectivity. CoaXPress transmits high-speed image data over coaxial cable. Camera Link and Camera Link HS provide interfaces designed specifically for high-performance imaging applications, with copper and optical connectivity options.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt; Other imaging systems may use Mobile Industry Processor Interface (MIPI) CSI-2 interfaces with flexible flat cables (FFC). Compact FFC/ flexible printed circuit (FPC) connectors are suitable for confined spaces such as a robot&amp;#39;s head or torso. Some connectors feature a one-touch locking mechanism that provides secure cable retention.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Working in conjunction with the cameras, proximity, force, and torque sensors allow the robot to detect and measure its interactions with surrounding objects. Depending on the device, sensor outputs may be digital or analog and can have very different bandwidth requirements. As a result, connector selection should be based on each sensor&amp;#39;s specific requirements rather than treating perception as a single network.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Once collected, this sensor and imaging data must be transmitted to the robot&amp;#39;s compute systems and processed with minimal delay so the robot can respond effectively to changes in its environment.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Compute&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Processing sensor and imaging data with minimal latency is essential for humanoid robots that operate alongside humans. Transmitting large volumes of data to remote computing resources can introduce delays and make operation dependent on external networks. Edge computing helps address these challenges by enabling time-critical decisions to be made using onboard processing hardware.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Supporting these internal data flows places significant demands on the robot&amp;rsquo;s connectivity infrastructure. As data rates increase, maintaining signal integrity becomes more challenging because connectors, PCB traces, and cable assemblies are all part of the signal path and collectively affect the performance of the entire channel.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;These requirements are further complicated by the human-like form factors of humanoid robots. Unlike conventional industrial computers, components must fit within a compact, human-shaped structure that leaves little room for bulky connectors. Designers cannot simply increase the enclosure size to simplify packaging, and every additional component adds mass that the robot&amp;#39;s actuators must move.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;High-density connectors help support high data rates within the limited space available for the compute systems. Consequently, connector selection becomes a careful balance between electrical performance, mechanical packaging, and overall system design.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Actuation&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Humanoid robots must translate computational decisions into physical motion. Electric motors throughout the robot drive joints and other mechanisms, forming a complex control system that continuously responds to sensor inputs.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Motor drivers and controllers provide the interface between the robot&amp;#39;s computing system and its motors, which means they require connections for both control and power. Communication technologies such as SPI, EtherCAT, or RS-485 carry commands from the compute system, while separate power connections then deliver the energy required to drive the motors.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Controlling a humanoid joint involves more than simply commanding a motor to move. Motion occurs within a continuous feedback loop in which sensors monitor motor position, speed, and load, enabling the controller to compare expected and actual movement and make real-time adjustments.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;To balance, manipulate objects, and navigate uneven terrain, humanoid robots must coordinate movements across multiple joints simultaneously. These tasks depend on reliable data transfer to support rapid feedback and precise motion control.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;A single actuator assembly may require multiple connections for control signals, sensor feedback, and power within a limited space. Because connectors are often located near moving joints, they need to maintain reliable electrical and mechanical performance despite repeated motion and vibration. These demanding operating conditions require interconnect solutions that preserve signal integrity and electrical continuity while delivering long-term mechanical reliability throughout the robot&amp;#39;s motion-control system.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Power&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Power is distributed through the battery management system to the robot&amp;#39;s compute, sensing, and motion-control subsystems. These connections must deliver the required current while minimizing resistance and heat generation. Because the motors that enable complex humanoid motion can place substantial demands on the power system, efficient power distribution is essential for maximizing operating time.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Power connectors must remain securely mated even under repeated movement and vibration, which place mechanical stress on cables and connectors. Increased contact resistance in high-current connections can generate excess heat and increase the risk of arcing. As a result, positive locking mechanisms are especially valuable in mobile robotic systems. Connectors such as &lt;a href="https://www.mouser.com/en/new/molex/molex-minicirc-connectors"&gt;Molex MiniCirc Circular Connectors&lt;/a&gt; combine a compact circular design with vibration resistance and provide tactile feedback when fully mated.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Humanoid Connectivity Solutions&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;From sensor networks to power delivery systems, no single interconnect architecture is optimal for every robotic system. Humanoid robots place diverse demands on their interconnect infrastructure, highlighting the need for application-specific connectivity solutions. Perception and compute systems require compact, high-speed data connections, while actuation systems combine control, feedback, and power delivery within tightly constrained spaces. Power distribution systems place additional emphasis on current-carrying capacity, connector retention, and mechanical durability. Meeting these varied requirements requires designers to balance electrical performance, mechanical reliability, and packaging constraints across the robot.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Drawing on decades of experience in automotive and industrial applications, Molex offers &lt;a href="https://www.mouser.com/en/new/molex/molex-humanoid-robotics-interconnect/"&gt;connectivity solutions designed to meet the challenges of humanoid robotics&lt;/a&gt;, including SlimStack connectors for compact perception systems, Mirror Mezz backplane connectors for high-speed compute, and physically secure Micro-Lock Plus connectors for actuators.&lt;sup&gt;&lt;a href="#_edn2" name="_ednref2"&gt;[2]&lt;/a&gt;&lt;/sup&gt; Rather than relying on a single connectivity approach throughout the robot, designers can select interconnects tailored to the electrical, mechanical, and packaging requirements of each subsystem. This approach supports the reliable transfer of data, signals, and power throughout the robot.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Humanoid robots combine perception, compute, actuation, and power systems within a single moving platform. Reliable operation depends on interconnects that can support diverse signal, data, and power requirements while withstanding the space constraints and mechanical stresses inherent to humanoid robot designs. By matching connector and cable-assembly solutions to the specific needs of each subsystem, designers can help ensure reliable communication, control, and power delivery throughout the robot. As humanoid robots become more capable, interconnect selection will remain a foundational design consideration affecting performance, reliability and maintainability.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Author&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;img align="left" alt="" src="https://www.mouser.com/blog/Portals/11/David_Pike_headshot.jpeg" style="text-align: left; margin-right: 10px; float: left;" width="100" /&gt;David Pike is well known across the interconnect industry for his passion and general geekiness. His online name is Connector Geek.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;&lt;small&gt;&lt;em&gt;Sources&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://www.automate.org/vision/vision-standards/vision-standards-additional-machine-vision-standards&lt;/em&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref2" name="_edn2"&gt;[2]&lt;/a&gt;&amp;nbsp;https://www.molex.com/en-us/industries-applications/humanoid-robotics/humanoid-robotics-connectors&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">4714</guid></item><item><title>Exploring the Electronics Aboard AC75 and AC40 Foiling Yachts</title><link>https://www.mouser.com/blog/exploring-the-electronics-aboard-ac75-and-ac40-foiling-yachts</link><category>AllConnectors,General,Power,Sensors</category><pubDate>Wed, 14 Oct 2026 13:55:32 GMT</pubDate><description>&lt;p class="FigureCaption"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/LRP06100_300626_cNicolasTouze-LRPST_600_1.jpg?ver=xWSZ8S7wocfMOId2v_zvuw%3d%3d" style="width: 600px; height: 400px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;span style="font-size:8pt"&gt;Source: &amp;copy;Nicolas Touze/La Roche-Posay Racing Team&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Modern America&amp;rsquo;s Cup racing yachts are high-speed embedded systems platforms that use onboard sensors, telemetry, control loops, power conversion, and cockpit interfaces to help crews manage stability, drag, hydraulic response, and foil position. The competition features two classes of foiling yachts: the 12-metre AC40, used for preliminary regattas and the Women&amp;rsquo;s and Youth America&amp;rsquo;s Cup, and the 23-metre AC75, the team-specific design that contests the match.&lt;sup&gt;&lt;a href="#_edn1" name="_ednref1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;Mouser has joined La Roche-Posay Racing Team as an Official Supporter for the team&amp;rsquo;s campaign in the 38th Louis Vuitton America&amp;rsquo;s Cup. The partnership gives the French challenger access to performance-critical electronic components, supporting the onboard systems that keep the team&amp;rsquo;s foiling race yachts stable, fast, and reliable.&lt;/p&gt;
-
-&lt;p style="margin-bottom:11px"&gt;This blog looks at why electronics have become central to America&amp;rsquo;s Cup performance, how the team&amp;rsquo;s AC75 boat copes with the demands of the marine environment, and what component availability and traceability mean for a campaign built on rapid, data-driven improvement.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Why Electronics Are Central to America&amp;rsquo;s Cup Performance&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Modern America&amp;rsquo;s Cup boats are tightly integrated, embedded platforms whose electronics&amp;mdash;including telemetry, sensor fusion, and networked electronics architectures&amp;mdash;support performance, control, monitoring, and safety-related functions. Mark Patrick, Technical Content Director at Mouser EMEA, describes today&amp;rsquo;s AC75s as &amp;ldquo;effectively flying embedded systems platforms,&amp;rdquo; where the deciding factor is how quickly a team can turn that data into performance improvements. For the 2027 AC75, batteries replace the cyclor teams&amp;mdash;crew members pedaling stationary bikes&amp;mdash;that previously supplied hydraulic power. A new onboard data crew member monitors how the limited stored energy is allocated among trimming, mast rotation, and foil-cant functions, making power monitoring and control part of the race strategy. Engineers analyse the data both during and after testing sessions to refine foil positioning, hydraulic response, and energy management, continuously updating the digital models that guide development.&lt;/p&gt;
-
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;That speed of iteration puts real pressure on component reliability, system integration, and supply chain support. For critical systems, such as flight control, power conversion, and telemetry, teams typically apply dual sourcing to ensure supply continuity, along with full component traceability and life cycle monitoring to safeguard design decisions. Quality controls, including moisture-sensitive device (MSD) protection,&lt;a href="https://www.mouser.co.uk/en/c/circuit-protection/esd-protection-diodes-tvs-diodes/"&gt; &lt;/a&gt;electrostatic discharge (ESD)-safe storage and assembly practices, and authenticity verification, help ensure components perform reliably under extreme load.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Engineering for the Marine Environment&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Onboard&lt;a href="https://www.mouser.co.uk/en/c/connectors/circular-connectors/"&gt; &lt;/a&gt;electronics and interconnect systems must perform under conditions few embedded systems ever face: constant vibration, moisture exposure, saltwater, and&lt;a href="https://www.mouser.co.uk/blog/emc-emi-shielding-explained"&gt; &lt;/a&gt;&lt;a href="https://resources.mouser.com/rf-wireless/emc-emi-shielding-explained"&gt;electromagnetic interference&lt;/a&gt; (EMI)&amp;mdash;all at racing speed. That places significant demands on component quality, system integration, and long-term reliability, since even a small delay in actuator response or control-loop timing can affect drag, stability, and flight behaviour. Reliable electronics integration and deterministic system performance have become genuine competitive advantages, not just engineering requirements.&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Powering the AC40 and AC75 Foiling Yachts&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;In both the AC40 and AC75 classes, real-time data from onboard sensors informs small adjustments, such as foil position or hydraulic response, that balance lift, drag, stability, and maneuverability over the course of a race. That level of responsiveness depends on&lt;a href="https://mouser.co.uk/c/sensors"&gt; &lt;/a&gt;instrumentation and control systems that continue performing accurately at speed, under load, and in a marine environment. To find out more, &lt;a href="https://te.mouser.com/harsh-environment/te-connectivity-why-are-there-electronics-on-a-sailboat"&gt;explore the Mouser eBook&lt;/a&gt; on how electronics are being used on La Roche-Posay Racing Team&amp;rsquo;s sailboats (&lt;strong&gt;Figure 1&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;p class="FigureCaption"&gt;&lt;img alt="" src="/blog/Portals/11/Julie Wright/LAPO_racing yacht on water_600.jpg?ver=LVnVPNrgxbodKkzZOOEi7g%3d%3d" style="width: 600px; height: 400px;" title="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt;&amp;nbsp;A La Roche-Posay racing yacht on the water. (Source: &amp;copy;Nicolas Touze/La Roche-Posay Racing Team)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Component Supply as a Performance Driver&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;Procurement quality, traceability, and handling directly affect the team&amp;rsquo;s preparation for on-water results. Missing parts limit testing time and compress validation cycles ahead of races, which can carry through to performance on the water. Authorised distribution also plays a role in compliant handling and supply continuity during these compressed cycles: Engineering teams often analyse telemetry immediately after a testing session, implement configuration updates overnight, and validate the changes during the next on-water run (&lt;strong&gt;Figure 2&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;div style="position: relative; display: block; max-width: 960px;"&gt;
-&lt;div style="padding-top: 5%;"&gt;&lt;iframe allow="encrypted-media" allowfullscreen="allowfullscreen" height="300" src="https://players.brightcove.net/618591172001/default_default/index.html?videoId=6404533487112" style="top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; " width="550"&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;span style="font-size:8pt"&gt;&lt;em&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt;&amp;nbsp;Pia Mathias, embedded systems engineer, discusses her project with the La Roche-Posay Racing Team. (Source: Mouser)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;h2 style="border:none; padding:0in; margin-top:16px; margin-bottom:16px"&gt;&lt;span style="font-size:16pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:Arial,sans-serif"&gt;&lt;span style="color:#004a85"&gt;Looking Ahead to Naples 2027&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;The 38th Louis Vuitton America&amp;rsquo;s Cup will be held in Naples in 2027, the first time the event has been staged in Italy. &amp;ldquo;Performance in today&amp;rsquo;s America&amp;rsquo;s Cup is no longer driven by sailing talent alone, but by the ability to integrate cutting-edge technologies into every aspect of the project,&amp;rdquo; says Stephan Kandler, CEO of La Roche-Posay Racing Team. As the team continues development and testing ahead of the match, its partnership with Mouser is intended to enhance the reliability, precision, and competitiveness of its onboard electronic systems, reinforcing the growing role that component-level engineering plays in elite sailing performance.&lt;/p&gt;
-
-&lt;p style="margin-top:16px; margin-bottom:11px"&gt;&lt;small&gt;&lt;em&gt;Sources&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;em&gt;&lt;a href="#_ednref1" name="_edn1"&gt;[1]&lt;/a&gt;&amp;nbsp;https://www.americascup.com/the-boats&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-</description><guid isPermaLink="false">4746</guid></item></channel></rss>
+</description><guid isPermaLink="false">4807</guid></item></channel></rss>
